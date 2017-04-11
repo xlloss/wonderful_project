@@ -29,6 +29,8 @@
 #include "mbiot.h"
 #include "ble_heart_rate_service.h"
 
+extern int my_printf(const char *format, ...)large reentrant;
+
 PUBLIC  MCODE  u8 APP_Defined_Services[]={
 
 	/*Heart Scale Service*/
@@ -47,7 +49,7 @@ PUBLIC  MCODE  u8 APP_Defined_Services[]={
 	/* ATT_ATTRUBUTE_HEADER_2 */
   0x0B,	0x00,	0x00,0x00,	0x02,	UUID_CHARACTERISTIC>>8,UUID_CHARACTERISTIC,						WRITE,	0x00,0x00,	UUID_HEART_RATE_CONTROL_POINT>>8,UUID_HEART_RATE_CONTROL_POINT,
   /* ATT_ATTRUBUTE_HEADER_2 */																		/* ATT_ATTRIBUTE_VALUE_CHARACTERISTIC_VALUE */
-	0x08,	PM_MANUAL_WRITE_RESP,	0x00,0x00,	0x02,	UUID_HEART_RATE_CONTROL_POINT>>8,UUID_HEART_RATE_CONTROL_POINT,			0x01,	0x00,
+	0x08,	0x00/*PM_MANUAL_WRITE_RESP*/,	0x00,0x00,	0x02,	UUID_HEART_RATE_CONTROL_POINT>>8,UUID_HEART_RATE_CONTROL_POINT,			0x01,	0x00,
 };
 
 PUBLIC XDATA HRSProcessRoutine	HRSProcess;
@@ -86,43 +88,74 @@ PUBLIC u16 BLE_HRS_Init_Service()large
 		HRBodySensorLocationHandle=startHandle+INDEX_BODY_SENSOR_LOCATION_VALUE;
 		HRControlPointHandle=startHandle+INDEX_HEART_RATE_CONTROL_POINT_VALUE;
 	}
-	
+
 	return result;
 }
 
 PUBLIC void BLE_HRS_Catch_Event(BLE_GATT_Event XDATA * p_event) large
 {
+	XDATA APP_PWM_ConfParas pwm = {PWM_CLOCK_1024K, 24, 12, POSITIVE_OUTPUT};
+
+	my_printf("BLE_HRS_Catch_Event\n");
+
 	switch(p_event->eventID)
 	{
-		case BLE_GATTS_EVT_WRITE:
-		{			
-			XDATA u16 cccd_value;
-			XDATA u8 cp_value;
-			BLE_HRS_Event XDATA *p_hrsEvent;
-		
-			p_hrsEvent = (BLE_HRS_Event XDATA *)APP_HEAP_Alloc(sizeof(BLE_HRS_Event));
+			XDATA u8 pwm_value;
 
-			if(p_hrsEvent!= NULL)
+			case BLE_GATTS_EVT_WRITE:
 			{
-				if(p_event->eventField.onWrite.charHandle == HRMearsuementCCCDHandle)
-				{
-					xmemcpy((u8 XDATA *)&cccd_value, p_event->eventField.onWrite.p_charValue, p_event->eventField.onWrite.writeDataLength);
-					p_hrsEvent->eventType = cccd_value;
-					p_hrsEvent->write_value = cccd_value;
-					HRSProcess(p_hrsEvent);
+				if (p_event->eventField.onWrite.charHandle == HRControlPointHandle) {
+					my_printf ("HRControlPointHandle\n");
+					xmemcpy((u8 XDATA *)&pwm_value, p_event->eventField.onWrite.p_charValue, 
+						p_event->eventField.onWrite.writeDataLength);
 					
+					pwm.compareValue = (led_pwm * 24) / 100;
+					if (pwm.compareValue > 24 )
+						pwm.compareValue = 24;
+
+					APP_PWM_Stop (PWM1_MASK);
+					APP_PWM_Config((PWM1_MASK), &pwm);
+					APP_PWM_Start(PWM1_MASK);
+
+					APP_PWM_Stop (PWM2_MASK);
+					APP_PWM_Config((PWM2_MASK), &pwm);
+					APP_PWM_Start(PWM2_MASK);
 				}
-				else if (p_event->eventField.onWrite.charHandle == HRControlPointHandle)
-				{
-					xmemcpy((u8 XDATA *)&cp_value, p_event->eventField.onWrite.p_charValue, p_event->eventField.onWrite.writeDataLength);
-					p_hrsEvent->eventType = HEART_RATE_CONTROL_POINT_WRITE;
-					p_hrsEvent->write_value = cp_value;
-					HRSProcess(p_hrsEvent);
-				}
-				APP_HEAP_Free((u8 XDATA *)p_hrsEvent);
+				break;
 			}
-		}
-		break;
+
+//		case BLE_GATTS_EVT_WRITE:
+//		{
+//			XDATA u16 cccd_value;
+//			XDATA u8 cp_value;
+//			BLE_HRS_Event XDATA *p_hrsEvent;
+//
+//			my_printf("BLE_GATTS_EVT_WRITE\n");
+//			p_hrsEvent = (BLE_HRS_Event XDATA *)APP_HEAP_Alloc(sizeof(BLE_HRS_Event));
+//
+//			if(p_hrsEvent!= NULL)
+//			{
+//				if(p_event->eventField.onWrite.charHandle == HRMearsuementCCCDHandle)
+//				{
+//					my_printf("HRMearsuementCCCDHandle\n");
+//					xmemcpy((u8 XDATA *)&cccd_value, p_event->eventField.onWrite.p_charValue, p_event->eventField.onWrite.writeDataLength);
+//					p_hrsEvent->eventType = cccd_value;
+//					p_hrsEvent->write_value = cccd_value;
+//					HRSProcess(p_hrsEvent);
+//
+//				}
+//				else if (p_event->eventField.onWrite.charHandle == HRControlPointHandle)
+//				{
+//					my_printf("HRControlPointHandle\n");
+//					xmemcpy((u8 XDATA *)&cp_value, p_event->eventField.onWrite.p_charValue, p_event->eventField.onWrite.writeDataLength);
+//					p_hrsEvent->eventType = HEART_RATE_CONTROL_POINT_WRITE;
+//					p_hrsEvent->write_value = cp_value;
+//					HRSProcess(p_hrsEvent);
+//				}
+//				APP_HEAP_Free((u8 XDATA *)p_hrsEvent);
+//			}
+//		}
+//		break;
 		
 		default:
 		break;
