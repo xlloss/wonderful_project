@@ -1,4 +1,4 @@
-/********************************************************************
+﻿/********************************************************************
   File Information:
     FileName:       application.c
     Processor:      8051
@@ -57,6 +57,8 @@ static XDATA u8 uart_cmd_wait;							/**< APPlication Variable for Recording Rec
 //static XDATA APP_CONN_STRUCT XDATA *p_app_conn;				/**< Pointer to Application Connection Parameters Structure. */
 static XDATA APP_CONN_STRUCT XDATA *p_app_conn;				/**< Pointer to Application Connection Parameters Structure. */
 static PUBLIC u8 XDATA reset_energy_flag;
+extern int my_printf(const char *format, ...)large reentrant;
+
 
 /**@brief Definition of events. */
 static MCODE APP_EVENT_STRUCT app_event[]=
@@ -127,7 +129,7 @@ static void app_init()large reentrant
 	else
 	{
 		app_send_event(EVT_UNSPECIFIC_ERROR);
-	}	
+	}
 }
 
 /**@brief Function for parsing received UART data.
@@ -247,11 +249,14 @@ static void hrs_event_handler(BLE_HRS_Event XDATA *p_hrsEvent)large reentrant
 		if(p_hrsEvent->write_value == 0x01)
 		{
 			reset_energy_flag = 1;
+
+			my_printf ("BLE_HRS_Send_Write_Response\n");
 			/*Send the write response to the client manually*/
 			BLE_HRS_Send_Write_Response(p_app_conn->handle, BLE_GATT_TYPE_WRITE_RESP);
 		}
 		else
 		{
+			my_printf ("BLE_HRS_Send_Error_Response\n");
 			BLE_HRS_Send_Error_Response(p_app_conn->handle, BLE_ATT_ERRCODE_APPLICATION_ERROR);
 		}		
 	}
@@ -372,13 +377,14 @@ PUBLIC void gatt_event_handler(BLE_GATT_Event XDATA * p_event) large reentrant
 		}
 		case BLE_GATTS_EVT_READ:
 		{
+			my_printf("BLE_GATTS_EVT_READ\n");
 			// Send read response by connection handle
 		}
 		break;
 		
 		case BLE_GATTS_EVT_WRITE:
 		{
-			// Write event
+			my_printf("BLE_GATTS_EVT_WRITE\n");
 		}
 		break;
 		
@@ -509,24 +515,25 @@ PUBLIC void Application_Init() large reentrant
 {
 	u8 XDATA newName[]="Heart Rate";
 
+
 	//BLE stack call back function initialize
 	BLE_GAP_Init(gap_event_handler);
 	BLE_L2CAP_Init(l2cap_event_handler);
 	BLE_GATT_Init(gatt_event_handler);
 	BLE_SMP_Init(smp_event_handler);
-	
+
 	//MBIoT call back function initialize
 	APP_PERIPHERAL_Init(peripheral_event_handler);
 	APP_COMMON_Init(common_event_handler);
 	APP_HEAP_Init();
-	
+
 	//Application initialize	
 	BLE_HRS_Init(hrs_event_handler);	
 	//GATT Service Table initialize
 	BLE_GATTS_StartCreatingServiceTable();
 	BLE_HRS_Init_Service();
 	BLE_GATTS_EndCreatingServiceTable();
-		
+
 	//UART initialize
 	uart_cmd_index=0;
 	uart_cmd_wait=0;
@@ -551,6 +558,11 @@ PUBLIC void Application_Init() large reentrant
 	UTILITY_LowPowerModeControl(LOW_POWER_MODE_DISALLOW);
 	BLE_GAP_Set_DeviceName(sizeof(newName),newName);
 	
+	//LED
+	APP_GPIO_Pin_Config_Direction (GPIO_P02, GPIO_DIR_OUTPUT);
+
+
+
 	//Application initial
-	app_init();	
+	app_init();
 }
