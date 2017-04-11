@@ -1,0 +1,165 @@
+NOINDIRECTCALL
+NOJMPTAB
+RAMSIZE(256)
+MAP
+NODEFAULTLIBRARY
+DISABLEWARNING(16)
+
+CODE(0000H,?PR?COM_RUN_PSRAM_PROG?FIXED_COMMBANK(0100H),?PR?COM_EFLASH_MAIN?FIXED_COMMBANK(010EH),?PR?COM_HCI_RESET?FIXED_COMMBANK(0114H),?PR?COM_EFLASH_WRITE?FIXED_COMMBANK(011AH),?PR?COM_EFLASH_SECTORERASE?FIXED_COMMBANK(0128H),?PR?COM_EFLASH_INFO_SECTORERASE?FIXED_COMMBANK(0136H),?PR?COM_EFLASH_INFO_WRITE?FIXED_COMMBANK(0144H),?PR?COM_EFLASH_INFO_READ?FIXED_COMMBANK(0152H),?PR?COM_eFlash_DMA_Write?FIXED_COMMBANK(0160H),?PR?COM_READ_IC_VERSION?FIXED_COMMBANK(016eH),?PR?FIXED_COMMBANK(0188H),?CO?VERSION_CTRL(1000H))
+BANKAREA(4000H,0FFFFH)
+BANK0(?PR?Run_PSRAM_Prog?PSRAM_PROGRAM(C000H))
+BANK1(?CO?BB_REG_BT5505(4000H))
+BANK2(?CO?BLE_SMP_PRIVATE(4000H),?CO?BLE_SMP_PRIVATE_ROUTINE,?CO?BLE_L2CAP_PRIVATE_ROUTINE,?CO?BLE_GATT_PRIVATE_ROUTINE,?CO?GATT_SERVICE_TABLE)
+BANK3(5000H,?CO?BLE_ADAPTER(5000H),?CO?LE_HCI_COMMAND,?CO?BLE_HCI_UTILITY,?CO?BLE_HCI_EVENT_PROC,?CO?BLE_HCI,?CO?BATTERY_VOLTAGE_DECTECT)
+BANK4(?CO?BLE_MESH_PRIVATE(4000H),?CO?eFlash_Tag_MCODE(FFF8H))
+BANK5(?CO?EFLASH_PERMISSION_KEY(4000H),?PR?_?APPLICATION_INIT?APPLICATION(4100H),?CO?APPLICATION,?CO?BLE_ALERT_NOTIFY_SERVICE,?CO?BLE_IMMEDIATE_ALERT_SERVICE,?CO?BLE_LINK_LOSS_SERVICE,?CO?BLE_TX_POWER_SERVICE)
+
+XDATA(0000H-47FFH,?XD?CM_REG(0100H),04800H-05FFFH,?XD?APPLICATION(4800H),?XD?BLE_ALERT_NOTIFY_SERVICE,?XD?*?BLE_ALERT_NOTIFY_SERVICE,?XD?BLE_IMMEDIATE_ALERT_SERVICE,?XD?*?BLE_IMMEDIATE_ALERT_SERVICE,?XD?BLE_LINK_LOSS_SERVICE,?XD?*?BLE_LINK_LOSS_SERVICE,?XD?BLE_TX_POWER_SERVICE,?XD?*?BLE_TX_POWER_SERVICE,0C000H-0D7FFH,?XD?RTOS_MESSAGE(C000H))
+PDATA(0000H)
+DATA(0000H)
+IXREF DS DP DL LI PUBLICS SYMBOLS AMAKE PL(20000) PW(132)
+
+OVERLAY( 
+; Create different Overlay Root for ISR OS function and High level Task
+    * ! OSdummyISR,
+    * ! OSdummyOS, 
+    * ! OSIntLowScheduler, 
+    * ! OSIntMediumScheduler, 
+
+; ISR need a independant overlay control
+OSdummyISR !
+(
+    vBBICirqHandler,
+    vHCIirqHandler,
+    vSIOserialIntHandler
+),
+
+;* Need to ensure a seperate path to all KNL functions
+OSdummyOS !
+(
+    OSMessageRecheckHigh, 
+    OSMessageRecheckMed,  
+    OSMessageRecheckLow,
+    OSGetMessageHuge,    
+    OSGetMessageLarge,
+    OSGetMessageMedium,
+    OSGetMessageSmall,
+    OSfreeMessage,
+    OSsaveMessage,
+    OSIntrSendMessage,
+    OSPushBufferMessage,
+    OSPopBufferMessage,
+    OSTimerTick,
+    OSsetTimer,
+    OSresetTimer
+),
+
+OSIntMediumScheduler ! OShighPriEntry,
+OShighPriEntry !
+(
+    OStimerTask,
+    vCTCentryPoint
+),
+
+OSIntLowScheduler ! OSmidPriEntry,
+OSmidPriEntry !
+(
+    vHCIentryPoint,
+    vBBLCentryPoint,
+    vLMPentryPoint,
+    vLowPTimerTask 
+),
+
+OSScheduler ! OSlowPriEntry,   
+OSlowPriEntry !
+(
+	vUpLayerentryPoint,
+	vSuper_APP,
+    OSnullTask 
+),
+
+
+;* SYS files containing state machines or indirect function calls
+?CO?SYSTASK ~
+(
+    OStimerTask,
+    vHCIentryPoint,
+    vBBLCentryPoint,
+   	vLMPentryPoint,
+    vCTCentryPoint,
+    vLowPTimerTask,
+    vUpLayerentryPoint,
+    vSuper_APP,       
+    OSnullTask    
+),
+
+BLE_SMP_API!
+(
+	BLE_SMP_APIConnected,
+	BLE_SMP_APIDisconnected,
+	BLE_SMP_APIInitialize,
+	BLE_SMP_APIEncryptionChange,
+	BLE_SMP_APIPasskeyEntryReply,
+	BLE_SMP_APINumericComparisonReply,
+	BLE_SMP_APIPasskeyEntryNegReply,
+	BLE_SMP_APIInitiatePairing,
+	BLE_SMP_APIIsLinkEncrypted,
+	BLE_SMP_APIGetConnKeySize
+),
+
+BLE_GATT_API!
+(
+	BLE_GATT_API_Connect,
+	BLE_GATT_API_Disconnect,
+	BLE_GATT_API_Configure,
+	BLE_GATTS_API_StartCreatingServiceTable,
+	BLE_GATTS_API_EndCreatingServiceTable,
+	BLE_GATTS_API_InitServiceTable,
+	BLE_GATTC_API_FindInformationReq,
+	BLE_GATTC_API_FindByTypeValueReq,
+	BLE_GATTC_API_ReadByTypeReq,
+	BLE_GATTC_API_Read,
+	BLE_GATTC_API_ReadByGroupTypeReq,
+	BLE_GATTC_API_Write,
+	BLE_GATTC_API_HandleValueConfirm,
+	BLE_GATTS_API_SendHandleValue,
+	BLE_GATTS_API_SetHandleValue,
+	BLE_GATTS_API_GetHandleValue,
+	BLE_GATTS_API_SendReadResponse,
+	BLE_GATTS_API_SendWriteResponse,
+	BLE_GATTS_API_SendErrorResponse,
+	BLE_GATTS_API_SendReadByTypeResponse
+),
+
+BLE_L2CAP_API!
+(
+	BLE_L2CAP_APIConnParaUpdateRequest,
+	BLE_L2CAP_APIConnParaUpdateResponse,
+	BLE_L2CAP_APIDisconnected,
+	BLE_L2CAP_APICreditBasedConnRequest,
+	BLE_L2CAP_APIFlowControlCredit,
+	BLE_L2CAP_APICreditBasedSendData,
+	BLE_L2CAP_APIDisconnectRequest,
+	BLE_L2CAP_APIConnectionPermission,
+	BLE_L2CAP_API_Connect
+),
+
+;; the following function do not overlay
+BLE_GAP_ConveyToAPP ! gap_event_handler,
+BLE_L2CAP_ConveyToAPP ! l2cap_event_handler,
+BLE_SMP_ConveyToAPP ! smp_event_handler,
+BLE_GATT_ConveyToAPP ! gatt_event_handler,
+ADP_PERIPHERAL_ConveyToAPP ! peripheral_event_handler,
+ADP_COMMON_ConveyToAPP ! common_event_handler,
+
+Application_Init ~
+(
+	gap_event_handler,
+	l2cap_event_handler,
+	smp_event_handler,
+	gatt_event_handler,
+	peripheral_event_handler,
+	common_event_handler
+)
+
+)

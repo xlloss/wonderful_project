@@ -1,0 +1,147 @@
+\hypertarget{group___b_l_e___l_l_s}{}\subsection{Ble Link Loss Service}
+\label{group___b_l_e___l_l_s}\index{Ble Link Loss Service@{Ble Link Loss Service}}
+
+
+Ble Link Loss Service.  
+
+
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___b_l_e___l_l_s_gacd94b0a6c2acb12daf69dad639f55790}{U\+U\+I\+D\+\_\+\+L\+I\+N\+K\+\_\+\+L\+O\+SS}~0x1803\hypertarget{group___b_l_e___l_l_s_gacd94b0a6c2acb12daf69dad639f55790}{}\label{group___b_l_e___l_l_s_gacd94b0a6c2acb12daf69dad639f55790}
+
+\begin{DoxyCompactList}\small\item\em Link Loss Service U\+U\+ID definitions. \end{DoxyCompactList}\item 
+\#define {\bfseries U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+EL}~0x2\+A06\hypertarget{group___b_l_e___l_l_s_ga1bbf6424686c00ceecb1a7bf7f5cbef3}{}\label{group___b_l_e___l_l_s_ga1bbf6424686c00ceecb1a7bf7f5cbef3}
+
+\item 
+\#define \hyperlink{group___b_l_e___l_l_s_ga52be9a71178b24e3e2a3c3f323213dd7}{I\+N\+D\+E\+X\+\_\+\+L\+L\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+EL}~2
+\item 
+\#define \hyperlink{group___b_l_e___l_l_s_ga2b9c170b858bc7776ffda41d20a57b12}{A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+O\+\_\+\+A\+L\+E\+RT}~0x00
+\begin{DoxyCompactList}\small\item\em Alert Levels. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___b_l_e___l_l_s_gad54bc05bfbd668d20c97f740e5cad14c}{A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+L\+D\+\_\+\+A\+L\+E\+RT}~0x01
+\item 
+\#define \hyperlink{group___b_l_e___l_l_s_gaa6d896950cabe95f73e332ff71bb4ab0}{A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+H\+I\+G\+H\+\_\+\+A\+L\+E\+RT}~0x02
+\item 
+\#define \hyperlink{group___b_l_e___l_l_s_ga4d951c4df4521247bcd29bc66c67822a}{T\+O\+T\+A\+L\+\_\+\+L\+L\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM}~3
+\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{group___b_l_e___l_l_s_gab9eca50948d792c9c67c5920703b1960}{L\+L\+S\+Process\+Routine}) (u8 alert\+Level) large\hypertarget{group___b_l_e___l_l_s_gab9eca50948d792c9c67c5920703b1960}{}\label{group___b_l_e___l_l_s_gab9eca50948d792c9c67c5920703b1960}
+
+\begin{DoxyCompactList}\small\item\em Prototype for lls events handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___l_l_s_gac75ebe3de2e4ae57459da4248e44d217}{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Init} (\hyperlink{group___b_l_e___l_l_s_gab9eca50948d792c9c67c5920703b1960}{L\+L\+S\+Process\+Routine} lls\+Handler) large
+\begin{DoxyCompactList}\small\item\em Initialize B\+LE L\+LS. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___l_l_s_gab76210fe02e1caec3770df9c3fac092e}{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Init\+\_\+\+Service} () large
+\begin{DoxyCompactList}\small\item\em Initialize B\+LE Link Loss service table. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___b_l_e___l_l_s_gae2fda0ca26167be8f6fad0e442b1c912}{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Catch\+\_\+\+Event} (\hyperlink{struct_b_l_e___g_a_t_t___event}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} X\+D\+A\+TA $\ast$p\+\_\+event) large
+\begin{DoxyCompactList}\small\item\em Catch B\+L\+E\+\_\+\+G\+A\+TT events to get the L\+LS events. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___l_l_s_ga8248836636d5aa27aa26279e8e52ba10}{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Set\+\_\+\+Alert\+Level} (u8 alert\+Level) large
+\begin{DoxyCompactList}\small\item\em Set alert level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Ble Link Loss Service. 
+
+\begin{DoxyNote}{Note}
+Definitions and prototypes for the Ble Link Loss Service application programming interface. 
+\end{DoxyNote}
+
+
+\subsubsection{Macro Definition Documentation}
+\index{Ble Link Loss Service@{Ble Link Loss Service}!A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+H\+I\+G\+H\+\_\+\+A\+L\+E\+RT@{A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+H\+I\+G\+H\+\_\+\+A\+L\+E\+RT}}
+\index{A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+H\+I\+G\+H\+\_\+\+A\+L\+E\+RT@{A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+H\+I\+G\+H\+\_\+\+A\+L\+E\+RT}!Ble Link Loss Service@{Ble Link Loss Service}}
+\paragraph[{\texorpdfstring{A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+H\+I\+G\+H\+\_\+\+A\+L\+E\+RT}{ALERT_LEVEL_HIGH_ALERT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+H\+I\+G\+H\+\_\+\+A\+L\+E\+RT~0x02}\hypertarget{group___b_l_e___l_l_s_gaa6d896950cabe95f73e332ff71bb4ab0}{}\label{group___b_l_e___l_l_s_gaa6d896950cabe95f73e332ff71bb4ab0}
+High Alert. \index{Ble Link Loss Service@{Ble Link Loss Service}!A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+L\+D\+\_\+\+A\+L\+E\+RT@{A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+L\+D\+\_\+\+A\+L\+E\+RT}}
+\index{A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+L\+D\+\_\+\+A\+L\+E\+RT@{A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+L\+D\+\_\+\+A\+L\+E\+RT}!Ble Link Loss Service@{Ble Link Loss Service}}
+\paragraph[{\texorpdfstring{A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+L\+D\+\_\+\+A\+L\+E\+RT}{ALERT_LEVEL_MILD_ALERT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+I\+L\+D\+\_\+\+A\+L\+E\+RT~0x01}\hypertarget{group___b_l_e___l_l_s_gad54bc05bfbd668d20c97f740e5cad14c}{}\label{group___b_l_e___l_l_s_gad54bc05bfbd668d20c97f740e5cad14c}
+Mild Alert. \index{Ble Link Loss Service@{Ble Link Loss Service}!A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+O\+\_\+\+A\+L\+E\+RT@{A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+O\+\_\+\+A\+L\+E\+RT}}
+\index{A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+O\+\_\+\+A\+L\+E\+RT@{A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+O\+\_\+\+A\+L\+E\+RT}!Ble Link Loss Service@{Ble Link Loss Service}}
+\paragraph[{\texorpdfstring{A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+O\+\_\+\+A\+L\+E\+RT}{ALERT_LEVEL_NO_ALERT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+O\+\_\+\+A\+L\+E\+RT~0x00}\hypertarget{group___b_l_e___l_l_s_ga2b9c170b858bc7776ffda41d20a57b12}{}\label{group___b_l_e___l_l_s_ga2b9c170b858bc7776ffda41d20a57b12}
+
+
+Alert Levels. 
+
+No Alert. \index{Ble Link Loss Service@{Ble Link Loss Service}!I\+N\+D\+E\+X\+\_\+\+L\+L\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+EL@{I\+N\+D\+E\+X\+\_\+\+L\+L\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+EL}}
+\index{I\+N\+D\+E\+X\+\_\+\+L\+L\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+EL@{I\+N\+D\+E\+X\+\_\+\+L\+L\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+EL}!Ble Link Loss Service@{Ble Link Loss Service}}
+\paragraph[{\texorpdfstring{I\+N\+D\+E\+X\+\_\+\+L\+L\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+EL}{INDEX_LLS_ALERT_LEVEL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+D\+E\+X\+\_\+\+L\+L\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+L\+E\+V\+EL~2}\hypertarget{group___b_l_e___l_l_s_ga52be9a71178b24e3e2a3c3f323213dd7}{}\label{group___b_l_e___l_l_s_ga52be9a71178b24e3e2a3c3f323213dd7}
+Index of Link Loss Alert Level Characteristic. \index{Ble Link Loss Service@{Ble Link Loss Service}!T\+O\+T\+A\+L\+\_\+\+L\+L\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM@{T\+O\+T\+A\+L\+\_\+\+L\+L\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM}}
+\index{T\+O\+T\+A\+L\+\_\+\+L\+L\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM@{T\+O\+T\+A\+L\+\_\+\+L\+L\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM}!Ble Link Loss Service@{Ble Link Loss Service}}
+\paragraph[{\texorpdfstring{T\+O\+T\+A\+L\+\_\+\+L\+L\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM}{TOTAL_LLS_ATTR_NUM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+O\+T\+A\+L\+\_\+\+L\+L\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM~3}\hypertarget{group___b_l_e___l_l_s_ga4d951c4df4521247bcd29bc66c67822a}{}\label{group___b_l_e___l_l_s_ga4d951c4df4521247bcd29bc66c67822a}
+Total attribure number of link loss service. 
+
+\subsubsection{Function Documentation}
+\index{Ble Link Loss Service@{Ble Link Loss Service}!B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Catch\+\_\+\+Event@{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Catch\+\_\+\+Event}}
+\index{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Catch\+\_\+\+Event@{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Catch\+\_\+\+Event}!Ble Link Loss Service@{Ble Link Loss Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Catch\+\_\+\+Event(\+B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event X\+D\+A\+T\+A $\ast$p\+\_\+event) large}{BLE_LLS_Catch_Event(BLE_GATT_Event XDATA *p_event) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Catch\+\_\+\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} X\+D\+A\+TA $\ast$}]{p\+\_\+event}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___l_l_s_gae2fda0ca26167be8f6fad0e442b1c912}{}\label{group___b_l_e___l_l_s_gae2fda0ca26167be8f6fad0e442b1c912}
+
+
+Catch B\+L\+E\+\_\+\+G\+A\+TT events to get the L\+LS events. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+event} & Pointer to \hyperlink{struct_b_l_e___g_a_t_t___event}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Catch B\+LE G\+A\+TT events configuration successfully. 
+\end{DoxyReturn}
+\index{Ble Link Loss Service@{Ble Link Loss Service}!B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Init@{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Init}}
+\index{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Init@{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Init}!Ble Link Loss Service@{Ble Link Loss Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Init(\+L\+L\+S\+Process\+Routine lls\+Handler) large}{BLE_LLS_Init(LLSProcessRoutine llsHandler) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf L\+L\+S\+Process\+Routine}}]{lls\+Handler}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___l_l_s_gac75ebe3de2e4ae57459da4248e44d217}{}\label{group___b_l_e___l_l_s_gac75ebe3de2e4ae57459da4248e44d217}
+
+
+Initialize B\+LE L\+LS. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em lls\+Handler} & M\+B\+IoT callback function for B\+LE L\+LS events.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Initialize B\+LE L\+LS successfully. 
+\end{DoxyReturn}
+\index{Ble Link Loss Service@{Ble Link Loss Service}!B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Init\+\_\+\+Service@{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Init\+\_\+\+Service}}
+\index{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Init\+\_\+\+Service@{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Init\+\_\+\+Service}!Ble Link Loss Service@{Ble Link Loss Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Init\+\_\+\+Service() large}{BLE_LLS_Init_Service() large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Init\+\_\+\+Service (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___l_l_s_gab76210fe02e1caec3770df9c3fac092e}{}\label{group___b_l_e___l_l_s_gab76210fe02e1caec3770df9c3fac092e}
+
+
+Initialize B\+LE Link Loss service table. 
+
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Initialize B\+LE Link Loss service table successfully. 
+\end{DoxyReturn}
+\index{Ble Link Loss Service@{Ble Link Loss Service}!B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Set\+\_\+\+Alert\+Level@{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Set\+\_\+\+Alert\+Level}}
+\index{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Set\+\_\+\+Alert\+Level@{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Set\+\_\+\+Alert\+Level}!Ble Link Loss Service@{Ble Link Loss Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Set\+\_\+\+Alert\+Level(u8 alert\+Level) large}{BLE_LLS_Set_AlertLevel(u8 alertLevel) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+L\+L\+S\+\_\+\+Set\+\_\+\+Alert\+Level (
+\begin{DoxyParamCaption}
+\item[{u8}]{alert\+Level}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___l_l_s_ga8248836636d5aa27aa26279e8e52ba10}{}\label{group___b_l_e___l_l_s_ga8248836636d5aa27aa26279e8e52ba10}
+
+
+Set alert level. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em alert\+Level} & Alert level.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS set alert level successfully. 
+\end{DoxyReturn}

@@ -1,0 +1,112 @@
+\hypertarget{group___b_l_e___t_p_s}{}\subsection{Ble Tx Power Service}
+\label{group___b_l_e___t_p_s}\index{Ble Tx Power Service@{Ble Tx Power Service}}
+
+
+Ble Tx Power Service.  
+
+
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___b_l_e___t_p_s_ga7a50af16b0cd4f07b9a1503e8559b6cc}{U\+U\+I\+D\+\_\+\+T\+X\+\_\+\+P\+O\+W\+ER}~0x1804
+\begin{DoxyCompactList}\small\item\em Tx Power Service U\+U\+ID definitions. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___b_l_e___t_p_s_gabb35fb64537acb5094f3a1d93b522890}{U\+U\+I\+D\+\_\+\+T\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+L\+E\+V\+EL}~0x2\+A07
+\item 
+\#define \hyperlink{group___b_l_e___t_p_s_gad42a301a5c3a66931412a7aa30d06037}{I\+N\+D\+E\+X\+\_\+\+T\+P\+S\+\_\+\+T\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+L\+E\+V\+EL}~2
+\item 
+\#define \hyperlink{group___b_l_e___t_p_s_gafed7d42c4161b20c2af4d216d95d76da}{T\+O\+T\+A\+L\+\_\+\+T\+P\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM}~3
+\item 
+\#define \hyperlink{group___b_l_e___t_p_s_gaecf59825946a8022eeb622b5f9a8626e}{M\+A\+X\+\_\+\+T\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+L\+E\+V\+EL}~0x00\hypertarget{group___b_l_e___t_p_s_gaecf59825946a8022eeb622b5f9a8626e}{}\label{group___b_l_e___t_p_s_gaecf59825946a8022eeb622b5f9a8626e}
+
+\begin{DoxyCompactList}\small\item\em Maximum transmit power level(-\/100 -\/ 20). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___t_p_s_ga269ad4614ff6f8a7b176653974416821}{B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Init\+\_\+\+Service} () large
+\begin{DoxyCompactList}\small\item\em Initialize B\+LE Transmit Power Level service table. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___b_l_e___t_p_s_gafedbd824a2480e45473db451c47e3d56}{B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Catch\+\_\+\+Event} (\hyperlink{struct_b_l_e___g_a_t_t___event}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} X\+D\+A\+TA $\ast$p\+\_\+event) large
+\begin{DoxyCompactList}\small\item\em Catch B\+L\+E\+\_\+\+G\+A\+TT events to get the T\+PS events. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___t_p_s_ga84165d1f804b88781fbd7cd54405db23}{B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Set\+\_\+\+Tx\+\_\+\+Power\+\_\+\+Level} (s8 tx\+Power\+Level) large
+\begin{DoxyCompactList}\small\item\em Set transmit Power level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Ble Tx Power Service. 
+
+\begin{DoxyNote}{Note}
+Definitions and prototypes for the Ble Tx Power Service application programming interface. 
+\end{DoxyNote}
+
+
+\subsubsection{Macro Definition Documentation}
+\index{Ble Tx Power Service@{Ble Tx Power Service}!I\+N\+D\+E\+X\+\_\+\+T\+P\+S\+\_\+\+T\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+L\+E\+V\+EL@{I\+N\+D\+E\+X\+\_\+\+T\+P\+S\+\_\+\+T\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+L\+E\+V\+EL}}
+\index{I\+N\+D\+E\+X\+\_\+\+T\+P\+S\+\_\+\+T\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+L\+E\+V\+EL@{I\+N\+D\+E\+X\+\_\+\+T\+P\+S\+\_\+\+T\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+L\+E\+V\+EL}!Ble Tx Power Service@{Ble Tx Power Service}}
+\paragraph[{\texorpdfstring{I\+N\+D\+E\+X\+\_\+\+T\+P\+S\+\_\+\+T\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+L\+E\+V\+EL}{INDEX_TPS_TX_POWER_LEVEL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+D\+E\+X\+\_\+\+T\+P\+S\+\_\+\+T\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+L\+E\+V\+EL~2}\hypertarget{group___b_l_e___t_p_s_gad42a301a5c3a66931412a7aa30d06037}{}\label{group___b_l_e___t_p_s_gad42a301a5c3a66931412a7aa30d06037}
+Index of Tx Power Level Characteristic. \index{Ble Tx Power Service@{Ble Tx Power Service}!T\+O\+T\+A\+L\+\_\+\+T\+P\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM@{T\+O\+T\+A\+L\+\_\+\+T\+P\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM}}
+\index{T\+O\+T\+A\+L\+\_\+\+T\+P\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM@{T\+O\+T\+A\+L\+\_\+\+T\+P\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM}!Ble Tx Power Service@{Ble Tx Power Service}}
+\paragraph[{\texorpdfstring{T\+O\+T\+A\+L\+\_\+\+T\+P\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM}{TOTAL_TPS_ATTR_NUM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+O\+T\+A\+L\+\_\+\+T\+P\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM~3}\hypertarget{group___b_l_e___t_p_s_gafed7d42c4161b20c2af4d216d95d76da}{}\label{group___b_l_e___t_p_s_gafed7d42c4161b20c2af4d216d95d76da}
+Total attribure number of tx power service. \index{Ble Tx Power Service@{Ble Tx Power Service}!U\+U\+I\+D\+\_\+\+T\+X\+\_\+\+P\+O\+W\+ER@{U\+U\+I\+D\+\_\+\+T\+X\+\_\+\+P\+O\+W\+ER}}
+\index{U\+U\+I\+D\+\_\+\+T\+X\+\_\+\+P\+O\+W\+ER@{U\+U\+I\+D\+\_\+\+T\+X\+\_\+\+P\+O\+W\+ER}!Ble Tx Power Service@{Ble Tx Power Service}}
+\paragraph[{\texorpdfstring{U\+U\+I\+D\+\_\+\+T\+X\+\_\+\+P\+O\+W\+ER}{UUID_TX_POWER}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+U\+I\+D\+\_\+\+T\+X\+\_\+\+P\+O\+W\+ER~0x1804}\hypertarget{group___b_l_e___t_p_s_ga7a50af16b0cd4f07b9a1503e8559b6cc}{}\label{group___b_l_e___t_p_s_ga7a50af16b0cd4f07b9a1503e8559b6cc}
+
+
+Tx Power Service U\+U\+ID definitions. 
+
+Definition of Tx Power Service U\+U\+ID. \index{Ble Tx Power Service@{Ble Tx Power Service}!U\+U\+I\+D\+\_\+\+T\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+L\+E\+V\+EL@{U\+U\+I\+D\+\_\+\+T\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+L\+E\+V\+EL}}
+\index{U\+U\+I\+D\+\_\+\+T\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+L\+E\+V\+EL@{U\+U\+I\+D\+\_\+\+T\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+L\+E\+V\+EL}!Ble Tx Power Service@{Ble Tx Power Service}}
+\paragraph[{\texorpdfstring{U\+U\+I\+D\+\_\+\+T\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+L\+E\+V\+EL}{UUID_TX_POWER_LEVEL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+U\+I\+D\+\_\+\+T\+X\+\_\+\+P\+O\+W\+E\+R\+\_\+\+L\+E\+V\+EL~0x2\+A07}\hypertarget{group___b_l_e___t_p_s_gabb35fb64537acb5094f3a1d93b522890}{}\label{group___b_l_e___t_p_s_gabb35fb64537acb5094f3a1d93b522890}
+Definition of Tx Power Level characteristic U\+U\+ID. 
+
+\subsubsection{Function Documentation}
+\index{Ble Tx Power Service@{Ble Tx Power Service}!B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Catch\+\_\+\+Event@{B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Catch\+\_\+\+Event}}
+\index{B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Catch\+\_\+\+Event@{B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Catch\+\_\+\+Event}!Ble Tx Power Service@{Ble Tx Power Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Catch\+\_\+\+Event(\+B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event X\+D\+A\+T\+A $\ast$p\+\_\+event) large}{BLE_TPS_Catch_Event(BLE_GATT_Event XDATA *p_event) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Catch\+\_\+\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} X\+D\+A\+TA $\ast$}]{p\+\_\+event}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___t_p_s_gafedbd824a2480e45473db451c47e3d56}{}\label{group___b_l_e___t_p_s_gafedbd824a2480e45473db451c47e3d56}
+
+
+Catch B\+L\+E\+\_\+\+G\+A\+TT events to get the T\+PS events. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+event} & Pointer to \hyperlink{struct_b_l_e___g_a_t_t___event}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Catch B\+LE G\+A\+TT events configuration successfully. 
+\end{DoxyReturn}
+\index{Ble Tx Power Service@{Ble Tx Power Service}!B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Init\+\_\+\+Service@{B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Init\+\_\+\+Service}}
+\index{B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Init\+\_\+\+Service@{B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Init\+\_\+\+Service}!Ble Tx Power Service@{Ble Tx Power Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Init\+\_\+\+Service() large}{BLE_TPS_Init_Service() large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Init\+\_\+\+Service (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___t_p_s_ga269ad4614ff6f8a7b176653974416821}{}\label{group___b_l_e___t_p_s_ga269ad4614ff6f8a7b176653974416821}
+
+
+Initialize B\+LE Transmit Power Level service table. 
+
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Initialize B\+LE Tansmit Power Level service table successfully. 
+\end{DoxyReturn}
+\index{Ble Tx Power Service@{Ble Tx Power Service}!B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Set\+\_\+\+Tx\+\_\+\+Power\+\_\+\+Level@{B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Set\+\_\+\+Tx\+\_\+\+Power\+\_\+\+Level}}
+\index{B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Set\+\_\+\+Tx\+\_\+\+Power\+\_\+\+Level@{B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Set\+\_\+\+Tx\+\_\+\+Power\+\_\+\+Level}!Ble Tx Power Service@{Ble Tx Power Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Set\+\_\+\+Tx\+\_\+\+Power\+\_\+\+Level(s8 tx\+Power\+Level) large}{BLE_TPS_Set_Tx_Power_Level(s8 txPowerLevel) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+T\+P\+S\+\_\+\+Set\+\_\+\+Tx\+\_\+\+Power\+\_\+\+Level (
+\begin{DoxyParamCaption}
+\item[{s8}]{tx\+Power\+Level}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___t_p_s_ga84165d1f804b88781fbd7cd54405db23}{}\label{group___b_l_e___t_p_s_ga84165d1f804b88781fbd7cd54405db23}
+
+
+Set transmit Power level. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em tx\+Power\+Level} & Maximum transmit power level.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS set tx power level successfully. 
+\end{DoxyReturn}

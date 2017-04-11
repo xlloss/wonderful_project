@@ -1,0 +1,151 @@
+\hypertarget{group___u_a_r_t}{}\subsection{U\+A\+RT}
+\label{group___u_a_r_t}\index{U\+A\+RT@{U\+A\+RT}}
+
+
+Definitions and prototypes for the U\+A\+RT application programming interface.  
+
+
+\subsubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___u_a_r_t___f_l_o_w___c_o_n_t_r_o_l___d_e_f}{U\+A\+R\+T\+\_\+\+F\+L\+O\+W\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+D\+EF}
+\begin{DoxyCompactList}\small\item\em The definition of U\+A\+RT flow control. \end{DoxyCompactList}\item 
+\hyperlink{group___u_a_r_t___m_i_n_i_m_u_m___b_u_f_f_e_r___l_e_n}{U\+A\+R\+T\+\_\+\+M\+I\+N\+I\+M\+U\+M\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}
+\item 
+\hyperlink{group___u_a_r_t___b_a_u_d_r_a_t_e___d_e_f}{U\+A\+R\+T\+\_\+\+B\+A\+U\+D\+R\+A\+T\+E\+\_\+\+D\+EF}
+\begin{DoxyCompactList}\small\item\em The definition of U\+A\+RT baud rate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_p_p___u_a_r_t___conf_paras}{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}
+\begin{DoxyCompactList}\small\item\em The structure of U\+A\+RT configuration parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_a_p_p___u_a_r_t___conf_paras}{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras} \hyperlink{group___u_a_r_t_ga9735015d6e551eed3b78e15c889192b2}{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}\hypertarget{group___u_a_r_t_ga9735015d6e551eed3b78e15c889192b2}{}\label{group___u_a_r_t_ga9735015d6e551eed3b78e15c889192b2}
+
+\begin{DoxyCompactList}\small\item\em The structure of U\+A\+RT configuration parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___u_a_r_t_gab8258af04badd0816cd07778a0104d56}{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Init} (\hyperlink{struct_a_p_p___u_a_r_t___conf_paras}{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras} X\+D\+A\+TA $\ast$p\+\_\+uart\+Paras) large
+\begin{DoxyCompactList}\small\item\em Initialize U\+A\+RT module. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___u_a_r_t_ga408769ebc1640f2cd7912a62e6152131}{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Get\+Received\+Data\+Length} (u8 X\+D\+A\+TA $\ast$p\+\_\+length) large
+\begin{DoxyCompactList}\small\item\em Get length of queued data in U\+A\+RT RX buffer. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___u_a_r_t_ga87d172513bcd8017fe1a2c0e24e56215}{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Get\+Received\+Data} (u16 length, u8 X\+D\+A\+TA $\ast$p\+\_\+buffer) large
+\begin{DoxyCompactList}\small\item\em Get specified length of queued received U\+A\+RT data from U\+A\+RT RX buffer. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___u_a_r_t_ga9ab68c53bc30c9f6313a01d73b0baf52}{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Put} (u16 length, u8 X\+D\+A\+TA $\ast$p\+\_\+buffer) large
+\begin{DoxyCompactList}\small\item\em Transmit U\+A\+RT data by specified length. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___u_a_r_t_ga9a7e6343707bf21c6c838830cd7a61a8}{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Close} () large
+\begin{DoxyCompactList}\small\item\em Close uart module. All occupied G\+P\+IO pins return to digital input and internal pull high. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Definitions and prototypes for the U\+A\+RT application programming interface. 
+
+
+
+\subsubsection{Function Documentation}
+\index{U\+A\+RT@{U\+A\+RT}!A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Close@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Close}}
+\index{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Close@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Close}!U\+A\+RT@{U\+A\+RT}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Close() large}{APP_UART_Close() large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_a_r_t_ga9a7e6343707bf21c6c838830cd7a61a8}{}\label{group___u_a_r_t_ga9a7e6343707bf21c6c838830cd7a61a8}
+
+
+Close uart module. All occupied G\+P\+IO pins return to digital input and internal pull high. 
+
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully close U\+A\+RT module. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{U\+A\+RT@{U\+A\+RT}!A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Get\+Received\+Data@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Get\+Received\+Data}}
+\index{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Get\+Received\+Data@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Get\+Received\+Data}!U\+A\+RT@{U\+A\+RT}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Get\+Received\+Data(u16 length, u8 X\+D\+A\+T\+A $\ast$p\+\_\+buffer) large}{APP_UART_GetReceivedData(u16 length, u8 XDATA *p_buffer) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Get\+Received\+Data (
+\begin{DoxyParamCaption}
+\item[{u16}]{length, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+buffer}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_a_r_t_ga87d172513bcd8017fe1a2c0e24e56215}{}\label{group___u_a_r_t_ga87d172513bcd8017fe1a2c0e24e56215}
+
+
+Get specified length of queued received U\+A\+RT data from U\+A\+RT RX buffer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em length} & The length of acquired data. \\
+\hline
+\mbox{\tt out}  & {\em p\+\_\+buffer} & Pointer to the data buffer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully get specified length of queued data from U\+A\+RT RX buffer 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{U\+A\+RT@{U\+A\+RT}!A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Get\+Received\+Data\+Length@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Get\+Received\+Data\+Length}}
+\index{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Get\+Received\+Data\+Length@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Get\+Received\+Data\+Length}!U\+A\+RT@{U\+A\+RT}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Get\+Received\+Data\+Length(u8 X\+D\+A\+T\+A $\ast$p\+\_\+length) large}{APP_UART_GetReceivedDataLength(u8 XDATA *p_length) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Get\+Received\+Data\+Length (
+\begin{DoxyParamCaption}
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+length}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_a_r_t_ga408769ebc1640f2cd7912a62e6152131}{}\label{group___u_a_r_t_ga408769ebc1640f2cd7912a62e6152131}
+
+
+Get length of queued data in U\+A\+RT RX buffer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em p\+\_\+length} & Pointer to the length of queued data. \\
+\hline
+\end{DoxyParams}
+\index{U\+A\+RT@{U\+A\+RT}!A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Init@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Init}}
+\index{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Init@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Init}!U\+A\+RT@{U\+A\+RT}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Init(\+A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras X\+D\+A\+T\+A $\ast$p\+\_\+uart\+Paras) large}{APP_UART_Init(APP_UART_ConfParas XDATA *p_uartParas) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras} X\+D\+A\+TA $\ast$}]{p\+\_\+uart\+Paras}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_a_r_t_gab8258af04badd0816cd07778a0104d56}{}\label{group___u_a_r_t_gab8258af04badd0816cd07778a0104d56}
+
+
+Initialize U\+A\+RT module. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+uart\+Paras} & Pointer to \hyperlink{struct_a_p_p___u_a_r_t___conf_paras}{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully initialize U\+A\+RT module. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{U\+A\+RT@{U\+A\+RT}!A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Put@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Put}}
+\index{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Put@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Put}!U\+A\+RT@{U\+A\+RT}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Put(u16 length, u8 X\+D\+A\+T\+A $\ast$p\+\_\+buffer) large}{APP_UART_Put(u16 length, u8 XDATA *p_buffer) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Put (
+\begin{DoxyParamCaption}
+\item[{u16}]{length, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+buffer}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_a_r_t_ga9ab68c53bc30c9f6313a01d73b0baf52}{}\label{group___u_a_r_t_ga9ab68c53bc30c9f6313a01d73b0baf52}
+
+
+Transmit U\+A\+RT data by specified length. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em length} & The length of data needed to be transmitted. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+buffer} & Pointer to the buffer of transmitted data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully transmit U\+A\+RT data by specified length. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+N\+O\+\_\+\+R\+E\+S\+O\+U\+R\+CE U\+A\+RT TX buffer is full. 
+\end{DoxyReturn}

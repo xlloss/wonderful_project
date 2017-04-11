@@ -1,0 +1,288 @@
+\hypertarget{group___b_l_e___h_r_s}{}\subsection{Ble Heart Rate Service}
+\label{group___b_l_e___h_r_s}\index{Ble Heart Rate Service@{Ble Heart Rate Service}}
+
+
+Ble Heart Rate Service.  
+
+
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_b_l_e___h_r_s___body___sensor__location}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Body\+\_\+\+Sensor\+\_\+location}
+\item 
+struct \hyperlink{struct_b_l_e___h_r_s___event}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Event}
+\begin{DoxyCompactList}\small\item\em A\+NS Events. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___h_r_s___measurement}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement}
+\begin{DoxyCompactList}\small\item\em Heart Rate measurement parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___b_l_e___h_r_s_gaf7984dd018f2a38d50015a19238b0a8f}{U\+U\+I\+D\+\_\+\+H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+S\+E\+R\+V\+I\+CE}~0x180D\hypertarget{group___b_l_e___h_r_s_gaf7984dd018f2a38d50015a19238b0a8f}{}\label{group___b_l_e___h_r_s_gaf7984dd018f2a38d50015a19238b0a8f}
+
+\begin{DoxyCompactList}\small\item\em heart rate service U\+U\+ID definition \end{DoxyCompactList}\item 
+\#define {\bfseries U\+U\+I\+D\+\_\+\+H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+NT}~0x2\+A37\hypertarget{group___b_l_e___h_r_s_gaa136cdcaaee49143190cc21b48f281d4}{}\label{group___b_l_e___h_r_s_gaa136cdcaaee49143190cc21b48f281d4}
+
+\item 
+\#define {\bfseries U\+U\+I\+D\+\_\+\+B\+O\+D\+Y\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+L\+O\+C\+A\+T\+I\+ON}~0x2\+A38\hypertarget{group___b_l_e___h_r_s_gaa9c7f663c695357cb0e8eef5e7d088a0}{}\label{group___b_l_e___h_r_s_gaa9c7f663c695357cb0e8eef5e7d088a0}
+
+\item 
+\#define {\bfseries U\+U\+I\+D\+\_\+\+H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+I\+NT}~0x2\+A39\hypertarget{group___b_l_e___h_r_s_ga82054fce592def41b0c2ef718db806c5}{}\label{group___b_l_e___h_r_s_ga82054fce592def41b0c2ef718db806c5}
+
+\item 
+\#define {\bfseries M\+A\+X\+\_\+\+H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+L\+EN}~15\hypertarget{group___b_l_e___h_r_s_gad2714a3f04ec678778fd2dd1ab2d7354}{}\label{group___b_l_e___h_r_s_gad2714a3f04ec678778fd2dd1ab2d7354}
+
+\item 
+\#define \hyperlink{group___b_l_e___h_r_s_ga5a46058550c3b3cf1e042f16f9c8c64e}{H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+ED}~0x0000
+\item 
+\#define \hyperlink{group___b_l_e___h_r_s_ga06378ba9251b48422062ef7b31db7d42}{H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+E\+N\+A\+B\+L\+ED}~0x0100
+\item 
+\#define \hyperlink{group___b_l_e___h_r_s_ga4ce40f9452d970df97e8b54e173ed9f2}{H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+W\+R\+I\+TE}~0x0001
+\item 
+\#define \hyperlink{group___b_l_e___h_r_s_ga315a74df2a429c72d429ed43dee0f9be}{H\+R\+\_\+\+Value\+\_\+8\+B\+IT}~0\hypertarget{group___b_l_e___h_r_s_ga315a74df2a429c72d429ed43dee0f9be}{}\label{group___b_l_e___h_r_s_ga315a74df2a429c72d429ed43dee0f9be}
+
+\begin{DoxyCompactList}\small\item\em heart rate meaurement value format \end{DoxyCompactList}\item 
+\#define {\bfseries H\+R\+\_\+\+Value\+\_\+16\+B\+IT}~1\hypertarget{group___b_l_e___h_r_s_ga3e052810b42a02da0f92726d9bd62a75}{}\label{group___b_l_e___h_r_s_ga3e052810b42a02da0f92726d9bd62a75}
+
+\item 
+\#define \hyperlink{group___b_l_e___h_r_s_ga2e829f32fd9d57d18d1e8daa7956dee5}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+E\+D\+\_\+\+R\+R\+\_\+\+I\+N\+T\+E\+R\+V\+A\+LS}~5
+\item 
+\#define \hyperlink{group___b_l_e___h_r_s_ga962d8723c083e3fa82a4e4ee4a66b5ae}{H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+L\+U\+E\+\_\+\+F\+O\+R\+M\+AT}~(1$<$$<$0)\hypertarget{group___b_l_e___h_r_s_ga962d8723c083e3fa82a4e4ee4a66b5ae}{}\label{group___b_l_e___h_r_s_ga962d8723c083e3fa82a4e4ee4a66b5ae}
+
+\begin{DoxyCompactList}\small\item\em Heart Rate Measurement flags. \end{DoxyCompactList}\item 
+\#define {\bfseries H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+F\+L\+A\+G\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~(1$<$$<$1)\hypertarget{group___b_l_e___h_r_s_ga72578d725eecdd0a9de78558d45369b5}{}\label{group___b_l_e___h_r_s_ga72578d725eecdd0a9de78558d45369b5}
+
+\item 
+\#define {\bfseries H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+F\+L\+A\+G\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+D\+E\+T\+E\+C\+T\+ED}~(1$<$$<$2)\hypertarget{group___b_l_e___h_r_s_gae8c9d89f1d73bbc34280f89fc5e9cd14}{}\label{group___b_l_e___h_r_s_gae8c9d89f1d73bbc34280f89fc5e9cd14}
+
+\item 
+\#define {\bfseries H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+F\+L\+A\+G\+\_\+\+E\+N\+E\+R\+G\+Y\+\_\+\+E\+X\+P\+E\+N\+D\+ED}~(1$<$$<$3)\hypertarget{group___b_l_e___h_r_s_ga7ab0777c1882beb636e3c71bcc18761f}{}\label{group___b_l_e___h_r_s_ga7ab0777c1882beb636e3c71bcc18761f}
+
+\item 
+\#define {\bfseries H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+F\+L\+A\+G\+\_\+\+R\+R\+\_\+\+I\+N\+T\+E\+R\+V\+AL}~(1$<$$<$4)\hypertarget{group___b_l_e___h_r_s_ga935a2d2ebe942f455fba9e4dbfb0257d}{}\label{group___b_l_e___h_r_s_ga935a2d2ebe942f455fba9e4dbfb0257d}
+
+\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_b_l_e___h_r_s___body___sensor__location}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Body\+\_\+\+Sensor\+\_\+location} {\bfseries B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Body\+\_\+\+Sensor\+\_\+location}\hypertarget{group___b_l_e___h_r_s_ga95c930c30bd6d13a7c9a023b8b9a7485}{}\label{group___b_l_e___h_r_s_ga95c930c30bd6d13a7c9a023b8b9a7485}
+
+\item 
+typedef struct \hyperlink{struct_b_l_e___h_r_s___event}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Event} \hyperlink{group___b_l_e___h_r_s_ga661a055c3730d8577db524bbf513fe26}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Event}\hypertarget{group___b_l_e___h_r_s_ga661a055c3730d8577db524bbf513fe26}{}\label{group___b_l_e___h_r_s_ga661a055c3730d8577db524bbf513fe26}
+
+\begin{DoxyCompactList}\small\item\em A\+NS Events. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___h_r_s___measurement}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement} \hyperlink{group___b_l_e___h_r_s_gab589edfdbd07d9f6e3f8e78f75c44ad9}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement}\hypertarget{group___b_l_e___h_r_s_gab589edfdbd07d9f6e3f8e78f75c44ad9}{}\label{group___b_l_e___h_r_s_gab589edfdbd07d9f6e3f8e78f75c44ad9}
+
+\begin{DoxyCompactList}\small\item\em Heart Rate measurement parameters. \end{DoxyCompactList}\item 
+typedef void($\ast$ {\bfseries H\+R\+S\+Process\+Routine}) (\hyperlink{struct_b_l_e___h_r_s___event}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Event} X\+D\+A\+TA $\ast$p\+\_\+hrs\+Event) large\hypertarget{group___b_l_e___h_r_s_gaf2c27a825c82e2505c3e4016ed354460}{}\label{group___b_l_e___h_r_s_gaf2c27a825c82e2505c3e4016ed354460}
+
+\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___b_l_e___h_r_s_gaf588708e263525a6606cc643e22d55a6}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Body\+\_\+\+Sensor\+\_\+\+Location} \{ \\*
+{\bfseries B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+B\+O\+D\+Y\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+O\+T\+H\+ER} =0x00, 
+{\bfseries B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+B\+O\+D\+Y\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+C\+H\+E\+ST}, 
+{\bfseries B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+B\+O\+D\+Y\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+W\+R\+I\+ST}, 
+{\bfseries B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+B\+O\+D\+Y\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+F\+I\+N\+G\+ER}, 
+\\*
+{\bfseries B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+B\+O\+D\+Y\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+H\+A\+ND}, 
+{\bfseries B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+B\+O\+D\+Y\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+E\+A\+R\+\_\+\+L\+O\+BE}, 
+{\bfseries B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+B\+O\+D\+Y\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+F\+O\+OT}
+ \}\hypertarget{group___b_l_e___h_r_s_gaf588708e263525a6606cc643e22d55a6}{}\label{group___b_l_e___h_r_s_gaf588708e263525a6606cc643e22d55a6}
+\begin{DoxyCompactList}\small\item\em Body Sensor Location values. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group___b_l_e___h_r_s_ga0804d16a5e96316dee3d48a5eed71644}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Attribute\+Index} \{ \\*
+{\bfseries I\+N\+D\+E\+X\+\_\+\+H\+R\+S\+\_\+\+P\+R\+I\+M\+A\+R\+Y\+\_\+\+S\+E\+R\+V\+I\+CE} =0x00, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+NT}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+V\+A\+L\+UE}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+C\+C\+CD}, 
+\\*
+{\bfseries I\+N\+D\+E\+X\+\_\+\+B\+O\+D\+Y\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+L\+O\+C\+A\+T\+I\+ON}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+B\+O\+D\+Y\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+V\+A\+L\+UE}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+I\+NT}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+V\+A\+L\+UE}, 
+\\*
+{\bfseries T\+O\+T\+A\+L\+\_\+\+H\+R\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM}
+ \}\hypertarget{group___b_l_e___h_r_s_ga0804d16a5e96316dee3d48a5eed71644}{}\label{group___b_l_e___h_r_s_ga0804d16a5e96316dee3d48a5eed71644}
+\begin{DoxyCompactList}\small\item\em Attribute number in the app defined Service Table. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___h_r_s_ga69d4b66132dd0c28c6f8a0711f255b4b}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Init} (H\+R\+S\+Process\+Routine hrs\+Handler) large
+\begin{DoxyCompactList}\small\item\em Initizlize B\+LE heart rate service. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___h_r_s_gafe6fcac37c742b2354fb7ea48c6725fd}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Init\+\_\+\+Service} () large
+\begin{DoxyCompactList}\small\item\em Initizlize B\+LE herat rate service table. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___b_l_e___h_r_s_ga231c9def69b1156f60ef8489ef6e2051}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Catch\+\_\+\+Event} (\hyperlink{struct_b_l_e___g_a_t_t___event}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} X\+D\+A\+TA $\ast$p\+\_\+event) large
+\begin{DoxyCompactList}\small\item\em Catch B\+L\+E\+\_\+\+G\+A\+TT events to get the heart rate service events. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___h_r_s_ga5e1c2ff7ad51a0271425c03aca1ac4fe}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Write\+\_\+\+Response} (u8 conn\+Handle, u8 resp\+Type)
+\begin{DoxyCompactList}\small\item\em Send write response. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___h_r_s_gaecdf24d2d792679c29e7d76a5f551991}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Error\+\_\+\+Response} (u8 conn\+Handle, u8 err\+Code)
+\begin{DoxyCompactList}\small\item\em Send error response. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___h_r_s_gae9b00ae197312e7174ed41527750f89f}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Measurement} (u8 conn\+Handle, \hyperlink{struct_b_l_e___h_r_s___measurement}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement} X\+D\+A\+TA $\ast$p\+\_\+measurement) large
+\begin{DoxyCompactList}\small\item\em Send weight measurement. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___h_r_s_ga79b84a393e171afd8b42b6b219763216}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Body\+\_\+\+Sensor\+\_\+\+Location\+\_\+\+Set} (u8 body\+\_\+sensor\+\_\+location) large
+\begin{DoxyCompactList}\small\item\em Set the Body Sensor Location. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Ble Heart Rate Service. 
+
+\begin{DoxyNote}{Note}
+Definitions and prototypes for the Ble Heart Rate Service application programming interface. 
+\end{DoxyNote}
+
+
+\subsubsection{Macro Definition Documentation}
+\index{Ble Heart Rate Service@{Ble Heart Rate Service}!B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+E\+D\+\_\+\+R\+R\+\_\+\+I\+N\+T\+E\+R\+V\+A\+LS@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+E\+D\+\_\+\+R\+R\+\_\+\+I\+N\+T\+E\+R\+V\+A\+LS}}
+\index{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+E\+D\+\_\+\+R\+R\+\_\+\+I\+N\+T\+E\+R\+V\+A\+LS@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+E\+D\+\_\+\+R\+R\+\_\+\+I\+N\+T\+E\+R\+V\+A\+LS}!Ble Heart Rate Service@{Ble Heart Rate Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+E\+D\+\_\+\+R\+R\+\_\+\+I\+N\+T\+E\+R\+V\+A\+LS}{BLE_HRS_MAX_BUFFERED_RR_INTERVALS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+E\+D\+\_\+\+R\+R\+\_\+\+I\+N\+T\+E\+R\+V\+A\+LS~5}\hypertarget{group___b_l_e___h_r_s_ga2e829f32fd9d57d18d1e8daa7956dee5}{}\label{group___b_l_e___h_r_s_ga2e829f32fd9d57d18d1e8daa7956dee5}
+Size of RR Interval buffer inside service. More than this exceeds the M\+TU \index{Ble Heart Rate Service@{Ble Heart Rate Service}!H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+W\+R\+I\+TE@{H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+W\+R\+I\+TE}}
+\index{H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+W\+R\+I\+TE@{H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+W\+R\+I\+TE}!Ble Heart Rate Service@{Ble Heart Rate Service}}
+\paragraph[{\texorpdfstring{H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+W\+R\+I\+TE}{HEART_RATE_CONTROL_POINT_WRITE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+W\+R\+I\+TE~0x0001}\hypertarget{group___b_l_e___h_r_s_ga4ce40f9452d970df97e8b54e173ed9f2}{}\label{group___b_l_e___h_r_s_ga4ce40f9452d970df97e8b54e173ed9f2}
+Heart Rate Control point write event. \index{Ble Heart Rate Service@{Ble Heart Rate Service}!H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+ED@{H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+ED}}
+\index{H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+ED@{H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+ED}!Ble Heart Rate Service@{Ble Heart Rate Service}}
+\paragraph[{\texorpdfstring{H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+ED}{HEART_RATE_NOTIFICATION_DISABLED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+ED~0x0000}\hypertarget{group___b_l_e___h_r_s_ga5a46058550c3b3cf1e042f16f9c8c64e}{}\label{group___b_l_e___h_r_s_ga5a46058550c3b3cf1e042f16f9c8c64e}
+Heart Rate value notification disabled event. \index{Ble Heart Rate Service@{Ble Heart Rate Service}!H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+E\+N\+A\+B\+L\+ED@{H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+E\+N\+A\+B\+L\+ED}}
+\index{H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+E\+N\+A\+B\+L\+ED@{H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+E\+N\+A\+B\+L\+ED}!Ble Heart Rate Service@{Ble Heart Rate Service}}
+\paragraph[{\texorpdfstring{H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+E\+N\+A\+B\+L\+ED}{HEART_RATE_NOTIFICATION_ENABLED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+E\+A\+R\+T\+\_\+\+R\+A\+T\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+E\+N\+A\+B\+L\+ED~0x0100}\hypertarget{group___b_l_e___h_r_s_ga06378ba9251b48422062ef7b31db7d42}{}\label{group___b_l_e___h_r_s_ga06378ba9251b48422062ef7b31db7d42}
+Heart Rate value notification enabled event. 
+
+\subsubsection{Function Documentation}
+\index{Ble Heart Rate Service@{Ble Heart Rate Service}!B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Body\+\_\+\+Sensor\+\_\+\+Location\+\_\+\+Set@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Body\+\_\+\+Sensor\+\_\+\+Location\+\_\+\+Set}}
+\index{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Body\+\_\+\+Sensor\+\_\+\+Location\+\_\+\+Set@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Body\+\_\+\+Sensor\+\_\+\+Location\+\_\+\+Set}!Ble Heart Rate Service@{Ble Heart Rate Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Body\+\_\+\+Sensor\+\_\+\+Location\+\_\+\+Set(u8 body\+\_\+sensor\+\_\+location) large}{BLE_HRS_Body_Sensor_Location_Set(u8 body_sensor_location) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Body\+\_\+\+Sensor\+\_\+\+Location\+\_\+\+Set (
+\begin{DoxyParamCaption}
+\item[{u8}]{body\+\_\+sensor\+\_\+location}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___h_r_s_ga79b84a393e171afd8b42b6b219763216}{}\label{group___b_l_e___h_r_s_ga79b84a393e171afd8b42b6b219763216}
+
+
+Set the Body Sensor Location. 
+
+Sets a new value of the Body Sensor Location characteristic. The new value will be sent to the client the next time the client reads the Body Sensor Location characteristic.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em body\+\_\+sensor\+\_\+location} & New Body Sensor Location.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+R\+F\+\_\+\+S\+U\+C\+C\+E\+SS on success, otherwise an error code. 
+\end{DoxyReturn}
+\index{Ble Heart Rate Service@{Ble Heart Rate Service}!B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Catch\+\_\+\+Event@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Catch\+\_\+\+Event}}
+\index{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Catch\+\_\+\+Event@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Catch\+\_\+\+Event}!Ble Heart Rate Service@{Ble Heart Rate Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Catch\+\_\+\+Event(\+B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event X\+D\+A\+T\+A $\ast$p\+\_\+event) large}{BLE_HRS_Catch_Event(BLE_GATT_Event XDATA *p_event) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Catch\+\_\+\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} X\+D\+A\+TA $\ast$}]{p\+\_\+event}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___h_r_s_ga231c9def69b1156f60ef8489ef6e2051}{}\label{group___b_l_e___h_r_s_ga231c9def69b1156f60ef8489ef6e2051}
+
+
+Catch B\+L\+E\+\_\+\+G\+A\+TT events to get the heart rate service events. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+event} & Pointer to \hyperlink{struct_b_l_e___g_a_t_t___event}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Catch B\+LE G\+A\+TT events configuration successfully. 
+\end{DoxyReturn}
+\index{Ble Heart Rate Service@{Ble Heart Rate Service}!B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Init@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Init}}
+\index{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Init@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Init}!Ble Heart Rate Service@{Ble Heart Rate Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Init(\+H\+R\+S\+Process\+Routine hrs\+Handler) large}{BLE_HRS_Init(HRSProcessRoutine hrsHandler) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{H\+R\+S\+Process\+Routine}]{hrs\+Handler}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___h_r_s_ga69d4b66132dd0c28c6f8a0711f255b4b}{}\label{group___b_l_e___h_r_s_ga69d4b66132dd0c28c6f8a0711f255b4b}
+
+
+Initizlize B\+LE heart rate service. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em hrs\+Handler} & M\+B\+IoT callback function for B\+LE Heart rate events.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Initialize B\+LE Heart rate successfully. 
+\end{DoxyReturn}
+\index{Ble Heart Rate Service@{Ble Heart Rate Service}!B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Init\+\_\+\+Service@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Init\+\_\+\+Service}}
+\index{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Init\+\_\+\+Service@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Init\+\_\+\+Service}!Ble Heart Rate Service@{Ble Heart Rate Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Init\+\_\+\+Service() large}{BLE_HRS_Init_Service() large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Init\+\_\+\+Service (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___h_r_s_gafe6fcac37c742b2354fb7ea48c6725fd}{}\label{group___b_l_e___h_r_s_gafe6fcac37c742b2354fb7ea48c6725fd}
+
+
+Initizlize B\+LE herat rate service table. 
+
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Initialize B\+LE heart rate service table successfully. 
+\end{DoxyReturn}
+\index{Ble Heart Rate Service@{Ble Heart Rate Service}!B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Error\+\_\+\+Response@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Error\+\_\+\+Response}}
+\index{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Error\+\_\+\+Response@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Error\+\_\+\+Response}!Ble Heart Rate Service@{Ble Heart Rate Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Error\+\_\+\+Response(u8 conn\+Handle, u8 err\+Code)}{BLE_HRS_Send_Error_Response(u8 connHandle, u8 errCode)}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Error\+\_\+\+Response (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{u8}]{err\+Code}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___h_r_s_gaecdf24d2d792679c29e7d76a5f551991}{}\label{group___b_l_e___h_r_s_gaecdf24d2d792679c29e7d76a5f551991}
+
+
+Send error response. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Connection handle. \\
+\hline
+\mbox{\tt in}  & {\em err\+Code} & unsupported command.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS sent error response successfully. 
+\end{DoxyReturn}
+\index{Ble Heart Rate Service@{Ble Heart Rate Service}!B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Measurement@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Measurement}}
+\index{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Measurement@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Measurement}!Ble Heart Rate Service@{Ble Heart Rate Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Measurement(u8 conn\+Handle, B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement X\+D\+A\+T\+A $\ast$p\+\_\+measurement) large}{BLE_HRS_Send_Measurement(u8 connHandle, BLE_HRS_Measurement XDATA *p_measurement) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Measurement (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{{\bf B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement} X\+D\+A\+TA $\ast$}]{p\+\_\+measurement}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___h_r_s_gae9b00ae197312e7174ed41527750f89f}{}\label{group___b_l_e___h_r_s_gae9b00ae197312e7174ed41527750f89f}
+
+
+Send weight measurement. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+measurement} & Pointer to \hyperlink{struct_b_l_e___h_r_s___measurement}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Send heart rate measurement successfully. 
+\end{DoxyReturn}
+\index{Ble Heart Rate Service@{Ble Heart Rate Service}!B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Write\+\_\+\+Response@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Write\+\_\+\+Response}}
+\index{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Write\+\_\+\+Response@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Write\+\_\+\+Response}!Ble Heart Rate Service@{Ble Heart Rate Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Write\+\_\+\+Response(u8 conn\+Handle, u8 resp\+Type)}{BLE_HRS_Send_Write_Response(u8 connHandle, u8 respType)}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Send\+\_\+\+Write\+\_\+\+Response (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{u8}]{resp\+Type}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___h_r_s_ga5e1c2ff7ad51a0271425c03aca1ac4fe}{}\label{group___b_l_e___h_r_s_ga5e1c2ff7ad51a0271425c03aca1ac4fe}
+
+
+Send write response. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Connection handle. \\
+\hline
+\mbox{\tt in}  & {\em resp\+Type} & write response type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS sent error response successfully. 
+\end{DoxyReturn}

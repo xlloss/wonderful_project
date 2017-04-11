@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['read',['READ',['../group___b_l_e___g_a_t_t___c_h_a_r_a_c_t_e_r_i_s_t_i_c___p_r_o_p_e_r_t_i_e_s.html#gada74e7db007a68e763f20c17f2985356',1,'ble_gatts_services_table.h']]],
+  ['readbuffer',['readBuffer',['../struct_a_p_p___i2_c___combine_w_r_paras.html#a776fa5eb024d92048f721aab001a01a9',1,'APP_I2C_CombineWRParas::readBuffer()'],['../struct_a_p_p___s_p_i___s_flash_r_paras.html#aeceaeb193536f7f884aed96a7abf7a3e',1,'APP_SPI_SFlashRParas::readBuffer()']]],
+  ['readlen',['readLen',['../struct_a_p_p___s_p_i___s_flash_r_paras.html#a8923c378d042bdf8d029e504f89f5a7b',1,'APP_SPI_SFlashRParas']]],
+  ['readoffset',['readOffset',['../struct_b_l_e___a_t_t___e_v_t___read__t.html#a59fd444a9c256ed3f3eead9a5222c60a',1,'BLE_ATT_EVT_Read_t']]],
+  ['readtype',['readType',['../struct_b_l_e___a_t_t___e_v_t___read__t.html#ab618c0035772a3aa76192f9a76690cbc',1,'BLE_ATT_EVT_Read_t']]],
+  ['reason',['reason',['../struct_b_l_e___g_a_p___evt___disconnect.html#ad91e51c7ffd5650eab9886f1d8d96348',1,'BLE_GAP_Evt_Disconnect']]],
+  ['receivedlength',['receivedLength',['../struct_b_l_e___a_t_t___e_v_t___receive_h_v__t.html#a8ca377a650674ef7edb5b690de7a22f4',1,'BLE_ATT_EVT_ReceiveHV_t']]],
+  ['relaystate',['relayState',['../struct_m_e_s_h___e_v_t___update___relay.html#a2bb57ff7daf064c15f4988e9d47eaa64',1,'MESH_EVT_Update_Relay::relayState()'],['../struct_m_e_s_h___c_f_g__node_params.html#aada8547341e0a8a879d4970e548d9ebe',1,'MESH_CFG_nodeParams::relayState()']]],
+  ['reliable_5fwrite',['RELIABLE_WRITE',['../group___b_l_e___g_a_t_t___c_h_a_r_a_c_t_e_r_i_s_t_i_c___e_x_t_e_n_d_e_d___p_r_o_p_e_r_t_i_e_s.html#gaaf4257e06d56ac904bfb701f656b8872',1,'ble_gatts_services_table.h']]],
+  ['remoteaddr',['remoteAddr',['../struct_b_l_e___g_a_p___evt___connect.html#ae0a227aef87cce09e94203e8b5387c02',1,'BLE_GAP_Evt_Connect']]],
+  ['reqopcode',['reqOpcode',['../struct_b_l_e___g_a_t_t_s___send_err_response_params.html#ac65e7133d29ce74d90d7f4ed0528078f',1,'BLE_GATTS_SendErrResponseParams::reqOpcode()'],['../struct_b_l_e___a_t_t___e_v_t___error__t.html#adb4538600002ad67fedf1dd814783866',1,'BLE_ATT_EVT_Error_t::reqOpcode()']]],
+  ['respmode',['respMode',['../struct_a_p_p___s_p_i___slave___config.html#ab6dd24452cc1f01d12b37d79421c5bbf',1,'APP_SPI_Slave_Config']]],
+  ['responsetype',['responseType',['../struct_b_l_e___g_a_t_t_s___send_read_response_params.html#a562a1738eff391eaf2159c94fdf12009',1,'BLE_GATTS_SendReadResponseParams::responseType()'],['../struct_b_l_e___g_a_t_t_s___send_write_response_params.html#a672993b34e4dc4f5ec3b90819792d933',1,'BLE_GATTS_SendWriteResponseParams::responseType()'],['../struct_b_l_e___a_t_t___e_v_t___read_resp__t.html#adb39650d43cdd5856fe20a70c857f55d',1,'BLE_ATT_EVT_ReadResp_t::responseType()'],['../struct_b_l_e___a_t_t___e_v_t___write_resp__t.html#a6908f020851f87349cfc09d97f877a8c',1,'BLE_ATT_EVT_WriteResp_t::responseType()']]],
+  ['result',['result',['../struct_b_l_e___l2_c_a_p___evt___conn_para_update_result.html#a7151204dcf13ee49166b828e59ce1779',1,'BLE_L2CAP_Evt_ConnParaUpdateResult::result()'],['../struct_b_l_e___l2_c_a_p___evt___coc___conn___rsp.html#a93ec63cf450db31ed2f2de786bc7d4d2',1,'BLE_L2CAP_Evt_Coc_Conn_Rsp::result()']]],
+  ['role',['role',['../struct_b_l_e___g_a_p___evt___connect.html#a828ed427f121650cd78ceb07bb961cd6',1,'BLE_GAP_Evt_Connect']]],
+  ['rr_5finterval',['rr_interval',['../struct_b_l_e___h_r_s___measurement.html#a1626ff150d9577ee5ea80538e1f4f609',1,'BLE_HRS_Measurement']]],
+  ['rr_5finterval_5fcount',['rr_interval_count',['../struct_b_l_e___h_r_s___measurement.html#a85fda1a6c624db2b9c838e6009f3a62e',1,'BLE_HRS_Measurement']]],
+  ['rssi',['rssi',['../struct_b_l_e___g_a_p___evt___advertising_report.html#a73e74502aebf254922c809afd71d9661',1,'BLE_GAP_Evt_AdvertisingReport']]],
+  ['rxbuffer',['rxBuffer',['../struct_a_p_p___u_a_r_t___conf_paras.html#a7647cd1d40dbdbde863d7a3efa6321e8',1,'APP_UART_ConfParas']]],
+  ['rxbufferlen',['rxBufferLen',['../struct_a_p_p___s_p_i___master___conf_paras.html#a81b4eda9480a6dafa35b107cd46910d3',1,'APP_SPI_Master_ConfParas::rxBufferLen()'],['../struct_a_p_p___s_p_i___master___send_rece_paras.html#a8d292261dc155123f11a8b075aad29c2',1,'APP_SPI_Master_SendReceParas::rxBufferLen()'],['../struct_a_p_p___s_p_i___slave___config.html#a6b461b7c3aebf881e2fe2f2d867b2538',1,'APP_SPI_Slave_Config::rxBufferLen()']]],
+  ['rxbuffersize',['rxBufferSize',['../struct_a_p_p___u_a_r_t___conf_paras.html#aa600bf0e3bc9cb82642d01d348378c82',1,'APP_UART_ConfParas']]],
+  ['rxnotifylength',['rxNotifyLength',['../struct_a_p_p___u_a_r_t___conf_paras.html#a2bbafd648dba36ed57035ab029c31104',1,'APP_UART_ConfParas']]],
+  ['rxwakeuppinnum',['rxWakeupPinNum',['../struct_a_p_p___u_a_r_t___conf_paras.html#a090955f2d6580707c9550c1f5139b41e',1,'APP_UART_ConfParas']]]
+];

@@ -1,0 +1,539 @@
+\hypertarget{group___m_e_s_h}{}\subsection{M\+E\+SH}
+\label{group___m_e_s_h}\index{M\+E\+SH@{M\+E\+SH}}
+
+
+Definitions and prototypes for the M\+E\+SH application programming interface.  
+
+
+\subsubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___m_e_s_h___p_b___t_y_p_e___d_e_f}{M\+E\+S\+H\+\_\+\+P\+B\+\_\+\+T\+Y\+P\+E\+\_\+\+D\+EF}
+\begin{DoxyCompactList}\small\item\em The definition of Mesh provision type. \end{DoxyCompactList}\item 
+\hyperlink{group___m_e_s_h___p_r_o_v_i_s_i_o_n_i_n_g___s_t_a_t_u_s___d_e_f}{M\+E\+S\+H\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+N\+G\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+EF}
+\begin{DoxyCompactList}\small\item\em The definition of Mesh provision status. \end{DoxyCompactList}\item 
+\hyperlink{group___m_e_s_h___p_r_o_v_i_s_i_o_n_i_n_g___o_p_e_r_a_t_o_r___d_e_f}{M\+E\+S\+H\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+N\+G\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+D\+EF}
+\begin{DoxyCompactList}\small\item\em The definition of Mesh provision operator. \end{DoxyCompactList}\item 
+\hyperlink{group___m_e_s_h___r_e_l_a_y___s_t_a_t_e___d_e_f}{M\+E\+S\+H\+\_\+\+R\+E\+L\+A\+Y\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+EF}
+\begin{DoxyCompactList}\small\item\em The definition of Mesh relay state. \end{DoxyCompactList}\item 
+\hyperlink{group___m_e_s_h___a_p_p___k_e_y___n_u_m}{M\+E\+S\+H\+\_\+\+A\+P\+P\+\_\+\+K\+E\+Y\+\_\+\+N\+UM}
+\item 
+\hyperlink{group___m_e_s_h___g_r_o_u_p___n_u_m}{M\+E\+S\+H\+\_\+\+G\+R\+O\+U\+P\+\_\+\+N\+UM}
+\item 
+\hyperlink{group___m_e_s_h___p_a_r_a_m_s___l_e_n___d_e_f}{M\+E\+S\+H\+\_\+\+P\+A\+R\+A\+M\+S\+\_\+\+L\+E\+N\+\_\+\+D\+EF}
+\end{DoxyCompactItemize}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_m_e_s_h___one_opcode___data}{M\+E\+S\+H\+\_\+\+One\+Opcode\+\_\+\+Data}
+\begin{DoxyCompactList}\small\item\em The structure of application payload with 1-\/octect Opcodes. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_m_e_s_h___two_opcode___data}{M\+E\+S\+H\+\_\+\+Two\+Opcode\+\_\+\+Data}
+\begin{DoxyCompactList}\small\item\em The structure of application payload with 2-\/octect Opcodes. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_m_e_s_h___three_opcode___data}{M\+E\+S\+H\+\_\+\+Three\+Opcode\+\_\+\+Data}
+\begin{DoxyCompactList}\small\item\em The structure of application payload with 3-\/octect Opcodes. \end{DoxyCompactList}\item 
+union \hyperlink{union_m_e_s_h___application_payload}{M\+E\+S\+H\+\_\+\+Application\+Payload}
+\begin{DoxyCompactList}\small\item\em Structure of A\+PP P\+E\+R\+I\+P\+H\+E\+R\+AL events. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_m_e_s_h___e_v_t___rcv___data}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Rcv\+\_\+\+Data}
+\begin{DoxyCompactList}\small\item\em The structure of Mesh data was received event parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_m_e_s_h___e_v_t___provisioning_complete}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Provisioning\+Complete}
+\begin{DoxyCompactList}\small\item\em The structure of Provision procedure was complete event parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_m_e_s_h___e_v_t___new___nodes}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+New\+\_\+\+Nodes}
+\begin{DoxyCompactList}\small\item\em The structure of Un-\/provisioned device event parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_m_e_s_h___e_v_t___update___publication}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Update\+\_\+\+Publication}
+\begin{DoxyCompactList}\small\item\em The structure of Public address was updated event parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_m_e_s_h___e_v_t___update___subscription}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Update\+\_\+\+Subscription}
+\begin{DoxyCompactList}\small\item\em The structure of Subscription list was updated event parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_m_e_s_h___e_v_t___update___default___t_t_l}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Update\+\_\+\+Default\+\_\+\+T\+TL}
+\begin{DoxyCompactList}\small\item\em The structure of Default T\+TL was updated was updated event parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_m_e_s_h___e_v_t___update___relay}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Update\+\_\+\+Relay}
+\begin{DoxyCompactList}\small\item\em The structure of Relay state was updated event parameters. \end{DoxyCompactList}\item 
+union \hyperlink{union_m_e_s_h_event_field}{M\+E\+S\+H\+Event\+Field}
+\begin{DoxyCompactList}\small\item\em M\+E\+SH event types. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_ble___mesh___event}{Ble\+\_\+\+Mesh\+\_\+\+Event}
+\begin{DoxyCompactList}\small\item\em Structure of M\+E\+SH events. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_m_e_s_h___transmit___data}{M\+E\+S\+H\+\_\+\+Transmit\+\_\+\+Data}
+\begin{DoxyCompactList}\small\item\em The structrue of transmit data. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_m_e_s_h___app___key}{M\+E\+S\+H\+\_\+\+App\+\_\+\+Key}
+\begin{DoxyCompactList}\small\item\em The structrue of application key. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_m_e_s_h___c_f_g___static_provisioned}{M\+E\+S\+H\+\_\+\+C\+F\+G\+\_\+\+Static\+Provisioned}
+\begin{DoxyCompactList}\small\item\em The structrue of static provisioned. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_m_e_s_h___c_f_g__packet_scan_params}{M\+E\+S\+H\+\_\+\+C\+F\+G\+\_\+packet\+Scan\+Params}
+\begin{DoxyCompactList}\small\item\em The structrue of change scan parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_m_e_s_h___c_f_g__node_params}{M\+E\+S\+H\+\_\+\+C\+F\+G\+\_\+node\+Params}
+\begin{DoxyCompactList}\small\item\em The structrue of change node information. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_m_e_s_h___c_f_g__adv_params}{M\+E\+S\+H\+\_\+\+C\+F\+G\+\_\+adv\+Params}
+\begin{DoxyCompactList}\small\item\em The structrue of change advertising parameters. \end{DoxyCompactList}\item 
+union \hyperlink{union_m_e_s_h___conf_paras}{M\+E\+S\+H\+\_\+\+Conf\+Paras}
+\begin{DoxyCompactList}\small\item\em Data field of configuration. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_m_e_s_h___local_node}{M\+E\+S\+H\+\_\+\+Local\+Node}
+\begin{DoxyCompactList}\small\item\em The structure of node information parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_m_e_s_h___one_opcode___data}{M\+E\+S\+H\+\_\+\+One\+Opcode\+\_\+\+Data} \hyperlink{group___m_e_s_h_gab177c1d3cafedbfdfb8ce2dee082bfa3}{M\+E\+S\+H\+\_\+\+One\+Opcode\+\_\+\+Data}\hypertarget{group___m_e_s_h_gab177c1d3cafedbfdfb8ce2dee082bfa3}{}\label{group___m_e_s_h_gab177c1d3cafedbfdfb8ce2dee082bfa3}
+
+\begin{DoxyCompactList}\small\item\em The structure of application payload with 1-\/octect Opcodes. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_m_e_s_h___two_opcode___data}{M\+E\+S\+H\+\_\+\+Two\+Opcode\+\_\+\+Data} \hyperlink{group___m_e_s_h_ga65a121a02998a47f9cf1dbf9933f6d52}{M\+E\+S\+H\+\_\+\+Two\+Opcode\+\_\+\+Data}\hypertarget{group___m_e_s_h_ga65a121a02998a47f9cf1dbf9933f6d52}{}\label{group___m_e_s_h_ga65a121a02998a47f9cf1dbf9933f6d52}
+
+\begin{DoxyCompactList}\small\item\em The structure of application payload with 2-\/octect Opcodes. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_m_e_s_h___three_opcode___data}{M\+E\+S\+H\+\_\+\+Three\+Opcode\+\_\+\+Data} \hyperlink{group___m_e_s_h_ga8ead079edca9869661c3faff50f4517c}{M\+E\+S\+H\+\_\+\+Three\+Opcode\+\_\+\+Data}\hypertarget{group___m_e_s_h_ga8ead079edca9869661c3faff50f4517c}{}\label{group___m_e_s_h_ga8ead079edca9869661c3faff50f4517c}
+
+\begin{DoxyCompactList}\small\item\em The structure of application payload with 3-\/octect Opcodes. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_m_e_s_h___e_v_t___rcv___data}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Rcv\+\_\+\+Data} \hyperlink{group___m_e_s_h_gada1837dfa08926f09596882754c9eef4}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Rcv\+\_\+\+Data}\hypertarget{group___m_e_s_h_gada1837dfa08926f09596882754c9eef4}{}\label{group___m_e_s_h_gada1837dfa08926f09596882754c9eef4}
+
+\begin{DoxyCompactList}\small\item\em The structure of Mesh data was received event parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_m_e_s_h___e_v_t___provisioning_complete}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Provisioning\+Complete} \hyperlink{group___m_e_s_h_ga0e0b94cd22f973ad5f1dd80173a76fbc}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Provisioning\+Complete}\hypertarget{group___m_e_s_h_ga0e0b94cd22f973ad5f1dd80173a76fbc}{}\label{group___m_e_s_h_ga0e0b94cd22f973ad5f1dd80173a76fbc}
+
+\begin{DoxyCompactList}\small\item\em The structure of Provision procedure was complete event parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_m_e_s_h___e_v_t___new___nodes}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+New\+\_\+\+Nodes} \hyperlink{group___m_e_s_h_ga0807ff103f6a2d98dc11aa071242ec4f}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+New\+\_\+\+Nodes}\hypertarget{group___m_e_s_h_ga0807ff103f6a2d98dc11aa071242ec4f}{}\label{group___m_e_s_h_ga0807ff103f6a2d98dc11aa071242ec4f}
+
+\begin{DoxyCompactList}\small\item\em The structure of Un-\/provisioned device event parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_m_e_s_h___e_v_t___update___publication}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Update\+\_\+\+Publication} \hyperlink{group___m_e_s_h_ga689557a847282e89bac4831aac37e424}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Update\+\_\+\+Publication}\hypertarget{group___m_e_s_h_ga689557a847282e89bac4831aac37e424}{}\label{group___m_e_s_h_ga689557a847282e89bac4831aac37e424}
+
+\begin{DoxyCompactList}\small\item\em The structure of Public address was updated event parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_m_e_s_h___e_v_t___update___subscription}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Update\+\_\+\+Subscription} \hyperlink{group___m_e_s_h_ga4ddf73f26e703bcd103920a8573641e2}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Update\+\_\+\+Subscription}\hypertarget{group___m_e_s_h_ga4ddf73f26e703bcd103920a8573641e2}{}\label{group___m_e_s_h_ga4ddf73f26e703bcd103920a8573641e2}
+
+\begin{DoxyCompactList}\small\item\em The structure of Subscription list was updated event parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_m_e_s_h___e_v_t___update___default___t_t_l}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Update\+\_\+\+Default\+\_\+\+T\+TL} \hyperlink{group___m_e_s_h_ga8207cdb525f56e317a7a9f48eb2f1eeb}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Update\+\_\+\+Default\+\_\+\+T\+TL}\hypertarget{group___m_e_s_h_ga8207cdb525f56e317a7a9f48eb2f1eeb}{}\label{group___m_e_s_h_ga8207cdb525f56e317a7a9f48eb2f1eeb}
+
+\begin{DoxyCompactList}\small\item\em The structure of Default T\+TL was updated was updated event parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_m_e_s_h___e_v_t___update___relay}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Update\+\_\+\+Relay} \hyperlink{group___m_e_s_h_ga5c5d3d84371093b7dd9a23d1e8a283a7}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Update\+\_\+\+Relay}\hypertarget{group___m_e_s_h_ga5c5d3d84371093b7dd9a23d1e8a283a7}{}\label{group___m_e_s_h_ga5c5d3d84371093b7dd9a23d1e8a283a7}
+
+\begin{DoxyCompactList}\small\item\em The structure of Relay state was updated event parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_ble___mesh___event}{Ble\+\_\+\+Mesh\+\_\+\+Event} \hyperlink{group___m_e_s_h_ga0063f85a114c5b2b0b5d54fe0bec98c7}{Ble\+\_\+\+Mesh\+\_\+\+Event}\hypertarget{group___m_e_s_h_ga0063f85a114c5b2b0b5d54fe0bec98c7}{}\label{group___m_e_s_h_ga0063f85a114c5b2b0b5d54fe0bec98c7}
+
+\begin{DoxyCompactList}\small\item\em Structure of M\+E\+SH events. \end{DoxyCompactList}\item 
+typedef void($\ast$ \hyperlink{group___m_e_s_h_ga46ab9a569a5fb649c1c0246cb81b3389}{M\+E\+S\+H\+Process\+Routine}) (\hyperlink{struct_ble___mesh___event}{Ble\+\_\+\+Mesh\+\_\+\+Event} X\+D\+A\+TA $\ast$p\+\_\+event) large\hypertarget{group___m_e_s_h_ga46ab9a569a5fb649c1c0246cb81b3389}{}\label{group___m_e_s_h_ga46ab9a569a5fb649c1c0246cb81b3389}
+
+\begin{DoxyCompactList}\small\item\em M\+E\+SH callback function prototype. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_m_e_s_h___transmit___data}{M\+E\+S\+H\+\_\+\+Transmit\+\_\+\+Data} \hyperlink{group___m_e_s_h_gaf94f62d4935fc276c482ed909f9370a2}{M\+E\+S\+H\+\_\+\+Transmit\+\_\+\+Data}\hypertarget{group___m_e_s_h_gaf94f62d4935fc276c482ed909f9370a2}{}\label{group___m_e_s_h_gaf94f62d4935fc276c482ed909f9370a2}
+
+\begin{DoxyCompactList}\small\item\em The structrue of transmit data. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_m_e_s_h___app___key}{M\+E\+S\+H\+\_\+\+App\+\_\+\+Key} \hyperlink{group___m_e_s_h_gae88953e099430852c312d13a99d8c735}{M\+E\+S\+H\+\_\+\+App\+\_\+\+Key}\hypertarget{group___m_e_s_h_gae88953e099430852c312d13a99d8c735}{}\label{group___m_e_s_h_gae88953e099430852c312d13a99d8c735}
+
+\begin{DoxyCompactList}\small\item\em The structrue of application key. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_m_e_s_h___c_f_g___static_provisioned}{M\+E\+S\+H\+\_\+\+C\+F\+G\+\_\+\+Static\+Provisioned} \hyperlink{group___m_e_s_h_gaa0b2f4271ec8274ad38f1bc4d5796788}{M\+E\+S\+H\+\_\+\+C\+F\+G\+\_\+\+Static\+Provisioned}\hypertarget{group___m_e_s_h_gaa0b2f4271ec8274ad38f1bc4d5796788}{}\label{group___m_e_s_h_gaa0b2f4271ec8274ad38f1bc4d5796788}
+
+\begin{DoxyCompactList}\small\item\em The structrue of static provisioned. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_m_e_s_h___c_f_g__packet_scan_params}{M\+E\+S\+H\+\_\+\+C\+F\+G\+\_\+packet\+Scan\+Params} \hyperlink{group___m_e_s_h_gad3b42c59d6315c75d9435d55fcbe3ac1}{M\+E\+S\+H\+\_\+\+C\+F\+G\+\_\+\+Scan\+Params}\hypertarget{group___m_e_s_h_gad3b42c59d6315c75d9435d55fcbe3ac1}{}\label{group___m_e_s_h_gad3b42c59d6315c75d9435d55fcbe3ac1}
+
+\begin{DoxyCompactList}\small\item\em The structrue of change scan parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_m_e_s_h___c_f_g__node_params}{M\+E\+S\+H\+\_\+\+C\+F\+G\+\_\+node\+Params} \hyperlink{group___m_e_s_h_ga100debe22893bca692e5a89a5d51b392}{M\+E\+S\+H\+\_\+\+C\+F\+G\+\_\+node\+Params}\hypertarget{group___m_e_s_h_ga100debe22893bca692e5a89a5d51b392}{}\label{group___m_e_s_h_ga100debe22893bca692e5a89a5d51b392}
+
+\begin{DoxyCompactList}\small\item\em The structrue of change node information. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_m_e_s_h___c_f_g__adv_params}{M\+E\+S\+H\+\_\+\+C\+F\+G\+\_\+adv\+Params} \hyperlink{group___m_e_s_h_ga941df94a7cd27cb9a8d25cff0e3e64c3}{M\+E\+S\+H\+\_\+\+C\+F\+G\+\_\+adv\+Params}\hypertarget{group___m_e_s_h_ga941df94a7cd27cb9a8d25cff0e3e64c3}{}\label{group___m_e_s_h_ga941df94a7cd27cb9a8d25cff0e3e64c3}
+
+\begin{DoxyCompactList}\small\item\em The structrue of change advertising parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_m_e_s_h___local_node}{M\+E\+S\+H\+\_\+\+Local\+Node} \hyperlink{group___m_e_s_h_ga68e00bbe5d9e73891d1ebf3193f75af2}{M\+E\+S\+H\+\_\+\+Local\+Node}\hypertarget{group___m_e_s_h_ga68e00bbe5d9e73891d1ebf3193f75af2}{}\label{group___m_e_s_h_ga68e00bbe5d9e73891d1ebf3193f75af2}
+
+\begin{DoxyCompactList}\small\item\em The structure of node information parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___m_e_s_h_ga86e1f14d530a66d2094810f666ce76f4}{Mesh\+\_\+\+Config\+\_\+\+ID} \{ \\*
+\hyperlink{group___m_e_s_h_gga86e1f14d530a66d2094810f666ce76f4a9a4f7687bacc481b129108a77872fe7e}{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+E\+T\+\_\+\+T\+O\+\_\+\+D\+E\+F\+A\+U\+LT}, 
+\hyperlink{group___m_e_s_h_gga86e1f14d530a66d2094810f666ce76f4ab57bd889b70f0aa51a3491b2ed9463db}{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+I\+N\+ED}, 
+\hyperlink{group___m_e_s_h_gga86e1f14d530a66d2094810f666ce76f4a813ab3683bfac9f130631454b9ec5b60}{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+A\+D\+V\+\_\+\+P\+A\+R\+A\+MS}, 
+\hyperlink{group___m_e_s_h_gga86e1f14d530a66d2094810f666ce76f4af16c6c8a7784c6115fcdd9c96c0273e1}{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+C\+A\+N\+\_\+\+P\+A\+R\+A\+MS}, 
+\\*
+\hyperlink{group___m_e_s_h_gga86e1f14d530a66d2094810f666ce76f4a9f11ef5e9f7ffa69ef21814e79529701}{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+N\+O\+D\+E\+\_\+\+P\+A\+R\+A\+MS}
+ \}\begin{DoxyCompactList}\small\item\em Mesh configuration ID. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group___m_e_s_h_ga0493e3955ac50fa886c012769544fe89}{Mesh\+\_\+\+App\+\_\+\+Payload\+\_\+\+Type} \{ \hyperlink{group___m_e_s_h_gga0493e3955ac50fa886c012769544fe89a0c3413a282753c08fdf290e10407d991}{A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+1}, 
+\hyperlink{group___m_e_s_h_gga0493e3955ac50fa886c012769544fe89a92fbbbe7a45d88230a1a344304446598}{A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+2}, 
+\hyperlink{group___m_e_s_h_gga0493e3955ac50fa886c012769544fe89ab6ed48a7ff81c76ae976e4d1ada027fe}{A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+3}
+ \}\begin{DoxyCompactList}\small\item\em Application payload type. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group___m_e_s_h_gaa213f0dfb25460197ad32e6ab1921f66}{Mesh\+\_\+\+Event\+\_\+\+ID} \{ \\*
+\hyperlink{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66a23f6607b7051c22d2021d6fda7102e13}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+R\+C\+V\+\_\+\+D\+A\+TA} = 0x00, 
+\hyperlink{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66ae52fee8eeea04bd28c836b1c61342e38}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+N\+G\+\_\+\+C\+O\+M\+P\+L\+E\+TE}, 
+\hyperlink{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66af2c5e147c4320ea9dd5f744cd4d2a30f}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+N\+E\+W\+\_\+\+N\+O\+D\+ES}, 
+\hyperlink{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66a5237880c55f867838a8e36d93a6ecf18}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+P\+U\+B\+L\+I\+C\+A\+T\+I\+ON}, 
+\\*
+\hyperlink{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66ace2765fa89e3589acab24bbf246b4a0c}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+S\+U\+B\+S\+C\+R\+I\+P\+T\+I\+ON}, 
+\hyperlink{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66a7163370ca14a1b2deb17227d2d7f4b4f}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+TL}, 
+\hyperlink{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66a6c6604ad8f69f6819d39930e6b869d1a}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+R\+E\+L\+A\+Y\+\_\+\+S\+T\+A\+TE}, 
+\hyperlink{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66a3fbca500171093af15ba65cf9fd82ef7}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+N\+O\+D\+E\+\_\+\+R\+E\+S\+ET}
+ \}\begin{DoxyCompactList}\small\item\em Mesh call back events. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group___m_e_s_h_ga5714e7338d1ee21a5ba37747370c6486}{Mesh\+\_\+\+Node\+\_\+\+States\+\_\+\+Type} \{ \hyperlink{group___m_e_s_h_gga5714e7338d1ee21a5ba37747370c6486a774dcbfbb304f7603ca5c9d2d369130c}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+N\+P\+R\+O\+V\+I\+S\+I\+O\+I\+N\+ED} = 0x00, 
+\hyperlink{group___m_e_s_h_gga5714e7338d1ee21a5ba37747370c6486a98b2162768c4b79087791203df11d0ea}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+NG}, 
+\hyperlink{group___m_e_s_h_gga5714e7338d1ee21a5ba37747370c6486ae27a10c63fc4cf149f37a5b79c8ef4fd}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+AL}
+ \}\begin{DoxyCompactList}\small\item\em Mesh Node States Type. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC void \hyperlink{group___m_e_s_h_gaa4778cac2288723cda53693b176a64ea}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Init} (\hyperlink{group___m_e_s_h_ga46ab9a569a5fb649c1c0246cb81b3389}{M\+E\+S\+H\+Process\+Routine} mesh\+Handler) large
+\begin{DoxyCompactList}\small\item\em Initialize Mesh module. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___m_e_s_h_ga3af7a85eb552a1f32ac89a9b21c6fd50}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Start} () large
+\begin{DoxyCompactList}\small\item\em Start Mesh scheme. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___m_e_s_h_ga15c5398b4b0ae656d1f2f29168f5467f}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Stop} () large\hypertarget{group___m_e_s_h_ga15c5398b4b0ae656d1f2f29168f5467f}{}\label{group___m_e_s_h_ga15c5398b4b0ae656d1f2f29168f5467f}
+
+\begin{DoxyCompactList}\small\item\em Stop Mesh scheme. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___m_e_s_h_gaf278aaac14b896993d1a05079427a4d5}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Config} (u8 option, \hyperlink{union_m_e_s_h___conf_paras}{M\+E\+S\+H\+\_\+\+Conf\+Paras} X\+D\+A\+TA $\ast$p\+\_\+conf\+Paras) large
+\begin{DoxyCompactList}\small\item\em Cofigure node parameters. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___m_e_s_h_ga029b8285c958214732fdf1134e44abf6}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Transmit\+Data} (u16 component\+Address, \hyperlink{struct_m_e_s_h___transmit___data}{M\+E\+S\+H\+\_\+\+Transmit\+\_\+\+Data} X\+D\+A\+TA $\ast$p\+\_\+transmit\+Data) large
+\begin{DoxyCompactList}\small\item\em Trsnsmit data. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___m_e_s_h_ga2278ffb735e0b5573ecd1f4c2389c8a6}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Get\+Local\+Node\+Info} (\hyperlink{struct_m_e_s_h___local_node}{M\+E\+S\+H\+\_\+\+Local\+Node} X\+D\+A\+TA $\ast$p\+\_\+local\+Node) large
+\begin{DoxyCompactList}\small\item\em Get node information. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u8 \hyperlink{group___m_e_s_h_ga688c1b66fe80d21701256883f49a1b3e}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Get\+Local\+Node\+States} (void) large
+\begin{DoxyCompactList}\small\item\em Get node status. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___m_e_s_h_gae5cd935db83243a92388ef0af806b5ff}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Device\+Provisioning\+By\+Adv} (u8 mesh\+Operator, u8 X\+D\+A\+TA $\ast$p\+\_\+device\+U\+U\+ID) large
+\begin{DoxyCompactList}\small\item\em Device provisioning by advertising. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___m_e_s_h_ga2439336713adfe6966c8399c46c600e6}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Device\+Provisioning\+By\+Gatt} (u8 mesh\+Operator, u8 X\+D\+A\+TA $\ast$p\+\_\+device\+U\+U\+ID) large
+\begin{DoxyCompactList}\small\item\em Device provisioning by gatt. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___m_e_s_h_gab97f486b46a9747e043eb69017cba54d}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Scanning} (u8 mesh\+Operator) large
+\begin{DoxyCompactList}\small\item\em Provisioner scans nearby unprovisioned device. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___m_e_s_h_ga031e766f9574e1ee0d5d0c5f3485ae2d}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Provisioning\+By\+Adv} (u8 mesh\+Operator, u8 X\+D\+A\+TA $\ast$p\+\_\+device\+U\+U\+ID, u16 device\+Address) large
+\begin{DoxyCompactList}\small\item\em Provisioner provisioning nearby unprovisioned device by advertising. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___m_e_s_h_ga245a1f1b088111323d717869dd8dfee9}{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Provisioning\+By\+Gatt} (u8 mesh\+Operator, \hyperlink{struct_b_l_e___g_a_p___addr}{B\+L\+E\+\_\+\+G\+A\+P\+\_\+\+Addr} X\+D\+A\+TA $\ast$p\+\_\+device\+Addr, u16 device\+Address) large
+\begin{DoxyCompactList}\small\item\em Provisioner provisioning nearby unprovisioned device by gatt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Definitions and prototypes for the M\+E\+SH application programming interface. 
+
+
+
+\subsubsection{Enumeration Type Documentation}
+\index{M\+E\+SH@{M\+E\+SH}!Mesh\+\_\+\+App\+\_\+\+Payload\+\_\+\+Type@{Mesh\+\_\+\+App\+\_\+\+Payload\+\_\+\+Type}}
+\index{Mesh\+\_\+\+App\+\_\+\+Payload\+\_\+\+Type@{Mesh\+\_\+\+App\+\_\+\+Payload\+\_\+\+Type}!M\+E\+SH@{M\+E\+SH}}
+\paragraph[{\texorpdfstring{Mesh\+\_\+\+App\+\_\+\+Payload\+\_\+\+Type}{Mesh_App_Payload_Type}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Mesh\+\_\+\+App\+\_\+\+Payload\+\_\+\+Type}}\hypertarget{group___m_e_s_h_ga0493e3955ac50fa886c012769544fe89}{}\label{group___m_e_s_h_ga0493e3955ac50fa886c012769544fe89}
+
+
+Application payload type. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+1@{A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+1}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+1@{A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+1}}\item[{\em 
+A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+1\hypertarget{group___m_e_s_h_gga0493e3955ac50fa886c012769544fe89a0c3413a282753c08fdf290e10407d991}{}\label{group___m_e_s_h_gga0493e3955ac50fa886c012769544fe89a0c3413a282753c08fdf290e10407d991}
+}]1-\/octet Opcode payload type \index{A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+2@{A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+2}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+2@{A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+2}}\item[{\em 
+A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+2\hypertarget{group___m_e_s_h_gga0493e3955ac50fa886c012769544fe89a92fbbbe7a45d88230a1a344304446598}{}\label{group___m_e_s_h_gga0493e3955ac50fa886c012769544fe89a92fbbbe7a45d88230a1a344304446598}
+}]2-\/octet Opcode payload type \index{A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+3@{A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+3}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+3@{A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+3}}\item[{\em 
+A\+P\+P\+\_\+\+P\+A\+Y\+L\+O\+A\+D\+\_\+\+T\+Y\+P\+E\+\_\+3\hypertarget{group___m_e_s_h_gga0493e3955ac50fa886c012769544fe89ab6ed48a7ff81c76ae976e4d1ada027fe}{}\label{group___m_e_s_h_gga0493e3955ac50fa886c012769544fe89ab6ed48a7ff81c76ae976e4d1ada027fe}
+}]3-\/octet Opcode payload type \end{description}
+\end{Desc}
+\index{M\+E\+SH@{M\+E\+SH}!Mesh\+\_\+\+Config\+\_\+\+ID@{Mesh\+\_\+\+Config\+\_\+\+ID}}
+\index{Mesh\+\_\+\+Config\+\_\+\+ID@{Mesh\+\_\+\+Config\+\_\+\+ID}!M\+E\+SH@{M\+E\+SH}}
+\paragraph[{\texorpdfstring{Mesh\+\_\+\+Config\+\_\+\+ID}{Mesh_Config_ID}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Mesh\+\_\+\+Config\+\_\+\+ID}}\hypertarget{group___m_e_s_h_ga86e1f14d530a66d2094810f666ce76f4}{}\label{group___m_e_s_h_ga86e1f14d530a66d2094810f666ce76f4}
+
+
+Mesh configuration ID. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+E\+T\+\_\+\+T\+O\+\_\+\+D\+E\+F\+A\+U\+LT@{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+E\+T\+\_\+\+T\+O\+\_\+\+D\+E\+F\+A\+U\+LT}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+E\+T\+\_\+\+T\+O\+\_\+\+D\+E\+F\+A\+U\+LT@{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+E\+T\+\_\+\+T\+O\+\_\+\+D\+E\+F\+A\+U\+LT}}\item[{\em 
+M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+E\+T\+\_\+\+T\+O\+\_\+\+D\+E\+F\+A\+U\+LT\hypertarget{group___m_e_s_h_gga86e1f14d530a66d2094810f666ce76f4a9a4f7687bacc481b129108a77872fe7e}{}\label{group___m_e_s_h_gga86e1f14d530a66d2094810f666ce76f4a9a4f7687bacc481b129108a77872fe7e}
+}]Reset node to default \index{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+I\+N\+ED@{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+I\+N\+ED}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+I\+N\+ED@{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+I\+N\+ED}}\item[{\em 
+M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+I\+N\+ED\hypertarget{group___m_e_s_h_gga86e1f14d530a66d2094810f666ce76f4ab57bd889b70f0aa51a3491b2ed9463db}{}\label{group___m_e_s_h_gga86e1f14d530a66d2094810f666ce76f4ab57bd889b70f0aa51a3491b2ed9463db}
+}]Configure node keys manually \index{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+A\+D\+V\+\_\+\+P\+A\+R\+A\+MS@{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+A\+D\+V\+\_\+\+P\+A\+R\+A\+MS}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+A\+D\+V\+\_\+\+P\+A\+R\+A\+MS@{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+A\+D\+V\+\_\+\+P\+A\+R\+A\+MS}}\item[{\em 
+M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+A\+D\+V\+\_\+\+P\+A\+R\+A\+MS\hypertarget{group___m_e_s_h_gga86e1f14d530a66d2094810f666ce76f4a813ab3683bfac9f130631454b9ec5b60}{}\label{group___m_e_s_h_gga86e1f14d530a66d2094810f666ce76f4a813ab3683bfac9f130631454b9ec5b60}
+}]Configure node advertising parameters \index{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+C\+A\+N\+\_\+\+P\+A\+R\+A\+MS@{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+C\+A\+N\+\_\+\+P\+A\+R\+A\+MS}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+C\+A\+N\+\_\+\+P\+A\+R\+A\+MS@{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+C\+A\+N\+\_\+\+P\+A\+R\+A\+MS}}\item[{\em 
+M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+C\+A\+N\+\_\+\+P\+A\+R\+A\+MS\hypertarget{group___m_e_s_h_gga86e1f14d530a66d2094810f666ce76f4af16c6c8a7784c6115fcdd9c96c0273e1}{}\label{group___m_e_s_h_gga86e1f14d530a66d2094810f666ce76f4af16c6c8a7784c6115fcdd9c96c0273e1}
+}]Configure node scan parameters \index{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+N\+O\+D\+E\+\_\+\+P\+A\+R\+A\+MS@{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+N\+O\+D\+E\+\_\+\+P\+A\+R\+A\+MS}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+N\+O\+D\+E\+\_\+\+P\+A\+R\+A\+MS@{M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+N\+O\+D\+E\+\_\+\+P\+A\+R\+A\+MS}}\item[{\em 
+M\+E\+S\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+N\+O\+D\+E\+\_\+\+P\+A\+R\+A\+MS\hypertarget{group___m_e_s_h_gga86e1f14d530a66d2094810f666ce76f4a9f11ef5e9f7ffa69ef21814e79529701}{}\label{group___m_e_s_h_gga86e1f14d530a66d2094810f666ce76f4a9f11ef5e9f7ffa69ef21814e79529701}
+}]Configure node parameters \end{description}
+\end{Desc}
+\index{M\+E\+SH@{M\+E\+SH}!Mesh\+\_\+\+Event\+\_\+\+ID@{Mesh\+\_\+\+Event\+\_\+\+ID}}
+\index{Mesh\+\_\+\+Event\+\_\+\+ID@{Mesh\+\_\+\+Event\+\_\+\+ID}!M\+E\+SH@{M\+E\+SH}}
+\paragraph[{\texorpdfstring{Mesh\+\_\+\+Event\+\_\+\+ID}{Mesh_Event_ID}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Mesh\+\_\+\+Event\+\_\+\+ID}}\hypertarget{group___m_e_s_h_gaa213f0dfb25460197ad32e6ab1921f66}{}\label{group___m_e_s_h_gaa213f0dfb25460197ad32e6ab1921f66}
+
+
+Mesh call back events. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+R\+C\+V\+\_\+\+D\+A\+TA@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+R\+C\+V\+\_\+\+D\+A\+TA}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+R\+C\+V\+\_\+\+D\+A\+TA@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+R\+C\+V\+\_\+\+D\+A\+TA}}\item[{\em 
+B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+R\+C\+V\+\_\+\+D\+A\+TA\hypertarget{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66a23f6607b7051c22d2021d6fda7102e13}{}\label{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66a23f6607b7051c22d2021d6fda7102e13}
+}]Mesh data was received, see \hyperlink{struct_m_e_s_h___e_v_t___rcv___data}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Rcv\+\_\+\+Data} \index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+N\+G\+\_\+\+C\+O\+M\+P\+L\+E\+TE@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+N\+G\+\_\+\+C\+O\+M\+P\+L\+E\+TE}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+N\+G\+\_\+\+C\+O\+M\+P\+L\+E\+TE@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+N\+G\+\_\+\+C\+O\+M\+P\+L\+E\+TE}}\item[{\em 
+B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+N\+G\+\_\+\+C\+O\+M\+P\+L\+E\+TE\hypertarget{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66ae52fee8eeea04bd28c836b1c61342e38}{}\label{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66ae52fee8eeea04bd28c836b1c61342e38}
+}]Provisioning procedure was complete, see \hyperlink{struct_m_e_s_h___e_v_t___provisioning_complete}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Provisioning\+Complete} \index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+N\+E\+W\+\_\+\+N\+O\+D\+ES@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+N\+E\+W\+\_\+\+N\+O\+D\+ES}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+N\+E\+W\+\_\+\+N\+O\+D\+ES@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+N\+E\+W\+\_\+\+N\+O\+D\+ES}}\item[{\em 
+B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+N\+E\+W\+\_\+\+N\+O\+D\+ES\hypertarget{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66af2c5e147c4320ea9dd5f744cd4d2a30f}{}\label{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66af2c5e147c4320ea9dd5f744cd4d2a30f}
+}]Unprovisioned device, see \hyperlink{struct_m_e_s_h___e_v_t___new___nodes}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+New\+\_\+\+Nodes} \index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+P\+U\+B\+L\+I\+C\+A\+T\+I\+ON@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+P\+U\+B\+L\+I\+C\+A\+T\+I\+ON}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+P\+U\+B\+L\+I\+C\+A\+T\+I\+ON@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+P\+U\+B\+L\+I\+C\+A\+T\+I\+ON}}\item[{\em 
+B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+P\+U\+B\+L\+I\+C\+A\+T\+I\+ON\hypertarget{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66a5237880c55f867838a8e36d93a6ecf18}{}\label{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66a5237880c55f867838a8e36d93a6ecf18}
+}]Public address was updated, see \hyperlink{struct_m_e_s_h___e_v_t___update___publication}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Update\+\_\+\+Publication} \index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+S\+U\+B\+S\+C\+R\+I\+P\+T\+I\+ON@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+S\+U\+B\+S\+C\+R\+I\+P\+T\+I\+ON}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+S\+U\+B\+S\+C\+R\+I\+P\+T\+I\+ON@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+S\+U\+B\+S\+C\+R\+I\+P\+T\+I\+ON}}\item[{\em 
+B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+S\+U\+B\+S\+C\+R\+I\+P\+T\+I\+ON\hypertarget{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66ace2765fa89e3589acab24bbf246b4a0c}{}\label{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66ace2765fa89e3589acab24bbf246b4a0c}
+}]Subscription list was updated, see \hyperlink{struct_m_e_s_h___e_v_t___update___subscription}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Update\+\_\+\+Subscription} \index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+TL@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+TL}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+TL@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+TL}}\item[{\em 
+B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+TL\hypertarget{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66a7163370ca14a1b2deb17227d2d7f4b4f}{}\label{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66a7163370ca14a1b2deb17227d2d7f4b4f}
+}]Default T\+TL was updated, see \hyperlink{struct_m_e_s_h___e_v_t___update___default___t_t_l}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Update\+\_\+\+Default\+\_\+\+T\+TL} \index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+R\+E\+L\+A\+Y\+\_\+\+S\+T\+A\+TE@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+R\+E\+L\+A\+Y\+\_\+\+S\+T\+A\+TE}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+R\+E\+L\+A\+Y\+\_\+\+S\+T\+A\+TE@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+R\+E\+L\+A\+Y\+\_\+\+S\+T\+A\+TE}}\item[{\em 
+B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+R\+E\+L\+A\+Y\+\_\+\+S\+T\+A\+TE\hypertarget{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66a6c6604ad8f69f6819d39930e6b869d1a}{}\label{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66a6c6604ad8f69f6819d39930e6b869d1a}
+}]Relay state was updated, see \hyperlink{struct_m_e_s_h___e_v_t___update___relay}{M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+Update\+\_\+\+Relay} \index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+N\+O\+D\+E\+\_\+\+R\+E\+S\+ET@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+N\+O\+D\+E\+\_\+\+R\+E\+S\+ET}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+N\+O\+D\+E\+\_\+\+R\+E\+S\+ET@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+N\+O\+D\+E\+\_\+\+R\+E\+S\+ET}}\item[{\em 
+B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+E\+V\+T\+\_\+\+N\+O\+D\+E\+\_\+\+R\+E\+S\+ET\hypertarget{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66a3fbca500171093af15ba65cf9fd82ef7}{}\label{group___m_e_s_h_ggaa213f0dfb25460197ad32e6ab1921f66a3fbca500171093af15ba65cf9fd82ef7}
+}]Node reset to default \end{description}
+\end{Desc}
+\index{M\+E\+SH@{M\+E\+SH}!Mesh\+\_\+\+Node\+\_\+\+States\+\_\+\+Type@{Mesh\+\_\+\+Node\+\_\+\+States\+\_\+\+Type}}
+\index{Mesh\+\_\+\+Node\+\_\+\+States\+\_\+\+Type@{Mesh\+\_\+\+Node\+\_\+\+States\+\_\+\+Type}!M\+E\+SH@{M\+E\+SH}}
+\paragraph[{\texorpdfstring{Mesh\+\_\+\+Node\+\_\+\+States\+\_\+\+Type}{Mesh_Node_States_Type}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Mesh\+\_\+\+Node\+\_\+\+States\+\_\+\+Type}}\hypertarget{group___m_e_s_h_ga5714e7338d1ee21a5ba37747370c6486}{}\label{group___m_e_s_h_ga5714e7338d1ee21a5ba37747370c6486}
+
+
+Mesh Node States Type. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+N\+P\+R\+O\+V\+I\+S\+I\+O\+I\+N\+ED@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+N\+P\+R\+O\+V\+I\+S\+I\+O\+I\+N\+ED}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+N\+P\+R\+O\+V\+I\+S\+I\+O\+I\+N\+ED@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+N\+P\+R\+O\+V\+I\+S\+I\+O\+I\+N\+ED}}\item[{\em 
+B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+N\+P\+R\+O\+V\+I\+S\+I\+O\+I\+N\+ED\hypertarget{group___m_e_s_h_gga5714e7338d1ee21a5ba37747370c6486a774dcbfbb304f7603ca5c9d2d369130c}{}\label{group___m_e_s_h_gga5714e7338d1ee21a5ba37747370c6486a774dcbfbb304f7603ca5c9d2d369130c}
+}]Mesh Node is Unprovisioned \index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+NG@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+NG}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+NG@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+NG}}\item[{\em 
+B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+NG\hypertarget{group___m_e_s_h_gga5714e7338d1ee21a5ba37747370c6486a98b2162768c4b79087791203df11d0ea}{}\label{group___m_e_s_h_gga5714e7338d1ee21a5ba37747370c6486a98b2162768c4b79087791203df11d0ea}
+}]Mesh Node is Provisioning \index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+AL@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+AL}!M\+E\+SH@{M\+E\+SH}}\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+AL@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+AL}}\item[{\em 
+B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+AL\hypertarget{group___m_e_s_h_gga5714e7338d1ee21a5ba37747370c6486ae27a10c63fc4cf149f37a5b79c8ef4fd}{}\label{group___m_e_s_h_gga5714e7338d1ee21a5ba37747370c6486ae27a10c63fc4cf149f37a5b79c8ef4fd}
+}]Mesh Node is Operational \end{description}
+\end{Desc}
+
+
+\subsubsection{Function Documentation}
+\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Config@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Config}}
+\index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Config@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Config}!M\+E\+SH@{M\+E\+SH}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Config(u8 option, M\+E\+S\+H\+\_\+\+Conf\+Paras X\+D\+A\+T\+A $\ast$p\+\_\+conf\+Paras) large}{BLE_MESH_Config(u8 option, MESH_ConfParas XDATA *p_confParas) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Config (
+\begin{DoxyParamCaption}
+\item[{u8}]{option, }
+\item[{{\bf M\+E\+S\+H\+\_\+\+Conf\+Paras} X\+D\+A\+TA $\ast$}]{p\+\_\+conf\+Paras}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_e_s_h_gaf278aaac14b896993d1a05079427a4d5}{}\label{group___m_e_s_h_gaf278aaac14b896993d1a05079427a4d5}
+
+
+Cofigure node parameters. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em option} & Configure id, See \hyperlink{group___m_e_s_h_ga86e1f14d530a66d2094810f666ce76f4}{Mesh\+\_\+\+Config\+\_\+\+ID} \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+conf\+Paras} & Pointer to \hyperlink{union_m_e_s_h___conf_paras}{M\+E\+S\+H\+\_\+\+Conf\+Paras} structure\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully configure node. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Unspecific error. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Device\+Provisioning\+By\+Adv@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Device\+Provisioning\+By\+Adv}}
+\index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Device\+Provisioning\+By\+Adv@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Device\+Provisioning\+By\+Adv}!M\+E\+SH@{M\+E\+SH}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Device\+Provisioning\+By\+Adv(u8 mesh\+Operator, u8 X\+D\+A\+T\+A $\ast$p\+\_\+device\+U\+U\+I\+D) large}{BLE_MESH_DeviceProvisioningByAdv(u8 meshOperator, u8 XDATA *p_deviceUUID) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Device\+Provisioning\+By\+Adv (
+\begin{DoxyParamCaption}
+\item[{u8}]{mesh\+Operator, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+device\+U\+U\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_e_s_h_gae5cd935db83243a92388ef0af806b5ff}{}\label{group___m_e_s_h_gae5cd935db83243a92388ef0af806b5ff}
+
+
+Device provisioning by advertising. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mesh\+Operator} & Provisioning operator, see \hyperlink{group___m_e_s_h___p_r_o_v_i_s_i_o_n_i_n_g___o_p_e_r_a_t_o_r___d_e_f}{M\+E\+S\+H\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+N\+G\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+D\+EF} \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+device\+U\+U\+ID} & Pointer to device uuid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Device wait for provisioning. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Unspecific error. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Device\+Provisioning\+By\+Gatt@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Device\+Provisioning\+By\+Gatt}}
+\index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Device\+Provisioning\+By\+Gatt@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Device\+Provisioning\+By\+Gatt}!M\+E\+SH@{M\+E\+SH}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Device\+Provisioning\+By\+Gatt(u8 mesh\+Operator, u8 X\+D\+A\+T\+A $\ast$p\+\_\+device\+U\+U\+I\+D) large}{BLE_MESH_DeviceProvisioningByGatt(u8 meshOperator, u8 XDATA *p_deviceUUID) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Device\+Provisioning\+By\+Gatt (
+\begin{DoxyParamCaption}
+\item[{u8}]{mesh\+Operator, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+device\+U\+U\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_e_s_h_ga2439336713adfe6966c8399c46c600e6}{}\label{group___m_e_s_h_ga2439336713adfe6966c8399c46c600e6}
+
+
+Device provisioning by gatt. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mesh\+Operator} & Provisioning operator, see \hyperlink{group___m_e_s_h___p_r_o_v_i_s_i_o_n_i_n_g___o_p_e_r_a_t_o_r___d_e_f}{M\+E\+S\+H\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+N\+G\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+D\+EF} \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+device\+U\+U\+ID} & Pointer to device uuid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Device wait for provisioning. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Unspecific error. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Get\+Local\+Node\+Info@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Get\+Local\+Node\+Info}}
+\index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Get\+Local\+Node\+Info@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Get\+Local\+Node\+Info}!M\+E\+SH@{M\+E\+SH}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Get\+Local\+Node\+Info(\+M\+E\+S\+H\+\_\+\+Local\+Node X\+D\+A\+T\+A $\ast$p\+\_\+local\+Node) large}{BLE_MESH_GetLocalNodeInfo(MESH_LocalNode XDATA *p_localNode) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Get\+Local\+Node\+Info (
+\begin{DoxyParamCaption}
+\item[{{\bf M\+E\+S\+H\+\_\+\+Local\+Node} X\+D\+A\+TA $\ast$}]{p\+\_\+local\+Node}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_e_s_h_ga2278ffb735e0b5573ecd1f4c2389c8a6}{}\label{group___m_e_s_h_ga2278ffb735e0b5573ecd1f4c2389c8a6}
+
+
+Get node information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+local\+Node} & Pointer to \hyperlink{struct_m_e_s_h___local_node}{M\+E\+S\+H\+\_\+\+Local\+Node} structure \\
+\hline
+\end{DoxyParams}
+\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Get\+Local\+Node\+States@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Get\+Local\+Node\+States}}
+\index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Get\+Local\+Node\+States@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Get\+Local\+Node\+States}!M\+E\+SH@{M\+E\+SH}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Get\+Local\+Node\+States(void) large}{BLE_MESH_GetLocalNodeStates(void) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u8 B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Get\+Local\+Node\+States (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_e_s_h_ga688c1b66fe80d21701256883f49a1b3e}{}\label{group___m_e_s_h_ga688c1b66fe80d21701256883f49a1b3e}
+
+
+Get node status. 
+
+\begin{DoxyReturn}{Returns}
+B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+N\+P\+R\+O\+V\+I\+S\+I\+O\+I\+N\+ED Node is under unprovisioned state. 
+
+B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+NG Node is under provisioning state. 
+
+B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+R\+A\+T\+I\+O\+N\+AL Node is under operational state. 
+\end{DoxyReturn}
+\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Init@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Init}}
+\index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Init@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Init}!M\+E\+SH@{M\+E\+SH}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Init(\+M\+E\+S\+H\+Process\+Routine mesh\+Handler) large}{BLE_MESH_Init(MESHProcessRoutine meshHandler) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf M\+E\+S\+H\+Process\+Routine}}]{mesh\+Handler}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_e_s_h_gaa4778cac2288723cda53693b176a64ea}{}\label{group___m_e_s_h_gaa4778cac2288723cda53693b176a64ea}
+
+
+Initialize Mesh module. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mesh\+Handler} & M\+B\+IoT callback function for Mesh events. \\
+\hline
+\end{DoxyParams}
+\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Provisioning\+By\+Adv@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Provisioning\+By\+Adv}}
+\index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Provisioning\+By\+Adv@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Provisioning\+By\+Adv}!M\+E\+SH@{M\+E\+SH}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Provisioning\+By\+Adv(u8 mesh\+Operator, u8 X\+D\+A\+T\+A $\ast$p\+\_\+device\+U\+U\+I\+D, u16 device\+Address) large}{BLE_MESH_ProvisionerProvisioningByAdv(u8 meshOperator, u8 XDATA *p_deviceUUID, u16 deviceAddress) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Provisioning\+By\+Adv (
+\begin{DoxyParamCaption}
+\item[{u8}]{mesh\+Operator, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+device\+U\+U\+ID, }
+\item[{u16}]{device\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_e_s_h_ga031e766f9574e1ee0d5d0c5f3485ae2d}{}\label{group___m_e_s_h_ga031e766f9574e1ee0d5d0c5f3485ae2d}
+
+
+Provisioner provisioning nearby unprovisioned device by advertising. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mesh\+Operator} & Provisioning operator, see \hyperlink{group___m_e_s_h___p_r_o_v_i_s_i_o_n_i_n_g___o_p_e_r_a_t_o_r___d_e_f}{M\+E\+S\+H\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+N\+G\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+D\+EF} \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+device\+U\+U\+ID} & Pointer to device uuid \\
+\hline
+\mbox{\tt in}  & {\em device\+Address} & Assigned device address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Provisioner starts to provision nearby unprovisioned device. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Unspecific error. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Provisioning\+By\+Gatt@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Provisioning\+By\+Gatt}}
+\index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Provisioning\+By\+Gatt@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Provisioning\+By\+Gatt}!M\+E\+SH@{M\+E\+SH}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Provisioning\+By\+Gatt(u8 mesh\+Operator, B\+L\+E\+\_\+\+G\+A\+P\+\_\+\+Addr X\+D\+A\+T\+A $\ast$p\+\_\+device\+Addr, u16 device\+Address) large}{BLE_MESH_ProvisionerProvisioningByGatt(u8 meshOperator, BLE_GAP_Addr XDATA *p_deviceAddr, u16 deviceAddress) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Provisioning\+By\+Gatt (
+\begin{DoxyParamCaption}
+\item[{u8}]{mesh\+Operator, }
+\item[{{\bf B\+L\+E\+\_\+\+G\+A\+P\+\_\+\+Addr} X\+D\+A\+TA $\ast$}]{p\+\_\+device\+Addr, }
+\item[{u16}]{device\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_e_s_h_ga245a1f1b088111323d717869dd8dfee9}{}\label{group___m_e_s_h_ga245a1f1b088111323d717869dd8dfee9}
+
+
+Provisioner provisioning nearby unprovisioned device by gatt. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mesh\+Operator} & Provisioning operator, see \hyperlink{group___m_e_s_h___p_r_o_v_i_s_i_o_n_i_n_g___o_p_e_r_a_t_o_r___d_e_f}{M\+E\+S\+H\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+N\+G\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+D\+EF} \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+device\+U\+U\+ID} & Pointer to \hyperlink{struct_b_l_e___g_a_p___addr}{B\+L\+E\+\_\+\+G\+A\+P\+\_\+\+Addr} structure \\
+\hline
+\mbox{\tt in}  & {\em device\+Address} & Assigned device address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Provisioner starts to provision nearby unprovisioned device. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Unspecific error. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Scanning@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Scanning}}
+\index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Scanning@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Scanning}!M\+E\+SH@{M\+E\+SH}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Scanning(u8 mesh\+Operator) large}{BLE_MESH_ProvisionerScanning(u8 meshOperator) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Provisioner\+Scanning (
+\begin{DoxyParamCaption}
+\item[{u8}]{mesh\+Operator}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_e_s_h_gab97f486b46a9747e043eb69017cba54d}{}\label{group___m_e_s_h_gab97f486b46a9747e043eb69017cba54d}
+
+
+Provisioner scans nearby unprovisioned device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mesh\+Operator} & Provisioning operator, see \hyperlink{group___m_e_s_h___p_r_o_v_i_s_i_o_n_i_n_g___o_p_e_r_a_t_o_r___d_e_f}{M\+E\+S\+H\+\_\+\+P\+R\+O\+V\+I\+S\+I\+O\+N\+I\+N\+G\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+D\+EF}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Provisioner starts to scan nearby unprovisioned device. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Unspecific error. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Start@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Start}}
+\index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Start@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Start}!M\+E\+SH@{M\+E\+SH}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Start() large}{BLE_MESH_Start() large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_e_s_h_ga3af7a85eb552a1f32ac89a9b21c6fd50}{}\label{group___m_e_s_h_ga3af7a85eb552a1f32ac89a9b21c6fd50}
+
+
+Start Mesh scheme. 
+
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully start advertising. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Unspecific error. 
+\end{DoxyReturn}
+\index{M\+E\+SH@{M\+E\+SH}!B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Transmit\+Data@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Transmit\+Data}}
+\index{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Transmit\+Data@{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Transmit\+Data}!M\+E\+SH@{M\+E\+SH}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Transmit\+Data(u16 component\+Address, M\+E\+S\+H\+\_\+\+Transmit\+\_\+\+Data X\+D\+A\+T\+A $\ast$p\+\_\+transmit\+Data) large}{BLE_MESH_TransmitData(u16 componentAddress, MESH_Transmit_Data XDATA *p_transmitData) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+M\+E\+S\+H\+\_\+\+Transmit\+Data (
+\begin{DoxyParamCaption}
+\item[{u16}]{component\+Address, }
+\item[{{\bf M\+E\+S\+H\+\_\+\+Transmit\+\_\+\+Data} X\+D\+A\+TA $\ast$}]{p\+\_\+transmit\+Data}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_e_s_h_ga029b8285c958214732fdf1134e44abf6}{}\label{group___m_e_s_h_ga029b8285c958214732fdf1134e44abf6}
+
+
+Trsnsmit data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em component\+Address} & Component address \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+transmit\+Data} & Pointer to \hyperlink{struct_m_e_s_h___transmit___data}{M\+E\+S\+H\+\_\+\+Transmit\+\_\+\+Data} structure\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully configure node. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Unspecific error. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}

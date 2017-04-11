@@ -1,0 +1,201 @@
+\hypertarget{group___a_d_c}{}\subsection{A\+DC}
+\label{group___a_d_c}\index{A\+DC@{A\+DC}}
+
+
+Definitions and prototypes for the A\+DC (Analog-\/to-\/\+Digital Converter) application programming interface.  
+
+
+\subsubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___a_d_c___c_h_a_n_n_e_l___d_e_f}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+D\+EF}
+\begin{DoxyCompactList}\small\item\em Definition of A\+DC channel bus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___a_d_c_gae2979f990d12a677030fc13a4079cbc5}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+N\+UM} \{ \\*
+\hyperlink{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a128a6aef9e871beb488880dc1e5ed436}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L0} = 0, 
+\hyperlink{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5aa46518d4da91e4b82d8c539f32815a2b}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L1}, 
+\hyperlink{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a2ec5fc9ecdcbf1640cf21049def8178e}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L2}, 
+\hyperlink{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a5c649a124982b6b84875cd65daccc327}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L3}, 
+\\*
+\hyperlink{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a3bf51266b88bccef1a713c9d1c72f530}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L4}, 
+\hyperlink{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5ab83570928e47aa1743a838e81098b06b}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L5}, 
+\hyperlink{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a68b88bd4bf8be9e7a10554a5e5791078}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L6}, 
+\hyperlink{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5ac3498f6f14d6945a857c0f06fda48a65}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L7}, 
+\\*
+\hyperlink{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a293cf0aecb8674d1cd224977b3d57146}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L8}, 
+\hyperlink{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a73c4d7a532bebf7c3454afccf92103e9}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L9}, 
+\hyperlink{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a1db408d323eea204bb7cb393ca00422f}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L10}, 
+\hyperlink{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a5f0decba8b735365b7baae021d7889b2}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L11}, 
+\\*
+\hyperlink{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a527bf2b6e04a8d35d831364a37502775}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L12}, 
+\hyperlink{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a36150a35b3c40bfd3e113b0884d46874}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L13}, 
+\hyperlink{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a543a909ff6a2eb0384cc69723fbb2e80}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L14}, 
+\hyperlink{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5abaf0106e0f0fe496b311592a9d524098}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L15}
+ \}\begin{DoxyCompactList}\small\item\em Definition of A\+DC channel number. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC void \hyperlink{group___a_d_c_ga4949f13c3c7385d680d592fc0ad2ec43}{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Init} (u16 channel) large
+\begin{DoxyCompactList}\small\item\em Initialize A\+DC channel(s). \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___a_d_c_ga836d5c302b3543589dadb9b6503fa6ed}{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Close} (void) large\hypertarget{group___a_d_c_ga836d5c302b3543589dadb9b6503fa6ed}{}\label{group___a_d_c_ga836d5c302b3543589dadb9b6503fa6ed}
+
+\begin{DoxyCompactList}\small\item\em Free all A\+DC channel bus, all occupied G\+P\+I\+Os return to digital input with internal pull high. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___a_d_c_ga45d7a98dad9d4a719ac3a795679740d0}{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Value} (u8 channel, u16 X\+D\+A\+TA $\ast$p\+\_\+read\+Value) large
+\begin{DoxyCompactList}\small\item\em Get current A\+DC value(12 bits resolution, and 10 bits E\+N\+O\+B) of specified A\+DC channel. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___a_d_c_ga05987c2a1b9a75cb72bdce39cd53f156}{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Battery} (u8 X\+D\+A\+TA $\ast$p\+\_\+read\+Value) large
+\begin{DoxyCompactList}\small\item\em Get battery voltage of Vbat channel. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___a_d_c_gad1b95f19eda6b7fb908ca297b288931f}{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Calibration\+Value} (u8 X\+D\+A\+TA $\ast$p\+\_\+v18\+Sar\+Value, u8 X\+D\+A\+TA $\ast$p\+\_\+v36\+Sar\+Value) large
+\begin{DoxyCompactList}\small\item\em Get Reference Calibration Value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Definitions and prototypes for the A\+DC (Analog-\/to-\/\+Digital Converter) application programming interface. 
+
+
+
+\subsubsection{Enumeration Type Documentation}
+\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+N\+UM@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+N\+UM}}
+\index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+N\+UM@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+N\+UM}!A\+DC@{A\+DC}}
+\paragraph[{\texorpdfstring{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+N\+UM}{ADC_CHANNEL_NUM}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+N\+UM}}\hypertarget{group___a_d_c_gae2979f990d12a677030fc13a4079cbc5}{}\label{group___a_d_c_gae2979f990d12a677030fc13a4079cbc5}
+
+
+Definition of A\+DC channel number. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L0@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L0}!A\+DC@{A\+DC}}\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L0@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L0}}\item[{\em 
+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L0\hypertarget{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a128a6aef9e871beb488880dc1e5ed436}{}\label{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a128a6aef9e871beb488880dc1e5ed436}
+}]A\+DC Channel 0. The pin is P00. \index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L1@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L1}!A\+DC@{A\+DC}}\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L1@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L1}}\item[{\em 
+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L1\hypertarget{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5aa46518d4da91e4b82d8c539f32815a2b}{}\label{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5aa46518d4da91e4b82d8c539f32815a2b}
+}]A\+DC Channel 1. The pin is P01. \index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L2@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L2}!A\+DC@{A\+DC}}\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L2@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L2}}\item[{\em 
+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L2\hypertarget{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a2ec5fc9ecdcbf1640cf21049def8178e}{}\label{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a2ec5fc9ecdcbf1640cf21049def8178e}
+}]A\+DC Channel 2. The pin is P02. \index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L3@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L3}!A\+DC@{A\+DC}}\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L3@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L3}}\item[{\em 
+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L3\hypertarget{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a5c649a124982b6b84875cd65daccc327}{}\label{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a5c649a124982b6b84875cd65daccc327}
+}]A\+DC Channel 3. The pin is P03. \index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L4@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L4}!A\+DC@{A\+DC}}\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L4@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L4}}\item[{\em 
+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L4\hypertarget{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a3bf51266b88bccef1a713c9d1c72f530}{}\label{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a3bf51266b88bccef1a713c9d1c72f530}
+}]A\+DC Channel 4. The pin is P04. \index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L5@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L5}!A\+DC@{A\+DC}}\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L5@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L5}}\item[{\em 
+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L5\hypertarget{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5ab83570928e47aa1743a838e81098b06b}{}\label{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5ab83570928e47aa1743a838e81098b06b}
+}]A\+DC Channel 5. The pin is P05. \index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L6@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L6}!A\+DC@{A\+DC}}\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L6@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L6}}\item[{\em 
+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L6\hypertarget{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a68b88bd4bf8be9e7a10554a5e5791078}{}\label{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a68b88bd4bf8be9e7a10554a5e5791078}
+}]A\+DC Channel 6. The pin is P06. \index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L7@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L7}!A\+DC@{A\+DC}}\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L7@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L7}}\item[{\em 
+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L7\hypertarget{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5ac3498f6f14d6945a857c0f06fda48a65}{}\label{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5ac3498f6f14d6945a857c0f06fda48a65}
+}]A\+DC Channel 7. The pin is P07. \index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L8@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L8}!A\+DC@{A\+DC}}\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L8@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L8}}\item[{\em 
+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L8\hypertarget{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a293cf0aecb8674d1cd224977b3d57146}{}\label{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a293cf0aecb8674d1cd224977b3d57146}
+}]A\+DC Channel 8. The pin is P10. \index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L9@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L9}!A\+DC@{A\+DC}}\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L9@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L9}}\item[{\em 
+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L9\hypertarget{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a73c4d7a532bebf7c3454afccf92103e9}{}\label{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a73c4d7a532bebf7c3454afccf92103e9}
+}]A\+DC Channel 9. The pin is P11. \index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L10@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L10}!A\+DC@{A\+DC}}\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L10@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L10}}\item[{\em 
+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L10\hypertarget{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a1db408d323eea204bb7cb393ca00422f}{}\label{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a1db408d323eea204bb7cb393ca00422f}
+}]A\+DC Channel 10. The pin is P12. \index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L11@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L11}!A\+DC@{A\+DC}}\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L11@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L11}}\item[{\em 
+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L11\hypertarget{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a5f0decba8b735365b7baae021d7889b2}{}\label{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a5f0decba8b735365b7baae021d7889b2}
+}]A\+DC Channel 11. The pin is P13. \index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L12@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L12}!A\+DC@{A\+DC}}\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L12@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L12}}\item[{\em 
+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L12\hypertarget{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a527bf2b6e04a8d35d831364a37502775}{}\label{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a527bf2b6e04a8d35d831364a37502775}
+}]A\+DC Channel 12. The pin is P14. \index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L13@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L13}!A\+DC@{A\+DC}}\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L13@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L13}}\item[{\em 
+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L13\hypertarget{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a36150a35b3c40bfd3e113b0884d46874}{}\label{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a36150a35b3c40bfd3e113b0884d46874}
+}]A\+DC Channel 13. The pin is P15. \index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L14@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L14}!A\+DC@{A\+DC}}\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L14@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L14}}\item[{\em 
+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L14\hypertarget{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a543a909ff6a2eb0384cc69723fbb2e80}{}\label{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5a543a909ff6a2eb0384cc69723fbb2e80}
+}]A\+DC Channel 14. The pin is P25. \index{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L15@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L15}!A\+DC@{A\+DC}}\index{A\+DC@{A\+DC}!A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L15@{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L15}}\item[{\em 
+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L15\hypertarget{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5abaf0106e0f0fe496b311592a9d524098}{}\label{group___a_d_c_ggae2979f990d12a677030fc13a4079cbc5abaf0106e0f0fe496b311592a9d524098}
+}]A\+DC Channel 15. The pin is P27. \end{description}
+\end{Desc}
+
+
+\subsubsection{Function Documentation}
+\index{A\+DC@{A\+DC}!A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Battery@{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Battery}}
+\index{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Battery@{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Battery}!A\+DC@{A\+DC}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Battery(u8 X\+D\+A\+T\+A $\ast$p\+\_\+read\+Value) large}{APP_ADC_GetBattery(u8 XDATA *p_readValue) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Battery (
+\begin{DoxyParamCaption}
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+read\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{group___a_d_c_ga05987c2a1b9a75cb72bdce39cd53f156}{}\label{group___a_d_c_ga05987c2a1b9a75cb72bdce39cd53f156}
+
+
+Get battery voltage of Vbat channel. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em p\+\_\+read\+Value} & Pointer to value got via B\+AT. (Unit\+: 0.\+025 voltage) \\
+\hline
+\end{DoxyParams}
+\index{A\+DC@{A\+DC}!A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Calibration\+Value@{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Calibration\+Value}}
+\index{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Calibration\+Value@{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Calibration\+Value}!A\+DC@{A\+DC}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Calibration\+Value(u8 X\+D\+A\+T\+A $\ast$p\+\_\+v18\+Sar\+Value, u8 X\+D\+A\+T\+A $\ast$p\+\_\+v36\+Sar\+Value) large}{APP_ADC_GetCalibrationValue(u8 XDATA *p_v18SarValue, u8 XDATA *p_v36SarValue) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Calibration\+Value (
+\begin{DoxyParamCaption}
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+v18\+Sar\+Value, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+v36\+Sar\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{group___a_d_c_gad1b95f19eda6b7fb908ca297b288931f}{}\label{group___a_d_c_gad1b95f19eda6b7fb908ca297b288931f}
+
+
+Get Reference Calibration Value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em p\+\_\+v18\+Sar\+Value} & Pointer to value got Reference S\+AR Value of 1.\+8 voltage. \\
+\hline
+\mbox{\tt out}  & {\em p\+\_\+v36\+Sar\+Value} & Pointer to value got Reference S\+AR Value of 3.\+6 voltage.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Exampe\+:~\newline
+ Get Reference Calibration Value.~\newline
+ X\+D\+A\+TA u16 v18,v36;~\newline
+ A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Calibration\+Value((u8 X\+D\+A\+TA $\ast$)\&v18, (u8 X\+D\+A\+TA $\ast$)\&v36);~\newline
+
+\end{DoxyNote}
+\index{A\+DC@{A\+DC}!A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Value@{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Value}}
+\index{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Value@{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Value}!A\+DC@{A\+DC}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Value(u8 channel, u16 X\+D\+A\+T\+A $\ast$p\+\_\+read\+Value) large}{APP_ADC_GetValue(u8 channel, u16 XDATA *p_readValue) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Value (
+\begin{DoxyParamCaption}
+\item[{u8}]{channel, }
+\item[{u16 X\+D\+A\+TA $\ast$}]{p\+\_\+read\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{group___a_d_c_ga45d7a98dad9d4a719ac3a795679740d0}{}\label{group___a_d_c_ga45d7a98dad9d4a719ac3a795679740d0}
+
+
+Get current A\+DC value(12 bits resolution, and 10 bits E\+N\+O\+B) of specified A\+DC channel. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em channel} & Specify which A\+DC channel needs to be readed, see \hyperlink{group___a_d_c_gae2979f990d12a677030fc13a4079cbc5}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+N\+UM}. \\
+\hline
+\mbox{\tt out}  & {\em p\+\_\+read\+Value} & Pointer to the value got via specified channel.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully get a value from specified A\+DC channel. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Exampe\+:~\newline
+ Get A\+DC value via channel 1.~\newline
+ X\+D\+A\+TA u16 read;~\newline
+ A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Get\+Value(\+A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L1, \&read);~\newline
+
+\end{DoxyNote}
+\index{A\+DC@{A\+DC}!A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Init@{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Init}}
+\index{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Init@{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Init}!A\+DC@{A\+DC}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Init(u16 channel) large}{APP_ADC_Init(u16 channel) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{u16}]{channel}
+\end{DoxyParamCaption}
+)}\hypertarget{group___a_d_c_ga4949f13c3c7385d680d592fc0ad2ec43}{}\label{group___a_d_c_ga4949f13c3c7385d680d592fc0ad2ec43}
+
+
+Initialize A\+DC channel(s). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em channel} & Specify which channel(s) will be used, see \hyperlink{group___a_d_c___c_h_a_n_n_e_l___d_e_f}{A\+D\+C\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+D\+EF}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Example\+:~\newline
+ Initialize A\+DC Channe1 and Channel 13.~\newline
+ A\+P\+P\+\_\+\+A\+D\+C\+\_\+\+Init((A\+D\+C\+\_\+\+C\+H1\+\_\+\+B\+I\+T$\vert$\+A\+D\+C\+\_\+\+C\+H13\+\_\+\+B\+IT));~\newline
+
+\end{DoxyNote}

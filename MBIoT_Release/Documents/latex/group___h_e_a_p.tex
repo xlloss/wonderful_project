@@ -1,0 +1,128 @@
+\hypertarget{group___h_e_a_p}{}\subsection{Heap}
+\label{group___h_e_a_p}\index{Heap@{Heap}}
+
+
+Definitions and prototypes for the Heap application programming interface.  
+
+
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_p_p___h_e_a_p___s_t_r_u_c_t}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+S\+T\+R\+U\+CT}
+\begin{DoxyCompactList}\small\item\em The structure of A\+PP H\+E\+AP. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___h_e_a_p_gab940ae4a9a888cb4b29cdac91e969100}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}~(32)
+\begin{DoxyCompactList}\small\item\em Definition of Memory module. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___h_e_a_p_gab97877e7b2af2f27dcec19233cd2d7d3}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+FT}~(5)
+\item 
+\#define \hyperlink{group___h_e_a_p_ga050b0012d8038c0c9b5b8cfe5af842b4}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+F\+T\+\_\+\+M\+A\+SK}~(\hyperlink{group___h_e_a_p_gab940ae4a9a888cb4b29cdac91e969100}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}-\/1)
+\item 
+\#define \hyperlink{group___h_e_a_p_ga16afa60a5d847e39bd31115ba7009b34}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+N\+U\+M\+B\+ER}~(A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+ZE/\hyperlink{group___h_e_a_p_gab940ae4a9a888cb4b29cdac91e969100}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE})
+\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef u8 \hyperlink{group___h_e_a_p_gac92ab72831cd0fc218a7529be207c778}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+I\+N\+D\+EX}
+\item 
+typedef u8 \hyperlink{group___h_e_a_p_ga2b37dbe3b78e682f59bb6d1aeb58f508}{A\+P\+P\+\_\+\+A\+L\+L\+O\+C\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+Y\+PE}
+\item 
+typedef u8 X\+D\+A\+TA $\ast$ \hyperlink{group___h_e_a_p_gac8090ae7433e9fda501dd91e26c7f66e}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+P\+O\+I\+N\+T\+\_\+\+T\+Y\+PE}
+\item 
+typedef struct \hyperlink{struct_a_p_p___h_e_a_p___s_t_r_u_c_t}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+S\+T\+R\+U\+CT} \hyperlink{group___h_e_a_p_gab1b2f6211e41b3cfd2b3a270afa198f1}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+S\+T\+R\+U\+CT}\hypertarget{group___h_e_a_p_gab1b2f6211e41b3cfd2b3a270afa198f1}{}\label{group___h_e_a_p_gab1b2f6211e41b3cfd2b3a270afa198f1}
+
+\begin{DoxyCompactList}\small\item\em The structure of A\+PP H\+E\+AP. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC void \hyperlink{group___h_e_a_p_ga9c0ed7b5b0e4b2a0d21e80d861ced5f6}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Init} (void) large\hypertarget{group___h_e_a_p_ga9c0ed7b5b0e4b2a0d21e80d861ced5f6}{}\label{group___h_e_a_p_ga9c0ed7b5b0e4b2a0d21e80d861ced5f6}
+
+\begin{DoxyCompactList}\small\item\em Initialize A\+PP heap list. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC \hyperlink{group___h_e_a_p_gac8090ae7433e9fda501dd91e26c7f66e}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+P\+O\+I\+N\+T\+\_\+\+T\+Y\+PE} \hyperlink{group___h_e_a_p_ga741c668643d6a13d719e5a3212c05857}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Alloc} (u16 size)
+\begin{DoxyCompactList}\small\item\em Alloc the request memory. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___h_e_a_p_ga2b419c19b01e26ed329a24ff5854cb18}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Free} (\hyperlink{group___h_e_a_p_gac8090ae7433e9fda501dd91e26c7f66e}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+P\+O\+I\+N\+T\+\_\+\+T\+Y\+PE} p\+\_\+heap) large
+\begin{DoxyCompactList}\small\item\em Deallocates the memory previously allocated by A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Alloc A\+PI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC \hyperlink{struct_a_p_p___h_e_a_p___s_t_r_u_c_t}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+S\+T\+R\+U\+CT} X\+D\+A\+TA {\bfseries App\+\_\+\+Heap} \mbox{[}\hyperlink{group___h_e_a_p_ga16afa60a5d847e39bd31115ba7009b34}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+N\+U\+M\+B\+ER}\mbox{]}\hypertarget{group___h_e_a_p_ga1f2af9e9a6e91a010202eab1b33afe30}{}\label{group___h_e_a_p_ga1f2af9e9a6e91a010202eab1b33afe30}
+
+\item 
+P\+U\+B\+L\+IC \hyperlink{group___h_e_a_p_gac92ab72831cd0fc218a7529be207c778}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+I\+N\+D\+EX} X\+D\+A\+TA {\bfseries App\+\_\+\+Heap\+\_\+\+Index} \mbox{[}\hyperlink{group___h_e_a_p_ga16afa60a5d847e39bd31115ba7009b34}{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+N\+U\+M\+B\+ER}\mbox{]}\hypertarget{group___h_e_a_p_ga0138d3a6567b342f230697665d740a46}{}\label{group___h_e_a_p_ga0138d3a6567b342f230697665d740a46}
+
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Definitions and prototypes for the Heap application programming interface. 
+
+
+
+\subsubsection{Macro Definition Documentation}
+\index{Heap@{Heap}!A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+N\+U\+M\+B\+ER@{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+N\+U\+M\+B\+ER}}
+\index{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+N\+U\+M\+B\+ER@{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+N\+U\+M\+B\+ER}!Heap@{Heap}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+N\+U\+M\+B\+ER}{APP_HEAP_BLOCK_NUMBER}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+N\+U\+M\+B\+ER~(A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+ZE/{\bf A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE})}\hypertarget{group___h_e_a_p_ga16afa60a5d847e39bd31115ba7009b34}{}\label{group___h_e_a_p_ga16afa60a5d847e39bd31115ba7009b34}
+Total block heap number. \index{Heap@{Heap}!A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE@{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}}
+\index{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE@{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}!Heap@{Heap}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}{APP_HEAP_BLOCK_SIZE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE~(32)}\hypertarget{group___h_e_a_p_gab940ae4a9a888cb4b29cdac91e969100}{}\label{group___h_e_a_p_gab940ae4a9a888cb4b29cdac91e969100}
+
+
+Definition of Memory module. 
+
+Heap block size. \index{Heap@{Heap}!A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+FT@{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+FT}}
+\index{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+FT@{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+FT}!Heap@{Heap}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+FT}{APP_HEAP_BLOCK_SIZE_SHIFT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+FT~(5)}\hypertarget{group___h_e_a_p_gab97877e7b2af2f27dcec19233cd2d7d3}{}\label{group___h_e_a_p_gab97877e7b2af2f27dcec19233cd2d7d3}
+Bit mask of heap block size . \index{Heap@{Heap}!A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+F\+T\+\_\+\+M\+A\+SK@{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+F\+T\+\_\+\+M\+A\+SK}}
+\index{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+F\+T\+\_\+\+M\+A\+SK@{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+F\+T\+\_\+\+M\+A\+SK}!Heap@{Heap}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+F\+T\+\_\+\+M\+A\+SK}{APP_HEAP_BLOCK_SIZE_SHIFT_MASK}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+F\+T\+\_\+\+M\+A\+SK~({\bf A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}-\/1)}\hypertarget{group___h_e_a_p_ga050b0012d8038c0c9b5b8cfe5af842b4}{}\label{group___h_e_a_p_ga050b0012d8038c0c9b5b8cfe5af842b4}
+Mask of heap block size. 
+
+\subsubsection{Typedef Documentation}
+\index{Heap@{Heap}!A\+P\+P\+\_\+\+A\+L\+L\+O\+C\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+Y\+PE@{A\+P\+P\+\_\+\+A\+L\+L\+O\+C\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+Y\+PE}}
+\index{A\+P\+P\+\_\+\+A\+L\+L\+O\+C\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+Y\+PE@{A\+P\+P\+\_\+\+A\+L\+L\+O\+C\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+Y\+PE}!Heap@{Heap}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+A\+L\+L\+O\+C\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+Y\+PE}{APP_ALLOC_BLOCK_TYPE}}]{\setlength{\rightskip}{0pt plus 5cm}typedef u8 {\bf A\+P\+P\+\_\+\+A\+L\+L\+O\+C\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+Y\+PE}}\hypertarget{group___h_e_a_p_ga2b37dbe3b78e682f59bb6d1aeb58f508}{}\label{group___h_e_a_p_ga2b37dbe3b78e682f59bb6d1aeb58f508}
+Type definition of A\+P\+P\+\_\+\+A\+L\+L\+O\+C\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+Y\+PE. \index{Heap@{Heap}!A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+I\+N\+D\+EX@{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+I\+N\+D\+EX}}
+\index{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+I\+N\+D\+EX@{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+I\+N\+D\+EX}!Heap@{Heap}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+I\+N\+D\+EX}{APP_HEAP_INDEX}}]{\setlength{\rightskip}{0pt plus 5cm}typedef u8 {\bf A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+I\+N\+D\+EX}}\hypertarget{group___h_e_a_p_gac92ab72831cd0fc218a7529be207c778}{}\label{group___h_e_a_p_gac92ab72831cd0fc218a7529be207c778}
+Type definition of A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+I\+N\+D\+EX. \index{Heap@{Heap}!A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+P\+O\+I\+N\+T\+\_\+\+T\+Y\+PE@{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+P\+O\+I\+N\+T\+\_\+\+T\+Y\+PE}}
+\index{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+P\+O\+I\+N\+T\+\_\+\+T\+Y\+PE@{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+P\+O\+I\+N\+T\+\_\+\+T\+Y\+PE}!Heap@{Heap}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+P\+O\+I\+N\+T\+\_\+\+T\+Y\+PE}{APP_HEAP_POINT_TYPE}}]{\setlength{\rightskip}{0pt plus 5cm}typedef u8 X\+D\+A\+TA$\ast$ {\bf A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+P\+O\+I\+N\+T\+\_\+\+T\+Y\+PE}}\hypertarget{group___h_e_a_p_gac8090ae7433e9fda501dd91e26c7f66e}{}\label{group___h_e_a_p_gac8090ae7433e9fda501dd91e26c7f66e}
+Type definition of A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+P\+O\+I\+N\+T\+\_\+\+T\+Y\+PE. 
+
+\subsubsection{Function Documentation}
+\index{Heap@{Heap}!A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Alloc@{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Alloc}}
+\index{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Alloc@{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Alloc}!Heap@{Heap}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Alloc(u16 size)}{APP_HEAP_Alloc(u16 size)}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC {\bf A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+P\+O\+I\+N\+T\+\_\+\+T\+Y\+PE} A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Alloc (
+\begin{DoxyParamCaption}
+\item[{u16}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{group___h_e_a_p_ga741c668643d6a13d719e5a3212c05857}{}\label{group___h_e_a_p_ga741c668643d6a13d719e5a3212c05857}
+
+
+Alloc the request memory. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em size} & The size of required memory.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the allocated memory, or N\+U\+LL if the request fails. 
+\end{DoxyReturn}
+\index{Heap@{Heap}!A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Free@{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Free}}
+\index{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Free@{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Free}!Heap@{Heap}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Free(\+A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+P\+O\+I\+N\+T\+\_\+\+T\+Y\+P\+E p\+\_\+heap) large}{APP_HEAP_Free(APP_HEAP_POINT_TYPE p_heap) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Free (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+P\+O\+I\+N\+T\+\_\+\+T\+Y\+PE}}]{p\+\_\+heap}
+\end{DoxyParamCaption}
+)}\hypertarget{group___h_e_a_p_ga2b419c19b01e26ed329a24ff5854cb18}{}\label{group___h_e_a_p_ga2b419c19b01e26ed329a24ff5854cb18}
+
+
+Deallocates the memory previously allocated by A\+P\+P\+\_\+\+H\+E\+A\+P\+\_\+\+Alloc A\+PI. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+heap} & Pointer to a memory previously allocated. \\
+\hline
+\end{DoxyParams}

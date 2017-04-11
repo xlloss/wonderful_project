@@ -1,0 +1,25 @@
+var modules =
+[
+    [ "BLE GAP", "group___b_l_e___g_a_p.html", "group___b_l_e___g_a_p" ],
+    [ "BLE GATT", "group___b_l_e___g_a_t_t.html", "group___b_l_e___g_a_t_t" ],
+    [ "BLE GATT SERVICE TABLE", "group___b_l_e___g_a_t_t___s_e_r_v_i_c_e___t_a_b_l_e.html", "group___b_l_e___g_a_t_t___s_e_r_v_i_c_e___t_a_b_l_e" ],
+    [ "BLE L2CAP", "group___b_l_e___l2_c_a_p.html", "group___b_l_e___l2_c_a_p" ],
+    [ "BLE SMP", "group___b_l_e___s_m_p.html", "group___b_l_e___s_m_p" ],
+    [ "BLE Service", "group___b_l_e___service.html", "group___b_l_e___service" ],
+    [ "Common", "group___a_p_p___c_o_m_m_o_n.html", "group___a_p_p___c_o_m_m_o_n" ],
+    [ "Debug", "group___d_e_b_u_g.html", "group___d_e_b_u_g" ],
+    [ "Heap", "group___h_e_a_p.html", "group___h_e_a_p" ],
+    [ "Timer", "group___t_i_m_e_r.html", "group___t_i_m_e_r" ],
+    [ "Utility", "group___u_t_i_l_i_t_y.html", "group___u_t_i_l_i_t_y" ],
+    [ "MESH", "group___m_e_s_h.html", "group___m_e_s_h" ],
+    [ "ADC", "group___a_d_c.html", "group___a_d_c" ],
+    [ "GPIO", "group___g_p_i_o.html", "group___g_p_i_o" ],
+    [ "I2C", "group___i2_c.html", "group___i2_c" ],
+    [ "LED", "group___l_e_d.html", "group___l_e_d" ],
+    [ "Peripheral", "group___a_p_p___p_e_r_i_p_h_e_r_a_l.html", "group___a_p_p___p_e_r_i_p_h_e_r_a_l" ],
+    [ "PWM", "group___p_w_m.html", "group___p_w_m" ],
+    [ "SPI Master", "group___s_p_i___m_a_s_t_e_r.html", "group___s_p_i___m_a_s_t_e_r" ],
+    [ "SPI Serial Flash", "group___s_p_i___s_e_r_i_a_l___f_l_a_s_h.html", "group___s_p_i___s_e_r_i_a_l___f_l_a_s_h" ],
+    [ "SPI Slave", "group___s_p_i___s_l_a_v_e.html", "group___s_p_i___s_l_a_v_e" ],
+    [ "UART", "group___u_a_r_t.html", "group___u_a_r_t" ]
+];

@@ -1,0 +1,545 @@
+\hypertarget{group___g_p_i_o}{}\subsection{G\+P\+IO}
+\label{group___g_p_i_o}\index{G\+P\+IO@{G\+P\+IO}}
+
+
+Definitions and prototypes for the G\+P\+IO application programming interface.  
+
+
+\subsubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___g_p_i_o___d_i_r___d_e_f}{G\+P\+I\+O\+\_\+\+D\+I\+R\+\_\+\+D\+EF}
+\begin{DoxyCompactList}\small\item\em Direction of G\+P\+IO pin/port. \end{DoxyCompactList}\item 
+\hyperlink{group___g_p_i_o___v_a_l_u_e___d_e_f}{G\+P\+I\+O\+\_\+\+V\+A\+L\+U\+E\+\_\+\+D\+EF}
+\begin{DoxyCompactList}\small\item\em The value of a G\+P\+IO. \end{DoxyCompactList}\item 
+\hyperlink{group___g_p_i_o___p_o_r_t___b_i_t___m_a_s_k}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK}
+\begin{DoxyCompactList}\small\item\em Bit mask of the G\+P\+IO port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_p_p___g_p_i_o___port___mask}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Mask}
+\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_a_p_p___g_p_i_o___port___mask}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Mask} {\bfseries A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Mask}\hypertarget{group___g_p_i_o_ga6695365de699284fb44652d8454de750}{}\label{group___g_p_i_o_ga6695365de699284fb44652d8454de750}
+
+\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___g_p_i_o_gae29ce6af934c2f54efec71258bc99502}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+D\+EF} \{ \hyperlink{group___g_p_i_o_ggae29ce6af934c2f54efec71258bc99502a843499d19905fc3012331e35eb0a5da7}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T0} = 0, 
+\hyperlink{group___g_p_i_o_ggae29ce6af934c2f54efec71258bc99502ac8291c1fa0797fd8f37ee0fe1237825f}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T1}, 
+\hyperlink{group___g_p_i_o_ggae29ce6af934c2f54efec71258bc99502aa00982db3132ede73a8ce42745202e0d}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T2}, 
+\hyperlink{group___g_p_i_o_ggae29ce6af934c2f54efec71258bc99502a8e605d1cb7edf51c1b4d5a418be676da}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T3}
+ \}\begin{DoxyCompactList}\small\item\em Definition of G\+P\+IO ports. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group___g_p_i_o_ga92de7c3421c2bc82f5e88b4303991d1d}{G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+\+N\+U\+M\+\_\+\+D\+EF} \{ \\*
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da67cbe35f94bc453affa1548eb0b708ae}{G\+P\+I\+O\+\_\+\+P00} = 0, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da396fd0f160d6562a2ae08b4580f5059a}{G\+P\+I\+O\+\_\+\+P01}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daf9d795ed0e9b9b3bc005a7d9cf3dc4d1}{G\+P\+I\+O\+\_\+\+P02}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da59d5b4472e7e64937e99c33b8b261d44}{G\+P\+I\+O\+\_\+\+P03}, 
+\\*
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da8ad2a6c306ff4ba0acc4c80babb0331c}{G\+P\+I\+O\+\_\+\+P04}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1dafd89f86ce211a9e701fddc8b1bf2c990}{G\+P\+I\+O\+\_\+\+P05}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1dab76b19feeb88700eb6723631b9e43a5d}{G\+P\+I\+O\+\_\+\+P06}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daf65107296b1673294b785c72ec1f1559}{G\+P\+I\+O\+\_\+\+P07}, 
+\\*
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da7fcb8aaa5b178ee02dbfe39f8d678d25}{G\+P\+I\+O\+\_\+\+P10}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da7a3faacdddb1e47928b9c7b1283710f8}{G\+P\+I\+O\+\_\+\+P11}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da52e9595e67b7ceb7a868cfa1b7e9fd20}{G\+P\+I\+O\+\_\+\+P12}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da6d6ed0a41506b48ebde7bec73a2173fa}{G\+P\+I\+O\+\_\+\+P13}, 
+\\*
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da4a764948d6050663641635f879ceadb4}{G\+P\+I\+O\+\_\+\+P14}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da68ee55e55e3eda4e3845de3c69c47ae3}{G\+P\+I\+O\+\_\+\+P15}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1dab2f47e6b6a9f8ad1513376141dd0cbf5}{G\+P\+I\+O\+\_\+\+P16}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daa0bdf96a4c726873b1d4a5fee943568e}{G\+P\+I\+O\+\_\+\+P17}, 
+\\*
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daddafe24ef38290f0c26c5a92fc8bc2f4}{G\+P\+I\+O\+\_\+\+P20}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daf50c0fa270e9161ebba94385028ff364}{G\+P\+I\+O\+\_\+\+P21}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da1bad8ca4126e6f27e54525a08a22ae36}{G\+P\+I\+O\+\_\+\+P22}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daa81a94c4871a241ffdf534345854b729}{G\+P\+I\+O\+\_\+\+P23}, 
+\\*
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da2d8985ec3cb25c29ba933b1e7ddd2064}{G\+P\+I\+O\+\_\+\+P24}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daa20f2f3062929e09d5504947e616d1ff}{G\+P\+I\+O\+\_\+\+P25}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da3540f01570d94b2a4a101e122b032051}{G\+P\+I\+O\+\_\+\+P26}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da2249671c3c53d10a00f86aa2ae8747ee}{G\+P\+I\+O\+\_\+\+P27}, 
+\\*
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da884c073d43d02649153d69dcfa5cbd89}{G\+P\+I\+O\+\_\+\+P30}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da7e89f2422b6e6083df13644eb79ada12}{G\+P\+I\+O\+\_\+\+P31}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da86eac751752267fdd9b92e07698816f0}{G\+P\+I\+O\+\_\+\+P32}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daa53d28fc11971128702eb4ddb07a1c48}{G\+P\+I\+O\+\_\+\+P33}, 
+\\*
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da6fd99e4f753b2eff58fc5bda4a91d8b5}{G\+P\+I\+O\+\_\+\+P34}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da4850ee205e6a7e5f85c5876f28168ae4}{G\+P\+I\+O\+\_\+\+P35}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da36555614060c2e30708624a7bfc73f0c}{G\+P\+I\+O\+\_\+\+P36}, 
+\hyperlink{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da29c4ecda265cc252d17c6d8538d37831}{G\+P\+I\+O\+\_\+\+P37}, 
+\\*
+{\bfseries G\+P\+I\+O\+\_\+\+N\+U\+LL}
+ \}\begin{DoxyCompactList}\small\item\em Definition of G\+P\+IO pin number. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___g_p_i_o_gae8f7f8102a23b119e9a503f9b728ae5b}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Range\+\_\+\+Config\+\_\+\+Direction} (u8 pin\+Start, u8 pin\+End, u8 direction) large
+\begin{DoxyCompactList}\small\item\em Configure the direction of G\+P\+IO pins within a specified range. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___g_p_i_o_gae1b49c05a6789910873067695e193149}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Config\+\_\+\+Direction} (u8 pin\+Num, u8 direction) large
+\begin{DoxyCompactList}\small\item\em Configure the direction of a specified G\+P\+IO pin. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___g_p_i_o_ga6d916949d52ef84903312ef818fa234a}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Config\+\_\+\+Direction} (u8 port\+Num, u8 direction) large
+\begin{DoxyCompactList}\small\item\em Configure the direction of a specified G\+P\+IO port. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___g_p_i_o_ga41e0fc2d8af1c81c46e3840028a14a1e}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Set} (u8 pin\+Num) large
+\begin{DoxyCompactList}\small\item\em Set a specified G\+P\+IO pin to H\+I\+GH. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___g_p_i_o_ga0e27a69df0f8dfd4c37cefd4804b9ace}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Clear} (u8 pin\+Num) large
+\begin{DoxyCompactList}\small\item\em Set a specified G\+P\+IO pin to L\+OW. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___g_p_i_o_ga75214ef2ec9de27e74ea028a41a9881f}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Read} (u8 pin\+Num, u8 X\+D\+A\+TA $\ast$p\+\_\+read\+Value) large
+\begin{DoxyCompactList}\small\item\em Get the value of a specified G\+P\+IO pin. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___g_p_i_o_gadca37fda3cec03ff8ea3f2a1f3a21170}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Set} (u8 port\+Num, u8 set\+Mask) large
+\begin{DoxyCompactList}\small\item\em Set multiple G\+P\+IO pins within a P\+O\+RT to H\+I\+GH. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___g_p_i_o_gab7b2deb3db0dc1dbac17141478e9d18c}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Clear} (u8 port\+Num, u8 clear\+Mask) large
+\begin{DoxyCompactList}\small\item\em Set multiple G\+P\+IO pins within a P\+O\+RT to L\+OW. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___g_p_i_o_ga116686b05ca9c46fc0c9ff69e2321518}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Write} (u8 port\+Num, u8 write\+Value) large
+\begin{DoxyCompactList}\small\item\em Assign a value as a specified G\+P\+IO port output value. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___g_p_i_o_gabde840726b6692c7d01bf6c81254f5ca}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Read} (u8 port\+Num, u8 X\+D\+A\+TA $\ast$p\+\_\+read\+Value) large
+\begin{DoxyCompactList}\small\item\em Get a value via a specified G\+P\+IO port. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___g_p_i_o_gae3f6656c2f0000d3a4c2ab1882249e33}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Polling\+\_\+\+Start} (\hyperlink{struct_a_p_p___g_p_i_o___port___mask}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Mask} X\+D\+A\+TA $\ast$p\+\_\+start\+Mask) large
+\begin{DoxyCompactList}\small\item\em Start the specified G\+P\+I\+Os polling. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___g_p_i_o_gab5d07012fe9a4784e0d34a9ae29c2dbb}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Polling\+\_\+\+Stop} (\hyperlink{struct_a_p_p___g_p_i_o___port___mask}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Mask} X\+D\+A\+TA $\ast$p\+\_\+stop\+Mask) large
+\begin{DoxyCompactList}\small\item\em Stop the specified G\+P\+I\+Os polling. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Definitions and prototypes for the G\+P\+IO application programming interface. 
+
+
+
+\subsubsection{Enumeration Type Documentation}
+\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+\+N\+U\+M\+\_\+\+D\+EF@{G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+\+N\+U\+M\+\_\+\+D\+EF}}
+\index{G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+\+N\+U\+M\+\_\+\+D\+EF@{G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+\+N\+U\+M\+\_\+\+D\+EF}!G\+P\+IO@{G\+P\+IO}}
+\paragraph[{\texorpdfstring{G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+\+N\+U\+M\+\_\+\+D\+EF}{GPIO_PIN_NUM_DEF}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+\+N\+U\+M\+\_\+\+D\+EF}}\hypertarget{group___g_p_i_o_ga92de7c3421c2bc82f5e88b4303991d1d}{}\label{group___g_p_i_o_ga92de7c3421c2bc82f5e88b4303991d1d}
+
+
+Definition of G\+P\+IO pin number. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{G\+P\+I\+O\+\_\+\+P00@{G\+P\+I\+O\+\_\+\+P00}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P00@{G\+P\+I\+O\+\_\+\+P00}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P00\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da67cbe35f94bc453affa1548eb0b708ae}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da67cbe35f94bc453affa1548eb0b708ae}
+}]P00 \index{G\+P\+I\+O\+\_\+\+P01@{G\+P\+I\+O\+\_\+\+P01}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P01@{G\+P\+I\+O\+\_\+\+P01}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P01\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da396fd0f160d6562a2ae08b4580f5059a}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da396fd0f160d6562a2ae08b4580f5059a}
+}]P01 \index{G\+P\+I\+O\+\_\+\+P02@{G\+P\+I\+O\+\_\+\+P02}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P02@{G\+P\+I\+O\+\_\+\+P02}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P02\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daf9d795ed0e9b9b3bc005a7d9cf3dc4d1}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daf9d795ed0e9b9b3bc005a7d9cf3dc4d1}
+}]P02 \index{G\+P\+I\+O\+\_\+\+P03@{G\+P\+I\+O\+\_\+\+P03}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P03@{G\+P\+I\+O\+\_\+\+P03}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P03\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da59d5b4472e7e64937e99c33b8b261d44}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da59d5b4472e7e64937e99c33b8b261d44}
+}]P03 \index{G\+P\+I\+O\+\_\+\+P04@{G\+P\+I\+O\+\_\+\+P04}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P04@{G\+P\+I\+O\+\_\+\+P04}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P04\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da8ad2a6c306ff4ba0acc4c80babb0331c}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da8ad2a6c306ff4ba0acc4c80babb0331c}
+}]P04 \index{G\+P\+I\+O\+\_\+\+P05@{G\+P\+I\+O\+\_\+\+P05}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P05@{G\+P\+I\+O\+\_\+\+P05}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P05\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1dafd89f86ce211a9e701fddc8b1bf2c990}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1dafd89f86ce211a9e701fddc8b1bf2c990}
+}]P05 \index{G\+P\+I\+O\+\_\+\+P06@{G\+P\+I\+O\+\_\+\+P06}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P06@{G\+P\+I\+O\+\_\+\+P06}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P06\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1dab76b19feeb88700eb6723631b9e43a5d}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1dab76b19feeb88700eb6723631b9e43a5d}
+}]P06 \index{G\+P\+I\+O\+\_\+\+P07@{G\+P\+I\+O\+\_\+\+P07}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P07@{G\+P\+I\+O\+\_\+\+P07}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P07\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daf65107296b1673294b785c72ec1f1559}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daf65107296b1673294b785c72ec1f1559}
+}]P07 \index{G\+P\+I\+O\+\_\+\+P10@{G\+P\+I\+O\+\_\+\+P10}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P10@{G\+P\+I\+O\+\_\+\+P10}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P10\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da7fcb8aaa5b178ee02dbfe39f8d678d25}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da7fcb8aaa5b178ee02dbfe39f8d678d25}
+}]P10 \index{G\+P\+I\+O\+\_\+\+P11@{G\+P\+I\+O\+\_\+\+P11}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P11@{G\+P\+I\+O\+\_\+\+P11}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P11\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da7a3faacdddb1e47928b9c7b1283710f8}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da7a3faacdddb1e47928b9c7b1283710f8}
+}]P11 \index{G\+P\+I\+O\+\_\+\+P12@{G\+P\+I\+O\+\_\+\+P12}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P12@{G\+P\+I\+O\+\_\+\+P12}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P12\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da52e9595e67b7ceb7a868cfa1b7e9fd20}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da52e9595e67b7ceb7a868cfa1b7e9fd20}
+}]P12 \index{G\+P\+I\+O\+\_\+\+P13@{G\+P\+I\+O\+\_\+\+P13}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P13@{G\+P\+I\+O\+\_\+\+P13}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P13\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da6d6ed0a41506b48ebde7bec73a2173fa}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da6d6ed0a41506b48ebde7bec73a2173fa}
+}]P13 \index{G\+P\+I\+O\+\_\+\+P14@{G\+P\+I\+O\+\_\+\+P14}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P14@{G\+P\+I\+O\+\_\+\+P14}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P14\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da4a764948d6050663641635f879ceadb4}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da4a764948d6050663641635f879ceadb4}
+}]P14 \index{G\+P\+I\+O\+\_\+\+P15@{G\+P\+I\+O\+\_\+\+P15}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P15@{G\+P\+I\+O\+\_\+\+P15}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P15\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da68ee55e55e3eda4e3845de3c69c47ae3}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da68ee55e55e3eda4e3845de3c69c47ae3}
+}]P15 \index{G\+P\+I\+O\+\_\+\+P16@{G\+P\+I\+O\+\_\+\+P16}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P16@{G\+P\+I\+O\+\_\+\+P16}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P16\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1dab2f47e6b6a9f8ad1513376141dd0cbf5}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1dab2f47e6b6a9f8ad1513376141dd0cbf5}
+}]P16 \index{G\+P\+I\+O\+\_\+\+P17@{G\+P\+I\+O\+\_\+\+P17}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P17@{G\+P\+I\+O\+\_\+\+P17}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P17\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daa0bdf96a4c726873b1d4a5fee943568e}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daa0bdf96a4c726873b1d4a5fee943568e}
+}]P17 \index{G\+P\+I\+O\+\_\+\+P20@{G\+P\+I\+O\+\_\+\+P20}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P20@{G\+P\+I\+O\+\_\+\+P20}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P20\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daddafe24ef38290f0c26c5a92fc8bc2f4}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daddafe24ef38290f0c26c5a92fc8bc2f4}
+}]P20 \index{G\+P\+I\+O\+\_\+\+P21@{G\+P\+I\+O\+\_\+\+P21}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P21@{G\+P\+I\+O\+\_\+\+P21}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P21\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daf50c0fa270e9161ebba94385028ff364}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daf50c0fa270e9161ebba94385028ff364}
+}]P21 \index{G\+P\+I\+O\+\_\+\+P22@{G\+P\+I\+O\+\_\+\+P22}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P22@{G\+P\+I\+O\+\_\+\+P22}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P22\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da1bad8ca4126e6f27e54525a08a22ae36}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da1bad8ca4126e6f27e54525a08a22ae36}
+}]P22 \index{G\+P\+I\+O\+\_\+\+P23@{G\+P\+I\+O\+\_\+\+P23}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P23@{G\+P\+I\+O\+\_\+\+P23}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P23\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daa81a94c4871a241ffdf534345854b729}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daa81a94c4871a241ffdf534345854b729}
+}]P23 \index{G\+P\+I\+O\+\_\+\+P24@{G\+P\+I\+O\+\_\+\+P24}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P24@{G\+P\+I\+O\+\_\+\+P24}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P24\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da2d8985ec3cb25c29ba933b1e7ddd2064}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da2d8985ec3cb25c29ba933b1e7ddd2064}
+}]P24 \index{G\+P\+I\+O\+\_\+\+P25@{G\+P\+I\+O\+\_\+\+P25}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P25@{G\+P\+I\+O\+\_\+\+P25}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P25\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daa20f2f3062929e09d5504947e616d1ff}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daa20f2f3062929e09d5504947e616d1ff}
+}]P25 \index{G\+P\+I\+O\+\_\+\+P26@{G\+P\+I\+O\+\_\+\+P26}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P26@{G\+P\+I\+O\+\_\+\+P26}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P26\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da3540f01570d94b2a4a101e122b032051}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da3540f01570d94b2a4a101e122b032051}
+}]P26 \index{G\+P\+I\+O\+\_\+\+P27@{G\+P\+I\+O\+\_\+\+P27}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P27@{G\+P\+I\+O\+\_\+\+P27}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P27\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da2249671c3c53d10a00f86aa2ae8747ee}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da2249671c3c53d10a00f86aa2ae8747ee}
+}]P27 \index{G\+P\+I\+O\+\_\+\+P30@{G\+P\+I\+O\+\_\+\+P30}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P30@{G\+P\+I\+O\+\_\+\+P30}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P30\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da884c073d43d02649153d69dcfa5cbd89}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da884c073d43d02649153d69dcfa5cbd89}
+}]P30 \index{G\+P\+I\+O\+\_\+\+P31@{G\+P\+I\+O\+\_\+\+P31}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P31@{G\+P\+I\+O\+\_\+\+P31}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P31\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da7e89f2422b6e6083df13644eb79ada12}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da7e89f2422b6e6083df13644eb79ada12}
+}]P31 \index{G\+P\+I\+O\+\_\+\+P32@{G\+P\+I\+O\+\_\+\+P32}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P32@{G\+P\+I\+O\+\_\+\+P32}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P32\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da86eac751752267fdd9b92e07698816f0}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da86eac751752267fdd9b92e07698816f0}
+}]P32 \index{G\+P\+I\+O\+\_\+\+P33@{G\+P\+I\+O\+\_\+\+P33}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P33@{G\+P\+I\+O\+\_\+\+P33}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P33\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daa53d28fc11971128702eb4ddb07a1c48}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1daa53d28fc11971128702eb4ddb07a1c48}
+}]P33 \index{G\+P\+I\+O\+\_\+\+P34@{G\+P\+I\+O\+\_\+\+P34}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P34@{G\+P\+I\+O\+\_\+\+P34}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P34\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da6fd99e4f753b2eff58fc5bda4a91d8b5}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da6fd99e4f753b2eff58fc5bda4a91d8b5}
+}]P34 \index{G\+P\+I\+O\+\_\+\+P35@{G\+P\+I\+O\+\_\+\+P35}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P35@{G\+P\+I\+O\+\_\+\+P35}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P35\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da4850ee205e6a7e5f85c5876f28168ae4}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da4850ee205e6a7e5f85c5876f28168ae4}
+}]P35 \index{G\+P\+I\+O\+\_\+\+P36@{G\+P\+I\+O\+\_\+\+P36}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P36@{G\+P\+I\+O\+\_\+\+P36}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P36\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da36555614060c2e30708624a7bfc73f0c}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da36555614060c2e30708624a7bfc73f0c}
+}]P36 \index{G\+P\+I\+O\+\_\+\+P37@{G\+P\+I\+O\+\_\+\+P37}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P37@{G\+P\+I\+O\+\_\+\+P37}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P37\hypertarget{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da29c4ecda265cc252d17c6d8538d37831}{}\label{group___g_p_i_o_gga92de7c3421c2bc82f5e88b4303991d1da29c4ecda265cc252d17c6d8538d37831}
+}]P37 \end{description}
+\end{Desc}
+\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+D\+EF@{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+D\+EF}}
+\index{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+D\+EF@{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+D\+EF}!G\+P\+IO@{G\+P\+IO}}
+\paragraph[{\texorpdfstring{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+D\+EF}{GPIO_PORT_DEF}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+D\+EF}}\hypertarget{group___g_p_i_o_gae29ce6af934c2f54efec71258bc99502}{}\label{group___g_p_i_o_gae29ce6af934c2f54efec71258bc99502}
+
+
+Definition of G\+P\+IO ports. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{G\+P\+I\+O\+\_\+\+P\+O\+R\+T0@{G\+P\+I\+O\+\_\+\+P\+O\+R\+T0}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P\+O\+R\+T0@{G\+P\+I\+O\+\_\+\+P\+O\+R\+T0}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P\+O\+R\+T0\hypertarget{group___g_p_i_o_ggae29ce6af934c2f54efec71258bc99502a843499d19905fc3012331e35eb0a5da7}{}\label{group___g_p_i_o_ggae29ce6af934c2f54efec71258bc99502a843499d19905fc3012331e35eb0a5da7}
+}]P00-\/\+P07 \index{G\+P\+I\+O\+\_\+\+P\+O\+R\+T1@{G\+P\+I\+O\+\_\+\+P\+O\+R\+T1}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P\+O\+R\+T1@{G\+P\+I\+O\+\_\+\+P\+O\+R\+T1}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P\+O\+R\+T1\hypertarget{group___g_p_i_o_ggae29ce6af934c2f54efec71258bc99502ac8291c1fa0797fd8f37ee0fe1237825f}{}\label{group___g_p_i_o_ggae29ce6af934c2f54efec71258bc99502ac8291c1fa0797fd8f37ee0fe1237825f}
+}]P10-\/\+P17 \index{G\+P\+I\+O\+\_\+\+P\+O\+R\+T2@{G\+P\+I\+O\+\_\+\+P\+O\+R\+T2}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P\+O\+R\+T2@{G\+P\+I\+O\+\_\+\+P\+O\+R\+T2}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P\+O\+R\+T2\hypertarget{group___g_p_i_o_ggae29ce6af934c2f54efec71258bc99502aa00982db3132ede73a8ce42745202e0d}{}\label{group___g_p_i_o_ggae29ce6af934c2f54efec71258bc99502aa00982db3132ede73a8ce42745202e0d}
+}]P20-\/\+P27 \index{G\+P\+I\+O\+\_\+\+P\+O\+R\+T3@{G\+P\+I\+O\+\_\+\+P\+O\+R\+T3}!G\+P\+IO@{G\+P\+IO}}\index{G\+P\+IO@{G\+P\+IO}!G\+P\+I\+O\+\_\+\+P\+O\+R\+T3@{G\+P\+I\+O\+\_\+\+P\+O\+R\+T3}}\item[{\em 
+G\+P\+I\+O\+\_\+\+P\+O\+R\+T3\hypertarget{group___g_p_i_o_ggae29ce6af934c2f54efec71258bc99502a8e605d1cb7edf51c1b4d5a418be676da}{}\label{group___g_p_i_o_ggae29ce6af934c2f54efec71258bc99502a8e605d1cb7edf51c1b4d5a418be676da}
+}]P30-\/\+P37 \end{description}
+\end{Desc}
+
+
+\subsubsection{Function Documentation}
+\index{G\+P\+IO@{G\+P\+IO}!A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Clear@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Clear}}
+\index{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Clear@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Clear}!G\+P\+IO@{G\+P\+IO}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Clear(u8 pin\+Num) large}{APP_GPIO_Pin_Clear(u8 pinNum) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Clear (
+\begin{DoxyParamCaption}
+\item[{u8}]{pin\+Num}
+\end{DoxyParamCaption}
+)}\hypertarget{group___g_p_i_o_ga0e27a69df0f8dfd4c37cefd4804b9ace}{}\label{group___g_p_i_o_ga0e27a69df0f8dfd4c37cefd4804b9ace}
+
+
+Set a specified G\+P\+IO pin to L\+OW. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pin\+Num} & Pin number, \hyperlink{group___g_p_i_o_ga92de7c3421c2bc82f5e88b4303991d1d}{G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+\+N\+U\+M\+\_\+\+D\+EF}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully clear a G\+P\+IO pin. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The direction of the specified G\+P\+IO pin must be configured to output before this A\+PI is executed.~\newline
+ Example\+:~\newline
+ Set P0\+\_\+1 to L\+OW.~\newline
+ A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Clear(\+G\+P\+I\+O\+\_\+\+P01);~\newline
+
+\end{DoxyNote}
+\index{G\+P\+IO@{G\+P\+IO}!A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Config\+\_\+\+Direction@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Config\+\_\+\+Direction}}
+\index{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Config\+\_\+\+Direction@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Config\+\_\+\+Direction}!G\+P\+IO@{G\+P\+IO}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Config\+\_\+\+Direction(u8 pin\+Num, u8 direction) large}{APP_GPIO_Pin_Config_Direction(u8 pinNum, u8 direction) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Config\+\_\+\+Direction (
+\begin{DoxyParamCaption}
+\item[{u8}]{pin\+Num, }
+\item[{u8}]{direction}
+\end{DoxyParamCaption}
+)}\hypertarget{group___g_p_i_o_gae1b49c05a6789910873067695e193149}{}\label{group___g_p_i_o_gae1b49c05a6789910873067695e193149}
+
+
+Configure the direction of a specified G\+P\+IO pin. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pin\+Num} & Pin number, see \hyperlink{group___g_p_i_o_ga92de7c3421c2bc82f5e88b4303991d1d}{G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+\+N\+U\+M\+\_\+\+D\+EF}. \\
+\hline
+\mbox{\tt in}  & {\em direction} & Input/\+Output, see \hyperlink{group___g_p_i_o___d_i_r___d_e_f}{G\+P\+I\+O\+\_\+\+D\+I\+R\+\_\+\+D\+EF}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully configure the direction of a specified G\+P\+IO pin. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Example\+:~\newline
+ Configure P05 to be output.~\newline
+ A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Config\+\_\+\+Direction(\+G\+P\+I\+O\+\_\+\+P05, G\+P\+I\+O\+\_\+\+D\+I\+R\+\_\+\+D\+E\+F\+\_\+\+O\+U\+T\+P\+U\+T);~\newline
+
+\end{DoxyNote}
+\index{G\+P\+IO@{G\+P\+IO}!A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Read@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Read}}
+\index{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Read@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Read}!G\+P\+IO@{G\+P\+IO}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Read(u8 pin\+Num, u8 X\+D\+A\+T\+A $\ast$p\+\_\+read\+Value) large}{APP_GPIO_Pin_Read(u8 pinNum, u8 XDATA *p_readValue) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Read (
+\begin{DoxyParamCaption}
+\item[{u8}]{pin\+Num, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+read\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{group___g_p_i_o_ga75214ef2ec9de27e74ea028a41a9881f}{}\label{group___g_p_i_o_ga75214ef2ec9de27e74ea028a41a9881f}
+
+
+Get the value of a specified G\+P\+IO pin. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pin\+Num} & Pin number, \hyperlink{group___g_p_i_o_ga92de7c3421c2bc82f5e88b4303991d1d}{G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+\+N\+U\+M\+\_\+\+D\+EF}. \\
+\hline
+\mbox{\tt out}  & {\em p\+\_\+read\+Value} & Pointer to the value got via specified pin, see \hyperlink{group___g_p_i_o___v_a_l_u_e___d_e_f}{G\+P\+I\+O\+\_\+\+V\+A\+L\+U\+E\+\_\+\+D\+EF}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully gets the value of a specified G\+P\+IO pin. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The direction of the specified G\+P\+IO pin must be configured to output before this A\+PI is executed.~\newline
+ Example\+:~\newline
+ X\+D\+A\+TA u8 read\+Value;~\newline
+ Get the value of P01.~\newline
+ A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Read(\+G\+P\+I\+O\+\_\+\+P01, \&read\+Value);~\newline
+
+\end{DoxyNote}
+\index{G\+P\+IO@{G\+P\+IO}!A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Set@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Set}}
+\index{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Set@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Set}!G\+P\+IO@{G\+P\+IO}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Set(u8 pin\+Num) large}{APP_GPIO_Pin_Set(u8 pinNum) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Set (
+\begin{DoxyParamCaption}
+\item[{u8}]{pin\+Num}
+\end{DoxyParamCaption}
+)}\hypertarget{group___g_p_i_o_ga41e0fc2d8af1c81c46e3840028a14a1e}{}\label{group___g_p_i_o_ga41e0fc2d8af1c81c46e3840028a14a1e}
+
+
+Set a specified G\+P\+IO pin to H\+I\+GH. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pin\+Num} & Pin number, \hyperlink{group___g_p_i_o_ga92de7c3421c2bc82f5e88b4303991d1d}{G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+\+N\+U\+M\+\_\+\+D\+EF}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully set a specified G\+P\+IO pin to H\+I\+GH. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The direction of the specified G\+P\+IO pin must be configured to output before this A\+PI is executed.~\newline
+ Example\+:~\newline
+ Set P01 to H\+I\+GH.~\newline
+ A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Pin\+\_\+\+Set(\+G\+P\+I\+O\+\_\+\+P01);~\newline
+
+\end{DoxyNote}
+\index{G\+P\+IO@{G\+P\+IO}!A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Polling\+\_\+\+Start@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Polling\+\_\+\+Start}}
+\index{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Polling\+\_\+\+Start@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Polling\+\_\+\+Start}!G\+P\+IO@{G\+P\+IO}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Polling\+\_\+\+Start(\+A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Mask X\+D\+A\+T\+A $\ast$p\+\_\+start\+Mask) large}{APP_GPIO_Polling_Start(APP_GPIO_Port_Mask XDATA *p_startMask) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Polling\+\_\+\+Start (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Mask} X\+D\+A\+TA $\ast$}]{p\+\_\+start\+Mask}
+\end{DoxyParamCaption}
+)}\hypertarget{group___g_p_i_o_gae3f6656c2f0000d3a4c2ab1882249e33}{}\label{group___g_p_i_o_gae3f6656c2f0000d3a4c2ab1882249e33}
+
+
+Start the specified G\+P\+I\+Os polling. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+start\+Mask} & Pointer to \hyperlink{struct_a_p_p___g_p_i_o___port___mask}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Mask} structure. \\
+\hline
+\end{DoxyParams}
+\index{G\+P\+IO@{G\+P\+IO}!A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Polling\+\_\+\+Stop@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Polling\+\_\+\+Stop}}
+\index{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Polling\+\_\+\+Stop@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Polling\+\_\+\+Stop}!G\+P\+IO@{G\+P\+IO}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Polling\+\_\+\+Stop(\+A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Mask X\+D\+A\+T\+A $\ast$p\+\_\+stop\+Mask) large}{APP_GPIO_Polling_Stop(APP_GPIO_Port_Mask XDATA *p_stopMask) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Polling\+\_\+\+Stop (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Mask} X\+D\+A\+TA $\ast$}]{p\+\_\+stop\+Mask}
+\end{DoxyParamCaption}
+)}\hypertarget{group___g_p_i_o_gab5d07012fe9a4784e0d34a9ae29c2dbb}{}\label{group___g_p_i_o_gab5d07012fe9a4784e0d34a9ae29c2dbb}
+
+
+Stop the specified G\+P\+I\+Os polling. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+stop\+Mask} & Pointer to \hyperlink{struct_a_p_p___g_p_i_o___port___mask}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Mask} structure. \\
+\hline
+\end{DoxyParams}
+\index{G\+P\+IO@{G\+P\+IO}!A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Clear@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Clear}}
+\index{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Clear@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Clear}!G\+P\+IO@{G\+P\+IO}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Clear(u8 port\+Num, u8 clear\+Mask) large}{APP_GPIO_Port_Clear(u8 portNum, u8 clearMask) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Clear (
+\begin{DoxyParamCaption}
+\item[{u8}]{port\+Num, }
+\item[{u8}]{clear\+Mask}
+\end{DoxyParamCaption}
+)}\hypertarget{group___g_p_i_o_gab7b2deb3db0dc1dbac17141478e9d18c}{}\label{group___g_p_i_o_gab7b2deb3db0dc1dbac17141478e9d18c}
+
+
+Set multiple G\+P\+IO pins within a P\+O\+RT to L\+OW. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em port\+Num} & Port number, see \hyperlink{group___g_p_i_o_gae29ce6af934c2f54efec71258bc99502}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+D\+EF}. \\
+\hline
+\mbox{\tt in}  & {\em clear\+Mask} & Bit mask of the specified G\+P\+IO port, see \hyperlink{group___g_p_i_o___p_o_r_t___b_i_t___m_a_s_k}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK}. The G\+P\+IO pin(s) can be set to L\+OW only when the bit mask is configred. And the other G\+P\+IO pin(s) will not be influenced.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully set mutilple G\+P\+IO pins within a P\+O\+RT to L\+OW. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The direction of the specified G\+P\+IO port must be configured to output before this A\+PI is executed.~\newline
+ Example\+:~\newline
+ Set G\+P\+IO port3 bit 5(P35) and bit7(\+P37) to L\+OW.~\newline
+ A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Clear(G\+P\+I\+O\+\_\+\+P\+O\+R\+T3, G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+S\+K\+\_\+\+B\+I\+T5$\vert$\+G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+S\+K\+\_\+\+B\+I\+T7);~\newline
+
+\end{DoxyNote}
+\index{G\+P\+IO@{G\+P\+IO}!A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Config\+\_\+\+Direction@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Config\+\_\+\+Direction}}
+\index{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Config\+\_\+\+Direction@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Config\+\_\+\+Direction}!G\+P\+IO@{G\+P\+IO}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Config\+\_\+\+Direction(u8 port\+Num, u8 direction) large}{APP_GPIO_Port_Config_Direction(u8 portNum, u8 direction) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Config\+\_\+\+Direction (
+\begin{DoxyParamCaption}
+\item[{u8}]{port\+Num, }
+\item[{u8}]{direction}
+\end{DoxyParamCaption}
+)}\hypertarget{group___g_p_i_o_ga6d916949d52ef84903312ef818fa234a}{}\label{group___g_p_i_o_ga6d916949d52ef84903312ef818fa234a}
+
+
+Configure the direction of a specified G\+P\+IO port. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em port\+Num} & Port number, see \hyperlink{group___g_p_i_o_gae29ce6af934c2f54efec71258bc99502}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+D\+EF}. \\
+\hline
+\mbox{\tt in}  & {\em direction} & Input/\+Output, see \hyperlink{group___g_p_i_o___d_i_r___d_e_f}{G\+P\+I\+O\+\_\+\+D\+I\+R\+\_\+\+D\+EF}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully configure direction of a G\+P\+IO port. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Example\+: Configure port1 to be output. A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Config\+\_\+\+Direction(\+G\+P\+I\+O\+\_\+\+P\+O\+R\+T1, G\+P\+I\+O\+\_\+\+D\+I\+R\+\_\+\+O\+U\+T\+P\+U\+T) 
+\end{DoxyNote}
+\index{G\+P\+IO@{G\+P\+IO}!A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Read@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Read}}
+\index{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Read@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Read}!G\+P\+IO@{G\+P\+IO}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Read(u8 port\+Num, u8 X\+D\+A\+T\+A $\ast$p\+\_\+read\+Value) large}{APP_GPIO_Port_Read(u8 portNum, u8 XDATA *p_readValue) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Read (
+\begin{DoxyParamCaption}
+\item[{u8}]{port\+Num, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+read\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{group___g_p_i_o_gabde840726b6692c7d01bf6c81254f5ca}{}\label{group___g_p_i_o_gabde840726b6692c7d01bf6c81254f5ca}
+
+
+Get a value via a specified G\+P\+IO port. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em port\+Num} & Port number, see \hyperlink{group___g_p_i_o_gae29ce6af934c2f54efec71258bc99502}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+D\+EF}. \\
+\hline
+\mbox{\tt out}  & {\em p\+\_\+read\+Value} & Pointer to the value got via specified G\+P\+IO port.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully get a value via a specified G\+P\+IO port. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The direction of the specified G\+P\+IO port must be configured to input before this A\+PI is executed.~\newline
+ Example\+: X\+D\+A\+TA u8 read\+Value; Get a value via G\+P\+IO port1. A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Write(\+G\+P\+I\+O\+\_\+\+P\+O\+R\+T1, \&read\+Value); 
+\end{DoxyNote}
+\index{G\+P\+IO@{G\+P\+IO}!A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Set@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Set}}
+\index{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Set@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Set}!G\+P\+IO@{G\+P\+IO}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Set(u8 port\+Num, u8 set\+Mask) large}{APP_GPIO_Port_Set(u8 portNum, u8 setMask) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Set (
+\begin{DoxyParamCaption}
+\item[{u8}]{port\+Num, }
+\item[{u8}]{set\+Mask}
+\end{DoxyParamCaption}
+)}\hypertarget{group___g_p_i_o_gadca37fda3cec03ff8ea3f2a1f3a21170}{}\label{group___g_p_i_o_gadca37fda3cec03ff8ea3f2a1f3a21170}
+
+
+Set multiple G\+P\+IO pins within a P\+O\+RT to H\+I\+GH. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em port\+Num} & Port number, see \hyperlink{group___g_p_i_o_gae29ce6af934c2f54efec71258bc99502}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+D\+EF}. \\
+\hline
+\mbox{\tt in}  & {\em set\+Mask} & Bit mask of the specified G\+P\+IO port, see \hyperlink{group___g_p_i_o___p_o_r_t___b_i_t___m_a_s_k}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK}. The G\+P\+IO pin(s) can be set to H\+I\+GH only when the bit mask is configred. And the other G\+P\+IO pin(s) will not be influenced.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully set mutilple G\+P\+IO pins within a P\+O\+RT to H\+I\+GH. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The direction of the specified G\+P\+IO port must be configured to output before this A\+PI is executed.~\newline
+ Example\+:~\newline
+ Set G\+P\+IO port1 bit 1(P11) and bit2(\+P12) to H\+I\+GH.~\newline
+ A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Set(G\+P\+I\+O\+\_\+\+P\+O\+R\+T1, G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+S\+K\+\_\+\+B\+I\+T1$\vert$\+G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+S\+K\+\_\+\+B\+I\+T2);~\newline
+
+\end{DoxyNote}
+\index{G\+P\+IO@{G\+P\+IO}!A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Write@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Write}}
+\index{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Write@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Write}!G\+P\+IO@{G\+P\+IO}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Write(u8 port\+Num, u8 write\+Value) large}{APP_GPIO_Port_Write(u8 portNum, u8 writeValue) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Write (
+\begin{DoxyParamCaption}
+\item[{u8}]{port\+Num, }
+\item[{u8}]{write\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{group___g_p_i_o_ga116686b05ca9c46fc0c9ff69e2321518}{}\label{group___g_p_i_o_ga116686b05ca9c46fc0c9ff69e2321518}
+
+
+Assign a value as a specified G\+P\+IO port output value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em port\+Num} & Port number, see \hyperlink{group___g_p_i_o_gae29ce6af934c2f54efec71258bc99502}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+\_\+\+D\+EF}. \\
+\hline
+\mbox{\tt in}  & {\em write\+Value} & The value assigned as the specified G\+P\+IO port output value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully asign a value as a specified G\+P\+IO port output value. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The direction of the specified G\+P\+IO port must be configured to output before this A\+PI is executed.~\newline
+ Example\+:~\newline
+ Asign 0x35 as G\+P\+IO port1 output value.~\newline
+ A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Write(\+G\+P\+I\+O\+\_\+\+P\+O\+R\+T1, 0x35);~\newline
+
+\end{DoxyNote}
+\index{G\+P\+IO@{G\+P\+IO}!A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Range\+\_\+\+Config\+\_\+\+Direction@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Range\+\_\+\+Config\+\_\+\+Direction}}
+\index{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Range\+\_\+\+Config\+\_\+\+Direction@{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Range\+\_\+\+Config\+\_\+\+Direction}!G\+P\+IO@{G\+P\+IO}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Range\+\_\+\+Config\+\_\+\+Direction(u8 pin\+Start, u8 pin\+End, u8 direction) large}{APP_GPIO_Range_Config_Direction(u8 pinStart, u8 pinEnd, u8 direction) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Range\+\_\+\+Config\+\_\+\+Direction (
+\begin{DoxyParamCaption}
+\item[{u8}]{pin\+Start, }
+\item[{u8}]{pin\+End, }
+\item[{u8}]{direction}
+\end{DoxyParamCaption}
+)}\hypertarget{group___g_p_i_o_gae8f7f8102a23b119e9a503f9b728ae5b}{}\label{group___g_p_i_o_gae8f7f8102a23b119e9a503f9b728ae5b}
+
+
+Configure the direction of G\+P\+IO pins within a specified range. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pin\+Start} & The starting pin number of the range, see \hyperlink{group___g_p_i_o_ga92de7c3421c2bc82f5e88b4303991d1d}{G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+\+N\+U\+M\+\_\+\+D\+EF}. \\
+\hline
+\mbox{\tt in}  & {\em pin\+End} & The end pin number of the range, see \hyperlink{group___g_p_i_o_ga92de7c3421c2bc82f5e88b4303991d1d}{G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+\+N\+U\+M\+\_\+\+D\+EF}. \\
+\hline
+\mbox{\tt in}  & {\em direction} & Input/\+Output, see \hyperlink{group___g_p_i_o___d_i_r___d_e_f}{G\+P\+I\+O\+\_\+\+D\+I\+R\+\_\+\+D\+EF}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully configure a range of G\+P\+IO pins. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Example\+:~\newline
+ Configure P00-\/\+P05 to be output.~\newline
+ A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Range\+\_\+\+Config\+\_\+\+Direction(\+G\+P\+I\+O\+\_\+\+P00, G\+P\+I\+O\+\_\+\+P05, G\+P\+I\+O\+\_\+\+D\+I\+R\+\_\+\+O\+U\+T\+P\+U\+T);~\newline
+
+\end{DoxyNote}

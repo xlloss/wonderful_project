@@ -1,0 +1,205 @@
+\hypertarget{group___p_w_m}{}\subsection{P\+WM}
+\label{group___p_w_m}\index{P\+WM@{P\+WM}}
+
+
+Definitions and prototypes for the P\+WM application programming interface, M\+B\+IoT P\+WM is Edge-\/aligned mode and up-\/count.  
+
+
+\subsubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___p_w_m___c_h_a_n_n_e_l___m_a_s_k}{P\+W\+M\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+M\+A\+SK}
+\begin{DoxyCompactList}\small\item\em Mask of P\+WM channel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_p_p___p_w_m___conf_paras}{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Conf\+Paras}
+\begin{DoxyCompactList}\small\item\em Structure of P\+WM configuration parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_a_p_p___p_w_m___conf_paras}{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Conf\+Paras} \hyperlink{group___p_w_m_ga0f430d07e4d7d25ddb6652517aab3ea7}{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Conf\+Paras}\hypertarget{group___p_w_m_ga0f430d07e4d7d25ddb6652517aab3ea7}{}\label{group___p_w_m_ga0f430d07e4d7d25ddb6652517aab3ea7}
+
+\begin{DoxyCompactList}\small\item\em Structure of P\+WM configuration parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___p_w_m_ga491cb08538d34ebef5010c3909a0ef4b}{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE} \{ \hyperlink{group___p_w_m_gga491cb08538d34ebef5010c3909a0ef4ba4b5992f696e683361b045709d6f2aa4b}{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+32K}, 
+\hyperlink{group___p_w_m_gga491cb08538d34ebef5010c3909a0ef4bab50013e096113453cb80304ad877c080}{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+1024K}, 
+\hyperlink{group___p_w_m_gga491cb08538d34ebef5010c3909a0ef4ba774d8de4fcd984b6a1806567fea3b7c8}{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+16M}
+ \}\begin{DoxyCompactList}\small\item\em Definition of P\+WM clock source. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group___p_w_m_ga7129b83fb324f0d2ba78c95815b02f15}{P\+W\+M\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+O\+L\+A\+R\+I\+TY} \{ \hyperlink{group___p_w_m_gga7129b83fb324f0d2ba78c95815b02f15a764922273e16ce2ec4d3ecd82a0b3fbe}{P\+O\+S\+I\+T\+I\+V\+E\+\_\+\+O\+U\+T\+P\+UT}, 
+\hyperlink{group___p_w_m_gga7129b83fb324f0d2ba78c95815b02f15a5e246186dbaac860a1cc0af6e3e1ea27}{I\+N\+V\+E\+R\+S\+E\+\_\+\+O\+U\+T\+P\+UT}
+ \}\begin{DoxyCompactList}\small\item\em Definition of P\+WM output polarity. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___p_w_m_ga4a97f9ecae78dbaf856004cbac253bd6}{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Config} (u8 pwm\+Mask, \hyperlink{struct_a_p_p___p_w_m___conf_paras}{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Conf\+Paras} X\+D\+A\+TA $\ast$p\+\_\+pwm\+Paras) large
+\begin{DoxyCompactList}\small\item\em Initialize P\+WM Channel. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___p_w_m_ga76fb6c9c661e7134731de4b8287580bf}{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Close} (u8 pwm\+Mask) large
+\begin{DoxyCompactList}\small\item\em Free P\+WM channel bus, the occupied G\+P\+IO pins return to input and internal pull high. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___p_w_m_gae1aa285b6fff3ec07f0c713fd22d030e}{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Start} (u8 pwm\+Mask) large
+\begin{DoxyCompactList}\small\item\em Start P\+WM signal by specified channel(s). \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___p_w_m_gab7d42fcb17a7ae21afe7eafd5ab4053d}{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Stop} (u8 pwm\+Mask) large
+\begin{DoxyCompactList}\small\item\em Stop specified P\+WM channel signal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Definitions and prototypes for the P\+WM application programming interface, M\+B\+IoT P\+WM is Edge-\/aligned mode and up-\/count. 
+
+
+
+\subsubsection{Enumeration Type Documentation}
+\index{P\+WM@{P\+WM}!P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE@{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}}
+\index{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE@{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}!P\+WM@{P\+WM}}
+\paragraph[{\texorpdfstring{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}{PWM_CLOCK_SOURCE}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}}\hypertarget{group___p_w_m_ga491cb08538d34ebef5010c3909a0ef4b}{}\label{group___p_w_m_ga491cb08538d34ebef5010c3909a0ef4b}
+
+
+Definition of P\+WM clock source. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+32K@{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+32K}!P\+WM@{P\+WM}}\index{P\+WM@{P\+WM}!P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+32K@{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+32K}}\item[{\em 
+P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+32K\hypertarget{group___p_w_m_gga491cb08538d34ebef5010c3909a0ef4ba4b5992f696e683361b045709d6f2aa4b}{}\label{group___p_w_m_gga491cb08538d34ebef5010c3909a0ef4ba4b5992f696e683361b045709d6f2aa4b}
+}]32\+K\+Hz. \index{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+1024K@{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+1024K}!P\+WM@{P\+WM}}\index{P\+WM@{P\+WM}!P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+1024K@{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+1024K}}\item[{\em 
+P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+1024K\hypertarget{group___p_w_m_gga491cb08538d34ebef5010c3909a0ef4bab50013e096113453cb80304ad877c080}{}\label{group___p_w_m_gga491cb08538d34ebef5010c3909a0ef4bab50013e096113453cb80304ad877c080}
+}]1024\+K\+Hz. \index{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+16M@{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+16M}!P\+WM@{P\+WM}}\index{P\+WM@{P\+WM}!P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+16M@{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+16M}}\item[{\em 
+P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+16M\hypertarget{group___p_w_m_gga491cb08538d34ebef5010c3909a0ef4ba774d8de4fcd984b6a1806567fea3b7c8}{}\label{group___p_w_m_gga491cb08538d34ebef5010c3909a0ef4ba774d8de4fcd984b6a1806567fea3b7c8}
+}]16\+M\+Hz. \end{description}
+\end{Desc}
+\index{P\+WM@{P\+WM}!P\+W\+M\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+O\+L\+A\+R\+I\+TY@{P\+W\+M\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+O\+L\+A\+R\+I\+TY}}
+\index{P\+W\+M\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+O\+L\+A\+R\+I\+TY@{P\+W\+M\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+O\+L\+A\+R\+I\+TY}!P\+WM@{P\+WM}}
+\paragraph[{\texorpdfstring{P\+W\+M\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+O\+L\+A\+R\+I\+TY}{PWM_OUTPUT_POLARITY}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf P\+W\+M\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+O\+L\+A\+R\+I\+TY}}\hypertarget{group___p_w_m_ga7129b83fb324f0d2ba78c95815b02f15}{}\label{group___p_w_m_ga7129b83fb324f0d2ba78c95815b02f15}
+
+
+Definition of P\+WM output polarity. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{P\+O\+S\+I\+T\+I\+V\+E\+\_\+\+O\+U\+T\+P\+UT@{P\+O\+S\+I\+T\+I\+V\+E\+\_\+\+O\+U\+T\+P\+UT}!P\+WM@{P\+WM}}\index{P\+WM@{P\+WM}!P\+O\+S\+I\+T\+I\+V\+E\+\_\+\+O\+U\+T\+P\+UT@{P\+O\+S\+I\+T\+I\+V\+E\+\_\+\+O\+U\+T\+P\+UT}}\item[{\em 
+P\+O\+S\+I\+T\+I\+V\+E\+\_\+\+O\+U\+T\+P\+UT\hypertarget{group___p_w_m_gga7129b83fb324f0d2ba78c95815b02f15a764922273e16ce2ec4d3ecd82a0b3fbe}{}\label{group___p_w_m_gga7129b83fb324f0d2ba78c95815b02f15a764922273e16ce2ec4d3ecd82a0b3fbe}
+}]Output of positive. \index{I\+N\+V\+E\+R\+S\+E\+\_\+\+O\+U\+T\+P\+UT@{I\+N\+V\+E\+R\+S\+E\+\_\+\+O\+U\+T\+P\+UT}!P\+WM@{P\+WM}}\index{P\+WM@{P\+WM}!I\+N\+V\+E\+R\+S\+E\+\_\+\+O\+U\+T\+P\+UT@{I\+N\+V\+E\+R\+S\+E\+\_\+\+O\+U\+T\+P\+UT}}\item[{\em 
+I\+N\+V\+E\+R\+S\+E\+\_\+\+O\+U\+T\+P\+UT\hypertarget{group___p_w_m_gga7129b83fb324f0d2ba78c95815b02f15a5e246186dbaac860a1cc0af6e3e1ea27}{}\label{group___p_w_m_gga7129b83fb324f0d2ba78c95815b02f15a5e246186dbaac860a1cc0af6e3e1ea27}
+}]Inverse P\+WM waveforms. \end{description}
+\end{Desc}
+
+
+\subsubsection{Function Documentation}
+\index{P\+WM@{P\+WM}!A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Close@{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Close}}
+\index{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Close@{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Close}!P\+WM@{P\+WM}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Close(u8 pwm\+Mask) large}{APP_PWM_Close(u8 pwmMask) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Close (
+\begin{DoxyParamCaption}
+\item[{u8}]{pwm\+Mask}
+\end{DoxyParamCaption}
+)}\hypertarget{group___p_w_m_ga76fb6c9c661e7134731de4b8287580bf}{}\label{group___p_w_m_ga76fb6c9c661e7134731de4b8287580bf}
+
+
+Free P\+WM channel bus, the occupied G\+P\+IO pins return to input and internal pull high. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pwm\+Mask} & The mask of P\+WM channel.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully free P\+WM channel bus. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Example\+:~\newline
+ Free P\+WM channel 1 and 2 bus.~\newline
+ A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Close(P\+W\+M1\+\_\+\+M\+A\+S\+K$\vert$\+P\+W\+M2\+\_\+\+M\+A\+SK);~\newline
+
+\end{DoxyNote}
+\index{P\+WM@{P\+WM}!A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Config@{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Config}}
+\index{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Config@{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Config}!P\+WM@{P\+WM}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Config(u8 pwm\+Mask, A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Conf\+Paras X\+D\+A\+T\+A $\ast$p\+\_\+pwm\+Paras) large}{APP_PWM_Config(u8 pwmMask, APP_PWM_ConfParas XDATA *p_pwmParas) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Config (
+\begin{DoxyParamCaption}
+\item[{u8}]{pwm\+Mask, }
+\item[{{\bf A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Conf\+Paras} X\+D\+A\+TA $\ast$}]{p\+\_\+pwm\+Paras}
+\end{DoxyParamCaption}
+)}\hypertarget{group___p_w_m_ga4a97f9ecae78dbaf856004cbac253bd6}{}\label{group___p_w_m_ga4a97f9ecae78dbaf856004cbac253bd6}
+
+
+Initialize P\+WM Channel. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pwm\+Mask} & The mask of P\+WM channel.~\newline
+ If P\+W\+M0\+\_\+\+M\+A\+SK is set, the P21 is occupied. If P\+W\+M1\+\_\+\+M\+A\+SK is set, the P22 is occupied.\+If P\+W\+M2\+\_\+\+M\+A\+SK is set, the P23 is occupied. If P\+W\+M3\+\_\+\+M\+A\+SK is set, the G\+P\+IO P25 is occupied. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+pwm\+Paras} & Pointer to the \hyperlink{struct_a_p_p___p_w_m___conf_paras}{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Conf\+Paras} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully configuring P\+WM Channel. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Example\+:~\newline
+ X\+D\+A\+TA \hyperlink{struct_a_p_p___p_w_m___conf_paras}{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Conf\+Paras} pwm = \{P\+W\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+32K, 319, 159, P\+O\+S\+I\+T\+I\+V\+E\+\_\+\+O\+U\+T\+P\+UT\};~\newline
+ A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Config((\+P\+W\+M0\+\_\+\+M\+A\+S\+K), \&pwm); ~\newline
+ The result of P\+W\+M0 is \+:~\newline
+ Frequency=clock\+Source/(auto\+Reload\+Value+1)=32000/(319+1) = 100 Hz ~\newline
+ Duty cycle=((auto\+Reload\+Value-\/compare\+Value)/(auto\+Reload\+Value+1))$\ast$ 100\% = (319-\/159)/(319+1)=50\%~\newline
+
+\end{DoxyNote}
+\index{P\+WM@{P\+WM}!A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Start@{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Start}}
+\index{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Start@{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Start}!P\+WM@{P\+WM}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Start(u8 pwm\+Mask) large}{APP_PWM_Start(u8 pwmMask) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Start (
+\begin{DoxyParamCaption}
+\item[{u8}]{pwm\+Mask}
+\end{DoxyParamCaption}
+)}\hypertarget{group___p_w_m_gae1aa285b6fff3ec07f0c713fd22d030e}{}\label{group___p_w_m_gae1aa285b6fff3ec07f0c713fd22d030e}
+
+
+Start P\+WM signal by specified channel(s). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pwm\+Mask} & The mask of P\+WM channel.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully start the P\+WM. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+P\+WM must be initialized befor start P\+WM signal. And the parameters of P\+WM can\textquotesingle{}t be changed during P\+WM signal is actived.~\newline
+ P\+WM signal must be stoped before changing the parameters of P\+WM. ~\newline
+ Example\+:~\newline
+ Start P\+WM couner for P\+WM channel 1.~\newline
+ A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Start(\+P\+W\+M1\+\_\+\+M\+A\+S\+K);~\newline
+
+\end{DoxyNote}
+\index{P\+WM@{P\+WM}!A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Stop@{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Stop}}
+\index{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Stop@{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Stop}!P\+WM@{P\+WM}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Stop(u8 pwm\+Mask) large}{APP_PWM_Stop(u8 pwmMask) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Stop (
+\begin{DoxyParamCaption}
+\item[{u8}]{pwm\+Mask}
+\end{DoxyParamCaption}
+)}\hypertarget{group___p_w_m_gab7d42fcb17a7ae21afe7eafd5ab4053d}{}\label{group___p_w_m_gab7d42fcb17a7ae21afe7eafd5ab4053d}
+
+
+Stop specified P\+WM channel signal. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pwm\+Mask} & The mask of P\+WM channel.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully stop the specified P\+WM channel signal. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+note Example\+:~\newline
+ Stop P\+WM couner for P\+WM channel 2.~\newline
+ A\+P\+P\+\_\+\+P\+W\+M\+\_\+\+Stop(\+P\+W\+M2\+\_\+\+M\+A\+S\+K);~\newline

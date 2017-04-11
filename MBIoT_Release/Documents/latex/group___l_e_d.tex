@@ -1,0 +1,195 @@
+\hypertarget{group___l_e_d}{}\subsection{L\+ED}
+\label{group___l_e_d}\index{L\+ED@{L\+ED}}
+
+
+Definitions and prototypes for the L\+ED application programming interface.  
+
+
+\subsubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___l_e_d___b_i_t___m_a_s_k}{L\+E\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK}
+\begin{DoxyCompactList}\small\item\em Mask of L\+E\+Ds. \end{DoxyCompactList}\item 
+\hyperlink{group___l_e_d___l_i_g_h_t_i_n_g___t_y_p_e___s_i_n_g_l_e}{L\+E\+D\+\_\+\+L\+I\+G\+H\+T\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+N\+G\+LE}
+\begin{DoxyCompactList}\small\item\em Type of single L\+ED lighting. \end{DoxyCompactList}\item 
+\hyperlink{group___l_e_d___l_i_g_h_t_i_n_g___t_y_p_e___c_o_m_b_o}{L\+E\+D\+\_\+\+L\+I\+G\+H\+T\+I\+N\+G\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+M\+BO}
+\begin{DoxyCompactList}\small\item\em Type of two L\+E\+Ds lighting. \end{DoxyCompactList}\item 
+\hyperlink{group___l_e_d___l_i_g_h_t_i_n_g___t_i_m_e_s}{L\+E\+D\+\_\+\+L\+I\+G\+H\+T\+I\+N\+G\+\_\+\+T\+I\+M\+ES}
+\begin{DoxyCompactList}\small\item\em The lighting times of L\+ED flashes. \end{DoxyCompactList}\item 
+\hyperlink{group___l_e_d___d_u_r_a_t_i_o_n}{L\+E\+D\+\_\+\+D\+U\+R\+A\+T\+I\+ON}
+\begin{DoxyCompactList}\small\item\em The duration of L\+ED turn on or off. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_p_p___l_e_d___conf_paras}{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Conf\+Paras}
+\begin{DoxyCompactList}\small\item\em Structure of L\+ED configuration parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___l_e_d_ga8250ab2f67c15b9a735477ae0c7948ee}{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Init} (u8 led\+Mask) large
+\begin{DoxyCompactList}\small\item\em L\+ED initialization. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___l_e_d_ga42256e088d86fda8dd2d10a7a95f2ecc}{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Close} (u8 led\+Mask) large
+\begin{DoxyCompactList}\small\item\em Free L\+ED control, occupied G\+P\+IO returns to digital input with internal pull high. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___l_e_d_ga9c74c2c5418e40b14383cebc82667ab1}{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+L\+E\+D0\+\_\+\+Flash} (\hyperlink{struct_a_p_p___l_e_d___conf_paras}{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Conf\+Paras} X\+D\+A\+TA $\ast$p\+\_\+profile) large
+\begin{DoxyCompactList}\small\item\em Configure lighting parameters of L\+E\+D0 and start to flash. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___l_e_d_gaea916b986322d9ba25f6a6e9c94f8835}{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+L\+E\+D1\+\_\+\+Flash} (\hyperlink{struct_a_p_p___l_e_d___conf_paras}{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Conf\+Paras} X\+D\+A\+TA $\ast$p\+\_\+profile) large
+\begin{DoxyCompactList}\small\item\em Configure lighting parameters of L\+E\+D1 and start to flash. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___l_e_d_ga6885c17555b9715547963fc930dff934}{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Combo\+\_\+\+Flash} (\hyperlink{struct_a_p_p___l_e_d___conf_paras}{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Conf\+Paras} X\+D\+A\+TA $\ast$p\+\_\+profile) large
+\begin{DoxyCompactList}\small\item\em Configure lighting parameters of L\+E\+D1 and L\+E\+D2, starts to flash both L\+E\+Ds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Definitions and prototypes for the L\+ED application programming interface. 
+
+
+
+\subsubsection{Function Documentation}
+\index{L\+ED@{L\+ED}!A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Close@{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Close}}
+\index{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Close@{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Close}!L\+ED@{L\+ED}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Close(u8 led\+Mask) large}{APP_LED_Close(u8 ledMask) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Close (
+\begin{DoxyParamCaption}
+\item[{u8}]{led\+Mask}
+\end{DoxyParamCaption}
+)}\hypertarget{group___l_e_d_ga42256e088d86fda8dd2d10a7a95f2ecc}{}\label{group___l_e_d_ga42256e088d86fda8dd2d10a7a95f2ecc}
+
+
+Free L\+ED control, occupied G\+P\+IO returns to digital input with internal pull high. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em led\+Mask} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully free L\+ED bus. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Example\+:~\newline
+ Close L\+E\+D1.~\newline
+ A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Close(\+L\+E\+D1\+\_\+\+M\+A\+S\+K);~\newline
+
+\end{DoxyNote}
+\index{L\+ED@{L\+ED}!A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Combo\+\_\+\+Flash@{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Combo\+\_\+\+Flash}}
+\index{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Combo\+\_\+\+Flash@{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Combo\+\_\+\+Flash}!L\+ED@{L\+ED}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Combo\+\_\+\+Flash(\+A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Conf\+Paras X\+D\+A\+T\+A $\ast$p\+\_\+profile) large}{APP_LED_Combo_Flash(APP_LED_ConfParas XDATA *p_profile) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Combo\+\_\+\+Flash (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Conf\+Paras} X\+D\+A\+TA $\ast$}]{p\+\_\+profile}
+\end{DoxyParamCaption}
+)}\hypertarget{group___l_e_d_ga6885c17555b9715547963fc930dff934}{}\label{group___l_e_d_ga6885c17555b9715547963fc930dff934}
+
+
+Configure lighting parameters of L\+E\+D1 and L\+E\+D2, starts to flash both L\+E\+Ds. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+profile} & Pointer to \hyperlink{struct_a_p_p___l_e_d___conf_paras}{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Conf\+Paras} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully configure lighting parameters of L\+E\+D1 and L\+E\+D2, starts to flash both L\+E\+Ds. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Example\+:~\newline
+ Interleave both L\+E\+Ds flashes 3 tiimes within 2 minutes, each time turn on 100ms and turn off 50ms .~\newline
+ X\+D\+A\+TA \hyperlink{struct_a_p_p___l_e_d___conf_paras}{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Conf\+Paras} led;~\newline
+ led.\+flash\+Type=L\+E\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+M\+B\+O\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+N\+T\+E\+R\+L\+E\+A\+VE;~\newline
+ led.\+on\+Interval=L\+E\+D\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+100\+\_\+\+MS;~\newline
+ led.\+off\+Interval=L\+E\+D\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+50\+\_\+\+MS;~\newline
+ led.\+count=L\+E\+D\+\_\+\+T\+I\+M\+E\+S\+\_\+3;~\newline
+ led.\+flash\+Interval=(L\+E\+D\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+1\+\_\+\+S\+E\+C$\ast$2);~\newline
+ A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Combo\+\_\+\+Flash(\&led);~\newline
+
+\end{DoxyNote}
+\index{L\+ED@{L\+ED}!A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Init@{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Init}}
+\index{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Init@{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Init}!L\+ED@{L\+ED}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Init(u8 led\+Mask) large}{APP_LED_Init(u8 ledMask) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{u8}]{led\+Mask}
+\end{DoxyParamCaption}
+)}\hypertarget{group___l_e_d_ga8250ab2f67c15b9a735477ae0c7948ee}{}\label{group___l_e_d_ga8250ab2f67c15b9a735477ae0c7948ee}
+
+
+L\+ED initialization. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em led\+Mask} & Mask of L\+E\+Ds. If L\+E\+D0\+\_\+\+M\+A\+SK is set, the P02 is occupied. If L\+E\+D1\+\_\+\+M\+A\+SK is set, the P35 is occupied. See \hyperlink{group___l_e_d___b_i_t___m_a_s_k}{L\+E\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully initialz L\+ED. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Example\+:~\newline
+ Initial L\+E\+D0 and L\+E\+D1.~\newline
+ A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Init(L\+E\+D0\+\_\+\+M\+A\+S\+K$\vert$\+L\+E\+D1\+\_\+\+M\+A\+SK);~\newline
+
+\end{DoxyNote}
+\index{L\+ED@{L\+ED}!A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+L\+E\+D0\+\_\+\+Flash@{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+L\+E\+D0\+\_\+\+Flash}}
+\index{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+L\+E\+D0\+\_\+\+Flash@{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+L\+E\+D0\+\_\+\+Flash}!L\+ED@{L\+ED}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+L\+E\+D0\+\_\+\+Flash(\+A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Conf\+Paras X\+D\+A\+T\+A $\ast$p\+\_\+profile) large}{APP_LED_LED0_Flash(APP_LED_ConfParas XDATA *p_profile) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+L\+E\+D0\+\_\+\+Flash (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Conf\+Paras} X\+D\+A\+TA $\ast$}]{p\+\_\+profile}
+\end{DoxyParamCaption}
+)}\hypertarget{group___l_e_d_ga9c74c2c5418e40b14383cebc82667ab1}{}\label{group___l_e_d_ga9c74c2c5418e40b14383cebc82667ab1}
+
+
+Configure lighting parameters of L\+E\+D0 and start to flash. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+profile} & Pointer to \hyperlink{struct_a_p_p___l_e_d___conf_paras}{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Conf\+Paras} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully configure lighting parameters of L\+E\+D0 and starts to flash. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Example\+:~\newline
+ L\+E\+D0 flashes 2 tiimes within 1 minute, each time turn on 50ms and turn off 50ms .~\newline
+ X\+D\+A\+TA \hyperlink{struct_a_p_p___l_e_d___conf_paras}{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Conf\+Paras} led;~\newline
+ led.\+flash\+Type=L\+E\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+F\+L\+A\+SH;~\newline
+ led.\+on\+Interval=L\+E\+D\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+50\+\_\+\+MS;~\newline
+ led.\+off\+Interval=L\+E\+D\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+100\+\_\+\+MS;~\newline
+ led.\+count=L\+E\+D\+\_\+\+T\+I\+M\+E\+S\+\_\+2;~\newline
+ led.\+flash\+Interval=L\+E\+D\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+1\+\_\+\+S\+EC;~\newline
+ A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+L\+E\+D0\+\_\+\+Flash(\&led);~\newline
+
+\end{DoxyNote}
+\index{L\+ED@{L\+ED}!A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+L\+E\+D1\+\_\+\+Flash@{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+L\+E\+D1\+\_\+\+Flash}}
+\index{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+L\+E\+D1\+\_\+\+Flash@{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+L\+E\+D1\+\_\+\+Flash}!L\+ED@{L\+ED}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+L\+E\+D1\+\_\+\+Flash(\+A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Conf\+Paras X\+D\+A\+T\+A $\ast$p\+\_\+profile) large}{APP_LED_LED1_Flash(APP_LED_ConfParas XDATA *p_profile) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+L\+E\+D1\+\_\+\+Flash (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Conf\+Paras} X\+D\+A\+TA $\ast$}]{p\+\_\+profile}
+\end{DoxyParamCaption}
+)}\hypertarget{group___l_e_d_gaea916b986322d9ba25f6a6e9c94f8835}{}\label{group___l_e_d_gaea916b986322d9ba25f6a6e9c94f8835}
+
+
+Configure lighting parameters of L\+E\+D1 and start to flash. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+profile} & Pointer to \hyperlink{struct_a_p_p___l_e_d___conf_paras}{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Conf\+Paras} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS configure lighting parameters of L\+E\+D1 and starts to flash. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Example\+:~\newline
+ L\+E\+D1 always turns on.~\newline
+ X\+D\+A\+TA \hyperlink{struct_a_p_p___l_e_d___conf_paras}{A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+Conf\+Paras} led;~\newline
+ led.\+flash\+Type=L\+E\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+ON;~\newline
+ A\+P\+P\+\_\+\+L\+E\+D\+\_\+\+L\+E\+D0\+\_\+\+Flash(\&led);~\newline
+
+\end{DoxyNote}

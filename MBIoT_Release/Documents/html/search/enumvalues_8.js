@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['spi_5fmaster_5fclk_5frate_5f1mhz',['SPI_MASTER_CLK_RATE_1MHZ',['../group___s_p_i___m_a_s_t_e_r.html#gga6a763a6c43f6042aad2c8441d6442180a14b1aa7fc9c8ff68737cf2b9ba72e716',1,'spi_master.h']]],
+  ['spi_5fmaster_5fclk_5frate_5f250khz',['SPI_MASTER_CLK_RATE_250KHZ',['../group___s_p_i___m_a_s_t_e_r.html#gga6a763a6c43f6042aad2c8441d6442180a6c05bf32dd595ec0426b9e4cfd1bdbff',1,'spi_master.h']]],
+  ['spi_5fmaster_5fclk_5frate_5f2mhz',['SPI_MASTER_CLK_RATE_2MHZ',['../group___s_p_i___m_a_s_t_e_r.html#gga6a763a6c43f6042aad2c8441d6442180a4747772dabdae2d99cc0a80621c96a0b',1,'spi_master.h']]],
+  ['spi_5fmaster_5fclk_5frate_5f4mhz',['SPI_MASTER_CLK_RATE_4MHZ',['../group___s_p_i___m_a_s_t_e_r.html#gga6a763a6c43f6042aad2c8441d6442180a4052a5a6b74a24e1f6b6c33255b118b7',1,'spi_master.h']]],
+  ['spi_5fmaster_5fclk_5frate_5f500khz',['SPI_MASTER_CLK_RATE_500KHZ',['../group___s_p_i___m_a_s_t_e_r.html#gga6a763a6c43f6042aad2c8441d6442180ad13f82a8a135f8837eb0cf2f40acb381',1,'spi_master.h']]],
+  ['spi_5fmaster_5fmode0',['SPI_MASTER_MODE0',['../group___s_p_i___m_a_s_t_e_r.html#gga9b0bdd65837c35731a6834dfa4a0a049aa5d478d17537938b9adb906b72875349',1,'spi_master.h']]],
+  ['spi_5fmaster_5fmode1',['SPI_MASTER_MODE1',['../group___s_p_i___m_a_s_t_e_r.html#gga9b0bdd65837c35731a6834dfa4a0a049a2762ebdf9a8f96bad970438d579a9dae',1,'spi_master.h']]],
+  ['spi_5fmaster_5fmode2',['SPI_MASTER_MODE2',['../group___s_p_i___m_a_s_t_e_r.html#gga9b0bdd65837c35731a6834dfa4a0a049ac802af208a78407642cb0ba05dc3f154',1,'spi_master.h']]],
+  ['spi_5fmaster_5fmode3',['SPI_MASTER_MODE3',['../group___s_p_i___m_a_s_t_e_r.html#gga9b0bdd65837c35731a6834dfa4a0a049a695e76f59a8f8a8c253fa9d28796b07e',1,'spi_master.h']]],
+  ['spi_5fslave_5fclk_5frate_5f16mhz',['SPI_SLAVE_CLK_RATE_16MHZ',['../group___s_p_i___s_l_a_v_e.html#gga829f1873bfb32bd5f6a679d3f4dd3979a41976f36b89d83f5a1fe9c9f90bb2bf2',1,'spi_slave.h']]],
+  ['spi_5fslave_5fclk_5frate_5f1mhz',['SPI_SLAVE_CLK_RATE_1MHZ',['../group___s_p_i___s_l_a_v_e.html#gga829f1873bfb32bd5f6a679d3f4dd3979a4fdaf2d65c083d4aeadc1e18e7230e3d',1,'spi_slave.h']]],
+  ['spi_5fslave_5fclk_5frate_5f250khz',['SPI_SLAVE_CLK_RATE_250KHZ',['../group___s_p_i___s_l_a_v_e.html#gga829f1873bfb32bd5f6a679d3f4dd3979afd7c69a2856dd2e6568484293e8a329f',1,'spi_slave.h']]],
+  ['spi_5fslave_5fclk_5frate_5f2mhz',['SPI_SLAVE_CLK_RATE_2MHZ',['../group___s_p_i___s_l_a_v_e.html#gga829f1873bfb32bd5f6a679d3f4dd3979a133c58cb7e8480bc0a67f470a8fe22c4',1,'spi_slave.h']]],
+  ['spi_5fslave_5fclk_5frate_5f4mhz',['SPI_SLAVE_CLK_RATE_4MHZ',['../group___s_p_i___s_l_a_v_e.html#gga829f1873bfb32bd5f6a679d3f4dd3979a28c7d5ea8fd6ca0cd062d42ea4ab30aa',1,'spi_slave.h']]],
+  ['spi_5fslave_5fclk_5frate_5f500khz',['SPI_SLAVE_CLK_RATE_500KHZ',['../group___s_p_i___s_l_a_v_e.html#gga829f1873bfb32bd5f6a679d3f4dd3979a4809a0b19165f45ed56a45a634ec95eb',1,'spi_slave.h']]],
+  ['spi_5fslave_5fclk_5frate_5f8mhz',['SPI_SLAVE_CLK_RATE_8MHZ',['../group___s_p_i___s_l_a_v_e.html#gga829f1873bfb32bd5f6a679d3f4dd3979a6c83b8cd3c0f1c519e351ea43c092eb9',1,'spi_slave.h']]],
+  ['spi_5fslave_5fmode0',['SPI_SLAVE_MODE0',['../group___s_p_i___s_l_a_v_e.html#gga8cb12470ae37e3883289b52731634acca823ffce26d59b56ced0dca0fd5e27417',1,'spi_slave.h']]],
+  ['spi_5fslave_5fmode1',['SPI_SLAVE_MODE1',['../group___s_p_i___s_l_a_v_e.html#gga8cb12470ae37e3883289b52731634accac40eb52d928367234ccb33b16f645495',1,'spi_slave.h']]],
+  ['spi_5fslave_5fmode2',['SPI_SLAVE_MODE2',['../group___s_p_i___s_l_a_v_e.html#gga8cb12470ae37e3883289b52731634accaf544a818da9ac07473a5577dc88a73b2',1,'spi_slave.h']]],
+  ['spi_5fslave_5fmode3',['SPI_SLAVE_MODE3',['../group___s_p_i___s_l_a_v_e.html#gga8cb12470ae37e3883289b52731634accaabfad961caf12e94b20b24d97c5ce2fd',1,'spi_slave.h']]],
+  ['state_5fno_5fcomm',['STATE_NO_COMM',['../group___b_l_e___g_s.html#gga2377e8b14a4dbee0ccc46ebf3970633cab892dc8bda08cca695cec9d2525c886a',1,'ble_glucose_service.h']]],
+  ['state_5fracp_5fproc_5factive',['STATE_RACP_PROC_ACTIVE',['../group___b_l_e___g_s.html#gga2377e8b14a4dbee0ccc46ebf3970633ca19d4e79a1a06d26731a150539ccf8f4c',1,'ble_glucose_service.h']]],
+  ['state_5fracp_5fresponse_5find_5fverif',['STATE_RACP_RESPONSE_IND_VERIF',['../group___b_l_e___g_s.html#gga2377e8b14a4dbee0ccc46ebf3970633cac9e1172d0c84f0307bcbe3a26df9d92d',1,'ble_glucose_service.h']]],
+  ['state_5fracp_5fresponse_5fpending',['STATE_RACP_RESPONSE_PENDING',['../group___b_l_e___g_s.html#gga2377e8b14a4dbee0ccc46ebf3970633ca552ae1c7135d17b86e9061d7b41a0e2f',1,'ble_glucose_service.h']]]
+];

@@ -1,0 +1,818 @@
+\hypertarget{group___b_l_e___g_a_t_t}{}\subsection{B\+LE G\+A\+TT}
+\label{group___b_l_e___g_a_t_t}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+
+
+Definitions and prototypes for the B\+LE G\+A\+TT stack layer application programming interface.  
+
+
+\subsubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___b_l_e___g_a_t_t___r_e_a_d___t_y_p_e_s}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+R\+E\+A\+D\+\_\+\+T\+Y\+P\+ES}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT read type definitions. \end{DoxyCompactList}\item 
+\hyperlink{group___b_l_e___g_a_t_t___w_r_i_t_e___t_y_p_e_s}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+Y\+P\+ES}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT write type definitions. \end{DoxyCompactList}\item 
+\hyperlink{group___b_l_e___g_a_t_t___e_x_e_c___w_r_i_t_e___f_l_a_g_s}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+E\+X\+E\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+F\+L\+A\+GS}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT flags for Execute Write Request. \end{DoxyCompactList}\item 
+\hyperlink{group___b_l_e___g_a_t_t___r_e_a_d___r_e_s_p___t_y_p_e_s}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+S\+P\+\_\+\+T\+Y\+P\+ES}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT write response type definitions. \end{DoxyCompactList}\item 
+\hyperlink{group___b_l_e___g_a_t_t___w_r_i_t_e___r_e_s_p___t_y_p_e_s}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+R\+E\+S\+P\+\_\+\+T\+Y\+P\+ES}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT write response type definitions. \end{DoxyCompactList}\item 
+\hyperlink{group___b_l_e___g_a_t_t___s_e_n_d___h_v___t_y_p_e_s}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+S\+E\+N\+D\+\_\+\+H\+V\+\_\+\+T\+Y\+P\+ES}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Server Handle Value sending types. \end{DoxyCompactList}\item 
+\hyperlink{group___b_l_e___a_t_t___c_o_n_f_i_g_u_r_a_t_i_o_n___b_i_t_s}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+O\+N\+\_\+\+B\+I\+TS}
+\begin{DoxyCompactList}\small\item\em B\+LE A\+TT configuration bits definitions. \end{DoxyCompactList}\item 
+\hyperlink{group___b_l_e___a_t_t___e_r_r_o_r___c_o_d_e_s}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+ES}
+\begin{DoxyCompactList}\small\item\em A\+TT Error Codes. \end{DoxyCompactList}\item 
+\hyperlink{group___b_l_e___a_t_t___o_p_c_o_d_e_s}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+O\+P\+C\+O\+D\+ES}
+\begin{DoxyCompactList}\small\item\em A\+TT Attribute Opcodes. \end{DoxyCompactList}\item 
+\hyperlink{group___a_t_t___p_e_r_m_i_s_s_i_o_n___k_e_y___s_i_z_e}{A\+T\+T\+\_\+\+P\+E\+R\+M\+I\+S\+S\+I\+O\+N\+\_\+\+K\+E\+Y\+\_\+\+S\+I\+ZE}
+\begin{DoxyCompactList}\small\item\em Attribute might requires permission(Encryption/\+Authentication Permission) to accessed. This key size defines the minimum length of the pairing key. Shorter than this length will be taken as un-\/safe authentication/encryption. Length ranges from 7 bytes to 16 bytes. Set to zero to disable the key size checking. \end{DoxyCompactList}\item 
+\hyperlink{group___g_a_t_t___p_r_o_c_e_d_u_r_e___s_t_a_t_u_s}{G\+A\+T\+T\+\_\+\+P\+R\+O\+C\+E\+D\+U\+R\+E\+\_\+\+S\+T\+A\+T\+US}
+\begin{DoxyCompactList}\small\item\em Some G\+A\+TT procedures would not finish in one A\+TT request. Thus, more than one event will receive in one procedure. Status in the event indicates that if this procedure will continue or end. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_b_l_e___g_a_t_t_c___read_by_type_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read\+By\+Type\+Params}
+\begin{DoxyCompactList}\small\item\em A\+TT Read By Type Request Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___g_a_t_t_c___discover_primary_service_by_uuid_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+Primary\+Service\+By\+Uuid\+Params}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Discover Primary Service By U\+U\+ID Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___g_a_t_t_c___write_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Write\+Params}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Write Request Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___g_a_t_t_s___handle_value_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Handle\+Value\+Params}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Handle Value Notification/\+Indication Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___g_a_t_t_s___send_err_response_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Err\+Response\+Params}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Send Error Response. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___g_a_t_t_s___send_read_response_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+Response\+Params}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Send Read Response. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___g_a_t_t_s___send_write_response_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Write\+Response\+Params}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Send Write Response. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___g_a_t_t_s___send_read_by_type_response_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+By\+Type\+Response\+Params}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Send Read By Type Response. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___g_a_t_t___services_info}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Services\+Info}
+\begin{DoxyCompactList}\small\item\em The services information of the Application definded services. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___error__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Error\+\_\+t}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Error Response Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___read__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Read\+\_\+t}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Read Request Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___write__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Write Request Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___disc_prim_serv_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Disc\+Prim\+Serv\+Resp\+\_\+t}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Discover All Primary Services Response Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___disc_prim_serv_by_uuid_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Disc\+Prim\+Serv\+By\+Uuid\+Resp\+\_\+t}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Discover Primary Service By U\+U\+ID Response Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___disc_char_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Disc\+Char\+Resp\+\_\+t}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Discover All Characteristics Response Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___disc_desc_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Disc\+Desc\+Resp\+\_\+t}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Discover All Descriptors Response Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___read_using_uuid_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Read\+Using\+Uuid\+Resp\+\_\+t}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Read Using U\+U\+ID Response Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___read_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Read\+Resp\+\_\+t}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Read Response Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___write_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+Resp\+\_\+t}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Write Response Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___update_m_t_u__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Update\+M\+T\+U\+\_\+t}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Updated M\+TU Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___receive_h_v__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Receive\+H\+V\+\_\+t}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Receive Handle Value Notification or Indication Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___receive_confirm__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Receive\+Confirm\+\_\+t}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Receive Handle Value Confirmation Parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___read_by_type__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Read\+By\+Type\+\_\+t}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Receive Read By Type Request Parameters. \end{DoxyCompactList}\item 
+union \hyperlink{union_b_l_e___g_a_t_t_event_field}{B\+L\+E\+\_\+\+G\+A\+T\+T\+Event\+Field}
+\begin{DoxyCompactList}\small\item\em The Union Structure of All Events Structures. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___g_a_t_t___event}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT callback function parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___b_l_e___g_a_t_t_ga4d1bd224084bd70c854891e4876dcf6f}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+EN}~23
+\item 
+\#define \hyperlink{group___b_l_e___g_a_t_t_gad67dc15fa3333c9a35a28d20dec4d848}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+T\+U\+\_\+\+L\+E\+N\+G\+TH}~23
+\item 
+\#define \hyperlink{group___b_l_e___g_a_t_t_ga380151ce5e77dadfae069f37afd70b8b}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+M\+A\+X\+\_\+\+M\+T\+U\+\_\+\+L\+E\+N\+G\+TH}~160
+\item 
+\#define \hyperlink{group___b_l_e___g_a_t_t_gaf7a0af4a975d6ef5bcb00e86d9098390}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+M\+A\+X\+\_\+\+U\+U\+I\+D\+\_\+\+S\+I\+ZE}~16
+\item 
+\#define \hyperlink{group___b_l_e___g_a_t_t_ga824bb76855b7f0e87c25d8050b1d94bd}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}~3
+\item 
+\#define \hyperlink{group___b_l_e___g_a_t_t_ga433fb9d859cdfa9d22acf4c6af69e1a3}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}~3
+\item 
+\#define \hyperlink{group___b_l_e___g_a_t_t_ga60b268cf9ce073bd7372e5c903f9aff8}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+S\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}~1
+\item 
+\#define \hyperlink{group___b_l_e___g_a_t_t_ga6a4807bfe93a96506caa739c30038acd}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+R\+E\+S\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}~5
+\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_b_l_e___g_a_t_t_c___read_by_type_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read\+By\+Type\+Params} \hyperlink{group___b_l_e___g_a_t_t_ga5d40131de1c2ba44da9772c6ccfbcc43}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read\+By\+Type\+Params}\hypertarget{group___b_l_e___g_a_t_t_ga5d40131de1c2ba44da9772c6ccfbcc43}{}\label{group___b_l_e___g_a_t_t_ga5d40131de1c2ba44da9772c6ccfbcc43}
+
+\begin{DoxyCompactList}\small\item\em A\+TT Read By Type Request Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___g_a_t_t_c___discover_primary_service_by_uuid_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+Primary\+Service\+By\+Uuid\+Params} \hyperlink{group___b_l_e___g_a_t_t_ga395b83607611eb337a3e6aae64263b85}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+Primary\+Service\+By\+Uuid\+Params}\hypertarget{group___b_l_e___g_a_t_t_ga395b83607611eb337a3e6aae64263b85}{}\label{group___b_l_e___g_a_t_t_ga395b83607611eb337a3e6aae64263b85}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Discover Primary Service By U\+U\+ID Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___g_a_t_t_c___write_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Write\+Params} \hyperlink{group___b_l_e___g_a_t_t_gaf94500f5ed4205d2ff7433a338f85b41}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Write\+Params}\hypertarget{group___b_l_e___g_a_t_t_gaf94500f5ed4205d2ff7433a338f85b41}{}\label{group___b_l_e___g_a_t_t_gaf94500f5ed4205d2ff7433a338f85b41}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Write Request Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___g_a_t_t_s___handle_value_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Handle\+Value\+Params} \hyperlink{group___b_l_e___g_a_t_t_ga4f14821e0aad8f7f479139dca795af51}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Handle\+Value\+Params}\hypertarget{group___b_l_e___g_a_t_t_ga4f14821e0aad8f7f479139dca795af51}{}\label{group___b_l_e___g_a_t_t_ga4f14821e0aad8f7f479139dca795af51}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Handle Value Notification/\+Indication Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___g_a_t_t_s___send_err_response_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Err\+Response\+Params} \hyperlink{group___b_l_e___g_a_t_t_ga6a58519105ef737c3e9ffad36cc0e6c4}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Err\+Response\+Params}\hypertarget{group___b_l_e___g_a_t_t_ga6a58519105ef737c3e9ffad36cc0e6c4}{}\label{group___b_l_e___g_a_t_t_ga6a58519105ef737c3e9ffad36cc0e6c4}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Send Error Response. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___g_a_t_t_s___send_read_response_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+Response\+Params} \hyperlink{group___b_l_e___g_a_t_t_ga84b0e821d28e0b71da5e10ba78e83fc9}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+Response\+Params}\hypertarget{group___b_l_e___g_a_t_t_ga84b0e821d28e0b71da5e10ba78e83fc9}{}\label{group___b_l_e___g_a_t_t_ga84b0e821d28e0b71da5e10ba78e83fc9}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Send Read Response. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___g_a_t_t_s___send_write_response_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Write\+Response\+Params} \hyperlink{group___b_l_e___g_a_t_t_ga429d9db17f28a460e8251902d9ad4200}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Write\+Response\+Params}\hypertarget{group___b_l_e___g_a_t_t_ga429d9db17f28a460e8251902d9ad4200}{}\label{group___b_l_e___g_a_t_t_ga429d9db17f28a460e8251902d9ad4200}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Send Write Response. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___g_a_t_t_s___send_read_by_type_response_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+By\+Type\+Response\+Params} \hyperlink{group___b_l_e___g_a_t_t_ga57706da5db03112e5ea710f5fc7bc9e8}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+By\+Type\+Response\+Params}\hypertarget{group___b_l_e___g_a_t_t_ga57706da5db03112e5ea710f5fc7bc9e8}{}\label{group___b_l_e___g_a_t_t_ga57706da5db03112e5ea710f5fc7bc9e8}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Send Read By Type Response. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___g_a_t_t___services_info}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Services\+Info} \hyperlink{group___b_l_e___g_a_t_t_ga051577f7154aff0ba20b321a00f866ff}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Services\+Info}\hypertarget{group___b_l_e___g_a_t_t_ga051577f7154aff0ba20b321a00f866ff}{}\label{group___b_l_e___g_a_t_t_ga051577f7154aff0ba20b321a00f866ff}
+
+\begin{DoxyCompactList}\small\item\em The services information of the Application definded services. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___error__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Error\+\_\+t} \hyperlink{group___b_l_e___g_a_t_t_gaf2575de36e06b52a2e03771a54df0ad3}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Error\+\_\+t}\hypertarget{group___b_l_e___g_a_t_t_gaf2575de36e06b52a2e03771a54df0ad3}{}\label{group___b_l_e___g_a_t_t_gaf2575de36e06b52a2e03771a54df0ad3}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Error Response Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___read__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Read\+\_\+t} \hyperlink{group___b_l_e___g_a_t_t_ga7673543d58a87f7d4b4fe2cb8152519c}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Read\+\_\+t}\hypertarget{group___b_l_e___g_a_t_t_ga7673543d58a87f7d4b4fe2cb8152519c}{}\label{group___b_l_e___g_a_t_t_ga7673543d58a87f7d4b4fe2cb8152519c}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Read Request Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___write__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t} \hyperlink{group___b_l_e___g_a_t_t_ga660cc2a870493eadb3f224eca9dd5c79}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}\hypertarget{group___b_l_e___g_a_t_t_ga660cc2a870493eadb3f224eca9dd5c79}{}\label{group___b_l_e___g_a_t_t_ga660cc2a870493eadb3f224eca9dd5c79}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Write Request Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___disc_prim_serv_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Disc\+Prim\+Serv\+Resp\+\_\+t} \hyperlink{group___b_l_e___g_a_t_t_gaefbeb8d6d5cc69f6d81bfb175571fe96}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Disc\+Prim\+Serv\+Resp\+\_\+t}\hypertarget{group___b_l_e___g_a_t_t_gaefbeb8d6d5cc69f6d81bfb175571fe96}{}\label{group___b_l_e___g_a_t_t_gaefbeb8d6d5cc69f6d81bfb175571fe96}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Discover All Primary Services Response Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___disc_prim_serv_by_uuid_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Disc\+Prim\+Serv\+By\+Uuid\+Resp\+\_\+t} \hyperlink{group___b_l_e___g_a_t_t_gacb3678acf025e0577c09e755c198d2d2}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Disc\+Prim\+Serv\+By\+Uuid\+Resp\+\_\+t}\hypertarget{group___b_l_e___g_a_t_t_gacb3678acf025e0577c09e755c198d2d2}{}\label{group___b_l_e___g_a_t_t_gacb3678acf025e0577c09e755c198d2d2}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Discover Primary Service By U\+U\+ID Response Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___disc_char_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Disc\+Char\+Resp\+\_\+t} \hyperlink{group___b_l_e___g_a_t_t_gad9e875621693416b47ca45c81b3dafff}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Disc\+Char\+Resp\+\_\+t}\hypertarget{group___b_l_e___g_a_t_t_gad9e875621693416b47ca45c81b3dafff}{}\label{group___b_l_e___g_a_t_t_gad9e875621693416b47ca45c81b3dafff}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Discover All Characteristics Response Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___disc_desc_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Disc\+Desc\+Resp\+\_\+t} \hyperlink{group___b_l_e___g_a_t_t_ga44940b346b848503bf77c1e1f5d765f4}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Disc\+Desc\+Resp\+\_\+t}\hypertarget{group___b_l_e___g_a_t_t_ga44940b346b848503bf77c1e1f5d765f4}{}\label{group___b_l_e___g_a_t_t_ga44940b346b848503bf77c1e1f5d765f4}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Discover All Descriptors Response Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___read_using_uuid_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Read\+Using\+Uuid\+Resp\+\_\+t} \hyperlink{group___b_l_e___g_a_t_t_gacd99d520d9b10e39a33a062b1d275371}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Read\+Using\+Uuid\+Resp\+\_\+t}\hypertarget{group___b_l_e___g_a_t_t_gacd99d520d9b10e39a33a062b1d275371}{}\label{group___b_l_e___g_a_t_t_gacd99d520d9b10e39a33a062b1d275371}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Read Using U\+U\+ID Response Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___read_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Read\+Resp\+\_\+t} \hyperlink{group___b_l_e___g_a_t_t_ga9c26ee141318df75c242d46bbc0e388d}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Read\+Resp\+\_\+t}\hypertarget{group___b_l_e___g_a_t_t_ga9c26ee141318df75c242d46bbc0e388d}{}\label{group___b_l_e___g_a_t_t_ga9c26ee141318df75c242d46bbc0e388d}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Read Response Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___write_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+Resp\+\_\+t} \hyperlink{group___b_l_e___g_a_t_t_gae879d12f09852da722312f669677ee1b}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+Resp\+\_\+t}\hypertarget{group___b_l_e___g_a_t_t_gae879d12f09852da722312f669677ee1b}{}\label{group___b_l_e___g_a_t_t_gae879d12f09852da722312f669677ee1b}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Write Response Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___update_m_t_u__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Update\+M\+T\+U\+\_\+t} \hyperlink{group___b_l_e___g_a_t_t_gabfd224d40e0b06789bc49955fd91d123}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Update\+M\+T\+U\+\_\+t}\hypertarget{group___b_l_e___g_a_t_t_gabfd224d40e0b06789bc49955fd91d123}{}\label{group___b_l_e___g_a_t_t_gabfd224d40e0b06789bc49955fd91d123}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Updated M\+TU Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___receive_h_v__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Receive\+H\+V\+\_\+t} \hyperlink{group___b_l_e___g_a_t_t_ga7b926a7fdc4ee6a623019c30c536ba4f}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Receive\+H\+V\+\_\+t}\hypertarget{group___b_l_e___g_a_t_t_ga7b926a7fdc4ee6a623019c30c536ba4f}{}\label{group___b_l_e___g_a_t_t_ga7b926a7fdc4ee6a623019c30c536ba4f}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Receive Handle Value Notification or Indication Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___receive_confirm__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Receive\+Confirm\+\_\+t} \hyperlink{group___b_l_e___g_a_t_t_ga9a54a03fd14610243a6d51b51837556d}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Receive\+Confirm\+\_\+t}\hypertarget{group___b_l_e___g_a_t_t_ga9a54a03fd14610243a6d51b51837556d}{}\label{group___b_l_e___g_a_t_t_ga9a54a03fd14610243a6d51b51837556d}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Receive Handle Value Confirmation Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_t_t___e_v_t___read_by_type__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Read\+By\+Type\+\_\+t} \hyperlink{group___b_l_e___g_a_t_t_ga9cfa75f09b14683afdd4def5cbc15be8}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Read\+By\+Type\+\_\+t}\hypertarget{group___b_l_e___g_a_t_t_ga9cfa75f09b14683afdd4def5cbc15be8}{}\label{group___b_l_e___g_a_t_t_ga9cfa75f09b14683afdd4def5cbc15be8}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT E\+V\+E\+NT Receive Read By Type Request Parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___g_a_t_t___event}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} \hyperlink{group___b_l_e___g_a_t_t_ga4eda93282685fc60561bed8c9e88f449}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event}\hypertarget{group___b_l_e___g_a_t_t_ga4eda93282685fc60561bed8c9e88f449}{}\label{group___b_l_e___g_a_t_t_ga4eda93282685fc60561bed8c9e88f449}
+
+\begin{DoxyCompactList}\small\item\em G\+A\+TT callback function parameters. \end{DoxyCompactList}\item 
+typedef void($\ast$ \hyperlink{group___b_l_e___g_a_t_t_ga3b479749f90cd267d7c3a3eea4605ff6}{G\+A\+T\+T\+Process\+Routine}) (\hyperlink{struct_b_l_e___g_a_t_t___event}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} X\+D\+A\+TA $\ast$p\+\_\+event) large\hypertarget{group___b_l_e___g_a_t_t_ga3b479749f90cd267d7c3a3eea4605ff6}{}\label{group___b_l_e___g_a_t_t_ga3b479749f90cd267d7c3a3eea4605ff6}
+
+\begin{DoxyCompactList}\small\item\em B\+LE G\+A\+TT callback function prototype. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___b_l_e___g_a_t_t_ga0a64d101980333994dbe7959f99d6b33}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event\+ID} \{ \\*
+\hyperlink{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a1a18dcb334e1358be4c3035f4d3e4b0d}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+SP} = 0x00, 
+\hyperlink{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a14aeaed03f5690ff9fbaa04571e2e2d0}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+P\+R\+I\+M\+\_\+\+S\+E\+R\+V\+\_\+\+R\+E\+SP}, 
+\hyperlink{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a0f4546f4d45ad997b4c8bae4b6c44315}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+P\+R\+I\+M\+\_\+\+S\+E\+R\+V\+\_\+\+B\+Y\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+SP}, 
+\hyperlink{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a71f60d4b70314bd778bfcd124862d5fb}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+C\+H\+A\+R\+\_\+\+R\+E\+SP}, 
+\\*
+\hyperlink{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a22f3a1d0d3d03a9471ec8432aef7eb7e}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+D\+E\+S\+C\+\_\+\+R\+E\+SP}, 
+\hyperlink{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a78fd49490c51e31db9db4e33f4e887c6}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+U\+S\+I\+N\+G\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+SP}, 
+\hyperlink{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a4ec62a1a663a7ef8eda32b53d2cdd723}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+SP}, 
+\hyperlink{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a9d2e19b620346ad298b99f542f36cde1}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+R\+E\+SP}, 
+\\*
+\hyperlink{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a8cb8b5b834bc84e0b81dd622a3021f95}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+N\+O\+T\+I\+FY}, 
+\hyperlink{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33ababe9d810c6ecb62d16b0d4682660f46}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+I\+N\+D\+I\+C\+A\+TE}, 
+\hyperlink{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a1c071eaec4d50d02fffb3857c32406a6}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+R\+E\+AD}, 
+\hyperlink{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33aa68b7764f5264ff092d2ad17851355ed}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+W\+R\+I\+TE}, 
+\\*
+\hyperlink{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a9783291bc8f37f6caabcfe0d897f2246}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+C\+O\+N\+F\+I\+RM}, 
+\hyperlink{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a53e0550cf3c7b17544a54d644b25fc77}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+B\+Y\+\_\+\+T\+Y\+PE}, 
+\hyperlink{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a8f9e6cc20f84412ffdbfe45bd5d9f4d9}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+T\+I\+M\+E\+O\+UT}, 
+\hyperlink{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33ac67a8dca872cc7b08498fe8cce0c36ff}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+M\+TU}
+ \}\begin{DoxyCompactList}\small\item\em B\+LE G\+A\+TT callback events. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_ga6924bc2183f639db2d41f74ded2b6da3}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Init} (\hyperlink{group___b_l_e___g_a_t_t_ga3b479749f90cd267d7c3a3eea4605ff6}{G\+A\+T\+T\+Process\+Routine} gatt\+Handler) large
+\begin{DoxyCompactList}\small\item\em Initialize G\+A\+TT. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_gab8231a728024e0181d21ac2229a4a47e}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Configure} (u16 configuration) large
+\begin{DoxyCompactList}\small\item\em Configure A\+TT stack behavior. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_gaced5c2469856c87b1b62b6a3617f55ee}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Start\+Creating\+Service\+Table} () large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Server starts the procedure to init Service Table. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_ga07d152cd88e2ef9cf67bea40aef8ee86}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+End\+Creating\+Service\+Table} () large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Server ends the procedure to init Service Table. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_ga226850291e0a9c12c00560437b252dc1}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Init\+Service\+Table} (\hyperlink{struct_b_l_e___g_a_t_t___services_info}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Services\+Info} X\+D\+A\+TA $\ast$p\+\_\+service\+Info, u16 X\+D\+A\+TA $\ast$p\+\_\+start\+Handle) large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Server initialize the G\+A\+TT Service Table. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_gaf93e988e8f26bb9df716c8d913d2ea7b}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read} (u8 conn\+Handle, u16 char\+Handle, u16 value\+Offset) large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Client initiates a read operation to G\+A\+TT Server. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_ga822208018904290ec8f5de3c5644f1c1}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Write} (u8 conn\+Handle, \hyperlink{struct_b_l_e___g_a_t_t_c___write_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Write\+Params} X\+D\+A\+TA $\ast$p\+\_\+write\+Params) large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Client initiates a write operation to G\+A\+TT Server. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_ga8cf4f7194f7d87e193cc9a002b39eb49}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Handle\+Value\+Confirm} (u8 conn\+Handle) large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Client sends Handle Value Confirmation for receiving a Handle Value Indication. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_ga99da90abd398559e06a91dec0555ac35}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Primary\+Services} (u8 conn\+Handle) large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Client initialize the discovering all primary services procedure. Two possible response events will come for this procedure. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+P\+R\+I\+M\+\_\+\+S\+E\+R\+V\+\_\+\+R\+E\+SP if service is discovered. Status flag indicates if more events are coming or procedure end. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+SP when no primary service is found. The procedure also ends. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_ga1971ff8cbddce2f2bebfd984ef0a6005}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+Primary\+Service\+By\+U\+U\+ID} (u8 conn\+Handle, \hyperlink{struct_b_l_e___g_a_t_t_c___discover_primary_service_by_uuid_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+Primary\+Service\+By\+Uuid\+Params} X\+D\+A\+TA $\ast$p\+\_\+disc\+Params) large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Client initialize the discovering primary service by uuid procedure with the given handle range. Two possible response events will come for this procedure. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+P\+R\+I\+M\+\_\+\+S\+E\+R\+V\+\_\+\+B\+Y\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+SP if service is discovered. Status flag indicates if more events are coming or procedure end. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+SP when no matched service is found. The procedure also ends. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_ga78d040ae3a72af1c93499bad90f185dc}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Characteristics} (u8 conn\+Handle, u16 start\+Handle, u16 end\+Handle) large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Client initialize the discovering all characteristics procedure with the given handle range. Two possible response events will come for this procedure. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+C\+H\+A\+R\+\_\+\+R\+E\+SP if characteristics are discovered. Status flag indicates if more events are coming or procedure end. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+SP when no characteristic is found. The procedure also ends. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_gab5b7400900819b84b5391555d8a5bc3e}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Descriptors} (u8 conn\+Handle, u16 start\+Handle, u16 end\+Handle) large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Client initialize the discovering all descriptors procedure with the given handle range. Two possible response events will come for this procedure. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+D\+E\+S\+C\+\_\+\+R\+E\+SP if matched descriptors are discovered. Status flag indicates if more events are coming or procedure end. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+SP when no descriptors is found. The procedure also ends. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_gaadbfe9bd310f779cfb924e7fb5a47c90}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read\+Using\+U\+U\+ID} (u8 conn\+Handle, \hyperlink{struct_b_l_e___g_a_t_t_c___read_by_type_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read\+By\+Type\+Params} X\+D\+A\+TA $\ast$p\+\_\+read\+Params) large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Client Read Characteristic Value using U\+U\+ID. Two possible response events will come for this procedure. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+U\+S\+I\+N\+G\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+SP if characteristic value is returned. Status flag indicates if more events are coming or procedure end. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+SP when no matched characteristic is found. The procedure also ends. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_gaafd2594c3671e138de2461b07bab346e}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Handle\+Value} (u8 conn\+Handle, \hyperlink{struct_b_l_e___g_a_t_t_s___handle_value_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Handle\+Value\+Params} X\+D\+A\+TA $\ast$p\+\_\+hv\+Params) large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Server sends Handle Value Notification or Indication to G\+A\+TT Client. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_ga5ac5fbf3af34caa031cdb4102f2dec7c}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Set\+Handle\+Value} (u16 char\+Handle, u16 char\+Length, u8 X\+D\+A\+TA $\ast$p\+\_\+char\+Value) large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Server sets the value of the characteristic. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_gaf3d67205f8113c1bed597881ef303817}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Get\+Handle\+Value} (u16 char\+Handle, u8 X\+D\+A\+TA $\ast$p\+\_\+char\+Length, u8 X\+D\+A\+TA $\ast$p\+\_\+char\+Value) large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Server gets the value of the characteristic. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_ga22e55f1a3ce94f17f644be2a3241aa10}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+Response} (u8 conn\+Handle, \hyperlink{struct_b_l_e___g_a_t_t_s___send_read_response_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+Response\+Params} X\+D\+A\+TA $\ast$p\+\_\+resp\+Params) large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Server sends the read response. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_ga94dbe55f4f14f255bde6d3273b14b282}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Write\+Response} (u8 conn\+Handle, \hyperlink{struct_b_l_e___g_a_t_t_s___send_write_response_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Write\+Response\+Params} X\+D\+A\+TA $\ast$p\+\_\+resp\+Params) large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Server sends the write response. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_gaf0554a04e9e8b1c983f67120d56ddb3f}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Error\+Response} (u8 conn\+Handle, \hyperlink{struct_b_l_e___g_a_t_t_s___send_err_response_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Err\+Response\+Params} X\+D\+A\+TA $\ast$p\+\_\+err\+Params) large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Server sends the error response. This A\+PI can be called after Application receives Write Request event. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_a_t_t_gaaa6ea10aeb9c2dd491e8de7f7432aef6}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+By\+Type\+Response} (u8 conn\+Handle, \hyperlink{struct_b_l_e___g_a_t_t_s___send_read_by_type_response_params}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+By\+Type\+Response\+Params} X\+D\+A\+TA $\ast$p\+\_\+read\+Params) large
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Server sends the Read By Type response. This A\+PI can be called after Application receives Read By Type Request event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Definitions and prototypes for the B\+LE G\+A\+TT stack layer application programming interface. 
+
+
+
+\subsubsection{Macro Definition Documentation}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+EN@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+EN}}
+\index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+EN@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+EN}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+EN}{BLE_ATT_ATTRIBUTE_VALUE_LEN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+EN~23}\hypertarget{group___b_l_e___g_a_t_t_ga4d1bd224084bd70c854891e4876dcf6f}{}\label{group___b_l_e___g_a_t_t_ga4d1bd224084bd70c854891e4876dcf6f}
+The Maximum Length of Attribute Value. Refer to A\+TT default M\+TU size. \index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+T\+U\+\_\+\+L\+E\+N\+G\+TH@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+T\+U\+\_\+\+L\+E\+N\+G\+TH}}
+\index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+T\+U\+\_\+\+L\+E\+N\+G\+TH@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+T\+U\+\_\+\+L\+E\+N\+G\+TH}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+T\+U\+\_\+\+L\+E\+N\+G\+TH}{BLE_ATT_DEFAULT_MTU_LENGTH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+T\+U\+\_\+\+L\+E\+N\+G\+TH~23}\hypertarget{group___b_l_e___g_a_t_t_gad67dc15fa3333c9a35a28d20dec4d848}{}\label{group___b_l_e___g_a_t_t_gad67dc15fa3333c9a35a28d20dec4d848}
+A\+TT default M\+TU size. \index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}}
+\index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}{BLE_ATT_HANDLE_VALUE_HEADER_SIZE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE~3}\hypertarget{group___b_l_e___g_a_t_t_ga824bb76855b7f0e87c25d8050b1d94bd}{}\label{group___b_l_e___g_a_t_t_ga824bb76855b7f0e87c25d8050b1d94bd}
+The B\+LE A\+TT Handle Value Notification/\+Indication Header Size. \index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+M\+A\+X\+\_\+\+M\+T\+U\+\_\+\+L\+E\+N\+G\+TH@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+M\+A\+X\+\_\+\+M\+T\+U\+\_\+\+L\+E\+N\+G\+TH}}
+\index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+M\+A\+X\+\_\+\+M\+T\+U\+\_\+\+L\+E\+N\+G\+TH@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+M\+A\+X\+\_\+\+M\+T\+U\+\_\+\+L\+E\+N\+G\+TH}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+M\+A\+X\+\_\+\+M\+T\+U\+\_\+\+L\+E\+N\+G\+TH}{BLE_ATT_MAX_MTU_LENGTH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+M\+A\+X\+\_\+\+M\+T\+U\+\_\+\+L\+E\+N\+G\+TH~160}\hypertarget{group___b_l_e___g_a_t_t_ga380151ce5e77dadfae069f37afd70b8b}{}\label{group___b_l_e___g_a_t_t_ga380151ce5e77dadfae069f37afd70b8b}
+The Maximum supported M\+TU size of A\+TT stack. \index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+M\+A\+X\+\_\+\+U\+U\+I\+D\+\_\+\+S\+I\+ZE@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+M\+A\+X\+\_\+\+U\+U\+I\+D\+\_\+\+S\+I\+ZE}}
+\index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+M\+A\+X\+\_\+\+U\+U\+I\+D\+\_\+\+S\+I\+ZE@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+M\+A\+X\+\_\+\+U\+U\+I\+D\+\_\+\+S\+I\+ZE}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+M\+A\+X\+\_\+\+U\+U\+I\+D\+\_\+\+S\+I\+ZE}{BLE_ATT_MAX_UUID_SIZE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+M\+A\+X\+\_\+\+U\+U\+I\+D\+\_\+\+S\+I\+ZE~16}\hypertarget{group___b_l_e___g_a_t_t_gaf7a0af4a975d6ef5bcb00e86d9098390}{}\label{group___b_l_e___g_a_t_t_gaf7a0af4a975d6ef5bcb00e86d9098390}
+The Maximum U\+U\+ID Length. 128-\/bit. \index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+S\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+S\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}}
+\index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+S\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+S\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+S\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}{BLE_ATT_READ_RESP_HEADER_SIZE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+S\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE~1}\hypertarget{group___b_l_e___g_a_t_t_ga60b268cf9ce073bd7372e5c903f9aff8}{}\label{group___b_l_e___g_a_t_t_ga60b268cf9ce073bd7372e5c903f9aff8}
+The B\+LE A\+TT Read Response Header Size. \index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}}
+\index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}{BLE_ATT_WRITE_HEADER_SIZE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE~3}\hypertarget{group___b_l_e___g_a_t_t_ga433fb9d859cdfa9d22acf4c6af69e1a3}{}\label{group___b_l_e___g_a_t_t_ga433fb9d859cdfa9d22acf4c6af69e1a3}
+The B\+LE A\+TT Write Request/\+Command Header Size. \index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+R\+E\+S\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+R\+E\+S\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}}
+\index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+R\+E\+S\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+R\+E\+S\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+R\+E\+S\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE}{BLE_ATT_WRITE_RESP_HEADER_SIZE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+R\+E\+S\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE~5}\hypertarget{group___b_l_e___g_a_t_t_ga6a4807bfe93a96506caa739c30038acd}{}\label{group___b_l_e___g_a_t_t_ga6a4807bfe93a96506caa739c30038acd}
+The B\+LE A\+TT Prepare Write Response Header Size. 
+
+\subsubsection{Enumeration Type Documentation}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event\+ID@{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event\+ID}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event\+ID@{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event\+ID}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event\+ID}{BLE_GATT_EventID}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event\+ID}}\hypertarget{group___b_l_e___g_a_t_t_ga0a64d101980333994dbe7959f99d6b33}{}\label{group___b_l_e___g_a_t_t_ga0a64d101980333994dbe7959f99d6b33}
+
+
+B\+LE G\+A\+TT callback events. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+SP@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+SP}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+SP@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+SP}}\item[{\em 
+B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+SP\hypertarget{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a1a18dcb334e1358be4c3035f4d3e4b0d}{}\label{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a1a18dcb334e1358be4c3035f4d3e4b0d}
+}]Error Response Event. Please see \hyperlink{struct_b_l_e___a_t_t___e_v_t___error__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Error\+\_\+t}. \index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+P\+R\+I\+M\+\_\+\+S\+E\+R\+V\+\_\+\+R\+E\+SP@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+P\+R\+I\+M\+\_\+\+S\+E\+R\+V\+\_\+\+R\+E\+SP}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+P\+R\+I\+M\+\_\+\+S\+E\+R\+V\+\_\+\+R\+E\+SP@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+P\+R\+I\+M\+\_\+\+S\+E\+R\+V\+\_\+\+R\+E\+SP}}\item[{\em 
+B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+P\+R\+I\+M\+\_\+\+S\+E\+R\+V\+\_\+\+R\+E\+SP\hypertarget{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a14aeaed03f5690ff9fbaa04571e2e2d0}{}\label{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a14aeaed03f5690ff9fbaa04571e2e2d0}
+}]Discover Primary Services Response Event. Please see \hyperlink{struct_b_l_e___a_t_t___e_v_t___disc_prim_serv_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Disc\+Prim\+Serv\+Resp\+\_\+t}. \index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+P\+R\+I\+M\+\_\+\+S\+E\+R\+V\+\_\+\+B\+Y\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+SP@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+P\+R\+I\+M\+\_\+\+S\+E\+R\+V\+\_\+\+B\+Y\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+SP}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+P\+R\+I\+M\+\_\+\+S\+E\+R\+V\+\_\+\+B\+Y\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+SP@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+P\+R\+I\+M\+\_\+\+S\+E\+R\+V\+\_\+\+B\+Y\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+SP}}\item[{\em 
+B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+P\+R\+I\+M\+\_\+\+S\+E\+R\+V\+\_\+\+B\+Y\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+SP\hypertarget{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a0f4546f4d45ad997b4c8bae4b6c44315}{}\label{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a0f4546f4d45ad997b4c8bae4b6c44315}
+}]Discover Primary Services By U\+U\+ID Response Event. Please see \hyperlink{struct_b_l_e___a_t_t___e_v_t___disc_prim_serv_by_uuid_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Disc\+Prim\+Serv\+By\+Uuid\+Resp\+\_\+t}. \index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+C\+H\+A\+R\+\_\+\+R\+E\+SP@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+C\+H\+A\+R\+\_\+\+R\+E\+SP}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+C\+H\+A\+R\+\_\+\+R\+E\+SP@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+C\+H\+A\+R\+\_\+\+R\+E\+SP}}\item[{\em 
+B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+C\+H\+A\+R\+\_\+\+R\+E\+SP\hypertarget{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a71f60d4b70314bd778bfcd124862d5fb}{}\label{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a71f60d4b70314bd778bfcd124862d5fb}
+}]Discover All Characeristics Response Event. Please see \hyperlink{struct_b_l_e___a_t_t___e_v_t___disc_char_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Disc\+Char\+Resp\+\_\+t}. \index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+D\+E\+S\+C\+\_\+\+R\+E\+SP@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+D\+E\+S\+C\+\_\+\+R\+E\+SP}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+D\+E\+S\+C\+\_\+\+R\+E\+SP@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+D\+E\+S\+C\+\_\+\+R\+E\+SP}}\item[{\em 
+B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+D\+E\+S\+C\+\_\+\+R\+E\+SP\hypertarget{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a22f3a1d0d3d03a9471ec8432aef7eb7e}{}\label{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a22f3a1d0d3d03a9471ec8432aef7eb7e}
+}]Discover All Descriptors Response Event. $\ast$\+Please see \hyperlink{struct_b_l_e___a_t_t___e_v_t___disc_desc_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Disc\+Desc\+Resp\+\_\+t}. \index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+U\+S\+I\+N\+G\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+SP@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+U\+S\+I\+N\+G\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+SP}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+U\+S\+I\+N\+G\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+SP@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+U\+S\+I\+N\+G\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+SP}}\item[{\em 
+B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+U\+S\+I\+N\+G\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+SP\hypertarget{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a78fd49490c51e31db9db4e33f4e887c6}{}\label{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a78fd49490c51e31db9db4e33f4e887c6}
+}]Read Using U\+U\+ID Response Event. Please see \hyperlink{struct_b_l_e___a_t_t___e_v_t___read_using_uuid_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Read\+Using\+Uuid\+Resp\+\_\+t}. \index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+SP@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+SP}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+SP@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+SP}}\item[{\em 
+B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+SP\hypertarget{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a4ec62a1a663a7ef8eda32b53d2cdd723}{}\label{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a4ec62a1a663a7ef8eda32b53d2cdd723}
+}]Read Response Event. Please see \hyperlink{struct_b_l_e___a_t_t___e_v_t___read_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Read\+Resp\+\_\+t}. \index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+R\+E\+SP@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+R\+E\+SP}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+R\+E\+SP@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+R\+E\+SP}}\item[{\em 
+B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+R\+E\+SP\hypertarget{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a9d2e19b620346ad298b99f542f36cde1}{}\label{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a9d2e19b620346ad298b99f542f36cde1}
+}]Write Response Event. Please see \hyperlink{struct_b_l_e___a_t_t___e_v_t___write_resp__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+Resp\+\_\+t}. \index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+N\+O\+T\+I\+FY@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+N\+O\+T\+I\+FY}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+N\+O\+T\+I\+FY@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+N\+O\+T\+I\+FY}}\item[{\em 
+B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+N\+O\+T\+I\+FY\hypertarget{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a8cb8b5b834bc84e0b81dd622a3021f95}{}\label{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a8cb8b5b834bc84e0b81dd622a3021f95}
+}]Handle Value Notification Event. Please see \hyperlink{struct_b_l_e___a_t_t___e_v_t___receive_h_v__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Receive\+H\+V\+\_\+t}. \index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+I\+N\+D\+I\+C\+A\+TE@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+I\+N\+D\+I\+C\+A\+TE}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+I\+N\+D\+I\+C\+A\+TE@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+I\+N\+D\+I\+C\+A\+TE}}\item[{\em 
+B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+I\+N\+D\+I\+C\+A\+TE\hypertarget{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33ababe9d810c6ecb62d16b0d4682660f46}{}\label{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33ababe9d810c6ecb62d16b0d4682660f46}
+}]Handle Value Indication Event. Please see \hyperlink{struct_b_l_e___a_t_t___e_v_t___receive_h_v__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Receive\+H\+V\+\_\+t}. \index{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+R\+E\+AD@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+R\+E\+AD}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+R\+E\+AD@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+R\+E\+AD}}\item[{\em 
+B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+R\+E\+AD\hypertarget{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a1c071eaec4d50d02fffb3857c32406a6}{}\label{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a1c071eaec4d50d02fffb3857c32406a6}
+}]Read Request Event. Please see \hyperlink{struct_b_l_e___a_t_t___e_v_t___read__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Read\+\_\+t}. \index{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+W\+R\+I\+TE@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+W\+R\+I\+TE}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+W\+R\+I\+TE@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+W\+R\+I\+TE}}\item[{\em 
+B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+W\+R\+I\+TE\hypertarget{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33aa68b7764f5264ff092d2ad17851355ed}{}\label{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33aa68b7764f5264ff092d2ad17851355ed}
+}]Write Request/\+Command Event. Please see \hyperlink{struct_b_l_e___a_t_t___e_v_t___write__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}. \index{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+C\+O\+N\+F\+I\+RM@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+C\+O\+N\+F\+I\+RM}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+C\+O\+N\+F\+I\+RM@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+C\+O\+N\+F\+I\+RM}}\item[{\em 
+B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+H\+V\+\_\+\+C\+O\+N\+F\+I\+RM\hypertarget{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a9783291bc8f37f6caabcfe0d897f2246}{}\label{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a9783291bc8f37f6caabcfe0d897f2246}
+}]Handle Value Confirmation Event. Please see \hyperlink{struct_b_l_e___a_t_t___e_v_t___receive_confirm__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Receive\+Confirm\+\_\+t}. \index{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+B\+Y\+\_\+\+T\+Y\+PE@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+B\+Y\+\_\+\+T\+Y\+PE}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+B\+Y\+\_\+\+T\+Y\+PE@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+B\+Y\+\_\+\+T\+Y\+PE}}\item[{\em 
+B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+B\+Y\+\_\+\+T\+Y\+PE\hypertarget{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a53e0550cf3c7b17544a54d644b25fc77}{}\label{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a53e0550cf3c7b17544a54d644b25fc77}
+}]Read By Type Request event. Please see \hyperlink{struct_b_l_e___a_t_t___e_v_t___read_by_type__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Read\+By\+Type\+\_\+t}. \index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+T\+I\+M\+E\+O\+UT@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+T\+I\+M\+E\+O\+UT}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+T\+I\+M\+E\+O\+UT@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+T\+I\+M\+E\+O\+UT}}\item[{\em 
+B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+T\+I\+M\+E\+O\+UT\hypertarget{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a8f9e6cc20f84412ffdbfe45bd5d9f4d9}{}\label{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33a8f9e6cc20f84412ffdbfe45bd5d9f4d9}
+}]A\+TT Stack Timeout Event. \index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+M\+TU@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+M\+TU}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+M\+TU@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+M\+TU}}\item[{\em 
+B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+M\+TU\hypertarget{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33ac67a8dca872cc7b08498fe8cce0c36ff}{}\label{group___b_l_e___g_a_t_t_gga0a64d101980333994dbe7959f99d6b33ac67a8dca872cc7b08498fe8cce0c36ff}
+}]Update M\+TU Event. Please see \hyperlink{struct_b_l_e___a_t_t___e_v_t___update_m_t_u__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Update\+M\+T\+U\+\_\+t}. \end{description}
+\end{Desc}
+
+
+\subsubsection{Function Documentation}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Configure@{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Configure}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Configure@{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Configure}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Configure(u16 configuration) large}{BLE_GATT_Configure(u16 configuration) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Configure (
+\begin{DoxyParamCaption}
+\item[{u16}]{configuration}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_gab8231a728024e0181d21ac2229a4a47e}{}\label{group___b_l_e___g_a_t_t_gab8231a728024e0181d21ac2229a4a47e}
+
+
+Configure A\+TT stack behavior. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em configuration} & Bitfield representing each configuration. Bit definitions refer to \hyperlink{group___b_l_e___a_t_t___c_o_n_f_i_g_u_r_a_t_i_o_n___b_i_t_s}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+O\+N\+\_\+\+B\+I\+TS}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Configuration successfully. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Init@{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Init}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Init@{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Init}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Init(\+G\+A\+T\+T\+Process\+Routine gatt\+Handler) large}{BLE_GATT_Init(GATTProcessRoutine gattHandler) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf G\+A\+T\+T\+Process\+Routine}}]{gatt\+Handler}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_ga6924bc2183f639db2d41f74ded2b6da3}{}\label{group___b_l_e___g_a_t_t_ga6924bc2183f639db2d41f74ded2b6da3}
+
+
+Initialize G\+A\+TT. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em gatt\+Handler} & Function to called if there\textquotesingle{}s gatt event.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS G\+A\+TT initialize successfully. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Characteristics@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Characteristics}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Characteristics@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Characteristics}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Characteristics(u8 conn\+Handle, u16 start\+Handle, u16 end\+Handle) large}{BLE_GATTC_DiscoverAllCharacteristics(u8 connHandle, u16 startHandle, u16 endHandle) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Characteristics (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{u16}]{start\+Handle, }
+\item[{u16}]{end\+Handle}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_ga78d040ae3a72af1c93499bad90f185dc}{}\label{group___b_l_e___g_a_t_t_ga78d040ae3a72af1c93499bad90f185dc}
+
+
+G\+A\+TT Client initialize the discovering all characteristics procedure with the given handle range. Two possible response events will come for this procedure. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+C\+H\+A\+R\+\_\+\+R\+E\+SP if characteristics are discovered. Status flag indicates if more events are coming or procedure end. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+SP when no characteristic is found. The procedure also ends. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Handle of the connection to discover the services. \\
+\hline
+\mbox{\tt in}  & {\em start\+Handle} & Start of the querying handle range. \\
+\hline
+\mbox{\tt in}  & {\em end\+Handle} & End of the querying handle range.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully starts the discovering. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Descriptors@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Descriptors}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Descriptors@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Descriptors}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Descriptors(u8 conn\+Handle, u16 start\+Handle, u16 end\+Handle) large}{BLE_GATTC_DiscoverAllDescriptors(u8 connHandle, u16 startHandle, u16 endHandle) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Descriptors (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{u16}]{start\+Handle, }
+\item[{u16}]{end\+Handle}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_gab5b7400900819b84b5391555d8a5bc3e}{}\label{group___b_l_e___g_a_t_t_gab5b7400900819b84b5391555d8a5bc3e}
+
+
+G\+A\+TT Client initialize the discovering all descriptors procedure with the given handle range. Two possible response events will come for this procedure. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+D\+E\+S\+C\+\_\+\+R\+E\+SP if matched descriptors are discovered. Status flag indicates if more events are coming or procedure end. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+SP when no descriptors is found. The procedure also ends. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Handle of the connection to discover the services. \\
+\hline
+\mbox{\tt in}  & {\em start\+Handle} & Start of the querying handle range. \\
+\hline
+\mbox{\tt in}  & {\em end\+Handle} & End of the querying handle range.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully starts the discovering. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Primary\+Services@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Primary\+Services}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Primary\+Services@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Primary\+Services}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Primary\+Services(u8 conn\+Handle) large}{BLE_GATTC_DiscoverAllPrimaryServices(u8 connHandle) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+All\+Primary\+Services (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_ga99da90abd398559e06a91dec0555ac35}{}\label{group___b_l_e___g_a_t_t_ga99da90abd398559e06a91dec0555ac35}
+
+
+G\+A\+TT Client initialize the discovering all primary services procedure. Two possible response events will come for this procedure. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+P\+R\+I\+M\+\_\+\+S\+E\+R\+V\+\_\+\+R\+E\+SP if service is discovered. Status flag indicates if more events are coming or procedure end. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+SP when no primary service is found. The procedure also ends. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Handle of the connection to discover the services.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully starts the discovering. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+Primary\+Service\+By\+U\+U\+ID@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+Primary\+Service\+By\+U\+U\+ID}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+Primary\+Service\+By\+U\+U\+ID@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+Primary\+Service\+By\+U\+U\+ID}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+Primary\+Service\+By\+U\+U\+I\+D(u8 conn\+Handle, B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+Primary\+Service\+By\+Uuid\+Params X\+D\+A\+T\+A $\ast$p\+\_\+disc\+Params) large}{BLE_GATTC_DiscoverPrimaryServiceByUUID(u8 connHandle, BLE_GATTC_DiscoverPrimaryServiceByUuidParams XDATA *p_discParams) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+Primary\+Service\+By\+U\+U\+ID (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{{\bf B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Discover\+Primary\+Service\+By\+Uuid\+Params} X\+D\+A\+TA $\ast$}]{p\+\_\+disc\+Params}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_ga1971ff8cbddce2f2bebfd984ef0a6005}{}\label{group___b_l_e___g_a_t_t_ga1971ff8cbddce2f2bebfd984ef0a6005}
+
+
+G\+A\+TT Client initialize the discovering primary service by uuid procedure with the given handle range. Two possible response events will come for this procedure. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+D\+I\+S\+C\+\_\+\+P\+R\+I\+M\+\_\+\+S\+E\+R\+V\+\_\+\+B\+Y\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+SP if service is discovered. Status flag indicates if more events are coming or procedure end. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+SP when no matched service is found. The procedure also ends. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Handle of the connection to discover the services. \\
+\hline
+\mbox{\tt in}  & {\em disc\+Params} & Pointer to the Discover Primary Service by U\+U\+ID parameter structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully starts the discovering. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Handle\+Value\+Confirm@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Handle\+Value\+Confirm}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Handle\+Value\+Confirm@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Handle\+Value\+Confirm}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Handle\+Value\+Confirm(u8 conn\+Handle) large}{BLE_GATTC_HandleValueConfirm(u8 connHandle) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Handle\+Value\+Confirm (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_ga8cf4f7194f7d87e193cc9a002b39eb49}{}\label{group___b_l_e___g_a_t_t_ga8cf4f7194f7d87e193cc9a002b39eb49}
+
+
+G\+A\+TT Client sends Handle Value Confirmation for receiving a Handle Value Indication. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Handle of the connection to send Handle Value Confirmation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully starts the Handle Value Confirmation. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read(u8 conn\+Handle, u16 char\+Handle, u16 value\+Offset) large}{BLE_GATTC_Read(u8 connHandle, u16 charHandle, u16 valueOffset) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{u16}]{char\+Handle, }
+\item[{u16}]{value\+Offset}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_gaf93e988e8f26bb9df716c8d913d2ea7b}{}\label{group___b_l_e___g_a_t_t_gaf93e988e8f26bb9df716c8d913d2ea7b}
+
+
+G\+A\+TT Client initiates a read operation to G\+A\+TT Server. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Handle of the connection to send read request. \\
+\hline
+\mbox{\tt in}  & {\em char\+Handle} & Handle of the characteristic to be read. \\
+\hline
+\mbox{\tt in}  & {\em value\+Offset} & None-\/zero offset value to initiate a read blob request.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully starts the read operation. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read\+Using\+U\+U\+ID@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read\+Using\+U\+U\+ID}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read\+Using\+U\+U\+ID@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read\+Using\+U\+U\+ID}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read\+Using\+U\+U\+I\+D(u8 conn\+Handle, B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read\+By\+Type\+Params X\+D\+A\+T\+A $\ast$p\+\_\+read\+Params) large}{BLE_GATTC_ReadUsingUUID(u8 connHandle, BLE_GATTC_ReadByTypeParams XDATA *p_readParams) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read\+Using\+U\+U\+ID (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{{\bf B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Read\+By\+Type\+Params} X\+D\+A\+TA $\ast$}]{p\+\_\+read\+Params}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_gaadbfe9bd310f779cfb924e7fb5a47c90}{}\label{group___b_l_e___g_a_t_t_gaadbfe9bd310f779cfb924e7fb5a47c90}
+
+
+G\+A\+TT Client Read Characteristic Value using U\+U\+ID. Two possible response events will come for this procedure. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+R\+E\+A\+D\+\_\+\+U\+S\+I\+N\+G\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+SP if characteristic value is returned. Status flag indicates if more events are coming or procedure end. Receive B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+E\+V\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+SP when no matched characteristic is found. The procedure also ends. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Handle of the connection to read characteristic value. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+read\+Params} & Pointer to Read Using U\+U\+ID Parameters.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully starts the discovering. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Write@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Write}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Write@{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Write}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Write(u8 conn\+Handle, B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Write\+Params X\+D\+A\+T\+A $\ast$p\+\_\+write\+Params) large}{BLE_GATTC_Write(u8 connHandle, BLE_GATTC_WriteParams XDATA *p_writeParams) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Write (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{{\bf B\+L\+E\+\_\+\+G\+A\+T\+T\+C\+\_\+\+Write\+Params} X\+D\+A\+TA $\ast$}]{p\+\_\+write\+Params}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_ga822208018904290ec8f5de3c5644f1c1}{}\label{group___b_l_e___g_a_t_t_ga822208018904290ec8f5de3c5644f1c1}
+
+
+G\+A\+TT Client initiates a write operation to G\+A\+TT Server. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Handle of the connection to send write operation. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+write\+Params} & Pointer to the Write Request parameters.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully starts the write operation. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+End\+Creating\+Service\+Table@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+End\+Creating\+Service\+Table}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+End\+Creating\+Service\+Table@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+End\+Creating\+Service\+Table}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+End\+Creating\+Service\+Table() large}{BLE_GATTS_EndCreatingServiceTable() large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+End\+Creating\+Service\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_ga07d152cd88e2ef9cf67bea40aef8ee86}{}\label{group___b_l_e___g_a_t_t_ga07d152cd88e2ef9cf67bea40aef8ee86}
+
+
+G\+A\+TT Server ends the procedure to init Service Table. 
+
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully create the whole Service Table. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Get\+Handle\+Value@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Get\+Handle\+Value}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Get\+Handle\+Value@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Get\+Handle\+Value}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Get\+Handle\+Value(u16 char\+Handle, u8 X\+D\+A\+T\+A $\ast$p\+\_\+char\+Length, u8 X\+D\+A\+T\+A $\ast$p\+\_\+char\+Value) large}{BLE_GATTS_GetHandleValue(u16 charHandle, u8 XDATA *p_charLength, u8 XDATA *p_charValue) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Get\+Handle\+Value (
+\begin{DoxyParamCaption}
+\item[{u16}]{char\+Handle, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+char\+Length, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+char\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_gaf3d67205f8113c1bed597881ef303817}{}\label{group___b_l_e___g_a_t_t_gaf3d67205f8113c1bed597881ef303817}
+
+
+G\+A\+TT Server gets the value of the characteristic. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em char\+Handle} & Handle of the characteristic to be get. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+\_\+char\+Length} & Pointer to length of the characteristic value. \\
+\hline
+\mbox{\tt in,out}  & {\em p\+\_\+char\+Value} & Pointer to the buffer to store the read value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully gets the characteristic value. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Init\+Service\+Table@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Init\+Service\+Table}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Init\+Service\+Table@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Init\+Service\+Table}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Init\+Service\+Table(\+B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Services\+Info X\+D\+A\+T\+A $\ast$p\+\_\+service\+Info, u16 X\+D\+A\+T\+A $\ast$p\+\_\+start\+Handle) large}{BLE_GATTS_InitServiceTable(BLE_GATT_ServicesInfo XDATA *p_serviceInfo, u16 XDATA *p_startHandle) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Init\+Service\+Table (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Services\+Info} X\+D\+A\+TA $\ast$}]{p\+\_\+service\+Info, }
+\item[{u16 X\+D\+A\+TA $\ast$}]{p\+\_\+start\+Handle}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_ga226850291e0a9c12c00560437b252dc1}{}\label{group___b_l_e___g_a_t_t_ga226850291e0a9c12c00560437b252dc1}
+
+
+G\+A\+TT Server initialize the G\+A\+TT Service Table. 
+
+\begin{DoxyNote}{Note}
+This function must be called between \hyperlink{group___b_l_e___g_a_t_t_gaced5c2469856c87b1b62b6a3617f55ee}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Start\+Creating\+Service\+Table()} and \hyperlink{group___b_l_e___g_a_t_t_ga07d152cd88e2ef9cf67bea40aef8ee86}{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+End\+Creating\+Service\+Table()}.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+service\+Info} & Pointer to the information of registered Service. \\
+\hline
+\mbox{\tt out}  & {\em p\+\_\+start\+Handle} & Pointer to the starting handle of the registered Service.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully initialize all information of the registered Service. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Error\+Response@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Error\+Response}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Error\+Response@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Error\+Response}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Error\+Response(u8 conn\+Handle, B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Err\+Response\+Params X\+D\+A\+T\+A $\ast$p\+\_\+err\+Params) large}{BLE_GATTS_SendErrorResponse(u8 connHandle, BLE_GATTS_SendErrResponseParams XDATA *p_errParams) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Error\+Response (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{{\bf B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Err\+Response\+Params} X\+D\+A\+TA $\ast$}]{p\+\_\+err\+Params}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_gaf0554a04e9e8b1c983f67120d56ddb3f}{}\label{group___b_l_e___g_a_t_t_gaf0554a04e9e8b1c983f67120d56ddb3f}
+
+
+G\+A\+TT Server sends the error response. This A\+PI can be called after Application receives Write Request event. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Handle of the connection to send the error response. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+err\+Params} & Pointer to Error Response parameters.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully starts to send the error response. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Handle\+Value@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Handle\+Value}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Handle\+Value@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Handle\+Value}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Handle\+Value(u8 conn\+Handle, B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Handle\+Value\+Params X\+D\+A\+T\+A $\ast$p\+\_\+hv\+Params) large}{BLE_GATTS_SendHandleValue(u8 connHandle, BLE_GATTS_HandleValueParams XDATA *p_hvParams) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Handle\+Value (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{{\bf B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Handle\+Value\+Params} X\+D\+A\+TA $\ast$}]{p\+\_\+hv\+Params}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_gaafd2594c3671e138de2461b07bab346e}{}\label{group___b_l_e___g_a_t_t_gaafd2594c3671e138de2461b07bab346e}
+
+
+G\+A\+TT Server sends Handle Value Notification or Indication to G\+A\+TT Client. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Handle of the connection to send Handle Value Notification/\+Indication. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+hv\+Params} & Pointer to the Handle Value Notification/\+Indication Parameters.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully starts the Handle Value Notification/\+Indication 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+By\+Type\+Response@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+By\+Type\+Response}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+By\+Type\+Response@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+By\+Type\+Response}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+By\+Type\+Response(u8 conn\+Handle, B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+By\+Type\+Response\+Params X\+D\+A\+T\+A $\ast$p\+\_\+read\+Params) large}{BLE_GATTS_SendReadByTypeResponse(u8 connHandle, BLE_GATTS_SendReadByTypeResponseParams XDATA *p_readParams) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+By\+Type\+Response (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{{\bf B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+By\+Type\+Response\+Params} X\+D\+A\+TA $\ast$}]{p\+\_\+read\+Params}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_gaaa6ea10aeb9c2dd491e8de7f7432aef6}{}\label{group___b_l_e___g_a_t_t_gaaa6ea10aeb9c2dd491e8de7f7432aef6}
+
+
+G\+A\+TT Server sends the Read By Type response. This A\+PI can be called after Application receives Read By Type Request event. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Handle of the connection to send the read by type response. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+read\+Params} & Pointer to Read By Type Response parameters.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully starts to send the read by type response. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+Response@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+Response}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+Response@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+Response}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+Response(u8 conn\+Handle, B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+Response\+Params X\+D\+A\+T\+A $\ast$p\+\_\+resp\+Params) large}{BLE_GATTS_SendReadResponse(u8 connHandle, BLE_GATTS_SendReadResponseParams XDATA *p_respParams) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+Response (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{{\bf B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Read\+Response\+Params} X\+D\+A\+TA $\ast$}]{p\+\_\+resp\+Params}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_ga22e55f1a3ce94f17f644be2a3241aa10}{}\label{group___b_l_e___g_a_t_t_ga22e55f1a3ce94f17f644be2a3241aa10}
+
+
+G\+A\+TT Server sends the read response. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Handle of the connection to send the read response. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+resp\+Params} & Pointer to Read Response parameters.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully starts to send the read response. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Write\+Response@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Write\+Response}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Write\+Response@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Write\+Response}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Write\+Response(u8 conn\+Handle, B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Write\+Response\+Params X\+D\+A\+T\+A $\ast$p\+\_\+resp\+Params) large}{BLE_GATTS_SendWriteResponse(u8 connHandle, BLE_GATTS_SendWriteResponseParams XDATA *p_respParams) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Write\+Response (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{{\bf B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Send\+Write\+Response\+Params} X\+D\+A\+TA $\ast$}]{p\+\_\+resp\+Params}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_ga94dbe55f4f14f255bde6d3273b14b282}{}\label{group___b_l_e___g_a_t_t_ga94dbe55f4f14f255bde6d3273b14b282}
+
+
+G\+A\+TT Server sends the write response. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Handle of the connection to send the write response. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+resp\+Params} & Pointer to Write Response Parameters.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully starts to send the write response. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Set\+Handle\+Value@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Set\+Handle\+Value}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Set\+Handle\+Value@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Set\+Handle\+Value}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Set\+Handle\+Value(u16 char\+Handle, u16 char\+Length, u8 X\+D\+A\+T\+A $\ast$p\+\_\+char\+Value) large}{BLE_GATTS_SetHandleValue(u16 charHandle, u16 charLength, u8 XDATA *p_charValue) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Set\+Handle\+Value (
+\begin{DoxyParamCaption}
+\item[{u16}]{char\+Handle, }
+\item[{u16}]{char\+Length, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+char\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_ga5ac5fbf3af34caa031cdb4102f2dec7c}{}\label{group___b_l_e___g_a_t_t_ga5ac5fbf3af34caa031cdb4102f2dec7c}
+
+
+G\+A\+TT Server sets the value of the characteristic. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em char\+Handle} & Handle of the characteristic to be set. \\
+\hline
+\mbox{\tt in}  & {\em char\+Length} & Length of the characteristic to be set. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+char\+Value} & Pointer to the value to be set to the characteristic.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully sets the characteristic value. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}!B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Start\+Creating\+Service\+Table@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Start\+Creating\+Service\+Table}}
+\index{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Start\+Creating\+Service\+Table@{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Start\+Creating\+Service\+Table}!B\+L\+E G\+A\+TT@{B\+L\+E G\+A\+TT}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Start\+Creating\+Service\+Table() large}{BLE_GATTS_StartCreatingServiceTable() large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+A\+T\+T\+S\+\_\+\+Start\+Creating\+Service\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_a_t_t_gaced5c2469856c87b1b62b6a3617f55ee}{}\label{group___b_l_e___g_a_t_t_gaced5c2469856c87b1b62b6a3617f55ee}
+
+
+G\+A\+TT Server starts the procedure to init Service Table. 
+
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully start the creating Service Table Procedure. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+O\+OM Out Of Memory. 
+\end{DoxyReturn}

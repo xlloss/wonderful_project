@@ -1,0 +1,189 @@
+\hypertarget{group___s_p_i___m_a_s_t_e_r}{}\subsection{S\+PI Master}
+\label{group___s_p_i___m_a_s_t_e_r}\index{S\+P\+I Master@{S\+P\+I Master}}
+
+
+Definitions and prototypes for the S\+PI Master application programming interface.  
+
+
+\subsubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___s_p_i___m_a_s_t_e_r___i_d}{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+ID}
+\begin{DoxyCompactList}\small\item\em The mode of S\+PI Master. \end{DoxyCompactList}\item 
+\hyperlink{group___s_p_i___m_a_s_t_e_r___m_a_x___b_u_f___s_i_z_e}{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE}
+\end{DoxyCompactItemize}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_p_p___s_p_i___master___conf_paras}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Master\+\_\+\+Conf\+Paras}
+\begin{DoxyCompactList}\small\item\em Struct of S\+PI master configuration parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_a_p_p___s_p_i___master___send_rece_paras}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Master\+\_\+\+Send\+Rece\+Paras}
+\begin{DoxyCompactList}\small\item\em Struct of S\+PI master Sending or Receiving parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_a_p_p___s_p_i___master___conf_paras}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Master\+\_\+\+Conf\+Paras} \hyperlink{group___s_p_i___m_a_s_t_e_r_gacd56cb41608d0b10ce9747291a6fb4d6}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Master\+\_\+\+Conf\+Paras}\hypertarget{group___s_p_i___m_a_s_t_e_r_gacd56cb41608d0b10ce9747291a6fb4d6}{}\label{group___s_p_i___m_a_s_t_e_r_gacd56cb41608d0b10ce9747291a6fb4d6}
+
+\begin{DoxyCompactList}\small\item\em Struct of S\+PI master configuration parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_a_p_p___s_p_i___master___send_rece_paras}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Master\+\_\+\+Send\+Rece\+Paras} \hyperlink{group___s_p_i___m_a_s_t_e_r_ga180f68de2953fff3eb6e05b02d47f3c9}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Master\+\_\+\+Send\+Rece\+Paras}\hypertarget{group___s_p_i___m_a_s_t_e_r_ga180f68de2953fff3eb6e05b02d47f3c9}{}\label{group___s_p_i___m_a_s_t_e_r_ga180f68de2953fff3eb6e05b02d47f3c9}
+
+\begin{DoxyCompactList}\small\item\em Struct of S\+PI master Sending or Receiving parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___s_p_i___m_a_s_t_e_r_ga9b0bdd65837c35731a6834dfa4a0a049}{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+D\+EF} \{ \hyperlink{group___s_p_i___m_a_s_t_e_r_gga9b0bdd65837c35731a6834dfa4a0a049aa5d478d17537938b9adb906b72875349}{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E0} = 0, 
+\hyperlink{group___s_p_i___m_a_s_t_e_r_gga9b0bdd65837c35731a6834dfa4a0a049a2762ebdf9a8f96bad970438d579a9dae}{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E1}, 
+\hyperlink{group___s_p_i___m_a_s_t_e_r_gga9b0bdd65837c35731a6834dfa4a0a049ac802af208a78407642cb0ba05dc3f154}{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E2}, 
+\hyperlink{group___s_p_i___m_a_s_t_e_r_gga9b0bdd65837c35731a6834dfa4a0a049a695e76f59a8f8a8c253fa9d28796b07e}{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E3}
+ \}\begin{DoxyCompactList}\small\item\em Definitions for S\+PI Master mode. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group___s_p_i___m_a_s_t_e_r_ga6a763a6c43f6042aad2c8441d6442180}{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+\+D\+EF} \{ \\*
+\hyperlink{group___s_p_i___m_a_s_t_e_r_gga6a763a6c43f6042aad2c8441d6442180a4052a5a6b74a24e1f6b6c33255b118b7}{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+4\+M\+HZ} = 3, 
+\hyperlink{group___s_p_i___m_a_s_t_e_r_gga6a763a6c43f6042aad2c8441d6442180a4747772dabdae2d99cc0a80621c96a0b}{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+2\+M\+HZ} = 7, 
+\hyperlink{group___s_p_i___m_a_s_t_e_r_gga6a763a6c43f6042aad2c8441d6442180a14b1aa7fc9c8ff68737cf2b9ba72e716}{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+1\+M\+HZ} = 15, 
+\hyperlink{group___s_p_i___m_a_s_t_e_r_gga6a763a6c43f6042aad2c8441d6442180ad13f82a8a135f8837eb0cf2f40acb381}{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+500\+K\+HZ} = 31, 
+\\*
+\hyperlink{group___s_p_i___m_a_s_t_e_r_gga6a763a6c43f6042aad2c8441d6442180a6c05bf32dd595ec0426b9e4cfd1bdbff}{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+250\+K\+HZ} =63
+ \}\begin{DoxyCompactList}\small\item\em Definition of master clock rate. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___s_p_i___m_a_s_t_e_r_ga163d9aab00fb66cec9b8a378213ef676}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+Init} (\hyperlink{struct_a_p_p___s_p_i___master___conf_paras}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Master\+\_\+\+Conf\+Paras} X\+D\+A\+TA $\ast$p\+\_\+spi\+Master\+Conf) large
+\begin{DoxyCompactList}\small\item\em Initialize S\+PI master bus. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___s_p_i___m_a_s_t_e_r_gabb4ce9647caadd5bc70bb4d6e02beae2}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+Send\+Receive} (\hyperlink{struct_a_p_p___s_p_i___master___send_rece_paras}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Master\+\_\+\+Send\+Rece\+Paras} X\+D\+A\+TA $\ast$p\+\_\+spi\+Master\+Send\+Rece) large
+\begin{DoxyCompactList}\small\item\em Start S\+PI communication. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___s_p_i___m_a_s_t_e_r_gad98112744dc797370e7aae9becaeae58}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+Close} () large\hypertarget{group___s_p_i___m_a_s_t_e_r_gad98112744dc797370e7aae9becaeae58}{}\label{group___s_p_i___m_a_s_t_e_r_gad98112744dc797370e7aae9becaeae58}
+
+\begin{DoxyCompactList}\small\item\em Free S\+PI bus, the occupied G\+P\+IO pins return to digital input and internal pull high. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Definitions and prototypes for the S\+PI Master application programming interface. 
+
+
+
+\subsubsection{Enumeration Type Documentation}
+\index{S\+P\+I Master@{S\+P\+I Master}!S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+\+D\+EF@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+\+D\+EF}}
+\index{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+\+D\+EF@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+\+D\+EF}!S\+P\+I Master@{S\+P\+I Master}}
+\paragraph[{\texorpdfstring{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+\+D\+EF}{SPI_MASTER_CLK_RATE_DEF}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+\+D\+EF}}\hypertarget{group___s_p_i___m_a_s_t_e_r_ga6a763a6c43f6042aad2c8441d6442180}{}\label{group___s_p_i___m_a_s_t_e_r_ga6a763a6c43f6042aad2c8441d6442180}
+
+
+Definition of master clock rate. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+4\+M\+HZ@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+4\+M\+HZ}!S\+P\+I Master@{S\+P\+I Master}}\index{S\+P\+I Master@{S\+P\+I Master}!S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+4\+M\+HZ@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+4\+M\+HZ}}\item[{\em 
+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+4\+M\+HZ\hypertarget{group___s_p_i___m_a_s_t_e_r_gga6a763a6c43f6042aad2c8441d6442180a4052a5a6b74a24e1f6b6c33255b118b7}{}\label{group___s_p_i___m_a_s_t_e_r_gga6a763a6c43f6042aad2c8441d6442180a4052a5a6b74a24e1f6b6c33255b118b7}
+}]4\+M\+Hz. \index{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+2\+M\+HZ@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+2\+M\+HZ}!S\+P\+I Master@{S\+P\+I Master}}\index{S\+P\+I Master@{S\+P\+I Master}!S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+2\+M\+HZ@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+2\+M\+HZ}}\item[{\em 
+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+2\+M\+HZ\hypertarget{group___s_p_i___m_a_s_t_e_r_gga6a763a6c43f6042aad2c8441d6442180a4747772dabdae2d99cc0a80621c96a0b}{}\label{group___s_p_i___m_a_s_t_e_r_gga6a763a6c43f6042aad2c8441d6442180a4747772dabdae2d99cc0a80621c96a0b}
+}]2\+M\+Hz. \index{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+1\+M\+HZ@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+1\+M\+HZ}!S\+P\+I Master@{S\+P\+I Master}}\index{S\+P\+I Master@{S\+P\+I Master}!S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+1\+M\+HZ@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+1\+M\+HZ}}\item[{\em 
+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+1\+M\+HZ\hypertarget{group___s_p_i___m_a_s_t_e_r_gga6a763a6c43f6042aad2c8441d6442180a14b1aa7fc9c8ff68737cf2b9ba72e716}{}\label{group___s_p_i___m_a_s_t_e_r_gga6a763a6c43f6042aad2c8441d6442180a14b1aa7fc9c8ff68737cf2b9ba72e716}
+}]1\+M\+Hz. \index{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+500\+K\+HZ@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+500\+K\+HZ}!S\+P\+I Master@{S\+P\+I Master}}\index{S\+P\+I Master@{S\+P\+I Master}!S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+500\+K\+HZ@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+500\+K\+HZ}}\item[{\em 
+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+500\+K\+HZ\hypertarget{group___s_p_i___m_a_s_t_e_r_gga6a763a6c43f6042aad2c8441d6442180ad13f82a8a135f8837eb0cf2f40acb381}{}\label{group___s_p_i___m_a_s_t_e_r_gga6a763a6c43f6042aad2c8441d6442180ad13f82a8a135f8837eb0cf2f40acb381}
+}]500\+K\+Hz. \index{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+250\+K\+HZ@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+250\+K\+HZ}!S\+P\+I Master@{S\+P\+I Master}}\index{S\+P\+I Master@{S\+P\+I Master}!S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+250\+K\+HZ@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+250\+K\+HZ}}\item[{\em 
+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+250\+K\+HZ\hypertarget{group___s_p_i___m_a_s_t_e_r_gga6a763a6c43f6042aad2c8441d6442180a6c05bf32dd595ec0426b9e4cfd1bdbff}{}\label{group___s_p_i___m_a_s_t_e_r_gga6a763a6c43f6042aad2c8441d6442180a6c05bf32dd595ec0426b9e4cfd1bdbff}
+}]250\+K\+Hz. \end{description}
+\end{Desc}
+\index{S\+P\+I Master@{S\+P\+I Master}!S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+D\+EF@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+D\+EF}}
+\index{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+D\+EF@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+D\+EF}!S\+P\+I Master@{S\+P\+I Master}}
+\paragraph[{\texorpdfstring{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+D\+EF}{SPI_MASTER_MODE_DEF}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+\+D\+EF}}\hypertarget{group___s_p_i___m_a_s_t_e_r_ga9b0bdd65837c35731a6834dfa4a0a049}{}\label{group___s_p_i___m_a_s_t_e_r_ga9b0bdd65837c35731a6834dfa4a0a049}
+
+
+Definitions for S\+PI Master mode. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E0@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E0}!S\+P\+I Master@{S\+P\+I Master}}\index{S\+P\+I Master@{S\+P\+I Master}!S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E0@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E0}}\item[{\em 
+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E0\hypertarget{group___s_p_i___m_a_s_t_e_r_gga9b0bdd65837c35731a6834dfa4a0a049aa5d478d17537938b9adb906b72875349}{}\label{group___s_p_i___m_a_s_t_e_r_gga9b0bdd65837c35731a6834dfa4a0a049aa5d478d17537938b9adb906b72875349}
+}]S\+PI Mode 0\+: C\+H\+OL is 0, C\+P\+HA is 0. \index{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E1@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E1}!S\+P\+I Master@{S\+P\+I Master}}\index{S\+P\+I Master@{S\+P\+I Master}!S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E1@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E1}}\item[{\em 
+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E1\hypertarget{group___s_p_i___m_a_s_t_e_r_gga9b0bdd65837c35731a6834dfa4a0a049a2762ebdf9a8f96bad970438d579a9dae}{}\label{group___s_p_i___m_a_s_t_e_r_gga9b0bdd65837c35731a6834dfa4a0a049a2762ebdf9a8f96bad970438d579a9dae}
+}]S\+PI Mode 1\+: C\+H\+OL is 0, C\+P\+HA is 1. \index{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E2@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E2}!S\+P\+I Master@{S\+P\+I Master}}\index{S\+P\+I Master@{S\+P\+I Master}!S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E2@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E2}}\item[{\em 
+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E2\hypertarget{group___s_p_i___m_a_s_t_e_r_gga9b0bdd65837c35731a6834dfa4a0a049ac802af208a78407642cb0ba05dc3f154}{}\label{group___s_p_i___m_a_s_t_e_r_gga9b0bdd65837c35731a6834dfa4a0a049ac802af208a78407642cb0ba05dc3f154}
+}]S\+PI Mode 2\+: C\+H\+OL is 1, C\+P\+HA is 0. \index{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E3@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E3}!S\+P\+I Master@{S\+P\+I Master}}\index{S\+P\+I Master@{S\+P\+I Master}!S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E3@{S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E3}}\item[{\em 
+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+O\+D\+E3\hypertarget{group___s_p_i___m_a_s_t_e_r_gga9b0bdd65837c35731a6834dfa4a0a049a695e76f59a8f8a8c253fa9d28796b07e}{}\label{group___s_p_i___m_a_s_t_e_r_gga9b0bdd65837c35731a6834dfa4a0a049a695e76f59a8f8a8c253fa9d28796b07e}
+}]S\+PI Mode 3\+: C\+H\+OL is 1, C\+P\+HA is 1. \end{description}
+\end{Desc}
+
+
+\subsubsection{Function Documentation}
+\index{S\+P\+I Master@{S\+P\+I Master}!A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+Init@{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+Init}}
+\index{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+Init@{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+Init}!S\+P\+I Master@{S\+P\+I Master}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+Init(\+A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Master\+\_\+\+Conf\+Paras X\+D\+A\+T\+A $\ast$p\+\_\+spi\+Master\+Conf) large}{APP_SPI_MASTER_Init(APP_SPI_Master_ConfParas XDATA *p_spiMasterConf) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Master\+\_\+\+Conf\+Paras} X\+D\+A\+TA $\ast$}]{p\+\_\+spi\+Master\+Conf}
+\end{DoxyParamCaption}
+)}\hypertarget{group___s_p_i___m_a_s_t_e_r_ga163d9aab00fb66cec9b8a378213ef676}{}\label{group___s_p_i___m_a_s_t_e_r_ga163d9aab00fb66cec9b8a378213ef676}
+
+
+Initialize S\+PI master bus. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+spi\+Master\+Conf} & Pointer to the \hyperlink{struct_a_p_p___s_p_i___master___conf_paras}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Master\+\_\+\+Conf\+Paras} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully initialize S\+PI master bus. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Default N\+CS is pulled low. 
+\end{DoxyNote}
+\index{S\+P\+I Master@{S\+P\+I Master}!A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+Send\+Receive@{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+Send\+Receive}}
+\index{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+Send\+Receive@{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+Send\+Receive}!S\+P\+I Master@{S\+P\+I Master}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+Send\+Receive(\+A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Master\+\_\+\+Send\+Rece\+Paras X\+D\+A\+T\+A $\ast$p\+\_\+spi\+Master\+Send\+Rece) large}{APP_SPI_MASTER_SendReceive(APP_SPI_Master_SendReceParas XDATA *p_spiMasterSendRece) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+Send\+Receive (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Master\+\_\+\+Send\+Rece\+Paras} X\+D\+A\+TA $\ast$}]{p\+\_\+spi\+Master\+Send\+Rece}
+\end{DoxyParamCaption}
+)}\hypertarget{group___s_p_i___m_a_s_t_e_r_gabb4ce9647caadd5bc70bb4d6e02beae2}{}\label{group___s_p_i___m_a_s_t_e_r_gabb4ce9647caadd5bc70bb4d6e02beae2}
+
+
+Start S\+PI communication. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+spi\+Master\+Send\+Rece} & Pointer to the \hyperlink{struct_a_p_p___s_p_i___master___send_rece_paras}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Master\+\_\+\+Send\+Rece\+Paras} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS S\+PI bus communicate successfully. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Hardware S\+PI master mode can connect Two S\+PI slaves by spi\+Master\+Id setting.~\newline
+ If S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+H\+W\+\_\+\+N\+C\+S0 is set, below G\+P\+IO pins are occupied for S\+PI bus.~\newline
+
+\begin{DoxyItemize}
+\item P31\+: N\+CS~\newline
+
+\item P32\+: M\+I\+SO~\newline
+
+\item P33\+: M\+O\+SI~\newline
+
+\item P34\+: S\+C\+LK~\newline
+ If S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+H\+W\+\_\+\+N\+C\+S1 is set, below G\+P\+IO pins are occupied for S\+PI bus.~\newline
+
+\item P27\+: N\+CS~\newline
+
+\item P32\+: M\+I\+SO~\newline
+
+\item P33\+: M\+O\+SI~\newline
+
+\item P34\+: S\+C\+LK~\newline
+ If S\+P\+I\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+A\+N\+U\+A\+L\+\_\+\+N\+CS is set, below G\+P\+IO pins are occupied for S\+PI bus.~\newline
+
+\item User define P\+XX for N\+CS~\newline
+
+\item P32\+: M\+I\+SO~\newline
+
+\item P33\+: M\+O\+SI~\newline
+
+\item P34\+: S\+C\+LK~\newline
+
+\end{DoxyItemize}
+\end{DoxyNote}

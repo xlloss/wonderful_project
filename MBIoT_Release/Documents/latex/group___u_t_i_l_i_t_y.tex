@@ -1,0 +1,285 @@
+\hypertarget{group___u_t_i_l_i_t_y}{}\subsection{Utility}
+\label{group___u_t_i_l_i_t_y}\index{Utility@{Utility}}
+
+
+Definitions and prototypes for the Utility application programming interface.  
+
+
+\subsubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___u_t_i_l_i_t_y___l_o_w___p_o_w_e_r___m_o_d_e}{U\+T\+I\+L\+I\+T\+Y\+\_\+\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+M\+O\+DE}
+\begin{DoxyCompactList}\small\item\em Definition of low power mode option. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_p_p___u_t_i_l_i_t_y___paired_info}{A\+P\+P\+\_\+\+U\+T\+I\+L\+I\+T\+Y\+\_\+\+Paired\+Info}
+\begin{DoxyCompactList}\small\item\em Structure of paired device information. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_a_p_p___u_t_i_l_i_t_y___mbiot_info}{A\+P\+P\+\_\+\+U\+T\+I\+L\+I\+T\+Y\+\_\+\+Mbiot\+Info}
+\begin{DoxyCompactList}\small\item\em Structure of M\+B\+IoT information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___u_t_i_l_i_t_y_gab75c2ebff376235ff1f30e4cff413607}{A\+P\+P\+\_\+\+R\+A\+N\+\_\+\+N\+U\+M\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+AX}~0x10\hypertarget{group___u_t_i_l_i_t_y_gab75c2ebff376235ff1f30e4cff413607}{}\label{group___u_t_i_l_i_t_y_gab75c2ebff376235ff1f30e4cff413607}
+
+\begin{DoxyCompactList}\small\item\em Definition length of random number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_a_p_p___u_t_i_l_i_t_y___paired_info}{A\+P\+P\+\_\+\+U\+T\+I\+L\+I\+T\+Y\+\_\+\+Paired\+Info} \hyperlink{group___u_t_i_l_i_t_y_ga17f3b36a88cd4cb1a9ad302eea064ba7}{A\+P\+P\+\_\+\+U\+T\+I\+L\+I\+T\+Y\+\_\+\+Paired\+Info}\hypertarget{group___u_t_i_l_i_t_y_ga17f3b36a88cd4cb1a9ad302eea064ba7}{}\label{group___u_t_i_l_i_t_y_ga17f3b36a88cd4cb1a9ad302eea064ba7}
+
+\begin{DoxyCompactList}\small\item\em Structure of paired device information. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_a_p_p___u_t_i_l_i_t_y___mbiot_info}{A\+P\+P\+\_\+\+U\+T\+I\+L\+I\+T\+Y\+\_\+\+Mbiot\+Info} \hyperlink{group___u_t_i_l_i_t_y_gaaa78fbb063cf3a7bf7ef65ea13069717}{A\+P\+P\+\_\+\+U\+T\+I\+L\+I\+T\+Y\+\_\+\+Mbiot\+Info}\hypertarget{group___u_t_i_l_i_t_y_gaaa78fbb063cf3a7bf7ef65ea13069717}{}\label{group___u_t_i_l_i_t_y_gaaa78fbb063cf3a7bf7ef65ea13069717}
+
+\begin{DoxyCompactList}\small\item\em Structure of M\+B\+IoT information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC void \hyperlink{group___u_t_i_l_i_t_y_gaf56162eda7f62250b2e0ac04cc47103d}{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Low\+Power\+Mode\+Control} (u8 option) large
+\begin{DoxyCompactList}\small\item\em M\+B\+IoT low power mode configuration. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___u_t_i_l_i_t_y_ga4e5e4c7373ce431d4f79314a25e8368b}{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Shutdown} (\hyperlink{struct_a_p_p___g_p_i_o___port___mask}{A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Mask} X\+D\+A\+TA $\ast$p\+\_\+start\+Mask) large
+\begin{DoxyCompactList}\small\item\em Shutdown M\+B\+IoT. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___u_t_i_l_i_t_y_gaa220e3a65ad055983746a496f5f091fc}{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Read\+All\+Paired\+Device} (u8 X\+D\+A\+TA $\ast$p\+\_\+device\+Num, u8 X\+D\+A\+TA $\ast$p\+\_\+paired\+List) large
+\begin{DoxyCompactList}\small\item\em Read all paired device information. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___u_t_i_l_i_t_y_gad4cc623d70e51882da4c77d2c4d81f9a}{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Erase\+All\+Paired\+Device} () large\hypertarget{group___u_t_i_l_i_t_y_gad4cc623d70e51882da4c77d2c4d81f9a}{}\label{group___u_t_i_l_i_t_y_gad4cc623d70e51882da4c77d2c4d81f9a}
+
+\begin{DoxyCompactList}\small\item\em Erase all paired device information. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___u_t_i_l_i_t_y_ga30652f81a214579ca0d01e8740492cee}{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Delete\+Specific\+Paired\+Device} (u8 index) large
+\begin{DoxyCompactList}\small\item\em Delete sepcified paired device information. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___u_t_i_l_i_t_y_gaeeed8ee65ce22ee218b8138a0326d0cc}{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Reset} () large\hypertarget{group___u_t_i_l_i_t_y_gaeeed8ee65ce22ee218b8138a0326d0cc}{}\label{group___u_t_i_l_i_t_y_gaeeed8ee65ce22ee218b8138a0326d0cc}
+
+\begin{DoxyCompactList}\small\item\em Reset M\+B\+IoT. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___u_t_i_l_i_t_y_gacfcfd6290e2122f99273a44d1a39dc50}{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Read\+Eflash} (u16 address, u16 length, u8 X\+D\+A\+TA $\ast$p\+\_\+payload) large
+\begin{DoxyCompactList}\small\item\em Read data from eflash. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___u_t_i_l_i_t_y_gad8567e861ddc039c6e1e5138eab348d5}{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Write\+Eflash} (u16 address, u16 length, u8 X\+D\+A\+TA $\ast$p\+\_\+payload) large
+\begin{DoxyCompactList}\small\item\em Write data in eflash. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___u_t_i_l_i_t_y_ga98774078e10d87ddf950a6ffeef2dbbf}{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Erase\+Eflash} (u16 address, u16 length) large
+\begin{DoxyCompactList}\small\item\em Erase e\+Flash. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___u_t_i_l_i_t_y_ga050a441890f0385996584f96ae81dc2a}{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Register\+O\+T\+A\+Key} (u8 X\+D\+A\+TA $\ast$p\+\_\+admin\+Key) large
+\begin{DoxyCompactList}\small\item\em Register O\+TA authenticated key. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___u_t_i_l_i_t_y_gabaed2c7ea4c9254612613869051f7e63}{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Get\+Mbiot\+Information} (\hyperlink{struct_a_p_p___u_t_i_l_i_t_y___mbiot_info}{A\+P\+P\+\_\+\+U\+T\+I\+L\+I\+T\+Y\+\_\+\+Mbiot\+Info} X\+D\+A\+TA $\ast$p\+\_\+info) large
+\begin{DoxyCompactList}\small\item\em Get M\+B\+Iot information. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___u_t_i_l_i_t_y_ga4a149b28535cc632e0a433b0cf3e8f24}{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Generate\+Random\+Number} (u8 length, u8 X\+D\+A\+TA $\ast$random) large
+\begin{DoxyCompactList}\small\item\em Write data in eflash. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Definitions and prototypes for the Utility application programming interface. 
+
+
+
+\subsubsection{Function Documentation}
+\index{Utility@{Utility}!U\+T\+I\+L\+I\+T\+Y\+\_\+\+Delete\+Specific\+Paired\+Device@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Delete\+Specific\+Paired\+Device}}
+\index{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Delete\+Specific\+Paired\+Device@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Delete\+Specific\+Paired\+Device}!Utility@{Utility}}
+\paragraph[{\texorpdfstring{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Delete\+Specific\+Paired\+Device(u8 index) large}{UTILITY_DeleteSpecificPairedDevice(u8 index) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 U\+T\+I\+L\+I\+T\+Y\+\_\+\+Delete\+Specific\+Paired\+Device (
+\begin{DoxyParamCaption}
+\item[{u8}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_t_i_l_i_t_y_ga30652f81a214579ca0d01e8740492cee}{}\label{group___u_t_i_l_i_t_y_ga30652f81a214579ca0d01e8740492cee}
+
+
+Delete sepcified paired device information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em index} & The index of paired information.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully delete sepcified paired device information. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{Utility@{Utility}!U\+T\+I\+L\+I\+T\+Y\+\_\+\+Erase\+Eflash@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Erase\+Eflash}}
+\index{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Erase\+Eflash@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Erase\+Eflash}!Utility@{Utility}}
+\paragraph[{\texorpdfstring{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Erase\+Eflash(u16 address, u16 length) large}{UTILITY_EraseEflash(u16 address, u16 length) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 U\+T\+I\+L\+I\+T\+Y\+\_\+\+Erase\+Eflash (
+\begin{DoxyParamCaption}
+\item[{u16}]{address, }
+\item[{u16}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_t_i_l_i_t_y_ga98774078e10d87ddf950a6ffeef2dbbf}{}\label{group___u_t_i_l_i_t_y_ga98774078e10d87ddf950a6ffeef2dbbf}
+
+
+Erase e\+Flash. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em address} & Address for e\+Flash erase. \\
+\hline
+\mbox{\tt in}  & {\em length} & The data length in byte for e\+Flash erase.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Range\+:0x4000$\sim$0x\+F\+F\+FF~\newline
+ Minumum Erase Unit is 2\+KB
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully erase address for e\+Flash . 
+\end{DoxyReturn}
+\index{Utility@{Utility}!U\+T\+I\+L\+I\+T\+Y\+\_\+\+Generate\+Random\+Number@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Generate\+Random\+Number}}
+\index{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Generate\+Random\+Number@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Generate\+Random\+Number}!Utility@{Utility}}
+\paragraph[{\texorpdfstring{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Generate\+Random\+Number(u8 length, u8 X\+D\+A\+T\+A $\ast$random) large}{UTILITY_GenerateRandomNumber(u8 length, u8 XDATA *random) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 U\+T\+I\+L\+I\+T\+Y\+\_\+\+Generate\+Random\+Number (
+\begin{DoxyParamCaption}
+\item[{u8}]{length, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{random}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_t_i_l_i_t_y_ga4a149b28535cc632e0a433b0cf3e8f24}{}\label{group___u_t_i_l_i_t_y_ga4a149b28535cc632e0a433b0cf3e8f24}
+
+
+Write data in eflash. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em length} & The random number length. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+payload} & Pointer to the random number data buffer. @ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully generate random number. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{Utility@{Utility}!U\+T\+I\+L\+I\+T\+Y\+\_\+\+Get\+Mbiot\+Information@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Get\+Mbiot\+Information}}
+\index{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Get\+Mbiot\+Information@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Get\+Mbiot\+Information}!Utility@{Utility}}
+\paragraph[{\texorpdfstring{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Get\+Mbiot\+Information(\+A\+P\+P\+\_\+\+U\+T\+I\+L\+I\+T\+Y\+\_\+\+Mbiot\+Info X\+D\+A\+T\+A $\ast$p\+\_\+info) large}{UTILITY_GetMbiotInformation(APP_UTILITY_MbiotInfo XDATA *p_info) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void U\+T\+I\+L\+I\+T\+Y\+\_\+\+Get\+Mbiot\+Information (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+P\+P\+\_\+\+U\+T\+I\+L\+I\+T\+Y\+\_\+\+Mbiot\+Info} X\+D\+A\+TA $\ast$}]{p\+\_\+info}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_t_i_l_i_t_y_gabaed2c7ea4c9254612613869051f7e63}{}\label{group___u_t_i_l_i_t_y_gabaed2c7ea4c9254612613869051f7e63}
+
+
+Get M\+B\+Iot information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+info} & Pointer to \hyperlink{struct_a_p_p___u_t_i_l_i_t_y___mbiot_info}{A\+P\+P\+\_\+\+U\+T\+I\+L\+I\+T\+Y\+\_\+\+Mbiot\+Info} structure. \\
+\hline
+\end{DoxyParams}
+\index{Utility@{Utility}!U\+T\+I\+L\+I\+T\+Y\+\_\+\+Low\+Power\+Mode\+Control@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Low\+Power\+Mode\+Control}}
+\index{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Low\+Power\+Mode\+Control@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Low\+Power\+Mode\+Control}!Utility@{Utility}}
+\paragraph[{\texorpdfstring{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Low\+Power\+Mode\+Control(u8 option) large}{UTILITY_LowPowerModeControl(u8 option) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void U\+T\+I\+L\+I\+T\+Y\+\_\+\+Low\+Power\+Mode\+Control (
+\begin{DoxyParamCaption}
+\item[{u8}]{option}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_t_i_l_i_t_y_gaf56162eda7f62250b2e0ac04cc47103d}{}\label{group___u_t_i_l_i_t_y_gaf56162eda7f62250b2e0ac04cc47103d}
+
+
+M\+B\+IoT low power mode configuration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em option} & Low power mode parameter, see \hyperlink{group___u_t_i_l_i_t_y___l_o_w___p_o_w_e_r___m_o_d_e}{U\+T\+I\+L\+I\+T\+Y\+\_\+\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+M\+O\+DE}. (Default low power mode is enabled.) \\
+\hline
+\end{DoxyParams}
+\index{Utility@{Utility}!U\+T\+I\+L\+I\+T\+Y\+\_\+\+Read\+All\+Paired\+Device@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Read\+All\+Paired\+Device}}
+\index{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Read\+All\+Paired\+Device@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Read\+All\+Paired\+Device}!Utility@{Utility}}
+\paragraph[{\texorpdfstring{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Read\+All\+Paired\+Device(u8 X\+D\+A\+T\+A $\ast$p\+\_\+device\+Num, u8 X\+D\+A\+T\+A $\ast$p\+\_\+paired\+List) large}{UTILITY_ReadAllPairedDevice(u8 XDATA *p_deviceNum, u8 XDATA *p_pairedList) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void U\+T\+I\+L\+I\+T\+Y\+\_\+\+Read\+All\+Paired\+Device (
+\begin{DoxyParamCaption}
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+device\+Num, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+paired\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_t_i_l_i_t_y_gaa220e3a65ad055983746a496f5f091fc}{}\label{group___u_t_i_l_i_t_y_gaa220e3a65ad055983746a496f5f091fc}
+
+
+Read all paired device information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em p\+\_\+device\+Num} & Pointer to the number of paired device. \\
+\hline
+\mbox{\tt out}  & {\em p\+\_\+paired\+List} & Pointer to paired device information, see \hyperlink{struct_a_p_p___u_t_i_l_i_t_y___paired_info}{A\+P\+P\+\_\+\+U\+T\+I\+L\+I\+T\+Y\+\_\+\+Paired\+Info}. \\
+\hline
+\end{DoxyParams}
+\index{Utility@{Utility}!U\+T\+I\+L\+I\+T\+Y\+\_\+\+Read\+Eflash@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Read\+Eflash}}
+\index{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Read\+Eflash@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Read\+Eflash}!Utility@{Utility}}
+\paragraph[{\texorpdfstring{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Read\+Eflash(u16 address, u16 length, u8 X\+D\+A\+T\+A $\ast$p\+\_\+payload) large}{UTILITY_ReadEflash(u16 address, u16 length, u8 XDATA *p_payload) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 U\+T\+I\+L\+I\+T\+Y\+\_\+\+Read\+Eflash (
+\begin{DoxyParamCaption}
+\item[{u16}]{address, }
+\item[{u16}]{length, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+payload}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_t_i_l_i_t_y_gacfcfd6290e2122f99273a44d1a39dc50}{}\label{group___u_t_i_l_i_t_y_gacfcfd6290e2122f99273a44d1a39dc50}
+
+
+Read data from eflash. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em address} & Address \\
+\hline
+\mbox{\tt in}  & {\em length} & The data length. \\
+\hline
+\mbox{\tt out}  & {\em p\+\_\+payload} & Pointer to the data buffer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Range\+:0x4000$\sim$0x\+F\+F\+FF
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully Read data from Eflash. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{Utility@{Utility}!U\+T\+I\+L\+I\+T\+Y\+\_\+\+Register\+O\+T\+A\+Key@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Register\+O\+T\+A\+Key}}
+\index{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Register\+O\+T\+A\+Key@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Register\+O\+T\+A\+Key}!Utility@{Utility}}
+\paragraph[{\texorpdfstring{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Register\+O\+T\+A\+Key(u8 X\+D\+A\+T\+A $\ast$p\+\_\+admin\+Key) large}{UTILITY_RegisterOTAKey(u8 XDATA *p_adminKey) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void U\+T\+I\+L\+I\+T\+Y\+\_\+\+Register\+O\+T\+A\+Key (
+\begin{DoxyParamCaption}
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+admin\+Key}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_t_i_l_i_t_y_ga050a441890f0385996584f96ae81dc2a}{}\label{group___u_t_i_l_i_t_y_ga050a441890f0385996584f96ae81dc2a}
+
+
+Register O\+TA authenticated key. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+admin\+Key} & Pointer to the 16 bytes authenticated key buffer. Key value with 16 bytes 0x\+FF will be taken as disabling O\+TA feature. \\
+\hline
+\end{DoxyParams}
+\index{Utility@{Utility}!U\+T\+I\+L\+I\+T\+Y\+\_\+\+Shutdown@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Shutdown}}
+\index{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Shutdown@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Shutdown}!Utility@{Utility}}
+\paragraph[{\texorpdfstring{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Shutdown(\+A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Mask X\+D\+A\+T\+A $\ast$p\+\_\+start\+Mask) large}{UTILITY_Shutdown(APP_GPIO_Port_Mask XDATA *p_startMask) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void U\+T\+I\+L\+I\+T\+Y\+\_\+\+Shutdown (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+\+Port\+\_\+\+Mask} X\+D\+A\+TA $\ast$}]{p\+\_\+start\+Mask}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_t_i_l_i_t_y_ga4e5e4c7373ce431d4f79314a25e8368b}{}\label{group___u_t_i_l_i_t_y_ga4e5e4c7373ce431d4f79314a25e8368b}
+
+
+Shutdown M\+B\+IoT. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+start\+Mask} & Pointer to A\+P\+P\+\_\+\+G\+P\+I\+O\+\_\+polling structure. \\
+\hline
+\end{DoxyParams}
+\index{Utility@{Utility}!U\+T\+I\+L\+I\+T\+Y\+\_\+\+Write\+Eflash@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Write\+Eflash}}
+\index{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Write\+Eflash@{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Write\+Eflash}!Utility@{Utility}}
+\paragraph[{\texorpdfstring{U\+T\+I\+L\+I\+T\+Y\+\_\+\+Write\+Eflash(u16 address, u16 length, u8 X\+D\+A\+T\+A $\ast$p\+\_\+payload) large}{UTILITY_WriteEflash(u16 address, u16 length, u8 XDATA *p_payload) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 U\+T\+I\+L\+I\+T\+Y\+\_\+\+Write\+Eflash (
+\begin{DoxyParamCaption}
+\item[{u16}]{address, }
+\item[{u16}]{length, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+payload}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_t_i_l_i_t_y_gad8567e861ddc039c6e1e5138eab348d5}{}\label{group___u_t_i_l_i_t_y_gad8567e861ddc039c6e1e5138eab348d5}
+
+
+Write data in eflash. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em address} & Address. \\
+\hline
+\mbox{\tt in}  & {\em length} & The data length. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+payload} & Pointer to the data buffer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Range\+:0x4000$\sim$0x\+F\+F\+FF
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully write data in Eflash. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}

@@ -1,0 +1,152 @@
+\hypertarget{group___b_l_e___a_n_c_s}{}\subsection{Ble Apple Notification Center Service}
+\label{group___b_l_e___a_n_c_s}\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}
+
+
+Ble Apple Notification Center Service.  
+
+
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_b_l_e___a_n_c_s___characteristic}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Characteristic}
+\item 
+struct \hyperlink{struct_b_l_e___a_n_c_s___notify___flags}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Notify\+\_\+\+Flags}
+\begin{DoxyCompactList}\small\item\em Flags for i\+OS notifications. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_n_c_s___evt___notify}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify}
+\begin{DoxyCompactList}\small\item\em i\+OS notification structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_b_l_e___a_n_c_s___characteristic}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Characteristic} {\bfseries B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Characteristic}\hypertarget{group___b_l_e___a_n_c_s_ga80e79b974367dc36bc43229e9a063811}{}\label{group___b_l_e___a_n_c_s_ga80e79b974367dc36bc43229e9a063811}
+
+\item 
+typedef struct \hyperlink{struct_b_l_e___a_n_c_s___evt___notify}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify} \hyperlink{group___b_l_e___a_n_c_s_ga0bd8e932a1dc9ec48e78a8708db270fc}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify}\hypertarget{group___b_l_e___a_n_c_s_ga0bd8e932a1dc9ec48e78a8708db270fc}{}\label{group___b_l_e___a_n_c_s_ga0bd8e932a1dc9ec48e78a8708db270fc}
+
+\begin{DoxyCompactList}\small\item\em i\+OS notification structure. \end{DoxyCompactList}\item 
+typedef void($\ast$ \hyperlink{group___b_l_e___a_n_c_s_ga191b977bd0c8b7328a6a1c5ef65c76b2}{A\+N\+C\+S\+Process\+Routine}) (\hyperlink{struct_b_l_e___a_t_t___e_v_t___receive_h_v__t}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Receive\+H\+V\+\_\+t} X\+D\+A\+TA $\ast$p\+\_\+on\+Receive\+HV) large\hypertarget{group___b_l_e___a_n_c_s_ga191b977bd0c8b7328a6a1c5ef65c76b2}{}\label{group___b_l_e___a_n_c_s_ga191b977bd0c8b7328a6a1c5ef65c76b2}
+
+\begin{DoxyCompactList}\small\item\em Prototype for ancs events handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___b_l_e___a_n_c_s_gaf8fe466493239548694a1a439f5b8bc0}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+Id\+\_\+\+Values} \{ \hyperlink{group___b_l_e___a_n_c_s_ggaf8fe466493239548694a1a439f5b8bc0a66075787397eadb227b6dd857e236f90}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+A\+D\+D\+ED}, 
+\hyperlink{group___b_l_e___a_n_c_s_ggaf8fe466493239548694a1a439f5b8bc0a1e700db97914df9d81d0cb400f16e91f}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+M\+O\+D\+I\+F\+I\+ED}, 
+\hyperlink{group___b_l_e___a_n_c_s_ggaf8fe466493239548694a1a439f5b8bc0ac3f9348dafe4745f276318f4f7778c13}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+R\+E\+M\+O\+V\+ED}
+ \}\begin{DoxyCompactList}\small\item\em Event I\+Ds for i\+OS notifications. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group___b_l_e___a_n_c_s_ga982bbd8a00c6ecff960d5196576dbba0}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Category\+Id\+\_\+\+Values} \{ \\*
+\hyperlink{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0ac5413e8b060d9b1882c7a84010fec4c3}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+O\+T\+H\+ER}, 
+\hyperlink{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0aa0f8b1b168859591faeec569fdcf7a25}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+C\+A\+LL}, 
+\hyperlink{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a033a18372c7602c18bbe1a301a3844ff}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+M\+I\+S\+S\+E\+D\+\_\+\+C\+A\+LL}, 
+\hyperlink{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0ad9b4d8723097d5935a94d1bce7d47178}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+V\+O\+I\+C\+E\+\_\+\+M\+A\+IL}, 
+\\*
+\hyperlink{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a9845cb9f72892b9a89a87f3ad137dd92}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+S\+O\+C\+I\+AL}, 
+\hyperlink{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a7dc3fb3e5d4cd83c141fa692c788aa7a}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+S\+C\+H\+E\+D\+U\+LE}, 
+\hyperlink{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a6c7c6b40ce32fc93b0b9ed937635450d}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+E\+M\+A\+IL}, 
+\hyperlink{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a7ebbed119a09c2b99670ab746cefc150}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+N\+E\+WS}, 
+\\*
+\hyperlink{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a82bd51dba3a81963f6cc66bb3cd95410}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+H\+E\+A\+L\+T\+H\+\_\+\+A\+N\+D\+\_\+\+F\+I\+T\+N\+E\+SS}, 
+\hyperlink{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a7f616317762712e81e7f4b865496e9de}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+U\+S\+I\+N\+E\+S\+S\+\_\+\+A\+N\+D\+\_\+\+F\+I\+N\+A\+N\+CE}, 
+\hyperlink{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0adbdfc230e6ada8bbbb54829ad16f76cb}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+L\+O\+C\+A\+T\+I\+ON}, 
+\hyperlink{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0aff63bf0a7eb05e2609b434244353bfa5}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+E\+N\+T\+E\+R\+T\+A\+I\+N\+M\+E\+NT}
+ \}\begin{DoxyCompactList}\small\item\em Category I\+Ds for i\+OS notifications. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 {\bfseries B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Init} (\hyperlink{group___b_l_e___a_n_c_s_ga191b977bd0c8b7328a6a1c5ef65c76b2}{A\+N\+C\+S\+Process\+Routine} ancs\+Handler) large\hypertarget{group___b_l_e___a_n_c_s_ga33798ac497e1eac00ca6003700363918}{}\label{group___b_l_e___a_n_c_s_ga33798ac497e1eac00ca6003700363918}
+
+\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___a_n_c_s_ga517aae2875ac0c7e974484bc1a8bc64d}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Init\+\_\+\+Service} () large
+\begin{DoxyCompactList}\small\item\em Initialize B\+LE A\+N\+CS service table. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void {\bfseries B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Catch\+\_\+\+Event} (\hyperlink{struct_b_l_e___g_a_t_t___event}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} X\+D\+A\+TA $\ast$p\+\_\+event) large\hypertarget{group___b_l_e___a_n_c_s_ga0b1d160545932a195913a8fab468080c}{}\label{group___b_l_e___a_n_c_s_ga0b1d160545932a195913a8fab468080c}
+
+\item 
+P\+U\+B\+L\+IC u16 {\bfseries B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Subscribe\+\_\+\+Notification\+\_\+\+Source} (u8 conn\+Handle, \hyperlink{struct_b_l_e___a_n_c_s___characteristic}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Characteristic} $\ast$p\+\_\+\+A\+N\+C\+S\+\_\+\+Source\+\_\+\+Notify) large\hypertarget{group___b_l_e___a_n_c_s_ga007adcbc32137c04f2c2516c4ecdfa9c}{}\label{group___b_l_e___a_n_c_s_ga007adcbc32137c04f2c2516c4ecdfa9c}
+
+\item 
+P\+U\+B\+L\+IC u16 {\bfseries B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Subscribe\+\_\+\+Data\+\_\+\+Source} (u8 conn\+Handle, \hyperlink{struct_b_l_e___a_n_c_s___characteristic}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Characteristic} $\ast$p\+\_\+\+A\+N\+C\+S\+\_\+\+Data\+\_\+\+Source) large\hypertarget{group___b_l_e___a_n_c_s_gaf2e829dd68a0324117d7eeabe3c87933}{}\label{group___b_l_e___a_n_c_s_gaf2e829dd68a0324117d7eeabe3c87933}
+
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Ble Apple Notification Center Service. 
+
+\begin{DoxyNote}{Note}
+Definitions and prototypes for the Ble Apple Notification Center Service application programming interface. 
+\end{DoxyNote}
+
+
+\subsubsection{Enumeration Type Documentation}
+\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Category\+Id\+\_\+\+Values@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Category\+Id\+\_\+\+Values}}
+\index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Category\+Id\+\_\+\+Values@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Category\+Id\+\_\+\+Values}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Category\+Id\+\_\+\+Values}{BLE_ANCS_CategoryId_Values}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Category\+Id\+\_\+\+Values}}\hypertarget{group___b_l_e___a_n_c_s_ga982bbd8a00c6ecff960d5196576dbba0}{}\label{group___b_l_e___a_n_c_s_ga982bbd8a00c6ecff960d5196576dbba0}
+
+
+Category I\+Ds for i\+OS notifications. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+O\+T\+H\+ER@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+O\+T\+H\+ER}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+O\+T\+H\+ER@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+O\+T\+H\+ER}}\item[{\em 
+B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+O\+T\+H\+ER\hypertarget{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0ac5413e8b060d9b1882c7a84010fec4c3}{}\label{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0ac5413e8b060d9b1882c7a84010fec4c3}
+}]The i\+OS notification belongs to the \char`\"{}other\char`\"{} category. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+C\+A\+LL@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+C\+A\+LL}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+C\+A\+LL@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+C\+A\+LL}}\item[{\em 
+B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+C\+A\+LL\hypertarget{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0aa0f8b1b168859591faeec569fdcf7a25}{}\label{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0aa0f8b1b168859591faeec569fdcf7a25}
+}]The i\+OS notification belongs to the \char`\"{}\+Incoming Call\char`\"{} category. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+M\+I\+S\+S\+E\+D\+\_\+\+C\+A\+LL@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+M\+I\+S\+S\+E\+D\+\_\+\+C\+A\+LL}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+M\+I\+S\+S\+E\+D\+\_\+\+C\+A\+LL@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+M\+I\+S\+S\+E\+D\+\_\+\+C\+A\+LL}}\item[{\em 
+B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+M\+I\+S\+S\+E\+D\+\_\+\+C\+A\+LL\hypertarget{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a033a18372c7602c18bbe1a301a3844ff}{}\label{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a033a18372c7602c18bbe1a301a3844ff}
+}]The i\+OS notification belongs to the \char`\"{}\+Missed Call\char`\"{} category. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+V\+O\+I\+C\+E\+\_\+\+M\+A\+IL@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+V\+O\+I\+C\+E\+\_\+\+M\+A\+IL}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+V\+O\+I\+C\+E\+\_\+\+M\+A\+IL@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+V\+O\+I\+C\+E\+\_\+\+M\+A\+IL}}\item[{\em 
+B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+V\+O\+I\+C\+E\+\_\+\+M\+A\+IL\hypertarget{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0ad9b4d8723097d5935a94d1bce7d47178}{}\label{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0ad9b4d8723097d5935a94d1bce7d47178}
+}]The i\+OS notification belongs to the \char`\"{}\+Voice Mail\char`\"{} category. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+S\+O\+C\+I\+AL@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+S\+O\+C\+I\+AL}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+S\+O\+C\+I\+AL@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+S\+O\+C\+I\+AL}}\item[{\em 
+B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+S\+O\+C\+I\+AL\hypertarget{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a9845cb9f72892b9a89a87f3ad137dd92}{}\label{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a9845cb9f72892b9a89a87f3ad137dd92}
+}]The i\+OS notification belongs to the \char`\"{}\+Social\char`\"{} category. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+S\+C\+H\+E\+D\+U\+LE@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+S\+C\+H\+E\+D\+U\+LE}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+S\+C\+H\+E\+D\+U\+LE@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+S\+C\+H\+E\+D\+U\+LE}}\item[{\em 
+B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+S\+C\+H\+E\+D\+U\+LE\hypertarget{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a7dc3fb3e5d4cd83c141fa692c788aa7a}{}\label{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a7dc3fb3e5d4cd83c141fa692c788aa7a}
+}]The i\+OS notification belongs to the \char`\"{}\+Schedule\char`\"{} category. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+E\+M\+A\+IL@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+E\+M\+A\+IL}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+E\+M\+A\+IL@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+E\+M\+A\+IL}}\item[{\em 
+B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+E\+M\+A\+IL\hypertarget{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a6c7c6b40ce32fc93b0b9ed937635450d}{}\label{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a6c7c6b40ce32fc93b0b9ed937635450d}
+}]The i\+OS notification belongs to the \char`\"{}\+E-\/mail\char`\"{} category. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+N\+E\+WS@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+N\+E\+WS}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+N\+E\+WS@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+N\+E\+WS}}\item[{\em 
+B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+N\+E\+WS\hypertarget{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a7ebbed119a09c2b99670ab746cefc150}{}\label{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a7ebbed119a09c2b99670ab746cefc150}
+}]The i\+OS notification belongs to the \char`\"{}\+News\char`\"{} category. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+H\+E\+A\+L\+T\+H\+\_\+\+A\+N\+D\+\_\+\+F\+I\+T\+N\+E\+SS@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+H\+E\+A\+L\+T\+H\+\_\+\+A\+N\+D\+\_\+\+F\+I\+T\+N\+E\+SS}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+H\+E\+A\+L\+T\+H\+\_\+\+A\+N\+D\+\_\+\+F\+I\+T\+N\+E\+SS@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+H\+E\+A\+L\+T\+H\+\_\+\+A\+N\+D\+\_\+\+F\+I\+T\+N\+E\+SS}}\item[{\em 
+B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+H\+E\+A\+L\+T\+H\+\_\+\+A\+N\+D\+\_\+\+F\+I\+T\+N\+E\+SS\hypertarget{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a82bd51dba3a81963f6cc66bb3cd95410}{}\label{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a82bd51dba3a81963f6cc66bb3cd95410}
+}]The i\+OS notification belongs to the \char`\"{}\+Health and Fitness\char`\"{} category. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+U\+S\+I\+N\+E\+S\+S\+\_\+\+A\+N\+D\+\_\+\+F\+I\+N\+A\+N\+CE@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+U\+S\+I\+N\+E\+S\+S\+\_\+\+A\+N\+D\+\_\+\+F\+I\+N\+A\+N\+CE}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+U\+S\+I\+N\+E\+S\+S\+\_\+\+A\+N\+D\+\_\+\+F\+I\+N\+A\+N\+CE@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+U\+S\+I\+N\+E\+S\+S\+\_\+\+A\+N\+D\+\_\+\+F\+I\+N\+A\+N\+CE}}\item[{\em 
+B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+U\+S\+I\+N\+E\+S\+S\+\_\+\+A\+N\+D\+\_\+\+F\+I\+N\+A\+N\+CE\hypertarget{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a7f616317762712e81e7f4b865496e9de}{}\label{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0a7f616317762712e81e7f4b865496e9de}
+}]The i\+OS notification belongs to the \char`\"{}\+Buisness and Finance\char`\"{} category. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+L\+O\+C\+A\+T\+I\+ON@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+L\+O\+C\+A\+T\+I\+ON}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+L\+O\+C\+A\+T\+I\+ON@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+L\+O\+C\+A\+T\+I\+ON}}\item[{\em 
+B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+L\+O\+C\+A\+T\+I\+ON\hypertarget{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0adbdfc230e6ada8bbbb54829ad16f76cb}{}\label{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0adbdfc230e6ada8bbbb54829ad16f76cb}
+}]The i\+OS notification belongs to the \char`\"{}\+Location\char`\"{} category. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+E\+N\+T\+E\+R\+T\+A\+I\+N\+M\+E\+NT@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+E\+N\+T\+E\+R\+T\+A\+I\+N\+M\+E\+NT}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+E\+N\+T\+E\+R\+T\+A\+I\+N\+M\+E\+NT@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+E\+N\+T\+E\+R\+T\+A\+I\+N\+M\+E\+NT}}\item[{\em 
+B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+E\+N\+T\+E\+R\+T\+A\+I\+N\+M\+E\+NT\hypertarget{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0aff63bf0a7eb05e2609b434244353bfa5}{}\label{group___b_l_e___a_n_c_s_gga982bbd8a00c6ecff960d5196576dbba0aff63bf0a7eb05e2609b434244353bfa5}
+}]The i\+OS notification belongs to the \char`\"{}\+Entertainment\char`\"{} category. \end{description}
+\end{Desc}
+\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+Id\+\_\+\+Values@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+Id\+\_\+\+Values}}
+\index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+Id\+\_\+\+Values@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+Id\+\_\+\+Values}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+Id\+\_\+\+Values}{BLE_ANCS_EvtId_Values}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+Id\+\_\+\+Values}}\hypertarget{group___b_l_e___a_n_c_s_gaf8fe466493239548694a1a439f5b8bc0}{}\label{group___b_l_e___a_n_c_s_gaf8fe466493239548694a1a439f5b8bc0}
+
+
+Event I\+Ds for i\+OS notifications. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+A\+D\+D\+ED@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+A\+D\+D\+ED}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+A\+D\+D\+ED@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+A\+D\+D\+ED}}\item[{\em 
+B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+A\+D\+D\+ED\hypertarget{group___b_l_e___a_n_c_s_ggaf8fe466493239548694a1a439f5b8bc0a66075787397eadb227b6dd857e236f90}{}\label{group___b_l_e___a_n_c_s_ggaf8fe466493239548694a1a439f5b8bc0a66075787397eadb227b6dd857e236f90}
+}]The i\+OS notification was added. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+M\+O\+D\+I\+F\+I\+ED@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+M\+O\+D\+I\+F\+I\+ED}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+M\+O\+D\+I\+F\+I\+ED@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+M\+O\+D\+I\+F\+I\+ED}}\item[{\em 
+B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+M\+O\+D\+I\+F\+I\+ED\hypertarget{group___b_l_e___a_n_c_s_ggaf8fe466493239548694a1a439f5b8bc0a1e700db97914df9d81d0cb400f16e91f}{}\label{group___b_l_e___a_n_c_s_ggaf8fe466493239548694a1a439f5b8bc0a1e700db97914df9d81d0cb400f16e91f}
+}]The i\+OS notification was modified. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+R\+E\+M\+O\+V\+ED@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+R\+E\+M\+O\+V\+ED}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+R\+E\+M\+O\+V\+ED@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+R\+E\+M\+O\+V\+ED}}\item[{\em 
+B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+E\+V\+E\+N\+T\+\_\+\+I\+D\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+R\+E\+M\+O\+V\+ED\hypertarget{group___b_l_e___a_n_c_s_ggaf8fe466493239548694a1a439f5b8bc0ac3f9348dafe4745f276318f4f7778c13}{}\label{group___b_l_e___a_n_c_s_ggaf8fe466493239548694a1a439f5b8bc0ac3f9348dafe4745f276318f4f7778c13}
+}]The i\+OS notification was removed. \end{description}
+\end{Desc}
+
+
+\subsubsection{Function Documentation}
+\index{Ble Apple Notification Center Service@{Ble Apple Notification Center Service}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Init\+\_\+\+Service@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Init\+\_\+\+Service}}
+\index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Init\+\_\+\+Service@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Init\+\_\+\+Service}!Ble Apple Notification Center Service@{Ble Apple Notification Center Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Init\+\_\+\+Service() large}{BLE_ANCS_Init_Service() large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Init\+\_\+\+Service (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___a_n_c_s_ga517aae2875ac0c7e974484bc1a8bc64d}{}\label{group___b_l_e___a_n_c_s_ga517aae2875ac0c7e974484bc1a8bc64d}
+
+
+Initialize B\+LE A\+N\+CS service table. 
+
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Initialize B\+LE A\+N\+CS service table successfully. 
+\end{DoxyReturn}

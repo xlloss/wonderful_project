@@ -1,0 +1,371 @@
+\hypertarget{group___b_l_e___b_p_s}{}\subsection{Ble Blood Pressure Service}
+\label{group___b_l_e___b_p_s}\index{Ble Blood Pressure Service@{Ble Blood Pressure Service}}
+
+
+Ble Blood Pressure Service.  
+
+
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structieee__float}{ieee\+\_\+float}
+\item 
+struct \hyperlink{struct_time___field}{Time\+\_\+\+Field}
+\begin{DoxyCompactList}\small\item\em Time stamp parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___b_p_s___measurement}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement}
+\item 
+struct \hyperlink{struct_b_l_e___b_p_s___cuff___pressure}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Cuff\+\_\+\+Pressure}
+\end{DoxyCompactItemize}
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries B\+L\+O\+O\+D\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+U\+N\+I\+T\+\_\+\+M\+M\+HG}~0\hypertarget{group___b_l_e___b_p_s_gaa0f5912a7a0334803c4e857508413589}{}\label{group___b_l_e___b_p_s_gaa0f5912a7a0334803c4e857508413589}
+
+\item 
+\#define {\bfseries B\+L\+O\+O\+D\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+U\+N\+I\+T\+\_\+\+K\+PA}~1\hypertarget{group___b_l_e___b_p_s_ga2436fd11015e45e780cd0e9874b194c1}{}\label{group___b_l_e___b_p_s_ga2436fd11015e45e780cd0e9874b194c1}
+
+\item 
+\#define \hyperlink{group___b_l_e___b_p_s_ga74b1609781f74c3c9bcc29d375a28fc9}{B\+P\+S\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED}~0x0000
+\item 
+\#define \hyperlink{group___b_l_e___b_p_s_gad0e0abaa394291423191503f02f77e5c}{B\+P\+S\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+E\+\_\+\+E\+N\+A\+B\+L\+ED}~0x0200
+\item 
+\#define \hyperlink{group___b_l_e___b_p_s_ga76b8d9a227bd64b830b4aff30533d843}{B\+P\+S\+\_\+\+I\+N\+T\+E\+R\+\_\+\+C\+U\+T\+O\+F\+F\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+B\+L\+ED}~0x0100
+\item 
+\#define {\bfseries B\+P\+S\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+L\+EN}~15\hypertarget{group___b_l_e___b_p_s_ga9b6223a3d6548ad5370d49f4dc64952a}{}\label{group___b_l_e___b_p_s_ga9b6223a3d6548ad5370d49f4dc64952a}
+
+\item 
+\#define \hyperlink{group___b_l_e___b_p_s_ga743d53a92df1edc5fcc7ab76be172bd3}{U\+U\+I\+D\+\_\+\+B\+L\+O\+O\+D\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+R\+V\+I\+CE}~0x1810\hypertarget{group___b_l_e___b_p_s_ga743d53a92df1edc5fcc7ab76be172bd3}{}\label{group___b_l_e___b_p_s_ga743d53a92df1edc5fcc7ab76be172bd3}
+
+\begin{DoxyCompactList}\small\item\em Blood Pressure service U\+U\+ID definition. \end{DoxyCompactList}\item 
+\#define {\bfseries U\+U\+I\+D\+\_\+\+B\+L\+O\+O\+D\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+NT}~0x2\+A35\hypertarget{group___b_l_e___b_p_s_gadd7e6b60b56182c316fe5894074dd0b5}{}\label{group___b_l_e___b_p_s_gadd7e6b60b56182c316fe5894074dd0b5}
+
+\item 
+\#define {\bfseries U\+U\+I\+D\+\_\+\+I\+N\+T\+E\+R\+M\+E\+D\+I\+A\+T\+E\+\_\+\+C\+U\+F\+F\+\_\+\+P\+R\+E\+S\+S\+U\+RE}~0x2\+A36\hypertarget{group___b_l_e___b_p_s_ga55f0edc9b1c0f5ab6accf04baac1c639}{}\label{group___b_l_e___b_p_s_ga55f0edc9b1c0f5ab6accf04baac1c639}
+
+\item 
+\#define {\bfseries U\+U\+I\+D\+\_\+\+B\+L\+O\+O\+D\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+F\+E\+A\+T\+U\+RE}~0x2\+A49\hypertarget{group___b_l_e___b_p_s_ga118411d2112eabe4c3b5f9115eeb77e6}{}\label{group___b_l_e___b_p_s_ga118411d2112eabe4c3b5f9115eeb77e6}
+
+\item 
+\#define \hyperlink{group___b_l_e___b_p_s_gaa1bf6cf39fa83f7de6cfc0b845a13b46}{B\+P\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+B\+O\+D\+Y\+\_\+\+M\+O\+V\+E\+M\+E\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+B\+IT}~0\hypertarget{group___b_l_e___b_p_s_gaa1bf6cf39fa83f7de6cfc0b845a13b46}{}\label{group___b_l_e___b_p_s_gaa1bf6cf39fa83f7de6cfc0b845a13b46}
+
+\begin{DoxyCompactList}\small\item\em Bit position of blood pressure feature. \end{DoxyCompactList}\item 
+\#define {\bfseries B\+P\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+C\+O\+F\+F\+\_\+\+F\+I\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+B\+IT}~1\hypertarget{group___b_l_e___b_p_s_ga25585816157ac3e08fde7c1bf0023ce8}{}\label{group___b_l_e___b_p_s_ga25585816157ac3e08fde7c1bf0023ce8}
+
+\item 
+\#define {\bfseries B\+P\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+I\+R\+R\+E\+G\+U\+L\+A\+R\+\_\+\+P\+U\+L\+S\+E\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+B\+IT}~2\hypertarget{group___b_l_e___b_p_s_ga500a503dfc7f0f19bf4c452d89472903}{}\label{group___b_l_e___b_p_s_ga500a503dfc7f0f19bf4c452d89472903}
+
+\item 
+\#define {\bfseries B\+P\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+P\+U\+L\+S\+E\+\_\+\+R\+A\+T\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+B\+IT}~3\hypertarget{group___b_l_e___b_p_s_gad46f021ea34e5ea5b639fc3407f8ba1a}{}\label{group___b_l_e___b_p_s_gad46f021ea34e5ea5b639fc3407f8ba1a}
+
+\item 
+\#define {\bfseries B\+P\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+B\+IT}~4\hypertarget{group___b_l_e___b_p_s_ga27199617c5fef5d263cc2eaa1055a151}{}\label{group___b_l_e___b_p_s_ga27199617c5fef5d263cc2eaa1055a151}
+
+\item 
+\#define {\bfseries B\+P\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+B\+O\+N\+D\+\_\+\+B\+IT}~5\hypertarget{group___b_l_e___b_p_s_ga311f3c6944af1c8917b8576421e1fc6b}{}\label{group___b_l_e___b_p_s_ga311f3c6944af1c8917b8576421e1fc6b}
+
+\item 
+\#define \hyperlink{group___b_l_e___b_p_s_ga1c95ee545686a7df2bf3f1b0c041dd0c}{B\+P\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+B\+O\+D\+Y\+\_\+\+M\+O\+V\+E\+M\+E\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+M\+A\+SK}~(1$<$$<$0)\hypertarget{group___b_l_e___b_p_s_ga1c95ee545686a7df2bf3f1b0c041dd0c}{}\label{group___b_l_e___b_p_s_ga1c95ee545686a7df2bf3f1b0c041dd0c}
+
+\begin{DoxyCompactList}\small\item\em Mask of blood pressure feature. \end{DoxyCompactList}\item 
+\#define {\bfseries B\+P\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+C\+O\+F\+F\+\_\+\+F\+I\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+M\+A\+SK}~(1$<$$<$1)\hypertarget{group___b_l_e___b_p_s_ga914bcc9fcdea3e92ac4d4d5157904e5d}{}\label{group___b_l_e___b_p_s_ga914bcc9fcdea3e92ac4d4d5157904e5d}
+
+\item 
+\#define {\bfseries B\+P\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+I\+R\+R\+E\+G\+U\+L\+A\+R\+\_\+\+P\+U\+L\+S\+E\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+M\+A\+SK}~(1$<$$<$2)\hypertarget{group___b_l_e___b_p_s_ga2502aab994f16b5aa3e513514f9a211a}{}\label{group___b_l_e___b_p_s_ga2502aab994f16b5aa3e513514f9a211a}
+
+\item 
+\#define {\bfseries B\+P\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+P\+U\+L\+S\+E\+\_\+\+R\+A\+T\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+M\+A\+SK}~(1$<$$<$3)\hypertarget{group___b_l_e___b_p_s_gaa98d8e6f55d3b80ffdbf5a23d0a09f71}{}\label{group___b_l_e___b_p_s_gaa98d8e6f55d3b80ffdbf5a23d0a09f71}
+
+\item 
+\#define {\bfseries B\+P\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+M\+A\+SK}~(1$<$$<$4)\hypertarget{group___b_l_e___b_p_s_gaff2b384d6b0b90799d6a6b04f6f069b1}{}\label{group___b_l_e___b_p_s_gaff2b384d6b0b90799d6a6b04f6f069b1}
+
+\item 
+\#define {\bfseries B\+P\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+B\+O\+N\+D\+\_\+\+M\+A\+SK}~(1$<$$<$5)\hypertarget{group___b_l_e___b_p_s_gabded17ac413acfcbc18ec10f006bb97d}{}\label{group___b_l_e___b_p_s_gabded17ac413acfcbc18ec10f006bb97d}
+
+\item 
+\#define \hyperlink{group___b_l_e___b_p_s_gaae88c05e6fec892dca5a854f5485b623}{B\+P\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+F\+L\+A\+G\+\_\+\+U\+N\+I\+TS}~(1$<$$<$0)\hypertarget{group___b_l_e___b_p_s_gaae88c05e6fec892dca5a854f5485b623}{}\label{group___b_l_e___b_p_s_gaae88c05e6fec892dca5a854f5485b623}
+
+\begin{DoxyCompactList}\small\item\em Mask of Blood Pressure measurement flags. \end{DoxyCompactList}\item 
+\#define {\bfseries B\+P\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+F\+L\+A\+G\+\_\+\+T\+I\+M\+E\+S\+T\+A\+MP}~(1$<$$<$1)\hypertarget{group___b_l_e___b_p_s_ga31777d102b5eab7a831091b2f63cdbbb}{}\label{group___b_l_e___b_p_s_ga31777d102b5eab7a831091b2f63cdbbb}
+
+\item 
+\#define {\bfseries B\+P\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+F\+L\+A\+G\+\_\+\+P\+U\+L\+S\+E\+\_\+\+R\+A\+TE}~(1$<$$<$2)\hypertarget{group___b_l_e___b_p_s_ga23e662ee3844a98dd1819661beb322d1}{}\label{group___b_l_e___b_p_s_ga23e662ee3844a98dd1819661beb322d1}
+
+\item 
+\#define {\bfseries B\+P\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+F\+L\+A\+G\+\_\+\+U\+S\+E\+R\+\_\+\+ID}~(1$<$$<$3)\hypertarget{group___b_l_e___b_p_s_gaabfcd7036edeb64c7aa7e4fe23b8dbd9}{}\label{group___b_l_e___b_p_s_gaabfcd7036edeb64c7aa7e4fe23b8dbd9}
+
+\item 
+\#define {\bfseries B\+P\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+F\+L\+A\+G\+\_\+\+S\+T\+A\+T\+US}~(1$<$$<$4)\hypertarget{group___b_l_e___b_p_s_ga927e479b6a7384364d3b15a0b6cf26b4}{}\label{group___b_l_e___b_p_s_ga927e479b6a7384364d3b15a0b6cf26b4}
+
+\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structieee__float}{ieee\+\_\+float} {\bfseries ieee\+\_\+float}\hypertarget{group___b_l_e___b_p_s_gaa6d44d8adbf4d430a499f003547ab06b}{}\label{group___b_l_e___b_p_s_gaa6d44d8adbf4d430a499f003547ab06b}
+
+\item 
+typedef struct \hyperlink{struct_time___field}{Time\+\_\+\+Field} \hyperlink{group___b_l_e___b_p_s_ga8d554aac0512406a308b84a3392623fa}{Time\+\_\+\+Field}\hypertarget{group___b_l_e___b_p_s_ga8d554aac0512406a308b84a3392623fa}{}\label{group___b_l_e___b_p_s_ga8d554aac0512406a308b84a3392623fa}
+
+\begin{DoxyCompactList}\small\item\em Time stamp parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___b_p_s___measurement}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement} {\bfseries B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement}\hypertarget{group___b_l_e___b_p_s_ga20be876c85165a407f0be853ebd915ad}{}\label{group___b_l_e___b_p_s_ga20be876c85165a407f0be853ebd915ad}
+
+\item 
+typedef struct \hyperlink{struct_b_l_e___b_p_s___cuff___pressure}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Cuff\+\_\+\+Pressure} {\bfseries B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Cuff\+\_\+\+Pressure}\hypertarget{group___b_l_e___b_p_s_ga3a7e83d5f82f6eb23b5bacb33bae570a}{}\label{group___b_l_e___b_p_s_ga3a7e83d5f82f6eb23b5bacb33bae570a}
+
+\item 
+typedef void($\ast$ {\bfseries B\+P\+S\+Process\+Routine}) (u16 event\+Type) large\hypertarget{group___b_l_e___b_p_s_ga3e547727e55da97b9b9a680f0a990ef0}{}\label{group___b_l_e___b_p_s_ga3e547727e55da97b9b9a680f0a990ef0}
+
+\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___b_l_e___b_p_s_gaa06f231057fdb6110bac1000b0388d68}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Attribute\+Index} \{ \\*
+{\bfseries I\+N\+D\+E\+X\+\_\+\+B\+P\+S\+\_\+\+P\+R\+I\+M\+A\+R\+Y\+\_\+\+S\+E\+R\+V\+I\+CE} =0x00, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+B\+L\+O\+O\+D\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+NT}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+B\+L\+O\+O\+D\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+V\+A\+L\+UE}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+B\+L\+O\+O\+D\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+C\+C\+CD}, 
+\\*
+{\bfseries I\+N\+D\+E\+X\+\_\+\+I\+N\+T\+E\+R\+M\+E\+D\+I\+A\+T\+E\+\_\+\+C\+U\+F\+F\+\_\+\+P\+R\+E\+S\+S\+U\+RE}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+I\+N\+T\+E\+R\+M\+E\+D\+I\+A\+T\+E\+\_\+\+C\+U\+F\+F\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+V\+A\+L\+UE}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+I\+N\+T\+E\+R\+M\+E\+D\+I\+A\+T\+E\+\_\+\+C\+U\+F\+F\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+C\+C\+CD}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+B\+L\+O\+O\+D\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+F\+E\+A\+T\+U\+RE}, 
+\\*
+{\bfseries I\+N\+D\+E\+X\+\_\+\+B\+L\+O\+O\+D\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+V\+A\+L\+UE}, 
+{\bfseries T\+O\+T\+A\+L\+\_\+\+B\+P\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM}
+ \}\hypertarget{group___b_l_e___b_p_s_gaa06f231057fdb6110bac1000b0388d68}{}\label{group___b_l_e___b_p_s_gaa06f231057fdb6110bac1000b0388d68}
+\begin{DoxyCompactList}\small\item\em Attribute number in the app defined Service Table. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC void \hyperlink{group___b_l_e___b_p_s_ga4a9e2f52f1dec0a63c97b3d0150be5cd}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Init} (B\+P\+S\+Process\+Routine bps\+Handler) large
+\begin{DoxyCompactList}\small\item\em Initizlize B\+LE Blood Pressure service. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___b_p_s_gacbd9a73c10d0917408563202e3733e15}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Init\+\_\+\+Service} () large
+\begin{DoxyCompactList}\small\item\em Initizlize B\+LE Blood Pressure service table. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___b_l_e___b_p_s_ga434675153f04cfb41dc08fbf107557f1}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Catch\+\_\+\+Event} (\hyperlink{struct_b_l_e___g_a_t_t___event}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} X\+D\+A\+TA $\ast$p\+\_\+event) large
+\begin{DoxyCompactList}\small\item\em Catch B\+L\+E\+\_\+\+G\+A\+TT events to get the Blood Pressure events. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___b_p_s_ga629eba05d58599d765d7014314f44266}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Body\+\_\+\+Movement\+\_\+\+Detection\+\_\+\+Support} (bool is\+Body\+Movement\+Detection\+Supportbit) large
+\begin{DoxyCompactList}\small\item\em Set B\+PS Body Movement Detection Support option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___b_p_s_ga58b37c249ef1273bcc800562ae72f8c2}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Cuff\+\_\+\+Fit\+\_\+\+Detection\+\_\+\+Support} (bool is\+Cuff\+Fit\+Detection\+Supportbit) large
+\begin{DoxyCompactList}\small\item\em Set B\+PS Cuff Fit Detection Support option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___b_p_s_ga425c3cf06c7419a4e9596daa31c039c2}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Irregular\+\_\+\+Pulse\+\_\+\+Detection\+\_\+\+Support} (bool is\+Irregular\+Pulse\+Detection\+Supportbit) large
+\begin{DoxyCompactList}\small\item\em Set B\+PS Irregular Pulse Detection Support Option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___b_p_s_ga88a9d331b3b42b5ec3875e4ca8bdb352}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Pulse\+\_\+\+Rate\+\_\+\+Range\+\_\+\+Detection\+\_\+\+Support} (bool is\+Pulse\+Rate\+Range\+Detection\+Supportbit) large
+\begin{DoxyCompactList}\small\item\em Set B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Pulse\+\_\+\+Rate\+\_\+\+Range\+\_\+\+Detection\+\_\+\+Support option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___b_p_s_ga6e474cf2b15bba4651ea4ef9cd78d717}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement\+\_\+\+Position\+\_\+\+Detection\+\_\+\+Support} (bool is\+Measurement\+Position\+Detection\+Supportbit) large
+\begin{DoxyCompactList}\small\item\em Set B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement\+\_\+\+Position\+\_\+\+Detection\+\_\+\+Support option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___b_p_s_ga0930340def72eab5d0a9afbceed67163}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Multiple\+\_\+\+Bond\+\_\+\+Support} (bool is\+Multiple\+Bond\+Supportbit) large
+\begin{DoxyCompactList}\small\item\em Set B\+P\+S\+\_\+\+Multiple\+\_\+\+Bond\+\_\+\+Support option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___b_p_s_ga0c76f1c654643f9c57824f3135ef1c32}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Send\+\_\+\+Measurement} (u8 conn\+Handle, \hyperlink{struct_b_l_e___b_p_s___measurement}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement} X\+D\+A\+TA $\ast$p\+\_\+measurement) large
+\begin{DoxyCompactList}\small\item\em Send B\+PS measurement. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 {\bfseries B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Send\+\_\+\+Inter\+\_\+cuff} (u8 conn\+Handle, \hyperlink{struct_b_l_e___b_p_s___cuff___pressure}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Cuff\+\_\+\+Pressure} X\+D\+A\+TA $\ast$p\+\_\+\+Cuff\+Pressure) large\hypertarget{group___b_l_e___b_p_s_ga13e00a1e214c25403b199c04e69e1339}{}\label{group___b_l_e___b_p_s_ga13e00a1e214c25403b199c04e69e1339}
+
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Ble Blood Pressure Service. 
+
+\begin{DoxyNote}{Note}
+Definitions and prototypes for the Ble Blood Pressure Service application programming interface. 
+\end{DoxyNote}
+
+
+\subsubsection{Macro Definition Documentation}
+\index{Ble Blood Pressure Service@{Ble Blood Pressure Service}!B\+P\+S\+\_\+\+I\+N\+T\+E\+R\+\_\+\+C\+U\+T\+O\+F\+F\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+B\+L\+ED@{B\+P\+S\+\_\+\+I\+N\+T\+E\+R\+\_\+\+C\+U\+T\+O\+F\+F\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+B\+L\+ED}}
+\index{B\+P\+S\+\_\+\+I\+N\+T\+E\+R\+\_\+\+C\+U\+T\+O\+F\+F\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+B\+L\+ED@{B\+P\+S\+\_\+\+I\+N\+T\+E\+R\+\_\+\+C\+U\+T\+O\+F\+F\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+B\+L\+ED}!Ble Blood Pressure Service@{Ble Blood Pressure Service}}
+\paragraph[{\texorpdfstring{B\+P\+S\+\_\+\+I\+N\+T\+E\+R\+\_\+\+C\+U\+T\+O\+F\+F\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+B\+L\+ED}{BPS_INTER_CUTOFF_NOTIFY_ENABLED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+P\+S\+\_\+\+I\+N\+T\+E\+R\+\_\+\+C\+U\+T\+O\+F\+F\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+B\+L\+ED~0x0100}\hypertarget{group___b_l_e___b_p_s_ga76b8d9a227bd64b830b4aff30533d843}{}\label{group___b_l_e___b_p_s_ga76b8d9a227bd64b830b4aff30533d843}
+B\+PS intermediate cutoff notification is enabled. \index{Ble Blood Pressure Service@{Ble Blood Pressure Service}!B\+P\+S\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED@{B\+P\+S\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED}}
+\index{B\+P\+S\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED@{B\+P\+S\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED}!Ble Blood Pressure Service@{Ble Blood Pressure Service}}
+\paragraph[{\texorpdfstring{B\+P\+S\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED}{BPS_MEASUREMENT_INDICATE_DISABLED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+P\+S\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED~0x0000}\hypertarget{group___b_l_e___b_p_s_ga74b1609781f74c3c9bcc29d375a28fc9}{}\label{group___b_l_e___b_p_s_ga74b1609781f74c3c9bcc29d375a28fc9}
+B\+PS measurement indication is disabled. \index{Ble Blood Pressure Service@{Ble Blood Pressure Service}!B\+P\+S\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+E\+\_\+\+E\+N\+A\+B\+L\+ED@{B\+P\+S\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+E\+\_\+\+E\+N\+A\+B\+L\+ED}}
+\index{B\+P\+S\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+E\+\_\+\+E\+N\+A\+B\+L\+ED@{B\+P\+S\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+E\+\_\+\+E\+N\+A\+B\+L\+ED}!Ble Blood Pressure Service@{Ble Blood Pressure Service}}
+\paragraph[{\texorpdfstring{B\+P\+S\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+E\+\_\+\+E\+N\+A\+B\+L\+ED}{BPS_MEASUREMENT_INDICATE_ENABLED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+P\+S\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+E\+\_\+\+E\+N\+A\+B\+L\+ED~0x0200}\hypertarget{group___b_l_e___b_p_s_gad0e0abaa394291423191503f02f77e5c}{}\label{group___b_l_e___b_p_s_gad0e0abaa394291423191503f02f77e5c}
+B\+PS measurement indication is enabled. 
+
+\subsubsection{Function Documentation}
+\index{Ble Blood Pressure Service@{Ble Blood Pressure Service}!B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Body\+\_\+\+Movement\+\_\+\+Detection\+\_\+\+Support@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Body\+\_\+\+Movement\+\_\+\+Detection\+\_\+\+Support}}
+\index{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Body\+\_\+\+Movement\+\_\+\+Detection\+\_\+\+Support@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Body\+\_\+\+Movement\+\_\+\+Detection\+\_\+\+Support}!Ble Blood Pressure Service@{Ble Blood Pressure Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Body\+\_\+\+Movement\+\_\+\+Detection\+\_\+\+Support(bool is\+Body\+Movement\+Detection\+Supportbit) large}{BLE_BPS_Body_Movement_Detection_Support(bool isBodyMovementDetectionSupportbit) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Body\+\_\+\+Movement\+\_\+\+Detection\+\_\+\+Support (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+Body\+Movement\+Detection\+Supportbit}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___b_p_s_ga629eba05d58599d765d7014314f44266}{}\label{group___b_l_e___b_p_s_ga629eba05d58599d765d7014314f44266}
+
+
+Set B\+PS Body Movement Detection Support option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+Body\+Movement\+Detection\+Supportbit} & If Body Movement Detection field is supported, set this value to be true. Default Body Movement Detection field is unsupported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Set Body Movement Detection option successfully. 
+\end{DoxyReturn}
+\index{Ble Blood Pressure Service@{Ble Blood Pressure Service}!B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Catch\+\_\+\+Event@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Catch\+\_\+\+Event}}
+\index{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Catch\+\_\+\+Event@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Catch\+\_\+\+Event}!Ble Blood Pressure Service@{Ble Blood Pressure Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Catch\+\_\+\+Event(\+B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event X\+D\+A\+T\+A $\ast$p\+\_\+event) large}{BLE_BPS_Catch_Event(BLE_GATT_Event XDATA *p_event) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Catch\+\_\+\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} X\+D\+A\+TA $\ast$}]{p\+\_\+event}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___b_p_s_ga434675153f04cfb41dc08fbf107557f1}{}\label{group___b_l_e___b_p_s_ga434675153f04cfb41dc08fbf107557f1}
+
+
+Catch B\+L\+E\+\_\+\+G\+A\+TT events to get the Blood Pressure events. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+event} & Pointer to \hyperlink{struct_b_l_e___g_a_t_t___event}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Catch B\+LE G\+A\+TT events configuration successfully. 
+\end{DoxyReturn}
+\index{Ble Blood Pressure Service@{Ble Blood Pressure Service}!B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Cuff\+\_\+\+Fit\+\_\+\+Detection\+\_\+\+Support@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Cuff\+\_\+\+Fit\+\_\+\+Detection\+\_\+\+Support}}
+\index{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Cuff\+\_\+\+Fit\+\_\+\+Detection\+\_\+\+Support@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Cuff\+\_\+\+Fit\+\_\+\+Detection\+\_\+\+Support}!Ble Blood Pressure Service@{Ble Blood Pressure Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Cuff\+\_\+\+Fit\+\_\+\+Detection\+\_\+\+Support(bool is\+Cuff\+Fit\+Detection\+Supportbit) large}{BLE_BPS_Cuff_Fit_Detection_Support(bool isCuffFitDetectionSupportbit) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Cuff\+\_\+\+Fit\+\_\+\+Detection\+\_\+\+Support (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+Cuff\+Fit\+Detection\+Supportbit}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___b_p_s_ga58b37c249ef1273bcc800562ae72f8c2}{}\label{group___b_l_e___b_p_s_ga58b37c249ef1273bcc800562ae72f8c2}
+
+
+Set B\+PS Cuff Fit Detection Support option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+Cuff\+Fit\+Detection\+Supportbit} & If Cuff Fit Detection Support field is supported, set this value to be true. Default Cuff Fit Detection Support field is unsupported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Set Cuff Fit Detection Support option successfully. 
+\end{DoxyReturn}
+\index{Ble Blood Pressure Service@{Ble Blood Pressure Service}!B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Init@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Init}}
+\index{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Init@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Init}!Ble Blood Pressure Service@{Ble Blood Pressure Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Init(\+B\+P\+S\+Process\+Routine bps\+Handler) large}{BLE_BPS_Init(BPSProcessRoutine bpsHandler) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{B\+P\+S\+Process\+Routine}]{bps\+Handler}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___b_p_s_ga4a9e2f52f1dec0a63c97b3d0150be5cd}{}\label{group___b_l_e___b_p_s_ga4a9e2f52f1dec0a63c97b3d0150be5cd}
+
+
+Initizlize B\+LE Blood Pressure service. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bps\+Handler} & M\+B\+IoT callback function for B\+LE Blood Pressure events.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Initialize B\+LE Blood Pressurev successfully. 
+\end{DoxyReturn}
+\index{Ble Blood Pressure Service@{Ble Blood Pressure Service}!B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Init\+\_\+\+Service@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Init\+\_\+\+Service}}
+\index{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Init\+\_\+\+Service@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Init\+\_\+\+Service}!Ble Blood Pressure Service@{Ble Blood Pressure Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Init\+\_\+\+Service() large}{BLE_BPS_Init_Service() large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Init\+\_\+\+Service (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___b_p_s_gacbd9a73c10d0917408563202e3733e15}{}\label{group___b_l_e___b_p_s_gacbd9a73c10d0917408563202e3733e15}
+
+
+Initizlize B\+LE Blood Pressure service table. 
+
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Initialize B\+LE Blood Pressure service table successfully. 
+\end{DoxyReturn}
+\index{Ble Blood Pressure Service@{Ble Blood Pressure Service}!B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Irregular\+\_\+\+Pulse\+\_\+\+Detection\+\_\+\+Support@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Irregular\+\_\+\+Pulse\+\_\+\+Detection\+\_\+\+Support}}
+\index{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Irregular\+\_\+\+Pulse\+\_\+\+Detection\+\_\+\+Support@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Irregular\+\_\+\+Pulse\+\_\+\+Detection\+\_\+\+Support}!Ble Blood Pressure Service@{Ble Blood Pressure Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Irregular\+\_\+\+Pulse\+\_\+\+Detection\+\_\+\+Support(bool is\+Irregular\+Pulse\+Detection\+Supportbit) large}{BLE_BPS_Irregular_Pulse_Detection_Support(bool isIrregularPulseDetectionSupportbit) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Irregular\+\_\+\+Pulse\+\_\+\+Detection\+\_\+\+Support (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+Irregular\+Pulse\+Detection\+Supportbit}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___b_p_s_ga425c3cf06c7419a4e9596daa31c039c2}{}\label{group___b_l_e___b_p_s_ga425c3cf06c7419a4e9596daa31c039c2}
+
+
+Set B\+PS Irregular Pulse Detection Support Option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+Irregular\+Pulse\+Detection\+Supportbit} & If B\+PS Irregular Pulse Detection is supported, set this value to be true. Default B\+PS Irregular Pulse Detection Support field is unsupported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Set B\+PS Irregular Pulse Detection option successfully. 
+\end{DoxyReturn}
+\index{Ble Blood Pressure Service@{Ble Blood Pressure Service}!B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement\+\_\+\+Position\+\_\+\+Detection\+\_\+\+Support@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement\+\_\+\+Position\+\_\+\+Detection\+\_\+\+Support}}
+\index{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement\+\_\+\+Position\+\_\+\+Detection\+\_\+\+Support@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement\+\_\+\+Position\+\_\+\+Detection\+\_\+\+Support}!Ble Blood Pressure Service@{Ble Blood Pressure Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement\+\_\+\+Position\+\_\+\+Detection\+\_\+\+Support(bool is\+Measurement\+Position\+Detection\+Supportbit) large}{BLE_BPS_Measurement_Position_Detection_Support(bool isMeasurementPositionDetectionSupportbit) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement\+\_\+\+Position\+\_\+\+Detection\+\_\+\+Support (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+Measurement\+Position\+Detection\+Supportbit}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___b_p_s_ga6e474cf2b15bba4651ea4ef9cd78d717}{}\label{group___b_l_e___b_p_s_ga6e474cf2b15bba4651ea4ef9cd78d717}
+
+
+Set B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement\+\_\+\+Position\+\_\+\+Detection\+\_\+\+Support option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+Measurement\+Position\+Detection\+Supportbit} & If B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement\+\_\+\+Position\+\_\+\+Detection field is supported, set this value to be true. Default B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement\+\_\+\+Position\+\_\+\+Detection field is unsupported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Set B\+LE B\+PS Measurement Position Detection option successfully. 
+\end{DoxyReturn}
+\index{Ble Blood Pressure Service@{Ble Blood Pressure Service}!B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Multiple\+\_\+\+Bond\+\_\+\+Support@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Multiple\+\_\+\+Bond\+\_\+\+Support}}
+\index{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Multiple\+\_\+\+Bond\+\_\+\+Support@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Multiple\+\_\+\+Bond\+\_\+\+Support}!Ble Blood Pressure Service@{Ble Blood Pressure Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Multiple\+\_\+\+Bond\+\_\+\+Support(bool is\+Multiple\+Bond\+Supportbit) large}{BLE_BPS_Multiple_Bond_Support(bool isMultipleBondSupportbit) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Multiple\+\_\+\+Bond\+\_\+\+Support (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+Multiple\+Bond\+Supportbit}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___b_p_s_ga0930340def72eab5d0a9afbceed67163}{}\label{group___b_l_e___b_p_s_ga0930340def72eab5d0a9afbceed67163}
+
+
+Set B\+P\+S\+\_\+\+Multiple\+\_\+\+Bond\+\_\+\+Support option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+Multiple\+Bond\+Supportbit} & If B\+P\+S\+\_\+\+Multiple\+\_\+\+Bond field is supported, set this value to be true. Default B\+P\+S\+\_\+\+Multiple\+\_\+\+Bond field is unsupported\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Set B\+P\+S\+\_\+\+Multiple\+\_\+\+Bond option successfully. 
+\end{DoxyReturn}
+\index{Ble Blood Pressure Service@{Ble Blood Pressure Service}!B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Pulse\+\_\+\+Rate\+\_\+\+Range\+\_\+\+Detection\+\_\+\+Support@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Pulse\+\_\+\+Rate\+\_\+\+Range\+\_\+\+Detection\+\_\+\+Support}}
+\index{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Pulse\+\_\+\+Rate\+\_\+\+Range\+\_\+\+Detection\+\_\+\+Support@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Pulse\+\_\+\+Rate\+\_\+\+Range\+\_\+\+Detection\+\_\+\+Support}!Ble Blood Pressure Service@{Ble Blood Pressure Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Pulse\+\_\+\+Rate\+\_\+\+Range\+\_\+\+Detection\+\_\+\+Support(bool is\+Pulse\+Rate\+Range\+Detection\+Supportbit) large}{BLE_BPS_Pulse_Rate_Range_Detection_Support(bool isPulseRateRangeDetectionSupportbit) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Pulse\+\_\+\+Rate\+\_\+\+Range\+\_\+\+Detection\+\_\+\+Support (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+Pulse\+Rate\+Range\+Detection\+Supportbit}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___b_p_s_ga88a9d331b3b42b5ec3875e4ca8bdb352}{}\label{group___b_l_e___b_p_s_ga88a9d331b3b42b5ec3875e4ca8bdb352}
+
+
+Set B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Pulse\+\_\+\+Rate\+\_\+\+Range\+\_\+\+Detection\+\_\+\+Support option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+Pulse\+Rate\+Range\+Detection\+Supportbit} & If B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Pulse\+\_\+\+Rate\+\_\+\+Range\+\_\+\+Detection field is supported, set this value to be true. Default B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Pulse\+\_\+\+Rate\+\_\+\+Range\+\_\+\+Detection field is unsupported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Set B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Pulse\+\_\+\+Rate\+\_\+\+Range\+\_\+\+Detection option successfully. 
+\end{DoxyReturn}
+\index{Ble Blood Pressure Service@{Ble Blood Pressure Service}!B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Send\+\_\+\+Measurement@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Send\+\_\+\+Measurement}}
+\index{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Send\+\_\+\+Measurement@{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Send\+\_\+\+Measurement}!Ble Blood Pressure Service@{Ble Blood Pressure Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Send\+\_\+\+Measurement(u8 conn\+Handle, B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement X\+D\+A\+T\+A $\ast$p\+\_\+measurement) large}{BLE_BPS_Send_Measurement(u8 connHandle, BLE_BPS_Measurement XDATA *p_measurement) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Send\+\_\+\+Measurement (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{{\bf B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement} X\+D\+A\+TA $\ast$}]{p\+\_\+measurement}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___b_p_s_ga0c76f1c654643f9c57824f3135ef1c32}{}\label{group___b_l_e___b_p_s_ga0c76f1c654643f9c57824f3135ef1c32}
+
+
+Send B\+PS measurement. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+measurement} & Pointer to \hyperlink{struct_b_l_e___b_p_s___measurement}{B\+L\+E\+\_\+\+B\+P\+S\+\_\+\+Measurement} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Send B\+PS measurement successfully. 
+\end{DoxyReturn}

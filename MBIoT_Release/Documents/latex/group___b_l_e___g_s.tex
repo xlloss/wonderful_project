@@ -1,0 +1,961 @@
+\hypertarget{group___b_l_e___g_s}{}\subsection{Ble Glucose Service}
+\label{group___b_l_e___g_s}\index{Ble Glucose Service@{Ble Glucose Service}}
+
+
+Ble Glucose Service.  
+
+
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s__float}{S\+\_\+float}
+\item 
+struct \hyperlink{struct_time___field}{Time\+\_\+\+Field}
+\begin{DoxyCompactList}\small\item\em Time stamp parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___g_l_u_c_o_s_e___event}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Event}
+\item 
+struct \hyperlink{struct_b_l_e___glucose___r_a_c_p}{B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+CP}
+\item 
+struct \hyperlink{struct_b_l_e___g_l_u_c_o_s_e___measurement}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement}
+\begin{DoxyCompactList}\small\item\em Time stamp parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___g_l_u_c_o_s_e___measurement___context}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement\+\_\+\+Context}
+\item 
+struct \hyperlink{struct_b_l_e___g_l_u_c_o_s_e___records_database}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Records\+Database}
+\begin{DoxyCompactList}\small\item\em Glucose measurement record. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___g_l_u_c_o_s_e___records_database___entry}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Records\+Database\+\_\+\+Entry}
+\begin{DoxyCompactList}\small\item\em structure for Glucose measurement record \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___b_l_e___g_s_ga36f6166b882cf501eb460cdbf4b20aa0}{U\+U\+I\+D\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+S\+E\+R\+V\+I\+CE}~0x1808\hypertarget{group___b_l_e___g_s_ga36f6166b882cf501eb460cdbf4b20aa0}{}\label{group___b_l_e___g_s_ga36f6166b882cf501eb460cdbf4b20aa0}
+
+\begin{DoxyCompactList}\small\item\em Glucose service U\+U\+ID definition. \end{DoxyCompactList}\item 
+\#define {\bfseries U\+U\+I\+D\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+NT}~0x2\+A18\hypertarget{group___b_l_e___g_s_ga62e73ff7f2beafb08e0dfadbbb7ff5e6}{}\label{group___b_l_e___g_s_ga62e73ff7f2beafb08e0dfadbbb7ff5e6}
+
+\item 
+\#define {\bfseries U\+U\+I\+D\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+C\+O\+N\+T\+E\+XT}~0x2\+A34\hypertarget{group___b_l_e___g_s_ga88f8b7b4b794cf84e482fc9393618d4e}{}\label{group___b_l_e___g_s_ga88f8b7b4b794cf84e482fc9393618d4e}
+
+\item 
+\#define {\bfseries U\+U\+I\+D\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Feature}~0x2\+A51\hypertarget{group___b_l_e___g_s_ga29eb1a62b4f81ee8e91c9a4fb005765b}{}\label{group___b_l_e___g_s_ga29eb1a62b4f81ee8e91c9a4fb005765b}
+
+\item 
+\#define {\bfseries U\+U\+I\+D\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+I\+NT}~0x2\+A52\hypertarget{group___b_l_e___g_s_gaaa4175a8747ed3e0b2f322d50aae63ff}{}\label{group___b_l_e___g_s_gaaa4175a8747ed3e0b2f322d50aae63ff}
+
+\item 
+\#define \hyperlink{group___b_l_e___g_s_ga4e69f6712d805dfb0e4804298c428f62}{G\+L\+U\+C\+O\+S\+E\+\_\+\+C\+A\+P\+I\+L\+L\+A\+R\+Y\+\_\+\+W\+H\+O\+L\+E\+\_\+\+B\+L\+O\+OD}~0x01\hypertarget{group___b_l_e___g_s_ga4e69f6712d805dfb0e4804298c428f62}{}\label{group___b_l_e___g_s_ga4e69f6712d805dfb0e4804298c428f62}
+
+\begin{DoxyCompactList}\small\item\em Glucose measure type. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+Capillary\+\_\+\+Plasma}~0x02\hypertarget{group___b_l_e___g_s_gaf3d3cac17408368e46cb422a001a6ed0}{}\label{group___b_l_e___g_s_gaf3d3cac17408368e46cb422a001a6ed0}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+V\+E\+N\+O\+U\+S\+\_\+\+W\+H\+O\+L\+E\+\_\+\+B\+L\+O\+OD}~0x03\hypertarget{group___b_l_e___g_s_ga0261c771d02f6bf27dd088e774fc8eca}{}\label{group___b_l_e___g_s_ga0261c771d02f6bf27dd088e774fc8eca}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+V\+E\+N\+O\+U\+S\+\_\+\+P\+L\+A\+S\+MA}~0x04\hypertarget{group___b_l_e___g_s_gaf408f3eff39733602a8a4ed6a0ab5c86}{}\label{group___b_l_e___g_s_gaf408f3eff39733602a8a4ed6a0ab5c86}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+A\+R\+T\+E\+R\+I\+A\+L\+\_\+\+W\+H\+O\+L\+E\+\_\+\+B\+L\+O\+OD}~0x05\hypertarget{group___b_l_e___g_s_ga28ef0d6bfcd85bdb517f29da94bf6bd6}{}\label{group___b_l_e___g_s_ga28ef0d6bfcd85bdb517f29da94bf6bd6}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+A\+R\+T\+E\+R\+I\+A\+L\+\_\+\+P\+L\+A\+S\+MA}~0x06\hypertarget{group___b_l_e___g_s_ga49d50467164a51793bdb81495897e9c8}{}\label{group___b_l_e___g_s_ga49d50467164a51793bdb81495897e9c8}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+U\+N\+D\+E\+T\+E\+R\+M\+I\+N\+E\+D\+\_\+\+W\+H\+O\+L\+E\+\_\+\+B\+L\+O\+OD}~0x07\hypertarget{group___b_l_e___g_s_ga442ca60a9c2b868f29d113b18d1b35d3}{}\label{group___b_l_e___g_s_ga442ca60a9c2b868f29d113b18d1b35d3}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+U\+N\+D\+E\+T\+E\+R\+M\+I\+N\+E\+D\+\_\+\+P\+L\+A\+S\+MA}~0x08\hypertarget{group___b_l_e___g_s_gad5eb58a46e83a9a49c66d4df55bd7e83}{}\label{group___b_l_e___g_s_gad5eb58a46e83a9a49c66d4df55bd7e83}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+I\+N\+T\+E\+R\+S\+T\+I\+T\+I\+A\+L\+\_\+\+F\+L\+U\+ID}~0x09\hypertarget{group___b_l_e___g_s_ga2e863bef9c0868c10315d6175b6bbea2}{}\label{group___b_l_e___g_s_ga2e863bef9c0868c10315d6175b6bbea2}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+O\+L\+U\+T\+I\+ON}~0x0A\hypertarget{group___b_l_e___g_s_ga9b54ae7b2b37493b170322b4bd360f0d}{}\label{group___b_l_e___g_s_ga9b54ae7b2b37493b170322b4bd360f0d}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+B\+L\+ED}~0x0100\hypertarget{group___b_l_e___g_s_ga309ba0cfc7aabc6685ac189ec225af79}{}\label{group___b_l_e___g_s_ga309ba0cfc7aabc6685ac189ec225af79}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+D\+I\+S\+A\+B\+L\+ED}~0x0000\hypertarget{group___b_l_e___g_s_ga769d429ecb217ecdc13f8277fc40b72f}{}\label{group___b_l_e___g_s_ga769d429ecb217ecdc13f8277fc40b72f}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+E\+\_\+\+E\+N\+A\+B\+L\+ED}~0x0200\hypertarget{group___b_l_e___g_s_ga0ad6f1d9b710088528b557a33a0bbc20}{}\label{group___b_l_e___g_s_ga0ad6f1d9b710088528b557a33a0bbc20}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+E\+\_\+\+D\+I\+S\+A\+B\+L\+ED}~0x0000\hypertarget{group___b_l_e___g_s_ga8a7ce95f7736c0c814b5c6f1ebdb3fa1}{}\label{group___b_l_e___g_s_ga8a7ce95f7736c0c814b5c6f1ebdb3fa1}
+
+\item 
+\#define {\bfseries M\+A\+X\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+L\+EN}~30\hypertarget{group___b_l_e___g_s_ga6619cea161cec079694f3b8529bbbee8}{}\label{group___b_l_e___g_s_ga6619cea161cec079694f3b8529bbbee8}
+
+\item 
+\#define {\bfseries M\+A\+X\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+L\+EN}~30\hypertarget{group___b_l_e___g_s_ga183c0383dd4cf191f49c253f9bf0e62d}{}\label{group___b_l_e___g_s_ga183c0383dd4cf191f49c253f9bf0e62d}
+
+\item 
+\#define \hyperlink{group___b_l_e___g_s_ga3cbeefe4c72fb18c2f6cb7af3d8da434}{A\+P\+P\+\_\+\+D\+E\+F\+I\+N\+E\+D\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+N\+U\+M\+B\+ER}~0x0C\hypertarget{group___b_l_e___g_s_ga3cbeefe4c72fb18c2f6cb7af3d8da434}{}\label{group___b_l_e___g_s_ga3cbeefe4c72fb18c2f6cb7af3d8da434}
+
+\begin{DoxyCompactList}\small\item\em Attribute number in the app defined Service Table. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___b_l_e___g_s_gaf06c0487f1d16b54de92675226172ff1}{G\+L\+U\+C\+O\+S\+E\+\_\+\+C\+O\+N\+C\+E\+N\+T\+R\+A\+T\+I\+O\+N\+\_\+\+U\+N\+I\+T\+\_\+\+K\+GL}~0			/$\ast$$\ast$Glucose Concentration Units	 0	kg/L	 $\ast$/\hypertarget{group___b_l_e___g_s_gaf06c0487f1d16b54de92675226172ff1}{}\label{group___b_l_e___g_s_gaf06c0487f1d16b54de92675226172ff1}
+
+\begin{DoxyCompactList}\small\item\em glucose Concentration unit \end{DoxyCompactList}\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+C\+O\+N\+C\+E\+N\+T\+R\+A\+T\+I\+O\+N\+\_\+\+U\+N\+I\+T\+\_\+\+M\+OL}~1			/$\ast$$\ast$Glucose Concentration Units     1	mol/L$\ast$/\hypertarget{group___b_l_e___g_s_ga11e873a22897567a6aaacb2c35d26947}{}\label{group___b_l_e___g_s_ga11e873a22897567a6aaacb2c35d26947}
+
+\item 
+\#define \hyperlink{group___b_l_e___g_s_ga370292f9ec79040cc6bb1fab8a89f858}{G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+F\+L\+A\+G\+\_\+\+T\+I\+M\+E\+O\+F\+F\+S\+ET}~(1$<$$<$0)\hypertarget{group___b_l_e___g_s_ga370292f9ec79040cc6bb1fab8a89f858}{}\label{group___b_l_e___g_s_ga370292f9ec79040cc6bb1fab8a89f858}
+
+\begin{DoxyCompactList}\small\item\em G\+L\+U\+C\+O\+SE measurement flags. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+F\+L\+A\+G\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+C\+O\+N\+C\+E\+N\+T\+R\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+O\+C\+A\+T\+I\+ON}~(1$<$$<$1)\hypertarget{group___b_l_e___g_s_gaba86fe13c4f2ca3bb4991483c5a9f415}{}\label{group___b_l_e___g_s_gaba86fe13c4f2ca3bb4991483c5a9f415}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+F\+L\+A\+G\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+C\+O\+N\+C\+E\+N\+T\+R\+A\+T\+I\+O\+N\+\_\+\+U\+N\+IT}~(1$<$$<$2)\hypertarget{group___b_l_e___g_s_ga13ea87b4ec4a39e657039bd607021edf}{}\label{group___b_l_e___g_s_ga13ea87b4ec4a39e657039bd607021edf}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+F\+L\+A\+G\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+A\+N\+N\+U\+C\+I\+A\+T\+I\+O\+N\+\_\+\+P\+R\+E\+S\+E\+NT}~(1$<$$<$3)\hypertarget{group___b_l_e___g_s_ga3b4a48be6845f4d1fa7c556d5891ce24}{}\label{group___b_l_e___g_s_ga3b4a48be6845f4d1fa7c556d5891ce24}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+F\+L\+A\+G\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON}~(1$<$$<$4)\hypertarget{group___b_l_e___g_s_ga136d37103ec637adcb4d782318f0e18f}{}\label{group___b_l_e___g_s_ga136d37103ec637adcb4d782318f0e18f}
+
+\item 
+\#define \hyperlink{group___b_l_e___g_s_gaf32b81dff6dec9fae2aa2dd96219c9fa}{G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+L\+A\+G\+\_\+\+C\+A\+R\+B\+O\+H\+Y\+D\+R\+A\+T\+E\+\_\+\+I\+D\+\_\+\+P\+R\+E\+S\+E\+NT}~(1$<$$<$0)\hypertarget{group___b_l_e___g_s_gaf32b81dff6dec9fae2aa2dd96219c9fa}{}\label{group___b_l_e___g_s_gaf32b81dff6dec9fae2aa2dd96219c9fa}
+
+\begin{DoxyCompactList}\small\item\em G\+L\+U\+C\+O\+SE measurement Context flags. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+L\+A\+G\+\_\+\+M\+E\+A\+L\+\_\+\+P\+R\+E\+S\+E\+NT}~(1$<$$<$1)\hypertarget{group___b_l_e___g_s_gab4032f1da9aa12947b90aae8d4340c12}{}\label{group___b_l_e___g_s_gab4032f1da9aa12947b90aae8d4340c12}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+L\+A\+G\+\_\+\+T\+E\+S\+T\+E\+R\+\_\+\+H\+E\+A\+L\+T\+H\+\_\+\+P\+R\+E\+S\+E\+NT}~(1$<$$<$2)\hypertarget{group___b_l_e___g_s_ga630f1e013b0b4224ec4801be0588edb8}{}\label{group___b_l_e___g_s_ga630f1e013b0b4224ec4801be0588edb8}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+L\+A\+G\+\_\+\+E\+X\+E\+R\+C\+I\+S\+E\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+\+I\+N\+T\+E\+N\+S\+I\+T\+Y\+\_\+\+P\+R\+E\+S\+E\+NT}~(1$<$$<$3)\hypertarget{group___b_l_e___g_s_gad83acabe097fc163e412515b565d4e99}{}\label{group___b_l_e___g_s_gad83acabe097fc163e412515b565d4e99}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+L\+A\+G\+\_\+\+M\+D\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+D\+\_\+\+P\+R\+E\+S\+E\+NT}~(1$<$$<$4)\hypertarget{group___b_l_e___g_s_ga386a8d3d1b6e372ba8c5b4d15c739d0f}{}\label{group___b_l_e___g_s_ga386a8d3d1b6e372ba8c5b4d15c739d0f}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+L\+A\+G\+\_\+\+M\+D\+I\+C\+A\+T\+I\+O\+N\+\_\+\+V\+A\+L\+U\+E\+\_\+\+P\+R\+E\+S\+E\+NT}~(1$<$$<$5)\hypertarget{group___b_l_e___g_s_gaa9c0375cf630b2c588bc847acce02d2e}{}\label{group___b_l_e___g_s_gaa9c0375cf630b2c588bc847acce02d2e}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+L\+A\+G\+\_\+\+H\+B\+A1\+C\+P\+R\+E\+S\+E\+NT}~(1$<$$<$6)\hypertarget{group___b_l_e___g_s_gaac26ca00a87c2d3c7e10df814b522d01}{}\label{group___b_l_e___g_s_gaac26ca00a87c2d3c7e10df814b522d01}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+C\+O\+N\+T\+E\+X\+T\+\_\+\+F\+L\+A\+G\+\_\+\+E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+F\+L\+A\+G\+\_\+\+P\+R\+E\+S\+E\+NT}~(1$<$$<$7)\hypertarget{group___b_l_e___g_s_ga024434a2fa5c29c85181e695cd5c4c43}{}\label{group___b_l_e___g_s_ga024434a2fa5c29c85181e695cd5c4c43}
+
+\item 
+\#define \hyperlink{group___b_l_e___g_s_ga77c005f74705959bcd25d440b02e4a96}{G\+L\+U\+C\+O\+S\+E\+\_\+\+L\+O\+W\+\_\+\+B\+A\+T\+T\+E\+R\+Y\+\_\+\+D\+E\+T\+E\+C\+T\+I\+O\+N\+\_\+\+D\+U\+R\+I\+N\+G\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~(1$<$$<$0)\hypertarget{group___b_l_e___g_s_ga77c005f74705959bcd25d440b02e4a96}{}\label{group___b_l_e___g_s_ga77c005f74705959bcd25d440b02e4a96}
+
+\begin{DoxyCompactList}\small\item\em G\+L\+U\+C\+O\+SE Feature flags. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+M\+A\+L\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+T\+E\+C\+T\+I\+O\+N\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~(1$<$$<$1)\hypertarget{group___b_l_e___g_s_ga5e3c9e47093fc773e80c0c35ce22dcee}{}\label{group___b_l_e___g_s_ga5e3c9e47093fc773e80c0c35ce22dcee}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~(1$<$$<$2)\hypertarget{group___b_l_e___g_s_ga3631be0214e91429c745100af7d89081}{}\label{group___b_l_e___g_s_ga3631be0214e91429c745100af7d89081}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+S\+T\+R\+I\+P\+\_\+\+I\+N\+S\+E\+R\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+D\+E\+T\+E\+C\+T\+I\+O\+N\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~(1$<$$<$3)\hypertarget{group___b_l_e___g_s_gac9fc7244a22056ede57d7d28908c1718}{}\label{group___b_l_e___g_s_gac9fc7244a22056ede57d7d28908c1718}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+S\+T\+R\+I\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+D\+E\+T\+E\+C\+T\+I\+O\+N\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~(1$<$$<$4)\hypertarget{group___b_l_e___g_s_ga89051b09d9a18101e53abbd363d45579}{}\label{group___b_l_e___g_s_ga89051b09d9a18101e53abbd363d45579}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+H\+I\+G\+H\+\_\+\+L\+O\+W\+\_\+\+D\+E\+T\+E\+C\+T\+I\+O\+N\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~(1$<$$<$5)\hypertarget{group___b_l_e___g_s_gad73762628fef545f04f935ffb4f94c0a}{}\label{group___b_l_e___g_s_gad73762628fef545f04f935ffb4f94c0a}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+H\+I\+G\+H\+\_\+\+L\+O\+W\+\_\+\+D\+E\+T\+E\+C\+T\+I\+O\+N\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~(1$<$$<$6)\hypertarget{group___b_l_e___g_s_ga6a123d5fee7bd69420c1828ceb04732c}{}\label{group___b_l_e___g_s_ga6a123d5fee7bd69420c1828ceb04732c}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+D\+E\+T\+E\+C\+T\+I\+O\+N\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~(1$<$$<$7)\hypertarget{group___b_l_e___g_s_gab1f24ac225f10bdd907bd3b68b92dee3}{}\label{group___b_l_e___g_s_gab1f24ac225f10bdd907bd3b68b92dee3}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+G\+E\+N\+E\+R\+A\+L\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+F\+A\+U\+L\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~(1$<$$<$8)\hypertarget{group___b_l_e___g_s_gafc6b85fbb858046ad56fd9fd28f954a9}{}\label{group___b_l_e___g_s_gafc6b85fbb858046ad56fd9fd28f954a9}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+T\+I\+M\+E\+\_\+\+F\+A\+U\+L\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~(1$<$$<$9)\hypertarget{group___b_l_e___g_s_ga50132e303539196e0803e4a92bc0ccd1}{}\label{group___b_l_e___g_s_ga50132e303539196e0803e4a92bc0ccd1}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+B\+O\+N\+D\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~(1$<$$<$10)\hypertarget{group___b_l_e___g_s_ga4ece34a35afa072071a8f8ae771ba76b}{}\label{group___b_l_e___g_s_ga4ece34a35afa072071a8f8ae771ba76b}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+A\+L\+L\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~0x03\+FF\hypertarget{group___b_l_e___g_s_ga01464d3cc188bc4c160e946bcd3ec69c}{}\label{group___b_l_e___g_s_ga01464d3cc188bc4c160e946bcd3ec69c}
+
+\item 
+\#define \hyperlink{group___b_l_e___g_s_gab5c0409cac8d6c9f649bf66fe348851d}{D\+E\+V\+I\+C\+E\+\_\+\+B\+A\+T\+T\+E\+R\+Y\+\_\+\+L\+O\+W\+\_\+\+A\+T\+\_\+\+T\+I\+M\+E\+\_\+\+O\+F\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+NT}~(1$<$$<$0)\hypertarget{group___b_l_e___g_s_gab5c0409cac8d6c9f649bf66fe348851d}{}\label{group___b_l_e___g_s_gab5c0409cac8d6c9f649bf66fe348851d}
+
+\begin{DoxyCompactList}\small\item\em G\+L\+U\+C\+O\+SE Sensor A\+Status Annunciation flags. \end{DoxyCompactList}\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+M\+A\+L\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+O\+R\+\_\+\+F\+A\+U\+L\+T\+I\+N\+G\+\_\+\+A\+T\+\_\+\+T\+I\+M\+E\+\_\+\+O\+F\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+NT}~(1$<$$<$1)\hypertarget{group___b_l_e___g_s_gacc6450b30084cc6554c8654bcbc25e2f}{}\label{group___b_l_e___g_s_gacc6450b30084cc6554c8654bcbc25e2f}
+
+\item 
+\#define {\bfseries S\+A\+M\+P\+L\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+F\+O\+R\+\_\+\+B\+L\+O\+O\+D\+\_\+\+O\+R\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+I\+N\+S\+U\+F\+F\+I\+C\+I\+E\+N\+T\+\_\+\+A\+T\+\_\+\+T\+I\+M\+E\+\_\+\+O\+F\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+NT}~(1$<$$<$2)\hypertarget{group___b_l_e___g_s_ga6911413ac1ab2cc2206cb8881c0a6317}{}\label{group___b_l_e___g_s_ga6911413ac1ab2cc2206cb8881c0a6317}
+
+\item 
+\#define {\bfseries S\+T\+R\+I\+P\+\_\+\+I\+N\+S\+E\+R\+T\+I\+O\+N\+\_\+\+E\+R\+R\+OR}~(1$<$$<$3)\hypertarget{group___b_l_e___g_s_ga24c13503095399e6c71f12aab955c0a0}{}\label{group___b_l_e___g_s_ga24c13503095399e6c71f12aab955c0a0}
+
+\item 
+\#define {\bfseries S\+T\+R\+I\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+C\+O\+R\+R\+E\+C\+T\+\_\+\+F\+O\+R\+\_\+\+D\+E\+V\+I\+CE}~(1$<$$<$4)\hypertarget{group___b_l_e___g_s_ga4bbc015e1dcf9962772d07f0b25059cc}{}\label{group___b_l_e___g_s_ga4bbc015e1dcf9962772d07f0b25059cc}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+H\+I\+G\+H\+E\+R\+\_\+\+T\+H\+A\+N\+\_\+\+T\+H\+E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+A\+N\+\_\+\+P\+R\+O\+C\+E\+SS}~(1$<$$<$5)\hypertarget{group___b_l_e___g_s_ga3f69fbffd39e1c3a5785f1d3cb34bb07}{}\label{group___b_l_e___g_s_ga3f69fbffd39e1c3a5785f1d3cb34bb07}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+L\+O\+W\+E\+R\+\_\+\+T\+H\+A\+N\+\_\+\+T\+H\+E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+A\+N\+\_\+\+P\+R\+O\+C\+E\+SS}~(1$<$$<$6)\hypertarget{group___b_l_e___g_s_ga535810e8a82055efe7ba213ca716e559}{}\label{group___b_l_e___g_s_ga535810e8a82055efe7ba213ca716e559}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+T\+O\+O\+\_\+\+H\+I\+G\+H\+\_\+\+F\+O\+R\+\_\+\+V\+A\+L\+I\+D\+\_\+\+T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+A\+T\+\_\+\+T\+I\+M\+E\+\_\+\+O\+F\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+NT}~(1$<$$<$7)\hypertarget{group___b_l_e___g_s_gab2452683d0835767cfd3ff5f2c289c75}{}\label{group___b_l_e___g_s_gab2452683d0835767cfd3ff5f2c289c75}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+T\+O\+O\+\_\+\+L\+O\+W\+\_\+\+F\+O\+R\+\_\+\+V\+A\+L\+I\+D\+\_\+\+T\+E\+S\+T\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+A\+T\+\_\+\+T\+I\+M\+E\+\_\+\+O\+F\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+NT}~(1$<$$<$8)\hypertarget{group___b_l_e___g_s_ga10dcfe989fc808aefd6e414caf4281d0}{}\label{group___b_l_e___g_s_ga10dcfe989fc808aefd6e414caf4281d0}
+
+\item 
+\#define {\bfseries S\+E\+N\+S\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+E\+D\+\_\+\+B\+E\+C\+A\+U\+S\+E\+\_\+\+S\+T\+R\+I\+P\+\_\+\+W\+A\+S\+\_\+\+P\+U\+L\+L\+E\+D\+\_\+\+T\+O\+O\+\_\+\+S\+O\+O\+N\+\_\+\+A\+T\+\_\+\+T\+I\+M\+E\+\_\+\+O\+F\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+NT}~(1$<$$<$9)\hypertarget{group___b_l_e___g_s_ga4fb0b4f70b5eda961a64f0b8fea67e8a}{}\label{group___b_l_e___g_s_ga4fb0b4f70b5eda961a64f0b8fea67e8a}
+
+\item 
+\#define {\bfseries G\+E\+N\+E\+R\+A\+L\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+F\+A\+U\+L\+T\+\_\+\+H\+A\+S\+\_\+\+O\+C\+C\+U\+R\+R\+E\+D\+\_\+\+I\+N\+\_\+\+T\+H\+E\+\_\+\+S\+E\+N\+S\+OR}~(1$<$$<$10)\hypertarget{group___b_l_e___g_s_ga8377219f172bff5a32b6c94609da8f88}{}\label{group___b_l_e___g_s_ga8377219f172bff5a32b6c94609da8f88}
+
+\item 
+\#define {\bfseries T\+I\+M\+E\+\_\+\+F\+A\+U\+L\+T\+\_\+\+H\+A\+S\+\_\+\+O\+C\+C\+U\+R\+R\+E\+D\+\_\+\+I\+N\+\_\+\+T\+H\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+A\+N\+D\+\_\+\+T\+I\+M\+E\+\_\+\+M\+A\+Y\+\_\+\+B\+E\+\_\+\+I\+N\+A\+C\+C\+U\+R\+A\+TE}~(1$<$$<$11)\hypertarget{group___b_l_e___g_s_ga901867af7b9479bab2c52974529b2c96}{}\label{group___b_l_e___g_s_ga901867af7b9479bab2c52974529b2c96}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+S\+T\+O\+R\+E\+D\+\_\+\+R\+E\+C\+O\+R\+DS}~0x01\hypertarget{group___b_l_e___g_s_gad557e94fdf50f607949525b2e7196c1c}{}\label{group___b_l_e___g_s_gad557e94fdf50f607949525b2e7196c1c}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+S\+T\+O\+R\+E\+D\+\_\+\+R\+E\+C\+O\+R\+DS}~0x02\hypertarget{group___b_l_e___g_s_ga16dcd69bb1048fcf6428a2a005f1f2a7}{}\label{group___b_l_e___g_s_ga16dcd69bb1048fcf6428a2a005f1f2a7}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+A\+B\+O\+R\+T\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON}~0x03\hypertarget{group___b_l_e___g_s_ga4f381a27815a6d1fd25f8643bf4530ab}{}\label{group___b_l_e___g_s_ga4f381a27815a6d1fd25f8643bf4530ab}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+S\+T\+O\+R\+E\+D\+\_\+\+R\+E\+C\+O\+R\+DS}~0x04\hypertarget{group___b_l_e___g_s_ga22bad536df10e01d7e334b76355396e7}{}\label{group___b_l_e___g_s_ga22bad536df10e01d7e334b76355396e7}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+S\+T\+O\+R\+E\+D\+\_\+\+R\+E\+C\+O\+R\+D\+S\+\_\+\+R\+E\+S\+P\+O\+N\+SE}~0x05\hypertarget{group___b_l_e___g_s_gabdad6b9bdbd170a23d8204ddd8e05121}{}\label{group___b_l_e___g_s_gabdad6b9bdbd170a23d8204ddd8e05121}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+C\+O\+DE}~0x06\hypertarget{group___b_l_e___g_s_gab1c2b0849b15a83ccf2a81a279eda153}{}\label{group___b_l_e___g_s_gab1c2b0849b15a83ccf2a81a279eda153}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+N\+U\+LL}~0x00\hypertarget{group___b_l_e___g_s_ga530f914c25645412148565504b12c956}{}\label{group___b_l_e___g_s_ga530f914c25645412148565504b12c956}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+A\+L\+L\+\_\+\+R\+E\+C\+O\+R\+DS}~0x01\hypertarget{group___b_l_e___g_s_ga6b16faa2992eb4371905e1a4e0d27823}{}\label{group___b_l_e___g_s_ga6b16faa2992eb4371905e1a4e0d27823}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+L\+E\+S\+S\+\_\+\+T\+H\+A\+N\+\_\+\+O\+R\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+TO}~0x02\hypertarget{group___b_l_e___g_s_ga1659df49b4b2163091118124b2ab8fe2}{}\label{group___b_l_e___g_s_ga1659df49b4b2163091118124b2ab8fe2}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+G\+R\+E\+A\+T\+E\+R\+\_\+\+T\+H\+A\+N\+\_\+\+O\+R\+\_\+\+E\+Q\+U\+A\+L\+\_\+\+TO}~0x03\hypertarget{group___b_l_e___g_s_gaf36a69122b65903027552ad5b2ae0bbf}{}\label{group___b_l_e___g_s_gaf36a69122b65903027552ad5b2ae0bbf}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+W\+I\+T\+H\+I\+N\+\_\+\+R\+R\+A\+N\+G\+E\+\_\+\+OF}~0x04\hypertarget{group___b_l_e___g_s_ga248606a12d2e232da0d9674b90dc93cc}{}\label{group___b_l_e___g_s_ga248606a12d2e232da0d9674b90dc93cc}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+F\+I\+R\+S\+T\+\_\+\+R\+E\+C\+O\+RD}~0x05\hypertarget{group___b_l_e___g_s_ga132fb7a8a95546be14eac2324c0c9578}{}\label{group___b_l_e___g_s_ga132fb7a8a95546be14eac2324c0c9578}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+L\+A\+S\+T\+\_\+\+R\+E\+C\+O\+RD}~0x06\hypertarget{group___b_l_e___g_s_ga50fd013f7cd8fb49609f89a02adaa54c}{}\label{group___b_l_e___g_s_ga50fd013f7cd8fb49609f89a02adaa54c}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+NA}~0x00\hypertarget{group___b_l_e___g_s_ga31414b0559613b97e87ce314d6be334a}{}\label{group___b_l_e___g_s_ga31414b0559613b97e87ce314d6be334a}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+RS}~0x01\hypertarget{group___b_l_e___g_s_gabe9365b31be087edb927dc18513af08c}{}\label{group___b_l_e___g_s_gabe9365b31be087edb927dc18513af08c}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R\+S2}~0x02\hypertarget{group___b_l_e___g_s_ga7e832dff997c953b1ab6e63c3478df02}{}\label{group___b_l_e___g_s_ga7e832dff997c953b1ab6e63c3478df02}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+N\+O\+T\+\_\+\+I\+N\+C\+L\+U\+D\+ED}~0x03\hypertarget{group___b_l_e___g_s_gab4efcb8935fbd0667125de1f81249d66}{}\label{group___b_l_e___g_s_gab4efcb8935fbd0667125de1f81249d66}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R\+S3}~0x04\hypertarget{group___b_l_e___g_s_gac31d3591fa138e7f482b94929e5b422d}{}\label{group___b_l_e___g_s_gac31d3591fa138e7f482b94929e5b422d}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+R\+E\+C\+O\+R\+D\+S\+\_\+\+F\+I\+E\+L\+D\+S\+I\+ZE}~0x05\hypertarget{group___b_l_e___g_s_ga3043c8ad5219983bdcb6a0e6db9eb1e6}{}\label{group___b_l_e___g_s_ga3043c8ad5219983bdcb6a0e6db9eb1e6}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+O\+P\+\_\+\+C\+O\+DE}~0x06\hypertarget{group___b_l_e___g_s_ga02cae4140b33e436b6f402c99d42d2b0}{}\label{group___b_l_e___g_s_ga02cae4140b33e436b6f402c99d42d2b0}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+R\+E\+S\+P\+O\+N\+SE}~0x01\hypertarget{group___b_l_e___g_s_gac7a157e13132613c6cf2444aca8941fd}{}\label{group___b_l_e___g_s_gac7a157e13132613c6cf2444aca8941fd}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+O\+P\+\_\+\+C\+O\+D\+E\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~0x02\hypertarget{group___b_l_e___g_s_gac0c68a09decd4d028bf28bcdc246124c}{}\label{group___b_l_e___g_s_gac0c68a09decd4d028bf28bcdc246124c}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+O\+P\+E\+R\+A\+T\+OR}~0x03\hypertarget{group___b_l_e___g_s_ga9150a4683591401061e1c54d96199a17}{}\label{group___b_l_e___g_s_ga9150a4683591401061e1c54d96199a17}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~0x04\hypertarget{group___b_l_e___g_s_ga65514d6e4874be0847b2726c966e29c1}{}\label{group___b_l_e___g_s_ga65514d6e4874be0847b2726c966e29c1}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+O\+P\+E\+R\+A\+N\+D\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+R\+E\+S\+P\+O\+N\+SE}~0x05\hypertarget{group___b_l_e___g_s_ga2d76c31e9e8d49ccd3bdbdb1063caa3c}{}\label{group___b_l_e___g_s_ga2d76c31e9e8d49ccd3bdbdb1063caa3c}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+N\+O\+\_\+\+R\+C\+O\+R\+D\+S\+\_\+\+F\+O\+U\+ND}~0x06\hypertarget{group___b_l_e___g_s_gaab40458cb354c45e1a58991df63ef4d2}{}\label{group___b_l_e___g_s_gaab40458cb354c45e1a58991df63ef4d2}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+A\+B\+O\+R\+T\+\_\+\+U\+N\+S\+U\+C\+C\+E\+S\+S\+F\+UL}~0x07\hypertarget{group___b_l_e___g_s_gaf41662264872004ec1f41e70681daff2}{}\label{group___b_l_e___g_s_gaf41662264872004ec1f41e70681daff2}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+P\+R\+O\+C\+E\+D\+U\+R\+E\+\_\+\+N\+O\+T\+\_\+\+C\+O\+M\+P\+L\+E\+T\+ED}~0x08\hypertarget{group___b_l_e___g_s_ga15d98a58bd51213c5c682e31cf91761c}{}\label{group___b_l_e___g_s_ga15d98a58bd51213c5c682e31cf91761c}
+
+\item 
+\#define {\bfseries G\+L\+U\+C\+O\+S\+E\+\_\+\+O\+P\+E\+R\+A\+N\+D\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~0x09\hypertarget{group___b_l_e___g_s_ga287e1c154e26662c7bda9b2a54d8b0ef}{}\label{group___b_l_e___g_s_ga287e1c154e26662c7bda9b2a54d8b0ef}
+
+\item 
+\#define {\bfseries B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Database\+\_\+\+M\+A\+X\+\_\+\+R\+E\+C\+O\+R\+DS}~20\hypertarget{group___b_l_e___g_s_ga72eb5f60d652cb0452d1fd9509a8a302}{}\label{group___b_l_e___g_s_ga72eb5f60d652cb0452d1fd9509a8a302}
+
+\item 
+\#define {\bfseries B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+E\+R\+R\+OR}~0x81\hypertarget{group___b_l_e___g_s_gaa1e0c12652d5f35846e4fe387e18456c}{}\label{group___b_l_e___g_s_gaa1e0c12652d5f35846e4fe387e18456c}
+
+\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_s__float}{S\+\_\+float} {\bfseries S\+\_\+float}\hypertarget{group___b_l_e___g_s_ga9d1e332e81ce1e7d15b0c539d85ac9d0}{}\label{group___b_l_e___g_s_ga9d1e332e81ce1e7d15b0c539d85ac9d0}
+
+\item 
+typedef struct \hyperlink{struct_time___field}{Time\+\_\+\+Field} \hyperlink{group___b_l_e___g_s_ga8d554aac0512406a308b84a3392623fa}{Time\+\_\+\+Field}\hypertarget{group___b_l_e___g_s_ga8d554aac0512406a308b84a3392623fa}{}\label{group___b_l_e___g_s_ga8d554aac0512406a308b84a3392623fa}
+
+\begin{DoxyCompactList}\small\item\em Time stamp parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___g_l_u_c_o_s_e___event}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Event} {\bfseries B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Event}\hypertarget{group___b_l_e___g_s_ga2608d39b298d18f49f98c513a595ff5d}{}\label{group___b_l_e___g_s_ga2608d39b298d18f49f98c513a595ff5d}
+
+\item 
+typedef struct \hyperlink{struct_b_l_e___glucose___r_a_c_p}{B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+CP} \hyperlink{group___b_l_e___g_s_gad603a274a4f36aa80acc5e6d8cdf792d}{B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+CP}
+\item 
+typedef struct \hyperlink{struct_b_l_e___g_l_u_c_o_s_e___measurement}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement} \hyperlink{group___b_l_e___g_s_ga8be1fbb6fa8e32337f5d100f6653e06e}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement}
+\begin{DoxyCompactList}\small\item\em Time stamp parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___g_l_u_c_o_s_e___measurement___context}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement\+\_\+\+Context} {\bfseries B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement\+\_\+\+Context}\hypertarget{group___b_l_e___g_s_ga9631bf5a7e7002d0911b94f6db0fe91a}{}\label{group___b_l_e___g_s_ga9631bf5a7e7002d0911b94f6db0fe91a}
+
+\item 
+typedef struct \hyperlink{struct_b_l_e___g_l_u_c_o_s_e___records_database}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Records\+Database} \hyperlink{group___b_l_e___g_s_ga5689bcf43c1ef64defad972ad53649c9}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Records\+Database}\hypertarget{group___b_l_e___g_s_ga5689bcf43c1ef64defad972ad53649c9}{}\label{group___b_l_e___g_s_ga5689bcf43c1ef64defad972ad53649c9}
+
+\begin{DoxyCompactList}\small\item\em Glucose measurement record. \end{DoxyCompactList}\item 
+typedef void($\ast$ {\bfseries Glucose\+Process\+Routine}) (\hyperlink{struct_b_l_e___g_l_u_c_o_s_e___event}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Event} X\+D\+A\+TA $\ast$p\+\_\+glucose\+Event) large\hypertarget{group___b_l_e___g_s_ga20270fb7fa4e542ca45dc0f6331905c6}{}\label{group___b_l_e___g_s_ga20270fb7fa4e542ca45dc0f6331905c6}
+
+\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___b_l_e___g_s_gaebc08cd72805620fc1106a0b90462c83}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Attribute\+Index} \{ \\*
+{\bfseries I\+N\+D\+E\+X\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+P\+R\+I\+M\+A\+R\+Y\+\_\+\+S\+E\+R\+V\+I\+CE} =0x00, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+NT}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+V\+A\+L\+UE}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+C\+C\+CD}, 
+\\*
+{\bfseries I\+N\+D\+E\+X\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+C\+O\+N\+T\+E\+XT}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+V\+A\+L\+UE}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+C\+CD}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+F\+E\+A\+T\+U\+RE}, 
+\\*
+{\bfseries I\+N\+D\+E\+X\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+V\+A\+L\+UE}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+I\+NT}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+V\+A\+L\+UE}, 
+{\bfseries I\+N\+D\+E\+X\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+C\+C\+CD}, 
+\\*
+{\bfseries T\+O\+T\+A\+L\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM}
+ \}\hypertarget{group___b_l_e___g_s_gaebc08cd72805620fc1106a0b90462c83}{}\label{group___b_l_e___g_s_gaebc08cd72805620fc1106a0b90462c83}
+\begin{DoxyCompactList}\small\item\em Attribute index number in the app defined Service Table. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group___b_l_e___g_s_ga2377e8b14a4dbee0ccc46ebf3970633c}{B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+C\+Pstate} \{ \hyperlink{group___b_l_e___g_s_gga2377e8b14a4dbee0ccc46ebf3970633cab892dc8bda08cca695cec9d2525c886a}{S\+T\+A\+T\+E\+\_\+\+N\+O\+\_\+\+C\+O\+MM}, 
+\hyperlink{group___b_l_e___g_s_gga2377e8b14a4dbee0ccc46ebf3970633ca19d4e79a1a06d26731a150539ccf8f4c}{S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+VE}, 
+\hyperlink{group___b_l_e___g_s_gga2377e8b14a4dbee0ccc46ebf3970633ca552ae1c7135d17b86e9061d7b41a0e2f}{S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+P\+E\+N\+D\+I\+NG}, 
+\hyperlink{group___b_l_e___g_s_gga2377e8b14a4dbee0ccc46ebf3970633cac9e1172d0c84f0307bcbe3a26df9d92d}{S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+I\+N\+D\+\_\+\+V\+E\+R\+IF}
+ \}\begin{DoxyCompactList}\small\item\em Glucose R\+A\+CP Service communication state. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_ga3ad5941d4be77b3f64af1ab1f24b4db4}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Init} (Glucose\+Process\+Routine glucose\+Handler) large
+\begin{DoxyCompactList}\small\item\em Initizlize B\+LE glucose. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_ga54657aa8e37820087f7d2ee475c46d19}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Init\+\_\+\+Service} () large
+\begin{DoxyCompactList}\small\item\em Initizlize B\+LE Glucose service table. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_ga46a7f8a9ba2550a8dc8e9b0d1ba7238e}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Database\+\_\+\+Init} (void) large
+\begin{DoxyCompactList}\small\item\em Function for initializing the glucose record database. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_ga989e27895433c06328e836db741c33a6}{B\+L\+E\+\_\+\+Add\+\_\+\+Glucose\+\_\+\+Measurement\+Database} (\hyperlink{struct_b_l_e___g_l_u_c_o_s_e___records_database}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Records\+Database} X\+D\+A\+TA $\ast$p\+\_\+recorddatabase) large
+\begin{DoxyCompactList}\small\item\em Add Glucose measurement database. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_gaf31acf015dbec6c950cd48ab1031946b}{B\+L\+E\+\_\+\+Delete\+\_\+\+Glucose\+\_\+\+Measurement\+Record} (u8 X\+D\+A\+TA record\+\_\+index) large
+\begin{DoxyCompactList}\small\item\em Delete specific Glucose measurement record. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_ga95ec9029e7c94a93f3d255245d0e5e0d}{B\+L\+E\+\_\+\+Get\+\_\+\+Number\+Of\+Records\+\_\+\+Glucose\+\_\+\+Measurement\+Record} (void) large
+\begin{DoxyCompactList}\small\item\em Function for getting the number of records in the database. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_ga63e70e439d715ab69015f66fa749d300}{B\+L\+E\+\_\+\+Get\+\_\+\+Glucose\+\_\+\+Measurement\+Record} (u8 record\+\_\+index, \hyperlink{struct_b_l_e___g_l_u_c_o_s_e___records_database}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Records\+Database} X\+D\+A\+TA $\ast$p\+\_\+recorddatabase) large
+\begin{DoxyCompactList}\small\item\em Function for getting a record from the database. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___b_l_e___g_s_gaaf3f248c172a0241f73dea4ed02a4a88}{B\+L\+E\+\_\+\+Glucose\+\_\+\+Catch\+\_\+\+Event} (\hyperlink{struct_b_l_e___g_a_t_t___event}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} X\+D\+A\+TA $\ast$p\+\_\+event) large
+\begin{DoxyCompactList}\small\item\em Catch B\+L\+E\+\_\+\+G\+A\+TT events to get the Glucose scale events. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_ga66b67b9691b6658665a2824c581ebf13}{B\+L\+E\+\_\+\+Glucose\+\_\+\+Low\+\_\+\+Battery\+\_\+\+Detection} (bool is\+Low\+Battery\+Supported) large
+\begin{DoxyCompactList}\small\item\em Set Low\+\_\+\+Battery\+\_\+\+Detection option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_ga95e64c6e785881fede9b01fc35e0050e}{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Sensor\+\_\+\+Manfunction\+\_\+\+Detection} (bool is\+Malfunction\+Supported) large
+\begin{DoxyCompactList}\small\item\em Set Set\+\_\+\+Sensor\+\_\+\+Manfunction\+\_\+\+Detection option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_ga4dc6981de0f3b8db9b3867390523e3a7}{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Sample\+Size} (bool is\+Samplesize\+Supported) large
+\begin{DoxyCompactList}\small\item\em Set Set\+\_\+\+Sample\+Size option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_ga9458017530c8c4ef999d1fd3f38ed226}{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Strip\+\_\+\+Insertion\+\_\+\+Error\+\_\+\+Detection} (bool is\+Strip\+Insertion\+Supported) large
+\begin{DoxyCompactList}\small\item\em Set Set\+\_\+\+Strip\+\_\+\+Insertion\+\_\+\+Error\+\_\+\+Detection option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_gac82ac3dd933b9932942941f640aaa3f3}{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Strip\+\_\+\+Type} (bool is\+Strip\+Type\+Supported) large
+\begin{DoxyCompactList}\small\item\em Set Set\+\_\+\+Strip\+\_\+\+Type option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_ga0856f5ef2e42f5f3dfcf232314af5023}{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Read\+\_\+\+Interrupt\+\_\+\+Detection} (bool is\+Read\+Interrupt\+Supported) large
+\begin{DoxyCompactList}\small\item\em Set Read\+\_\+\+Interrupt\+\_\+\+Detection option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_gae142c41f60ecb05b23337811718108ab}{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Device\+\_\+\+Fault\+\_\+\+Supported} (bool is\+Device\+Fault\+Supported) large
+\begin{DoxyCompactList}\small\item\em Set Device\+\_\+\+Fault\+\_\+\+Supported option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_gac6116a7f9682ef00eb79fbd66e89c398}{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Time\+\_\+\+Fault\+\_\+\+Supported} (bool is\+Time\+Fault\+Supported) large
+\begin{DoxyCompactList}\small\item\em Set Time\+\_\+\+Fault\+\_\+\+Supported option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_gaab90d43e21e6f72d4eec076929a74b90}{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Result\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection} (bool is\+High\+Low\+Result\+Supported) large
+\begin{DoxyCompactList}\small\item\em Set Result\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_ga8bd80dbe332d60a634b162ae4e682bf9}{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Temperature\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection} (bool is\+High\+Low\+Temp\+Supported) large
+\begin{DoxyCompactList}\small\item\em Set Temperature\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_ga7243726cef55710161f4b827ccf97e90}{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Glucose\+\_\+\+Multi\+Bond} (bool is\+Multi\+Bond\+Supported) large
+\begin{DoxyCompactList}\small\item\em Set Glucose\+\_\+\+Multi\+Bond option. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_gaa62181d7e8ed7effb5b1068b068e41ce}{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Error\+\_\+\+Response} (u8 conn\+Handle, u8 resp\+Type)
+\begin{DoxyCompactList}\small\item\em Send error response. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_ga0b2867b8eeca1fd67024b3316e03fc47}{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Write\+\_\+\+Response} (u8 conn\+Handle, u8 resp\+Type)
+\begin{DoxyCompactList}\small\item\em Send write response. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_ga0e057f83e7a937de4ff9b4cde139693b}{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Measurement} (u8 conn\+Handle, \hyperlink{struct_b_l_e___g_l_u_c_o_s_e___measurement}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement} X\+D\+A\+TA $\ast$p\+\_\+measurement) large
+\begin{DoxyCompactList}\small\item\em Send Glucose measurement. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___g_s_gad42f4fb74c6efd69041abc079d0e6705}{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Measurement\+\_\+\+Context} (u8 conn\+Handle, \hyperlink{struct_b_l_e___g_l_u_c_o_s_e___measurement___context}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement\+\_\+\+Context} X\+D\+A\+TA $\ast$p\+\_\+measurement\+Context) large
+\begin{DoxyCompactList}\small\item\em Send Glucose measurement Context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 X\+D\+A\+TA {\bfseries B\+L\+E\+\_\+\+Glucose\+\_\+\+Feature}\hypertarget{group___b_l_e___g_s_gaf4fb23312f2686352ce2f4ad702c04ea}{}\label{group___b_l_e___g_s_gaf4fb23312f2686352ce2f4ad702c04ea}
+
+\item 
+P\+U\+B\+L\+IC u16 X\+D\+A\+TA {\bfseries glucose\+Measurement\+Handle}\hypertarget{group___b_l_e___g_s_gae0920e46d9316d3fa6139c3d60c48082}{}\label{group___b_l_e___g_s_gae0920e46d9316d3fa6139c3d60c48082}
+
+\item 
+P\+U\+B\+L\+IC u16 X\+D\+A\+TA {\bfseries glucose\+Measurement\+C\+C\+D\+Handle}\hypertarget{group___b_l_e___g_s_ga31a21181477491b50c17cd1accc2cbd0}{}\label{group___b_l_e___g_s_ga31a21181477491b50c17cd1accc2cbd0}
+
+\item 
+P\+U\+B\+L\+IC u16 X\+D\+A\+TA {\bfseries glucose\+Measurement\+Context\+Handle}\hypertarget{group___b_l_e___g_s_ga78749b158dd187b2405758b9ef6ac440}{}\label{group___b_l_e___g_s_ga78749b158dd187b2405758b9ef6ac440}
+
+\item 
+P\+U\+B\+L\+IC u16 X\+D\+A\+TA {\bfseries glucose\+Measurement\+Context\+C\+C\+D\+Handle}\hypertarget{group___b_l_e___g_s_ga655e26b1a58dab5791f4d89951991644}{}\label{group___b_l_e___g_s_ga655e26b1a58dab5791f4d89951991644}
+
+\item 
+P\+U\+B\+L\+IC u16 X\+D\+A\+TA {\bfseries glucose\+Feature\+Handle}\hypertarget{group___b_l_e___g_s_gaab912bdb5be5d57830eed58c55fd3217}{}\label{group___b_l_e___g_s_gaab912bdb5be5d57830eed58c55fd3217}
+
+\item 
+P\+U\+B\+L\+IC u16 X\+D\+A\+TA {\bfseries glucose\+Record\+Access\+Control\+Point\+Handle}\hypertarget{group___b_l_e___g_s_ga3d38df59f8f32d761f97140d6aab4e08}{}\label{group___b_l_e___g_s_ga3d38df59f8f32d761f97140d6aab4e08}
+
+\item 
+P\+U\+B\+L\+IC u16 X\+D\+A\+TA {\bfseries glucose\+Record\+Access\+Control\+Point\+C\+C\+D\+Handle}\hypertarget{group___b_l_e___g_s_gaea0364103e8a70516168672a021da0b1}{}\label{group___b_l_e___g_s_gaea0364103e8a70516168672a021da0b1}
+
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Ble Glucose Service. 
+
+\begin{DoxyNote}{Note}
+Definitions and prototypes for the Ble Glucose Service application programming interface. 
+\end{DoxyNote}
+
+
+\subsubsection{Typedef Documentation}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement@{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement}}
+\index{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement@{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement}{BLE_GLUCOSE_Measurement}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement} {\bf B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement}}\hypertarget{group___b_l_e___g_s_ga8be1fbb6fa8e32337f5d100f6653e06e}{}\label{group___b_l_e___g_s_ga8be1fbb6fa8e32337f5d100f6653e06e}
+
+
+Time stamp parameters. 
+
+Glucose measurement parameters \index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+CP@{B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+CP}}
+\index{B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+CP@{B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+CP}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+CP}{BLE_Glucose_RACP}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+CP} {\bf B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+CP}}\hypertarget{group___b_l_e___g_s_gad603a274a4f36aa80acc5e6d8cdf792d}{}\label{group___b_l_e___g_s_gad603a274a4f36aa80acc5e6d8cdf792d}
+brief Glucose Record Access Point 
+
+\subsubsection{Enumeration Type Documentation}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+C\+Pstate@{B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+C\+Pstate}}
+\index{B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+C\+Pstate@{B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+C\+Pstate}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+C\+Pstate}{BLE_Glucose_RACPstate}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf B\+L\+E\+\_\+\+Glucose\+\_\+\+R\+A\+C\+Pstate}}\hypertarget{group___b_l_e___g_s_ga2377e8b14a4dbee0ccc46ebf3970633c}{}\label{group___b_l_e___g_s_ga2377e8b14a4dbee0ccc46ebf3970633c}
+
+
+Glucose R\+A\+CP Service communication state. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+T\+A\+T\+E\+\_\+\+N\+O\+\_\+\+C\+O\+MM@{S\+T\+A\+T\+E\+\_\+\+N\+O\+\_\+\+C\+O\+MM}!Ble Glucose Service@{Ble Glucose Service}}\index{Ble Glucose Service@{Ble Glucose Service}!S\+T\+A\+T\+E\+\_\+\+N\+O\+\_\+\+C\+O\+MM@{S\+T\+A\+T\+E\+\_\+\+N\+O\+\_\+\+C\+O\+MM}}\item[{\em 
+S\+T\+A\+T\+E\+\_\+\+N\+O\+\_\+\+C\+O\+MM\hypertarget{group___b_l_e___g_s_gga2377e8b14a4dbee0ccc46ebf3970633cab892dc8bda08cca695cec9d2525c886a}{}\label{group___b_l_e___g_s_gga2377e8b14a4dbee0ccc46ebf3970633cab892dc8bda08cca695cec9d2525c886a}
+}]The service is not in a communicating state. \index{S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+VE@{S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+VE}!Ble Glucose Service@{Ble Glucose Service}}\index{Ble Glucose Service@{Ble Glucose Service}!S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+VE@{S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+VE}}\item[{\em 
+S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+P\+R\+O\+C\+\_\+\+A\+C\+T\+I\+VE\hypertarget{group___b_l_e___g_s_gga2377e8b14a4dbee0ccc46ebf3970633ca19d4e79a1a06d26731a150539ccf8f4c}{}\label{group___b_l_e___g_s_gga2377e8b14a4dbee0ccc46ebf3970633ca19d4e79a1a06d26731a150539ccf8f4c}
+}]Processing requested data. \index{S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+P\+E\+N\+D\+I\+NG@{S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+P\+E\+N\+D\+I\+NG}!Ble Glucose Service@{Ble Glucose Service}}\index{Ble Glucose Service@{Ble Glucose Service}!S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+P\+E\+N\+D\+I\+NG@{S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+P\+E\+N\+D\+I\+NG}}\item[{\em 
+S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+P\+E\+N\+D\+I\+NG\hypertarget{group___b_l_e___g_s_gga2377e8b14a4dbee0ccc46ebf3970633ca552ae1c7135d17b86e9061d7b41a0e2f}{}\label{group___b_l_e___g_s_gga2377e8b14a4dbee0ccc46ebf3970633ca552ae1c7135d17b86e9061d7b41a0e2f}
+}]There is a R\+A\+CP indication waiting to be sent. \index{S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+I\+N\+D\+\_\+\+V\+E\+R\+IF@{S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+I\+N\+D\+\_\+\+V\+E\+R\+IF}!Ble Glucose Service@{Ble Glucose Service}}\index{Ble Glucose Service@{Ble Glucose Service}!S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+I\+N\+D\+\_\+\+V\+E\+R\+IF@{S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+I\+N\+D\+\_\+\+V\+E\+R\+IF}}\item[{\em 
+S\+T\+A\+T\+E\+\_\+\+R\+A\+C\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+I\+N\+D\+\_\+\+V\+E\+R\+IF\hypertarget{group___b_l_e___g_s_gga2377e8b14a4dbee0ccc46ebf3970633cac9e1172d0c84f0307bcbe3a26df9d92d}{}\label{group___b_l_e___g_s_gga2377e8b14a4dbee0ccc46ebf3970633cac9e1172d0c84f0307bcbe3a26df9d92d}
+}]Waiting for a verification of a R\+A\+CP indication. \end{description}
+\end{Desc}
+
+
+\subsubsection{Function Documentation}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Add\+\_\+\+Glucose\+\_\+\+Measurement\+Database@{B\+L\+E\+\_\+\+Add\+\_\+\+Glucose\+\_\+\+Measurement\+Database}}
+\index{B\+L\+E\+\_\+\+Add\+\_\+\+Glucose\+\_\+\+Measurement\+Database@{B\+L\+E\+\_\+\+Add\+\_\+\+Glucose\+\_\+\+Measurement\+Database}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Add\+\_\+\+Glucose\+\_\+\+Measurement\+Database(\+B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Records\+Database X\+D\+A\+T\+A $\ast$p\+\_\+recorddatabase) large}{BLE_Add_Glucose_MeasurementDatabase(BLE_GLUCOSE_RecordsDatabase XDATA *p_recorddatabase) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Add\+\_\+\+Glucose\+\_\+\+Measurement\+Database (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Records\+Database} X\+D\+A\+TA $\ast$}]{p\+\_\+recorddatabase}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_ga989e27895433c06328e836db741c33a6}{}\label{group___b_l_e___g_s_ga989e27895433c06328e836db741c33a6}
+
+
+Add Glucose measurement database. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+recorddatabase} & Pointer to Nested structure of \hyperlink{struct_b_l_e___g_l_u_c_o_s_e___measurement}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement} and \hyperlink{struct_b_l_e___g_l_u_c_o_s_e___measurement___context}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement\+\_\+\+Context} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS add glucose measurement database successfully. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Delete\+\_\+\+Glucose\+\_\+\+Measurement\+Record@{B\+L\+E\+\_\+\+Delete\+\_\+\+Glucose\+\_\+\+Measurement\+Record}}
+\index{B\+L\+E\+\_\+\+Delete\+\_\+\+Glucose\+\_\+\+Measurement\+Record@{B\+L\+E\+\_\+\+Delete\+\_\+\+Glucose\+\_\+\+Measurement\+Record}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Delete\+\_\+\+Glucose\+\_\+\+Measurement\+Record(u8 X\+D\+A\+T\+A record\+\_\+index) large}{BLE_Delete_Glucose_MeasurementRecord(u8 XDATA record_index) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Delete\+\_\+\+Glucose\+\_\+\+Measurement\+Record (
+\begin{DoxyParamCaption}
+\item[{u8 X\+D\+A\+TA}]{record\+\_\+index}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_gaf31acf015dbec6c950cd48ab1031946b}{}\label{group___b_l_e___g_s_gaf31acf015dbec6c950cd48ab1031946b}
+
+
+Delete specific Glucose measurement record. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em record\+\_\+num} & Index of record to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS add glucose measurement record deleted successfully. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Get\+\_\+\+Glucose\+\_\+\+Measurement\+Record@{B\+L\+E\+\_\+\+Get\+\_\+\+Glucose\+\_\+\+Measurement\+Record}}
+\index{B\+L\+E\+\_\+\+Get\+\_\+\+Glucose\+\_\+\+Measurement\+Record@{B\+L\+E\+\_\+\+Get\+\_\+\+Glucose\+\_\+\+Measurement\+Record}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Get\+\_\+\+Glucose\+\_\+\+Measurement\+Record(u8 record\+\_\+index, B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Records\+Database X\+D\+A\+T\+A $\ast$p\+\_\+recorddatabase) large}{BLE_Get_Glucose_MeasurementRecord(u8 record_index, BLE_GLUCOSE_RecordsDatabase XDATA *p_recorddatabase) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Get\+\_\+\+Glucose\+\_\+\+Measurement\+Record (
+\begin{DoxyParamCaption}
+\item[{u8}]{record\+\_\+index, }
+\item[{{\bf B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Records\+Database} X\+D\+A\+TA $\ast$}]{p\+\_\+recorddatabase}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_ga63e70e439d715ab69015f66fa749d300}{}\label{group___b_l_e___g_s_ga63e70e439d715ab69015f66fa749d300}
+
+
+Function for getting a record from the database. 
+
+This call returns a specified record from the database.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em record\+\_\+index} & Index of the record to retrieve. \\
+\hline
+\mbox{\tt out}  & {\em p\+\_\+recorddatabase} & Pointer to record structure where retrieved record is copied to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS on success. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Get\+\_\+\+Number\+Of\+Records\+\_\+\+Glucose\+\_\+\+Measurement\+Record@{B\+L\+E\+\_\+\+Get\+\_\+\+Number\+Of\+Records\+\_\+\+Glucose\+\_\+\+Measurement\+Record}}
+\index{B\+L\+E\+\_\+\+Get\+\_\+\+Number\+Of\+Records\+\_\+\+Glucose\+\_\+\+Measurement\+Record@{B\+L\+E\+\_\+\+Get\+\_\+\+Number\+Of\+Records\+\_\+\+Glucose\+\_\+\+Measurement\+Record}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Get\+\_\+\+Number\+Of\+Records\+\_\+\+Glucose\+\_\+\+Measurement\+Record(void) large}{BLE_Get_NumberOfRecords_Glucose_MeasurementRecord(void) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Get\+\_\+\+Number\+Of\+Records\+\_\+\+Glucose\+\_\+\+Measurement\+Record (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_ga95ec9029e7c94a93f3d255245d0e5e0d}{}\label{group___b_l_e___g_s_ga95ec9029e7c94a93f3d255245d0e5e0d}
+
+
+Function for getting the number of records in the database. 
+
+This call returns the number of records in the database.
+
+\begin{DoxyReturn}{Returns}
+Number of records in the database. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Glucose\+\_\+\+Catch\+\_\+\+Event@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Catch\+\_\+\+Event}}
+\index{B\+L\+E\+\_\+\+Glucose\+\_\+\+Catch\+\_\+\+Event@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Catch\+\_\+\+Event}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Glucose\+\_\+\+Catch\+\_\+\+Event(\+B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event X\+D\+A\+T\+A $\ast$p\+\_\+event) large}{BLE_Glucose_Catch_Event(BLE_GATT_Event XDATA *p_event) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void B\+L\+E\+\_\+\+Glucose\+\_\+\+Catch\+\_\+\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} X\+D\+A\+TA $\ast$}]{p\+\_\+event}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_gaaf3f248c172a0241f73dea4ed02a4a88}{}\label{group___b_l_e___g_s_gaaf3f248c172a0241f73dea4ed02a4a88}
+
+
+Catch B\+L\+E\+\_\+\+G\+A\+TT events to get the Glucose scale events. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+event} & Pointer to \hyperlink{struct_b_l_e___g_a_t_t___event}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Catch B\+LE G\+A\+TT events configuration successfully. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Database\+\_\+\+Init@{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Database\+\_\+\+Init}}
+\index{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Database\+\_\+\+Init@{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Database\+\_\+\+Init}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Database\+\_\+\+Init(void) large}{BLE_GLUCOSE_Database_Init(void) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Database\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_ga46a7f8a9ba2550a8dc8e9b0d1ba7238e}{}\label{group___b_l_e___g_s_ga46a7f8a9ba2550a8dc8e9b0d1ba7238e}
+
+
+Function for initializing the glucose record database. 
+
+This call initializes the database holding glucose records.
+
+\begin{DoxyReturn}{Returns}
+N\+R\+F\+\_\+\+S\+U\+C\+C\+E\+SS on success. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Init@{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Init}}
+\index{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Init@{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Init}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Init(\+Glucose\+Process\+Routine glucose\+Handler) large}{BLE_GLUCOSE_Init(GlucoseProcessRoutine glucoseHandler) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{Glucose\+Process\+Routine}]{glucose\+Handler}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_ga3ad5941d4be77b3f64af1ab1f24b4db4}{}\label{group___b_l_e___g_s_ga3ad5941d4be77b3f64af1ab1f24b4db4}
+
+
+Initizlize B\+LE glucose. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em smp\+Handler} & M\+B\+IoT callback function for B\+LE glucose events.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Initialize B\+LE Glucose Scale successfully. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Init\+\_\+\+Service@{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Init\+\_\+\+Service}}
+\index{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Init\+\_\+\+Service@{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Init\+\_\+\+Service}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Init\+\_\+\+Service() large}{BLE_GLUCOSE_Init_Service() large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Init\+\_\+\+Service (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_ga54657aa8e37820087f7d2ee475c46d19}{}\label{group___b_l_e___g_s_ga54657aa8e37820087f7d2ee475c46d19}
+
+
+Initizlize B\+LE Glucose service table. 
+
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Initialize B\+LE Glucose Scale service table successfully. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Glucose\+\_\+\+Low\+\_\+\+Battery\+\_\+\+Detection@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Low\+\_\+\+Battery\+\_\+\+Detection}}
+\index{B\+L\+E\+\_\+\+Glucose\+\_\+\+Low\+\_\+\+Battery\+\_\+\+Detection@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Low\+\_\+\+Battery\+\_\+\+Detection}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Glucose\+\_\+\+Low\+\_\+\+Battery\+\_\+\+Detection(bool is\+Low\+Battery\+Supported) large}{BLE_Glucose_Low_Battery_Detection(bool isLowBatterySupported) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Glucose\+\_\+\+Low\+\_\+\+Battery\+\_\+\+Detection (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+Low\+Battery\+Supported}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_ga66b67b9691b6658665a2824c581ebf13}{}\label{group___b_l_e___g_s_ga66b67b9691b6658665a2824c581ebf13}
+
+
+Set Low\+\_\+\+Battery\+\_\+\+Detection option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+Low\+Battery\+Supported} & If Low\+\_\+\+Battery\+\_\+\+Detection field is supported, set this value to be true. Default Low\+\_\+\+Battery\+\_\+\+Detection field is unsupported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully set Low\+\_\+\+Battery\+\_\+\+Detection option. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Device\+\_\+\+Fault\+\_\+\+Supported@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Device\+\_\+\+Fault\+\_\+\+Supported}}
+\index{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Device\+\_\+\+Fault\+\_\+\+Supported@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Device\+\_\+\+Fault\+\_\+\+Supported}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Device\+\_\+\+Fault\+\_\+\+Supported(bool is\+Device\+Fault\+Supported) large}{BLE_Glucose_Set_Device_Fault_Supported(bool isDeviceFaultSupported) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Device\+\_\+\+Fault\+\_\+\+Supported (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+Device\+Fault\+Supported}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_gae142c41f60ecb05b23337811718108ab}{}\label{group___b_l_e___g_s_gae142c41f60ecb05b23337811718108ab}
+
+
+Set Device\+\_\+\+Fault\+\_\+\+Supported option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+Device\+Fault\+Supported} & If Device\+\_\+\+Fault\+\_\+\+Supported field is supported, set this value to be true. Default Device\+\_\+\+Fault\+\_\+\+Supported field is unsupported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully set Device\+\_\+\+Fault\+\_\+\+Supported option. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Glucose\+\_\+\+Multi\+Bond@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Glucose\+\_\+\+Multi\+Bond}}
+\index{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Glucose\+\_\+\+Multi\+Bond@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Glucose\+\_\+\+Multi\+Bond}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Glucose\+\_\+\+Multi\+Bond(bool is\+Multi\+Bond\+Supported) large}{BLE_Glucose_Set_Glucose_MultiBond(bool isMultiBondSupported) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Glucose\+\_\+\+Multi\+Bond (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+Multi\+Bond\+Supported}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_ga7243726cef55710161f4b827ccf97e90}{}\label{group___b_l_e___g_s_ga7243726cef55710161f4b827ccf97e90}
+
+
+Set Glucose\+\_\+\+Multi\+Bond option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+Multi\+Bond\+Supported} & If Glucose\+\_\+\+Multi\+Bond field is supported, set this value to be true. Default Glucose\+\_\+\+Multi\+Bond field is unsupported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully set Glucose\+\_\+\+Multi\+Bond option. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Read\+\_\+\+Interrupt\+\_\+\+Detection@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Read\+\_\+\+Interrupt\+\_\+\+Detection}}
+\index{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Read\+\_\+\+Interrupt\+\_\+\+Detection@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Read\+\_\+\+Interrupt\+\_\+\+Detection}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Read\+\_\+\+Interrupt\+\_\+\+Detection(bool is\+Read\+Interrupt\+Supported) large}{BLE_Glucose_Set_Read_Interrupt_Detection(bool isReadInterruptSupported) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Read\+\_\+\+Interrupt\+\_\+\+Detection (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+Read\+Interrupt\+Supported}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_ga0856f5ef2e42f5f3dfcf232314af5023}{}\label{group___b_l_e___g_s_ga0856f5ef2e42f5f3dfcf232314af5023}
+
+
+Set Read\+\_\+\+Interrupt\+\_\+\+Detection option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+Read\+Interrupt\+Supported} & If Read\+\_\+\+Interrupt\+\_\+\+Detection field is supported, set this value to be true. Default Read\+\_\+\+Interrupt\+\_\+\+Detection field is unsupported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully set Read\+\_\+\+Interrupt\+\_\+\+Detection option. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Result\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Result\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection}}
+\index{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Result\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Result\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Result\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection(bool is\+High\+Low\+Result\+Supported) large}{BLE_Glucose_Set_Result_High_Low_Detection(bool isHighLowResultSupported) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Result\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+High\+Low\+Result\+Supported}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_gaab90d43e21e6f72d4eec076929a74b90}{}\label{group___b_l_e___g_s_gaab90d43e21e6f72d4eec076929a74b90}
+
+
+Set Result\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+High\+Low\+Result\+Supported} & If Result\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection field is supported, set this value to be true. Default Result\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection field is unsupported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully set Result\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection option. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Sample\+Size@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Sample\+Size}}
+\index{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Sample\+Size@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Sample\+Size}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Sample\+Size(bool is\+Samplesize\+Supported) large}{BLE_Glucose_Set_SampleSize(bool isSamplesizeSupported) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Sample\+Size (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+Samplesize\+Supported}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_ga4dc6981de0f3b8db9b3867390523e3a7}{}\label{group___b_l_e___g_s_ga4dc6981de0f3b8db9b3867390523e3a7}
+
+
+Set Set\+\_\+\+Sample\+Size option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+Samplesize\+Supported} & If Set\+\_\+\+Sample\+Size field is supported, set this value to be true. Default Set\+\_\+\+Sample\+Size field is unsupported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully set Set\+\_\+\+Sample\+Size option. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Sensor\+\_\+\+Manfunction\+\_\+\+Detection@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Sensor\+\_\+\+Manfunction\+\_\+\+Detection}}
+\index{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Sensor\+\_\+\+Manfunction\+\_\+\+Detection@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Sensor\+\_\+\+Manfunction\+\_\+\+Detection}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Sensor\+\_\+\+Manfunction\+\_\+\+Detection(bool is\+Malfunction\+Supported) large}{BLE_Glucose_Set_Sensor_Manfunction_Detection(bool isMalfunctionSupported) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Sensor\+\_\+\+Manfunction\+\_\+\+Detection (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+Malfunction\+Supported}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_ga95e64c6e785881fede9b01fc35e0050e}{}\label{group___b_l_e___g_s_ga95e64c6e785881fede9b01fc35e0050e}
+
+
+Set Set\+\_\+\+Sensor\+\_\+\+Manfunction\+\_\+\+Detection option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+Malfunction\+Supported} & If Set\+\_\+\+Sensor\+\_\+\+Manfunction\+\_\+\+Detection field is supported, set this value to be true. Default Set\+\_\+\+Sensor\+\_\+\+Manfunction\+\_\+\+Detection field is unsupported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully set Set\+\_\+\+Sensor\+\_\+\+Manfunction\+\_\+\+Detection option. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Strip\+\_\+\+Insertion\+\_\+\+Error\+\_\+\+Detection@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Strip\+\_\+\+Insertion\+\_\+\+Error\+\_\+\+Detection}}
+\index{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Strip\+\_\+\+Insertion\+\_\+\+Error\+\_\+\+Detection@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Strip\+\_\+\+Insertion\+\_\+\+Error\+\_\+\+Detection}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Strip\+\_\+\+Insertion\+\_\+\+Error\+\_\+\+Detection(bool is\+Strip\+Insertion\+Supported) large}{BLE_Glucose_Set_Strip_Insertion_Error_Detection(bool isStripInsertionSupported) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Strip\+\_\+\+Insertion\+\_\+\+Error\+\_\+\+Detection (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+Strip\+Insertion\+Supported}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_ga9458017530c8c4ef999d1fd3f38ed226}{}\label{group___b_l_e___g_s_ga9458017530c8c4ef999d1fd3f38ed226}
+
+
+Set Set\+\_\+\+Strip\+\_\+\+Insertion\+\_\+\+Error\+\_\+\+Detection option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+Strip\+Insertion\+Supported} & If Set\+\_\+\+Strip\+\_\+\+Insertion\+\_\+\+Error\+\_\+\+Detection field is supported, set this value to be true. Default Set\+\_\+\+Strip\+\_\+\+Insertion\+\_\+\+Error\+\_\+\+Detection field is unsupported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully set Set\+\_\+\+Strip\+\_\+\+Insertion\+\_\+\+Error\+\_\+\+Detection option. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Strip\+\_\+\+Type@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Strip\+\_\+\+Type}}
+\index{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Strip\+\_\+\+Type@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Strip\+\_\+\+Type}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Strip\+\_\+\+Type(bool is\+Strip\+Type\+Supported) large}{BLE_Glucose_Set_Strip_Type(bool isStripTypeSupported) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Strip\+\_\+\+Type (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+Strip\+Type\+Supported}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_gac82ac3dd933b9932942941f640aaa3f3}{}\label{group___b_l_e___g_s_gac82ac3dd933b9932942941f640aaa3f3}
+
+
+Set Set\+\_\+\+Strip\+\_\+\+Type option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+Strip\+Type\+Supported} & If Set\+\_\+\+Strip\+\_\+\+Type field is supported, set this value to be true. Default Set\+\_\+\+Strip\+\_\+\+Type field is unsupported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully set Set\+\_\+\+Strip\+\_\+\+Type option. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Temperature\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Temperature\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection}}
+\index{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Temperature\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Temperature\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Temperature\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection(bool is\+High\+Low\+Temp\+Supported) large}{BLE_Glucose_Set_Temperature_High_Low_Detection(bool isHighLowTempSupported) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Temperature\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+High\+Low\+Temp\+Supported}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_ga8bd80dbe332d60a634b162ae4e682bf9}{}\label{group___b_l_e___g_s_ga8bd80dbe332d60a634b162ae4e682bf9}
+
+
+Set Temperature\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+High\+Low\+Temp\+Supported} & If Temperature\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection field is supported, set this value to be true. Default Temperature\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection field is unsupported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully set Temperature\+\_\+\+High\+\_\+\+Low\+\_\+\+Detection option. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Time\+\_\+\+Fault\+\_\+\+Supported@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Time\+\_\+\+Fault\+\_\+\+Supported}}
+\index{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Time\+\_\+\+Fault\+\_\+\+Supported@{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Time\+\_\+\+Fault\+\_\+\+Supported}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Time\+\_\+\+Fault\+\_\+\+Supported(bool is\+Time\+Fault\+Supported) large}{BLE_Glucose_Set_Time_Fault_Supported(bool isTimeFaultSupported) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Glucose\+\_\+\+Set\+\_\+\+Time\+\_\+\+Fault\+\_\+\+Supported (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\+Time\+Fault\+Supported}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_gac6116a7f9682ef00eb79fbd66e89c398}{}\label{group___b_l_e___g_s_gac6116a7f9682ef00eb79fbd66e89c398}
+
+
+Set Time\+\_\+\+Fault\+\_\+\+Supported option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+Time\+Fault\+Supported} & If Time\+\_\+\+Fault\+\_\+\+Supported field is supported, set this value to be true. Default Time\+\_\+\+Fault\+\_\+\+Supported field is unsupported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully set Time\+\_\+\+Fault\+\_\+\+Supported option. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+F\+A\+IL Operation is not permitted. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Error\+\_\+\+Response@{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Error\+\_\+\+Response}}
+\index{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Error\+\_\+\+Response@{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Error\+\_\+\+Response}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Error\+\_\+\+Response(u8 conn\+Handle, u8 resp\+Type)}{BLE_Send_Glucose_Error_Response(u8 connHandle, u8 respType)}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Error\+\_\+\+Response (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{u8}]{resp\+Type}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_gaa62181d7e8ed7effb5b1068b068e41ce}{}\label{group___b_l_e___g_s_gaa62181d7e8ed7effb5b1068b068e41ce}
+
+
+Send error response. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em resp\+Type,write} & response type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS sent error response successfully. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Measurement@{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Measurement}}
+\index{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Measurement@{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Measurement}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Measurement(u8 conn\+Handle, B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement X\+D\+A\+T\+A $\ast$p\+\_\+measurement) large}{BLE_Send_Glucose_Measurement(u8 connHandle, BLE_GLUCOSE_Measurement XDATA *p_measurement) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Measurement (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{{\bf B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement} X\+D\+A\+TA $\ast$}]{p\+\_\+measurement}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_ga0e057f83e7a937de4ff9b4cde139693b}{}\label{group___b_l_e___g_s_ga0e057f83e7a937de4ff9b4cde139693b}
+
+
+Send Glucose measurement. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+measurement} & Pointer to \hyperlink{struct_b_l_e___g_l_u_c_o_s_e___measurement}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Send glucose measurement successfully. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Measurement\+\_\+\+Context@{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Measurement\+\_\+\+Context}}
+\index{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Measurement\+\_\+\+Context@{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Measurement\+\_\+\+Context}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Measurement\+\_\+\+Context(u8 conn\+Handle, B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement\+\_\+\+Context X\+D\+A\+T\+A $\ast$p\+\_\+measurement\+Context) large}{BLE_Send_Glucose_Measurement_Context(u8 connHandle, BLE_GLUCOSE_Measurement_Context XDATA *p_measurementContext) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Measurement\+\_\+\+Context (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{{\bf B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement\+\_\+\+Context} X\+D\+A\+TA $\ast$}]{p\+\_\+measurement\+Context}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_gad42f4fb74c6efd69041abc079d0e6705}{}\label{group___b_l_e___g_s_gad42f4fb74c6efd69041abc079d0e6705}
+
+
+Send Glucose measurement Context. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+measurement} & Pointer to \hyperlink{struct_b_l_e___g_l_u_c_o_s_e___measurement___context}{B\+L\+E\+\_\+\+G\+L\+U\+C\+O\+S\+E\+\_\+\+Measurement\+\_\+\+Context} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Send g lucose measurement context successfully. 
+\end{DoxyReturn}
+\index{Ble Glucose Service@{Ble Glucose Service}!B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Write\+\_\+\+Response@{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Write\+\_\+\+Response}}
+\index{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Write\+\_\+\+Response@{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Write\+\_\+\+Response}!Ble Glucose Service@{Ble Glucose Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Write\+\_\+\+Response(u8 conn\+Handle, u8 resp\+Type)}{BLE_Send_Glucose_Write_Response(u8 connHandle, u8 respType)}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+Send\+\_\+\+Glucose\+\_\+\+Write\+\_\+\+Response (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{u8}]{resp\+Type}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___g_s_ga0b2867b8eeca1fd67024b3316e03fc47}{}\label{group___b_l_e___g_s_ga0b2867b8eeca1fd67024b3316e03fc47}
+
+
+Send write response. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em resp\+Type,write} & response type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS sent error response successfully. 
+\end{DoxyReturn}

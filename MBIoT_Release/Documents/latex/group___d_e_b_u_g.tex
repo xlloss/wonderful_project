@@ -1,0 +1,52 @@
+\hypertarget{group___d_e_b_u_g}{}\subsection{Debug}
+\label{group___d_e_b_u_g}\index{Debug@{Debug}}
+
+
+Definitions and prototypes for the Debug application programming interface.  
+
+
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___d_e_b_u_g_gabb8054bf4e67d91ba884ed87f28500c0}{M\+A\+X\+\_\+\+D\+E\+B\+U\+G\+\_\+\+L\+O\+G\+\_\+\+L\+E\+N\+G\+TH}~64\hypertarget{group___d_e_b_u_g_gabb8054bf4e67d91ba884ed87f28500c0}{}\label{group___d_e_b_u_g_gabb8054bf4e67d91ba884ed87f28500c0}
+
+\begin{DoxyCompactList}\small\item\em Maximum length of log text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___d_e_b_u_g_ga9ab431d998047e972ffb304e669f8581}{A\+P\+P\+\_\+\+D\+E\+B\+U\+G\+\_\+\+Log} (u8 length, u8 X\+D\+A\+TA $\ast$p\+\_\+buffer) large
+\begin{DoxyCompactList}\small\item\em Print out debug information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Definitions and prototypes for the Debug application programming interface. 
+
+
+
+\subsubsection{Function Documentation}
+\index{Debug@{Debug}!A\+P\+P\+\_\+\+D\+E\+B\+U\+G\+\_\+\+Log@{A\+P\+P\+\_\+\+D\+E\+B\+U\+G\+\_\+\+Log}}
+\index{A\+P\+P\+\_\+\+D\+E\+B\+U\+G\+\_\+\+Log@{A\+P\+P\+\_\+\+D\+E\+B\+U\+G\+\_\+\+Log}!Debug@{Debug}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+D\+E\+B\+U\+G\+\_\+\+Log(u8 length, u8 X\+D\+A\+T\+A $\ast$p\+\_\+buffer) large}{APP_DEBUG_Log(u8 length, u8 XDATA *p_buffer) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+D\+E\+B\+U\+G\+\_\+\+Log (
+\begin{DoxyParamCaption}
+\item[{u8}]{length, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+buffer}
+\end{DoxyParamCaption}
+)}\hypertarget{group___d_e_b_u_g_ga9ab431d998047e972ffb304e669f8581}{}\label{group___d_e_b_u_g_ga9ab431d998047e972ffb304e669f8581}
+
+
+Print out debug information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em length} & Length of debug information. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+buffer} & Pointer to debug information.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully send out the log information. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+N\+O\+\_\+\+R\+E\+S\+O\+U\+R\+CE U\+A\+RT tx buffer is full. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}

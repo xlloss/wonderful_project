@@ -1,0 +1,56 @@
+\hypertarget{struct_b_l_e___h_r_s___measurement}{}\subsection{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement Struct Reference}
+\label{struct_b_l_e___h_r_s___measurement}\index{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement}}
+
+
+Heart Rate measurement parameters.  
+
+
+
+
+{\ttfamily \#include $<$ble\+\_\+heart\+\_\+rate\+\_\+service.\+h$>$}
+
+\subsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries is\+Heart\+Rate\+Value\+Formatsupported\+Bit}\hypertarget{struct_b_l_e___h_r_s___measurement_a223f4878ad708b9d3706e098b515df88}{}\label{struct_b_l_e___h_r_s___measurement_a223f4878ad708b9d3706e098b515df88}
+
+\item 
+bool {\bfseries is\+Sensor\+Contact\+Supported\+Bit}\hypertarget{struct_b_l_e___h_r_s___measurement_a6e348ad9f21607bbd23458659e9dd3ac}{}\label{struct_b_l_e___h_r_s___measurement_a6e348ad9f21607bbd23458659e9dd3ac}
+
+\item 
+bool {\bfseries is\+Sensor\+Contact\+Detected\+Bit}\hypertarget{struct_b_l_e___h_r_s___measurement_a19957c7b17419837dcafc8dc0b903d67}{}\label{struct_b_l_e___h_r_s___measurement_a19957c7b17419837dcafc8dc0b903d67}
+
+\item 
+bool {\bfseries is\+Energy\+Expended\+Status\+Bit}\hypertarget{struct_b_l_e___h_r_s___measurement_a955421e178d075f5c8de9811f468fa7c}{}\label{struct_b_l_e___h_r_s___measurement_a955421e178d075f5c8de9811f468fa7c}
+
+\item 
+bool {\bfseries is\+R\+R\+Interval\+Bit}\hypertarget{struct_b_l_e___h_r_s___measurement_a4a6740ed95d745f9100783726d161260}{}\label{struct_b_l_e___h_r_s___measurement_a4a6740ed95d745f9100783726d161260}
+
+\item 
+u16 {\bfseries heart\+\_\+rate}\hypertarget{struct_b_l_e___h_r_s___measurement_a44585aa6fb3b82686f36c7bb3190b4b4}{}\label{struct_b_l_e___h_r_s___measurement_a44585aa6fb3b82686f36c7bb3190b4b4}
+
+\item 
+u16 {\bfseries energy\+\_\+expended}\hypertarget{struct_b_l_e___h_r_s___measurement_aec46004c6387a90f30f7af5f9dbdb427}{}\label{struct_b_l_e___h_r_s___measurement_aec46004c6387a90f30f7af5f9dbdb427}
+
+\item 
+u16 \hyperlink{struct_b_l_e___h_r_s___measurement_a1626ff150d9577ee5ea80538e1f4f609}{rr\+\_\+interval} \mbox{[}\hyperlink{group___b_l_e___h_r_s_ga2e829f32fd9d57d18d1e8daa7956dee5}{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+E\+D\+\_\+\+R\+R\+\_\+\+I\+N\+T\+E\+R\+V\+A\+LS}\mbox{]}
+\item 
+u8 \hyperlink{struct_b_l_e___h_r_s___measurement_a85fda1a6c624db2b9c838e6009f3a62e}{rr\+\_\+interval\+\_\+count}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Heart Rate measurement parameters. 
+
+\subsubsection{Member Data Documentation}
+\index{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement}!rr\+\_\+interval@{rr\+\_\+interval}}
+\index{rr\+\_\+interval@{rr\+\_\+interval}!B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement}}
+\paragraph[{\texorpdfstring{rr\+\_\+interval}{rr_interval}}]{\setlength{\rightskip}{0pt plus 5cm}u16 B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement\+::rr\+\_\+interval\mbox{[}{\bf B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+E\+D\+\_\+\+R\+R\+\_\+\+I\+N\+T\+E\+R\+V\+A\+LS}\mbox{]}}\hypertarget{struct_b_l_e___h_r_s___measurement_a1626ff150d9577ee5ea80538e1f4f609}{}\label{struct_b_l_e___h_r_s___measurement_a1626ff150d9577ee5ea80538e1f4f609}
+Set of RR Interval measurements since the last Heart Rate Measurement transmission. \index{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement}!rr\+\_\+interval\+\_\+count@{rr\+\_\+interval\+\_\+count}}
+\index{rr\+\_\+interval\+\_\+count@{rr\+\_\+interval\+\_\+count}!B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement@{B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement}}
+\paragraph[{\texorpdfstring{rr\+\_\+interval\+\_\+count}{rr_interval_count}}]{\setlength{\rightskip}{0pt plus 5cm}u8 B\+L\+E\+\_\+\+H\+R\+S\+\_\+\+Measurement\+::rr\+\_\+interval\+\_\+count}\hypertarget{struct_b_l_e___h_r_s___measurement_a85fda1a6c624db2b9c838e6009f3a62e}{}\label{struct_b_l_e___h_r_s___measurement_a85fda1a6c624db2b9c838e6009f3a62e}
+Number of RR Interval measurements since the last Heart Rate Measurement transmission. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+B\+L\+E\+\_\+\+Service/ble\+\_\+heart\+\_\+rate\+\_\+service.\+h\end{DoxyCompactItemize}

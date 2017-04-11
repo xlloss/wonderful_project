@@ -1,0 +1,177 @@
+\hypertarget{group___s_p_i___s_l_a_v_e}{}\subsection{S\+PI Slave}
+\label{group___s_p_i___s_l_a_v_e}\index{S\+P\+I Slave@{S\+P\+I Slave}}
+
+
+Definitions and prototypes for the S\+PI Slave application programming interface.  
+
+
+\subsubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___s_p_i___s_l_a_v_e___m_a_x___b_u_f___s_i_z_e}{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE}
+\item 
+\hyperlink{group___s_p_i___s_l_a_v_e___r_e_s_p_o_n_s_e___m_o_d_e}{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+M\+O\+DE}
+\begin{DoxyCompactList}\small\item\em Definition of spi response mode option. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_p_p___s_p_i___slave___config}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Slave\+\_\+\+Config}
+\begin{DoxyCompactList}\small\item\em Struct of S\+PI slave configuration parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_a_p_p___s_p_i___slave___send}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Slave\+\_\+\+Send}
+\begin{DoxyCompactList}\small\item\em Struct of S\+PI slave Data Sending parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_a_p_p___s_p_i___slave___config}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Slave\+\_\+\+Config} \hyperlink{group___s_p_i___s_l_a_v_e_gac4efd2b33719820a530c1aa2e76bb482}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Slave\+\_\+\+Config}\hypertarget{group___s_p_i___s_l_a_v_e_gac4efd2b33719820a530c1aa2e76bb482}{}\label{group___s_p_i___s_l_a_v_e_gac4efd2b33719820a530c1aa2e76bb482}
+
+\begin{DoxyCompactList}\small\item\em Struct of S\+PI slave configuration parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_a_p_p___s_p_i___slave___send}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Slave\+\_\+\+Send} \hyperlink{group___s_p_i___s_l_a_v_e_ga1edd267195cf3bb3fd25ff14691dfb9f}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Slave\+\_\+\+Send}\hypertarget{group___s_p_i___s_l_a_v_e_ga1edd267195cf3bb3fd25ff14691dfb9f}{}\label{group___s_p_i___s_l_a_v_e_ga1edd267195cf3bb3fd25ff14691dfb9f}
+
+\begin{DoxyCompactList}\small\item\em Struct of S\+PI slave Data Sending parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___s_p_i___s_l_a_v_e_ga8cb12470ae37e3883289b52731634acc}{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E\+\_\+\+D\+EF} \{ \hyperlink{group___s_p_i___s_l_a_v_e_gga8cb12470ae37e3883289b52731634acca823ffce26d59b56ced0dca0fd5e27417}{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E0} = 0, 
+\hyperlink{group___s_p_i___s_l_a_v_e_gga8cb12470ae37e3883289b52731634accac40eb52d928367234ccb33b16f645495}{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E1}, 
+\hyperlink{group___s_p_i___s_l_a_v_e_gga8cb12470ae37e3883289b52731634accaf544a818da9ac07473a5577dc88a73b2}{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E2}, 
+\hyperlink{group___s_p_i___s_l_a_v_e_gga8cb12470ae37e3883289b52731634accaabfad961caf12e94b20b24d97c5ce2fd}{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E3}
+ \}\begin{DoxyCompactList}\small\item\em Definitions for S\+PI Slave mode. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group___s_p_i___s_l_a_v_e_ga829f1873bfb32bd5f6a679d3f4dd3979}{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+\+D\+EF} \{ \\*
+\hyperlink{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a41976f36b89d83f5a1fe9c9f90bb2bf2}{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+16\+M\+HZ} = 0, 
+\hyperlink{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a6c83b8cd3c0f1c519e351ea43c092eb9}{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+8\+M\+HZ} = 1, 
+\hyperlink{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a28c7d5ea8fd6ca0cd062d42ea4ab30aa}{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+4\+M\+HZ} = 3, 
+\hyperlink{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a133c58cb7e8480bc0a67f470a8fe22c4}{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+2\+M\+HZ} = 7, 
+\\*
+\hyperlink{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a4fdaf2d65c083d4aeadc1e18e7230e3d}{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+1\+M\+HZ} = 15, 
+\hyperlink{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a4809a0b19165f45ed56a45a634ec95eb}{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+500\+K\+HZ} = 31, 
+\hyperlink{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979afd7c69a2856dd2e6568484293e8a329f}{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+250\+K\+HZ} =63
+ \}\begin{DoxyCompactList}\small\item\em Definition of slave clock rate. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___s_p_i___s_l_a_v_e_ga6d740478fb33ff060db8a06a1d8f502c}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+Init} (\hyperlink{struct_a_p_p___s_p_i___slave___config}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Slave\+\_\+\+Config} X\+D\+A\+TA $\ast$p\+\_\+spi\+Slave\+Conf) large
+\begin{DoxyCompactList}\small\item\em Initialize S\+PI slave bus. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___s_p_i___s_l_a_v_e_gaca825a871abdd7096640f0a291d59385}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+Send} (\hyperlink{struct_a_p_p___s_p_i___slave___send}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Slave\+\_\+\+Send} X\+D\+A\+TA $\ast$p\+\_\+spi\+Slave\+Send) large
+\begin{DoxyCompactList}\small\item\em Prepare data for S\+PI communication. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___s_p_i___s_l_a_v_e_ga6434e36bb9716105dbc2417aaec49965}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+Close} (void) large\hypertarget{group___s_p_i___s_l_a_v_e_ga6434e36bb9716105dbc2417aaec49965}{}\label{group___s_p_i___s_l_a_v_e_ga6434e36bb9716105dbc2417aaec49965}
+
+\begin{DoxyCompactList}\small\item\em Free specified S\+PI bus, the occupied G\+P\+IO pins return to digital input and internal pull high. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Definitions and prototypes for the S\+PI Slave application programming interface. 
+
+
+
+\subsubsection{Enumeration Type Documentation}
+\index{S\+P\+I Slave@{S\+P\+I Slave}!S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E\+\_\+\+D\+EF@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E\+\_\+\+D\+EF}}
+\index{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E\+\_\+\+D\+EF@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E\+\_\+\+D\+EF}!S\+P\+I Slave@{S\+P\+I Slave}}
+\paragraph[{\texorpdfstring{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E\+\_\+\+D\+EF}{SPI_SLAVE_MODE_DEF}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E\+\_\+\+D\+EF}}\hypertarget{group___s_p_i___s_l_a_v_e_ga8cb12470ae37e3883289b52731634acc}{}\label{group___s_p_i___s_l_a_v_e_ga8cb12470ae37e3883289b52731634acc}
+
+
+Definitions for S\+PI Slave mode. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E0@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E0}!S\+P\+I Slave@{S\+P\+I Slave}}\index{S\+P\+I Slave@{S\+P\+I Slave}!S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E0@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E0}}\item[{\em 
+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E0\hypertarget{group___s_p_i___s_l_a_v_e_gga8cb12470ae37e3883289b52731634acca823ffce26d59b56ced0dca0fd5e27417}{}\label{group___s_p_i___s_l_a_v_e_gga8cb12470ae37e3883289b52731634acca823ffce26d59b56ced0dca0fd5e27417}
+}]S\+PI Mode 0\+: C\+H\+OL is 0, C\+P\+HA is 0. \index{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E1@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E1}!S\+P\+I Slave@{S\+P\+I Slave}}\index{S\+P\+I Slave@{S\+P\+I Slave}!S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E1@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E1}}\item[{\em 
+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E1\hypertarget{group___s_p_i___s_l_a_v_e_gga8cb12470ae37e3883289b52731634accac40eb52d928367234ccb33b16f645495}{}\label{group___s_p_i___s_l_a_v_e_gga8cb12470ae37e3883289b52731634accac40eb52d928367234ccb33b16f645495}
+}]S\+PI Mode 1\+: C\+H\+OL is 0, C\+P\+HA is 1. \index{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E2@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E2}!S\+P\+I Slave@{S\+P\+I Slave}}\index{S\+P\+I Slave@{S\+P\+I Slave}!S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E2@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E2}}\item[{\em 
+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E2\hypertarget{group___s_p_i___s_l_a_v_e_gga8cb12470ae37e3883289b52731634accaf544a818da9ac07473a5577dc88a73b2}{}\label{group___s_p_i___s_l_a_v_e_gga8cb12470ae37e3883289b52731634accaf544a818da9ac07473a5577dc88a73b2}
+}]S\+PI Mode 2\+: C\+H\+OL is 1, C\+P\+HA is 0. \index{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E3@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E3}!S\+P\+I Slave@{S\+P\+I Slave}}\index{S\+P\+I Slave@{S\+P\+I Slave}!S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E3@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E3}}\item[{\em 
+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+M\+O\+D\+E3\hypertarget{group___s_p_i___s_l_a_v_e_gga8cb12470ae37e3883289b52731634accaabfad961caf12e94b20b24d97c5ce2fd}{}\label{group___s_p_i___s_l_a_v_e_gga8cb12470ae37e3883289b52731634accaabfad961caf12e94b20b24d97c5ce2fd}
+}]S\+PI Mode 3\+: C\+H\+OL is 1, C\+P\+HA is 1. \end{description}
+\end{Desc}
+\index{S\+P\+I Slave@{S\+P\+I Slave}!S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+\+D\+EF@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+\+D\+EF}}
+\index{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+\+D\+EF@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+\+D\+EF}!S\+P\+I Slave@{S\+P\+I Slave}}
+\paragraph[{\texorpdfstring{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+\+D\+EF}{SPI_SLAVE_OVERSAMPLING_CLK_RATE_DEF}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+\+D\+EF}}\hypertarget{group___s_p_i___s_l_a_v_e_ga829f1873bfb32bd5f6a679d3f4dd3979}{}\label{group___s_p_i___s_l_a_v_e_ga829f1873bfb32bd5f6a679d3f4dd3979}
+
+
+Definition of slave clock rate. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+16\+M\+HZ@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+16\+M\+HZ}!S\+P\+I Slave@{S\+P\+I Slave}}\index{S\+P\+I Slave@{S\+P\+I Slave}!S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+16\+M\+HZ@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+16\+M\+HZ}}\item[{\em 
+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+16\+M\+HZ\hypertarget{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a41976f36b89d83f5a1fe9c9f90bb2bf2}{}\label{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a41976f36b89d83f5a1fe9c9f90bb2bf2}
+}]16\+M\+Hz. S\+C\+LK Rate\+:4\+M\+Hz$\sim$1.9\+M\+Hz. \index{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+8\+M\+HZ@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+8\+M\+HZ}!S\+P\+I Slave@{S\+P\+I Slave}}\index{S\+P\+I Slave@{S\+P\+I Slave}!S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+8\+M\+HZ@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+8\+M\+HZ}}\item[{\em 
+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+8\+M\+HZ\hypertarget{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a6c83b8cd3c0f1c519e351ea43c092eb9}{}\label{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a6c83b8cd3c0f1c519e351ea43c092eb9}
+}]8\+M\+Hz. S\+C\+LK Rate\+:2\+M\+Hz$\sim$900\+K\+Hz. \index{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+4\+M\+HZ@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+4\+M\+HZ}!S\+P\+I Slave@{S\+P\+I Slave}}\index{S\+P\+I Slave@{S\+P\+I Slave}!S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+4\+M\+HZ@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+4\+M\+HZ}}\item[{\em 
+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+4\+M\+HZ\hypertarget{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a28c7d5ea8fd6ca0cd062d42ea4ab30aa}{}\label{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a28c7d5ea8fd6ca0cd062d42ea4ab30aa}
+}]4\+M\+Hz. S\+C\+LK Rate\+:1\+M\+Hz$\sim$400\+K\+Hz. \index{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+2\+M\+HZ@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+2\+M\+HZ}!S\+P\+I Slave@{S\+P\+I Slave}}\index{S\+P\+I Slave@{S\+P\+I Slave}!S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+2\+M\+HZ@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+2\+M\+HZ}}\item[{\em 
+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+2\+M\+HZ\hypertarget{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a133c58cb7e8480bc0a67f470a8fe22c4}{}\label{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a133c58cb7e8480bc0a67f470a8fe22c4}
+}]2\+M\+Hz. S\+C\+LK Rate\+:500\+K\+Hz$\sim$200\+K\+Hz. \index{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+1\+M\+HZ@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+1\+M\+HZ}!S\+P\+I Slave@{S\+P\+I Slave}}\index{S\+P\+I Slave@{S\+P\+I Slave}!S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+1\+M\+HZ@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+1\+M\+HZ}}\item[{\em 
+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+1\+M\+HZ\hypertarget{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a4fdaf2d65c083d4aeadc1e18e7230e3d}{}\label{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a4fdaf2d65c083d4aeadc1e18e7230e3d}
+}]1\+M\+Hz. S\+C\+LK Rate\+:250\+K\+Hz$\sim$100\+K\+Hz. \index{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+500\+K\+HZ@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+500\+K\+HZ}!S\+P\+I Slave@{S\+P\+I Slave}}\index{S\+P\+I Slave@{S\+P\+I Slave}!S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+500\+K\+HZ@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+500\+K\+HZ}}\item[{\em 
+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+500\+K\+HZ\hypertarget{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a4809a0b19165f45ed56a45a634ec95eb}{}\label{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979a4809a0b19165f45ed56a45a634ec95eb}
+}]500\+K\+Hz. S\+C\+LK Rate\+:125\+K\+Hz$\sim$50\+K\+Hz. \index{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+250\+K\+HZ@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+250\+K\+HZ}!S\+P\+I Slave@{S\+P\+I Slave}}\index{S\+P\+I Slave@{S\+P\+I Slave}!S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+250\+K\+HZ@{S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+250\+K\+HZ}}\item[{\em 
+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+C\+L\+K\+\_\+\+R\+A\+T\+E\+\_\+250\+K\+HZ\hypertarget{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979afd7c69a2856dd2e6568484293e8a329f}{}\label{group___s_p_i___s_l_a_v_e_gga829f1873bfb32bd5f6a679d3f4dd3979afd7c69a2856dd2e6568484293e8a329f}
+}]250\+K\+Hz. S\+C\+LK Rate\+:65\+K\+Hz$\sim$31\+K\+Hz. \end{description}
+\end{Desc}
+
+
+\subsubsection{Function Documentation}
+\index{S\+P\+I Slave@{S\+P\+I Slave}!A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+Init@{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+Init}}
+\index{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+Init@{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+Init}!S\+P\+I Slave@{S\+P\+I Slave}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+Init(\+A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Slave\+\_\+\+Config X\+D\+A\+T\+A $\ast$p\+\_\+spi\+Slave\+Conf) large}{APP_SPI_SLAVE_Init(APP_SPI_Slave_Config XDATA *p_spiSlaveConf) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Slave\+\_\+\+Config} X\+D\+A\+TA $\ast$}]{p\+\_\+spi\+Slave\+Conf}
+\end{DoxyParamCaption}
+)}\hypertarget{group___s_p_i___s_l_a_v_e_ga6d740478fb33ff060db8a06a1d8f502c}{}\label{group___s_p_i___s_l_a_v_e_ga6d740478fb33ff060db8a06a1d8f502c}
+
+
+Initialize S\+PI slave bus. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+spi\+Slave\+Conf} & Pointer to the \hyperlink{struct_a_p_p___s_p_i___slave___config}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Slave\+\_\+\+Config} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully initialize S\+PI slave bus. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+If S\+PI slave bus is initialized, below G\+P\+IO pins are occupied for S\+PI bus.~\newline
+
+\begin{DoxyItemize}
+\item P31\+: N\+CS~\newline
+
+\item P32\+: M\+I\+SO~\newline
+
+\item P33\+: M\+O\+SI~\newline
+
+\item P34\+: S\+C\+LK~\newline
+ If an interval of N\+CS pulled down until first sclok is less than 3 min second,~\newline
+ user must use S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+Q\+U\+I\+CK.~\newline
+
+\end{DoxyItemize}
+\end{DoxyNote}
+\index{S\+P\+I Slave@{S\+P\+I Slave}!A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+Send@{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+Send}}
+\index{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+Send@{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+Send}!S\+P\+I Slave@{S\+P\+I Slave}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+Send(\+A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Slave\+\_\+\+Send X\+D\+A\+T\+A $\ast$p\+\_\+spi\+Slave\+Send) large}{APP_SPI_SLAVE_Send(APP_SPI_Slave_Send XDATA *p_spiSlaveSend) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+Send (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Slave\+\_\+\+Send} X\+D\+A\+TA $\ast$}]{p\+\_\+spi\+Slave\+Send}
+\end{DoxyParamCaption}
+)}\hypertarget{group___s_p_i___s_l_a_v_e_gaca825a871abdd7096640f0a291d59385}{}\label{group___s_p_i___s_l_a_v_e_gaca825a871abdd7096640f0a291d59385}
+
+
+Prepare data for S\+PI communication. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+spi\+Slave\+Send} & Pointer to the \hyperlink{struct_a_p_p___s_p_i___slave___send}{A\+P\+P\+\_\+\+S\+P\+I\+\_\+\+Slave\+\_\+\+Send} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully prepare data for S\+PI communication. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+N\+O\+\_\+\+R\+E\+S\+O\+U\+R\+CE S\+PI bus is busy. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters. 
+\end{DoxyReturn}

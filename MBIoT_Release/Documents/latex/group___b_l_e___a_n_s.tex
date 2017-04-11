@@ -1,0 +1,558 @@
+\hypertarget{group___b_l_e___a_n_s}{}\subsection{Ble Alert Notify Service}
+\label{group___b_l_e___a_n_s}\index{Ble Alert Notify Service@{Ble Alert Notify Service}}
+
+
+Ble Alert Notify Service.  
+
+
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_b_l_e___a_n_s___new_alert___message}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+New\+Alert\+\_\+\+Message}
+\begin{DoxyCompactList}\small\item\em New Alert parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_n_s___unread_alert_status___message}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Unread\+Alert\+Status\+\_\+\+Message}
+\begin{DoxyCompactList}\small\item\em Unread Alert Status parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_n_s___alert___notification___control_point}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Alert\+\_\+\+Notification\+\_\+\+Control\+Point}
+\begin{DoxyCompactList}\small\item\em Alert Notification Control Point. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_n_s___aert_notify_state}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Aert\+Notify\+State}
+\begin{DoxyCompactList}\small\item\em Alert Notification Category Status. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_b_l_e___a_n_s___event}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Event}
+\begin{DoxyCompactList}\small\item\em A\+NS Events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga54c2c6106811e220432232e62bf3bf8d}{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}~0x1811
+\begin{DoxyCompactList}\small\item\em Alert Notification Service U\+U\+ID definations. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___b_l_e___a_n_s_gae79df2e16529fe8fc52a4e49fd584123}{U\+U\+I\+D\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY}~0x2\+A47
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga89002dc91236106925dcb63f156cb7b9}{U\+U\+I\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+RT}~0x2\+A46
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_gabe97994cb8dac98f9dbbcd4465310f6a}{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID}~0x2\+A43
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga975962490e989073aec17b4c68a75c67}{U\+U\+I\+D\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+C\+O\+N\+F\+IG}~0x2902
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga33eb9ad2d28d6721c6c147fc58e22fa3}{U\+U\+I\+D\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY}~0x2\+A48
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga2ff36a16f151a482454279c0a8e5fa87}{U\+U\+I\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+US}~0x2\+A45
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga3c96dbb307b54bdedc450bacbb1c840b}{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+NT}~0x2\+A44
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga099ff0035c1828b366f71c5c7a2bdd6c}{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK}~0x2\+A42
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga118dc2a4a3258c5edac47225144d7696}{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+A\+L\+E\+RT}~0x00
+\begin{DoxyCompactList}\small\item\em Alerts types as defined in the alert category id; U\+U\+ID\+: 0x2\+A43. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga9de840c4fb14c7589971efdfb8bf24af}{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+M\+A\+IL}~0x01
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_gad6e2761ace422cc7ade00258324c831c}{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+E\+WS}~0x02
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_gadcf6dc95a38de6b6a02e424f1b75f079}{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+A\+LL}~0x03
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga58d9a9b1c09db4a406c5db67678bb963}{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+I\+S\+S\+E\+D\+\_\+\+C\+A\+LL}~0x04
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga3209f94c5ea3bde1aa53e124e6f61d92}{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+M\+S\+\_\+\+M\+MS}~0x05
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga214c6aa840e7630ffb9c26c30f0c2e8b}{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+V\+O\+I\+C\+E\+\_\+\+M\+A\+IL}~0x06
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga03b13be471f94f0187c9d0dc7b2496a3}{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+C\+H\+E\+D\+U\+LE}~0x07
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_gacd78058e8f257b8e5fbfaaf675163f07}{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+H\+I\+G\+H\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+Z\+E\+D\+\_\+\+A\+L\+E\+RT}~0x08
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga87722a5078474bb2431b5021f228b67b}{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+S\+T\+A\+N\+T\+\_\+\+M\+E\+S\+S\+A\+GE}~0x09
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga184b6374fa7c99f508a87f91391a0418}{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+L\+L\+\_\+\+A\+L\+E\+R\+TS}~0x\+FF
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_gacb56a8a8ddb2833bee263b4b5b41c091}{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+D\+I\+S\+A\+B\+L\+ED}~0x0000
+\begin{DoxyCompactList}\small\item\em For C\+C\+CD handle. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga615915b560b0979ff591311e436e979c}{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+A\+B\+L\+ED}~0x0100
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_gaa85a92c40f8ea796f19b099b975e752d}{A\+N\+S\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}~0
+\begin{DoxyCompactList}\small\item\em Alerts notification control point commands as defined in the Alert Notification Specification; U\+U\+ID\+: 0x2\+A44. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga36f4324d646ba4ce30b9c6342d02d97e}{A\+N\+S\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}~1
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_gaf92f48e87216782c28b2cfe0c4724ee6}{A\+N\+S\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}~2
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_gadce3c6087668f98cc360a6df356bc5ad}{A\+N\+S\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}~3
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_gab6554594b4e928836ba1a5dd69731155}{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+I\+M\+M\+E\+D\+I\+A\+T\+E\+LY}~4
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_gac985b3d676fe04cdafdde4673d3a471e}{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+M\+M\+E\+D\+I\+A\+T\+E\+LY}~5
+\item 
+\#define \hyperlink{group___b_l_e___a_n_s_ga2fb5147aad42537bdc849fe47966da5f}{A\+N\+S\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+E\+R\+R\+OR}~0x\+A0\hypertarget{group___b_l_e___a_n_s_ga2fb5147aad42537bdc849fe47966da5f}{}\label{group___b_l_e___a_n_s_ga2fb5147aad42537bdc849fe47966da5f}
+
+\begin{DoxyCompactList}\small\item\em Error code, command not supported. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_b_l_e___a_n_s___new_alert___message}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+New\+Alert\+\_\+\+Message} \hyperlink{group___b_l_e___a_n_s_ga8965c1b063291f3c2d7bbfd44b6b7bec}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+New\+Alert\+\_\+\+Message}\hypertarget{group___b_l_e___a_n_s_ga8965c1b063291f3c2d7bbfd44b6b7bec}{}\label{group___b_l_e___a_n_s_ga8965c1b063291f3c2d7bbfd44b6b7bec}
+
+\begin{DoxyCompactList}\small\item\em New Alert parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_n_s___unread_alert_status___message}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Unread\+Alert\+Status\+\_\+\+Message} \hyperlink{group___b_l_e___a_n_s_ga1158b4e0fd53a48ad5a63591e4a42e0a}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Unread\+Alert\+Status\+\_\+\+Message}\hypertarget{group___b_l_e___a_n_s_ga1158b4e0fd53a48ad5a63591e4a42e0a}{}\label{group___b_l_e___a_n_s_ga1158b4e0fd53a48ad5a63591e4a42e0a}
+
+\begin{DoxyCompactList}\small\item\em Unread Alert Status parameters. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_n_s___alert___notification___control_point}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Alert\+\_\+\+Notification\+\_\+\+Control\+Point} \hyperlink{group___b_l_e___a_n_s_ga6475d27f07838c3a9e38ced8b7ca8826}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Alert\+\_\+\+Notification\+\_\+\+Control\+Point}\hypertarget{group___b_l_e___a_n_s_ga6475d27f07838c3a9e38ced8b7ca8826}{}\label{group___b_l_e___a_n_s_ga6475d27f07838c3a9e38ced8b7ca8826}
+
+\begin{DoxyCompactList}\small\item\em Alert Notification Control Point. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_n_s___aert_notify_state}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Aert\+Notify\+State} \hyperlink{group___b_l_e___a_n_s_ga38962718c3c6268631c1cdae3a41ae32}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Aert\+Notify\+State}\hypertarget{group___b_l_e___a_n_s_ga38962718c3c6268631c1cdae3a41ae32}{}\label{group___b_l_e___a_n_s_ga38962718c3c6268631c1cdae3a41ae32}
+
+\begin{DoxyCompactList}\small\item\em Alert Notification Category Status. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{struct_b_l_e___a_n_s___event}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Event} \hyperlink{group___b_l_e___a_n_s_ga4af394d9f47c830af202c97a789e567c}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Event}\hypertarget{group___b_l_e___a_n_s_ga4af394d9f47c830af202c97a789e567c}{}\label{group___b_l_e___a_n_s_ga4af394d9f47c830af202c97a789e567c}
+
+\begin{DoxyCompactList}\small\item\em A\+NS Events. \end{DoxyCompactList}\item 
+typedef void($\ast$ \hyperlink{group___b_l_e___a_n_s_ga1e3c95d8f99910c134671407f9f3cd2a}{A\+N\+S\+Process\+Routine}) (\hyperlink{struct_b_l_e___a_n_s___event}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Event} X\+D\+A\+TA $\ast$p\+\_\+ans\+Event) large\hypertarget{group___b_l_e___a_n_s_ga1e3c95d8f99910c134671407f9f3cd2a}{}\label{group___b_l_e___a_n_s_ga1e3c95d8f99910c134671407f9f3cd2a}
+
+\begin{DoxyCompactList}\small\item\em Prototype for ans events handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___b_l_e___a_n_s_ga80f34b5cfd2798b30f32bd666c2f82e8}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Attribute\+Index} \{ \\*
+\hyperlink{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a2f5a0e00bf62844fd8a5b2c1a0c5b281}{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+P\+R\+I\+M\+A\+R\+Y\+\_\+\+S\+E\+R\+V\+I\+CE} =0, 
+\hyperlink{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a8ed48018a098de74257f0530f883090e}{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY}, 
+\hyperlink{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a005f21e51ab0b78effc0888f097ff24e}{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK}, 
+\hyperlink{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a6d096fc1cda70df522ac597f624f30c3}{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+RT}, 
+\\*
+\hyperlink{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a23346c42b2d943109442f2a3fafaef53}{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID}, 
+\hyperlink{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a45db40dca6efc90660231ec8d7f1f97e}{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+C\+CD}, 
+\hyperlink{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8aea35b8fa80e7ce3e74e6db211d42fbc5}{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY}, 
+\hyperlink{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8ae7045c42fb78abc0c2c51182e0361f8a}{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK}, 
+\\*
+\hyperlink{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a25639101b36619824f7cf4c8eadd85d0}{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+US}, 
+\hyperlink{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8aa5592ce348bbd1e4373f31b1cbc4970d}{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID}, 
+\hyperlink{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a4f38cc856f2e3675acc6a62896597e3b}{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+C\+CD}, 
+\hyperlink{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a5510d44e314809090a462fd40d30cefe}{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+NT}, 
+\\*
+\hyperlink{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8af168d38b6bcc6ed4f4358ce245030442}{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+V\+A\+L\+UE}, 
+\hyperlink{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a271e98c2f9ba5ff30d5259a3b746e0e6}{T\+O\+T\+A\+L\+\_\+\+A\+N\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM}
+ \}\begin{DoxyCompactList}\small\item\em Attribute number in the app defined Service Table. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group___b_l_e___a_n_s_ga070e27685d9277855911bab2da81193e}{alert\+Notify\+State} \{ \hyperlink{group___b_l_e___a_n_s_gga070e27685d9277855911bab2da81193eab210d2305b05b39a04ae65f0adba0a2b}{N\+O\+T\+I\+F\+Y\+\_\+\+D\+I\+S\+A\+B\+LE}, 
+\hyperlink{group___b_l_e___a_n_s_gga070e27685d9277855911bab2da81193eaa8f7536179be42b2c58e5a219618a82b}{N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+B\+LE}
+ \}\begin{DoxyCompactList}\small\item\em Alert Notify State (enable/disable) \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___a_n_s_ga61c8e77a1c1bc963860a50fd8c432209}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Init} (\hyperlink{group___b_l_e___a_n_s_ga1e3c95d8f99910c134671407f9f3cd2a}{A\+N\+S\+Process\+Routine} ans\+Handler) large
+\begin{DoxyCompactList}\small\item\em Initialize B\+LE A\+NS. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___a_n_s_ga6424d11ab75b05bdb8d6ebec7a218d71}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Init\+\_\+\+Service} () large
+\begin{DoxyCompactList}\small\item\em Initialize B\+LE Alert Notification service table. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___b_l_e___a_n_s_gaa7823cb45826351b92af25d1f0dfbd1b}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Catch\+\_\+\+Event} (\hyperlink{struct_b_l_e___g_a_t_t___event}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} X\+D\+A\+TA $\ast$p\+\_\+event) large
+\begin{DoxyCompactList}\small\item\em Catch B\+L\+E\+\_\+\+G\+A\+TT events to get the A\+NS events. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___a_n_s_gac5b4e2bc46bad84b2c4b184437927ae1}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+New\+\_\+\+Alert} (u8 conn\+Handle, \hyperlink{struct_b_l_e___a_n_s___new_alert___message}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+New\+Alert\+\_\+\+Message} X\+D\+A\+TA $\ast$p\+\_\+ans\+New\+Alert\+Message) large
+\begin{DoxyCompactList}\small\item\em Send new alert status. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___a_n_s_ga12d36228c3f580967914f6ffa6876170}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Unread\+\_\+\+Alert\+\_\+\+Status} (u8 conn\+Handle, \hyperlink{struct_b_l_e___a_n_s___unread_alert_status___message}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Unread\+Alert\+Status\+\_\+\+Message} X\+D\+A\+TA $\ast$p\+\_\+ans\+Unread\+Alert\+Status\+Message) large
+\begin{DoxyCompactList}\small\item\em Send unread alert status. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___a_n_s_ga7e33cddd51ead14091de734720ce2478}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Write\+\_\+\+Response} (u8 conn\+Handle, u8 resp\+Type) large
+\begin{DoxyCompactList}\small\item\em Send write response. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___a_n_s_gaad46fa2ee9dcec78ecd36415fdc5bcdb}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Error\+\_\+\+Response} (u8 conn\+Handle, u8 err\+Code) large
+\begin{DoxyCompactList}\small\item\em Send error response. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___a_n_s_gad19a07f6e6c2f3d1b2014caff90d2d5a}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Add\+\_\+\+Supported\+New\+Alert\+Categories} () large
+\begin{DoxyCompactList}\small\item\em Add supported new alert categories. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___a_n_s_ga0058ffa32f5318301490f78c4d5d581f}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Add\+\_\+\+Supported\+Unread\+Alert\+Categories} () large
+\begin{DoxyCompactList}\small\item\em Add supported unread alert categories. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___a_n_s_gaeb367e2ef7c21652b9d7c64dc4b21521}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Get\+\_\+supported\+New\+Alert\+Categories} (u16 $\ast$p\+\_\+supported\+New\+Alert\+Categories) large
+\begin{DoxyCompactList}\small\item\em Get supported new alert categories. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___b_l_e___a_n_s_ga155e3f54a1cfbffa0d88c73399210ae3}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Get\+\_\+supported\+Unread\+Alert\+Categories} (u16 $\ast$p\+\_\+supported\+Unread\+Alert\+Categories) large
+\begin{DoxyCompactList}\small\item\em Get supported unread alert categories. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 X\+D\+A\+TA \hyperlink{group___b_l_e___a_n_s_ga4b0c0b3b45cbdd1a0d61c07c16ae60bb}{supported\+New\+Alert\+Category\+Handle}\hypertarget{group___b_l_e___a_n_s_ga4b0c0b3b45cbdd1a0d61c07c16ae60bb}{}\label{group___b_l_e___a_n_s_ga4b0c0b3b45cbdd1a0d61c07c16ae60bb}
+
+\begin{DoxyCompactList}\small\item\em extern C\+C\+CD handle, required in application \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 X\+D\+A\+TA {\bfseries new\+Alert\+Handle}\hypertarget{group___b_l_e___a_n_s_ga6a0de9cccc0e2d24d874850581ef0c4f}{}\label{group___b_l_e___a_n_s_ga6a0de9cccc0e2d24d874850581ef0c4f}
+
+\item 
+P\+U\+B\+L\+IC u16 X\+D\+A\+TA {\bfseries supported\+Unread\+Alert\+Category\+Handle}\hypertarget{group___b_l_e___a_n_s_ga4453e3b43157e1562894ff1eff371b69}{}\label{group___b_l_e___a_n_s_ga4453e3b43157e1562894ff1eff371b69}
+
+\item 
+P\+U\+B\+L\+IC u16 X\+D\+A\+TA {\bfseries unread\+Alert\+Status\+Handle}\hypertarget{group___b_l_e___a_n_s_ga9dbf2d982f37a92f9d9c5f31d12e20c3}{}\label{group___b_l_e___a_n_s_ga9dbf2d982f37a92f9d9c5f31d12e20c3}
+
+\item 
+P\+U\+B\+L\+IC u16 X\+D\+A\+TA {\bfseries control\+Point\+Handle}\hypertarget{group___b_l_e___a_n_s_gad13b440a753b04ec7165271e53c5de9c}{}\label{group___b_l_e___a_n_s_gad13b440a753b04ec7165271e53c5de9c}
+
+\item 
+P\+U\+B\+L\+IC u16 X\+D\+A\+TA {\bfseries new\+Alert\+C\+C\+C\+D\+Handle}\hypertarget{group___b_l_e___a_n_s_ga2025335ca6c1c199dc5d22ffda8eb3c0}{}\label{group___b_l_e___a_n_s_ga2025335ca6c1c199dc5d22ffda8eb3c0}
+
+\item 
+P\+U\+B\+L\+IC u16 X\+D\+A\+TA {\bfseries unread\+Alert\+Status\+C\+C\+C\+D\+Handle}\hypertarget{group___b_l_e___a_n_s_ga066a4d33027fefae4fa6ee5c9c9384a3}{}\label{group___b_l_e___a_n_s_ga066a4d33027fefae4fa6ee5c9c9384a3}
+
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Ble Alert Notify Service. 
+
+\begin{DoxyNote}{Note}
+Definitions and prototypes for the Ble Alert Notify Service application programming interface. 
+\end{DoxyNote}
+
+
+\subsubsection{Macro Definition Documentation}
+\index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON@{A\+N\+S\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}}
+\index{A\+N\+S\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON@{A\+N\+S\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}{ANS_DISABLE_NEW_INCOMING_ALERT_NOTIFICATION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON~2}\hypertarget{group___b_l_e___a_n_s_gaf92f48e87216782c28b2cfe0c4724ee6}{}\label{group___b_l_e___a_n_s_gaf92f48e87216782c28b2cfe0c4724ee6}
+Disable New Incoming Alert Notification. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON@{A\+N\+S\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}}
+\index{A\+N\+S\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON@{A\+N\+S\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}{ANS_DISABLE_UNREAD_CATEGORY_STATUS_NOTIFICATION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON~3}\hypertarget{group___b_l_e___a_n_s_gadce3c6087668f98cc360a6df356bc5ad}{}\label{group___b_l_e___a_n_s_gadce3c6087668f98cc360a6df356bc5ad}
+Disable Unread Category Status Notification. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON@{A\+N\+S\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}}
+\index{A\+N\+S\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON@{A\+N\+S\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}{ANS_ENABLE_NEW_INCOMING_ALERT_NOTIFICATION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON~0}\hypertarget{group___b_l_e___a_n_s_gaa85a92c40f8ea796f19b099b975e752d}{}\label{group___b_l_e___a_n_s_gaa85a92c40f8ea796f19b099b975e752d}
+
+
+Alerts notification control point commands as defined in the Alert Notification Specification; U\+U\+ID\+: 0x2\+A44. 
+
+Enable New Incoming Alert Notification. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON@{A\+N\+S\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}}
+\index{A\+N\+S\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON@{A\+N\+S\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}{ANS_ENABLE_UNREAD_CATEGORY_STATUS_NOTIFICATION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON~1}\hypertarget{group___b_l_e___a_n_s_ga36f4324d646ba4ce30b9c6342d02d97e}{}\label{group___b_l_e___a_n_s_ga36f4324d646ba4ce30b9c6342d02d97e}
+Enable Unread Category Status Notification. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+D\+I\+S\+A\+B\+L\+ED@{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+D\+I\+S\+A\+B\+L\+ED}}
+\index{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+D\+I\+S\+A\+B\+L\+ED@{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+D\+I\+S\+A\+B\+L\+ED}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+D\+I\+S\+A\+B\+L\+ED}{ANS_NOTIFY_DISABLED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+D\+I\+S\+A\+B\+L\+ED~0x0000}\hypertarget{group___b_l_e___a_n_s_gacb56a8a8ddb2833bee263b4b5b41c091}{}\label{group___b_l_e___a_n_s_gacb56a8a8ddb2833bee263b4b5b41c091}
+
+
+For C\+C\+CD handle. 
+
+Alert Notifications are disabled \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+A\+B\+L\+ED@{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+A\+B\+L\+ED}}
+\index{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+A\+B\+L\+ED@{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+A\+B\+L\+ED}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+A\+B\+L\+ED}{ANS_NOTIFY_ENAABLED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+A\+B\+L\+ED~0x0100}\hypertarget{group___b_l_e___a_n_s_ga615915b560b0979ff591311e436e979c}{}\label{group___b_l_e___a_n_s_ga615915b560b0979ff591311e436e979c}
+Alert Notifications are enabled \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+I\+M\+M\+E\+D\+I\+A\+T\+E\+LY@{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+I\+M\+M\+E\+D\+I\+A\+T\+E\+LY}}
+\index{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+I\+M\+M\+E\+D\+I\+A\+T\+E\+LY@{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+I\+M\+M\+E\+D\+I\+A\+T\+E\+LY}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+I\+M\+M\+E\+D\+I\+A\+T\+E\+LY}{ANS_NOTIFY_NEW_INCOMING_ALERT_IMMEDIATELY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+N\+E\+W\+\_\+\+I\+N\+C\+O\+M\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+I\+M\+M\+E\+D\+I\+A\+T\+E\+LY~4}\hypertarget{group___b_l_e___a_n_s_gab6554594b4e928836ba1a5dd69731155}{}\label{group___b_l_e___a_n_s_gab6554594b4e928836ba1a5dd69731155}
+Notify New Incoming Alert immediately. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+M\+M\+E\+D\+I\+A\+T\+E\+LY@{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+M\+M\+E\+D\+I\+A\+T\+E\+LY}}
+\index{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+M\+M\+E\+D\+I\+A\+T\+E\+LY@{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+M\+M\+E\+D\+I\+A\+T\+E\+LY}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+M\+M\+E\+D\+I\+A\+T\+E\+LY}{ANS_NOTIFY_UNREAD_CATEGORY_STATUS_IMMEDIATELY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+N\+O\+T\+I\+F\+Y\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+M\+M\+E\+D\+I\+A\+T\+E\+LY~5}\hypertarget{group___b_l_e___a_n_s_gac985b3d676fe04cdafdde4673d3a471e}{}\label{group___b_l_e___a_n_s_gac985b3d676fe04cdafdde4673d3a471e}
+Notify Unread Category Status immediately. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+L\+L\+\_\+\+A\+L\+E\+R\+TS@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+L\+L\+\_\+\+A\+L\+E\+R\+TS}}
+\index{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+L\+L\+\_\+\+A\+L\+E\+R\+TS@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+L\+L\+\_\+\+A\+L\+E\+R\+TS}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+L\+L\+\_\+\+A\+L\+E\+R\+TS}{ANS_TYPE_ALL_ALERTS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+L\+L\+\_\+\+A\+L\+E\+R\+TS~0x\+FF}\hypertarget{group___b_l_e___a_n_s_ga184b6374fa7c99f508a87f91391a0418}{}\label{group___b_l_e___a_n_s_ga184b6374fa7c99f508a87f91391a0418}
+Identifies All Alerts. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+M\+A\+IL@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+M\+A\+IL}}
+\index{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+M\+A\+IL@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+M\+A\+IL}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+M\+A\+IL}{ANS_TYPE_EMAIL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+M\+A\+IL~0x01}\hypertarget{group___b_l_e___a_n_s_ga9de840c4fb14c7589971efdfb8bf24af}{}\label{group___b_l_e___a_n_s_ga9de840c4fb14c7589971efdfb8bf24af}
+Alert when email messages arrives. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+H\+I\+G\+H\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+Z\+E\+D\+\_\+\+A\+L\+E\+RT@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+H\+I\+G\+H\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+Z\+E\+D\+\_\+\+A\+L\+E\+RT}}
+\index{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+H\+I\+G\+H\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+Z\+E\+D\+\_\+\+A\+L\+E\+RT@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+H\+I\+G\+H\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+Z\+E\+D\+\_\+\+A\+L\+E\+RT}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+H\+I\+G\+H\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+Z\+E\+D\+\_\+\+A\+L\+E\+RT}{ANS_TYPE_HIGH_PRIORITIZED_ALERT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+H\+I\+G\+H\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+Z\+E\+D\+\_\+\+A\+L\+E\+RT~0x08}\hypertarget{group___b_l_e___a_n_s_gacd78058e8f257b8e5fbfaaf675163f07}{}\label{group___b_l_e___a_n_s_gacd78058e8f257b8e5fbfaaf675163f07}
+Alert that should be handled as high priority. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+S\+T\+A\+N\+T\+\_\+\+M\+E\+S\+S\+A\+GE@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+S\+T\+A\+N\+T\+\_\+\+M\+E\+S\+S\+A\+GE}}
+\index{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+S\+T\+A\+N\+T\+\_\+\+M\+E\+S\+S\+A\+GE@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+S\+T\+A\+N\+T\+\_\+\+M\+E\+S\+S\+A\+GE}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+S\+T\+A\+N\+T\+\_\+\+M\+E\+S\+S\+A\+GE}{ANS_TYPE_INSTANT_MESSAGE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+S\+T\+A\+N\+T\+\_\+\+M\+E\+S\+S\+A\+GE~0x09}\hypertarget{group___b_l_e___a_n_s_ga87722a5078474bb2431b5021f228b67b}{}\label{group___b_l_e___a_n_s_ga87722a5078474bb2431b5021f228b67b}
+Alert for incoming instant messages. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+I\+S\+S\+E\+D\+\_\+\+C\+A\+LL@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+I\+S\+S\+E\+D\+\_\+\+C\+A\+LL}}
+\index{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+I\+S\+S\+E\+D\+\_\+\+C\+A\+LL@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+I\+S\+S\+E\+D\+\_\+\+C\+A\+LL}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+I\+S\+S\+E\+D\+\_\+\+C\+A\+LL}{ANS_TYPE_MISSED_CALL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+I\+S\+S\+E\+D\+\_\+\+C\+A\+LL~0x04}\hypertarget{group___b_l_e___a_n_s_ga58d9a9b1c09db4a406c5db67678bb963}{}\label{group___b_l_e___a_n_s_ga58d9a9b1c09db4a406c5db67678bb963}
+Missed call. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+E\+WS@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+E\+WS}}
+\index{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+E\+WS@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+E\+WS}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+E\+WS}{ANS_TYPE_NEWS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+E\+WS~0x02}\hypertarget{group___b_l_e___a_n_s_gad6e2761ace422cc7ade00258324c831c}{}\label{group___b_l_e___a_n_s_gad6e2761ace422cc7ade00258324c831c}
+News feeds such as R\+SS, Atom. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+A\+LL@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+A\+LL}}
+\index{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+A\+LL@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+A\+LL}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+A\+LL}{ANS_TYPE_NOTIFICATION_CALL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+A\+LL~0x03}\hypertarget{group___b_l_e___a_n_s_gadcf6dc95a38de6b6a02e424f1b75f079}{}\label{group___b_l_e___a_n_s_gadcf6dc95a38de6b6a02e424f1b75f079}
+Incoming call. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+C\+H\+E\+D\+U\+LE@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+C\+H\+E\+D\+U\+LE}}
+\index{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+C\+H\+E\+D\+U\+LE@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+C\+H\+E\+D\+U\+LE}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+C\+H\+E\+D\+U\+LE}{ANS_TYPE_SCHEDULE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+C\+H\+E\+D\+U\+LE~0x07}\hypertarget{group___b_l_e___a_n_s_ga03b13be471f94f0187c9d0dc7b2496a3}{}\label{group___b_l_e___a_n_s_ga03b13be471f94f0187c9d0dc7b2496a3}
+Alert occurred on calendar, planner. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+A\+L\+E\+RT@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+A\+L\+E\+RT}}
+\index{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+A\+L\+E\+RT@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+A\+L\+E\+RT}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+A\+L\+E\+RT}{ANS_TYPE_SIMPLE_ALERT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+A\+L\+E\+RT~0x00}\hypertarget{group___b_l_e___a_n_s_ga118dc2a4a3258c5edac47225144d7696}{}\label{group___b_l_e___a_n_s_ga118dc2a4a3258c5edac47225144d7696}
+
+
+Alerts types as defined in the alert category id; U\+U\+ID\+: 0x2\+A43. 
+
+General text alert or non-\/text alert. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+M\+S\+\_\+\+M\+MS@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+M\+S\+\_\+\+M\+MS}}
+\index{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+M\+S\+\_\+\+M\+MS@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+M\+S\+\_\+\+M\+MS}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+M\+S\+\_\+\+M\+MS}{ANS_TYPE_SMS_MMS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+M\+S\+\_\+\+M\+MS~0x05}\hypertarget{group___b_l_e___a_n_s_ga3209f94c5ea3bde1aa53e124e6f61d92}{}\label{group___b_l_e___a_n_s_ga3209f94c5ea3bde1aa53e124e6f61d92}
+S\+M\+S/\+M\+MS message arrives. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+V\+O\+I\+C\+E\+\_\+\+M\+A\+IL@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+V\+O\+I\+C\+E\+\_\+\+M\+A\+IL}}
+\index{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+V\+O\+I\+C\+E\+\_\+\+M\+A\+IL@{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+V\+O\+I\+C\+E\+\_\+\+M\+A\+IL}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+V\+O\+I\+C\+E\+\_\+\+M\+A\+IL}{ANS_TYPE_VOICE_MAIL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+V\+O\+I\+C\+E\+\_\+\+M\+A\+IL~0x06}\hypertarget{group___b_l_e___a_n_s_ga214c6aa840e7630ffb9c26c30f0c2e8b}{}\label{group___b_l_e___a_n_s_ga214c6aa840e7630ffb9c26c30f0c2e8b}
+Voice mail. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID@{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID}}
+\index{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID@{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID}{UUID_ALERT_CATAGORY_ID}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID~0x2\+A43}\hypertarget{group___b_l_e___a_n_s_gabe97994cb8dac98f9dbbcd4465310f6a}{}\label{group___b_l_e___a_n_s_gabe97994cb8dac98f9dbbcd4465310f6a}
+Definition of Alert Category ID U\+U\+ID. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK@{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK}}
+\index{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK@{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK}{UUID_ALERT_CATAGORY_ID_BIT_MASK}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK~0x2\+A42}\hypertarget{group___b_l_e___a_n_s_ga099ff0035c1828b366f71c5c7a2bdd6c}{}\label{group___b_l_e___a_n_s_ga099ff0035c1828b366f71c5c7a2bdd6c}
+Definition of Alert Category ID Bit Mask U\+U\+ID. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON@{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}}
+\index{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON@{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON}{UUID_ALERT_NOTIFICATION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+ON~0x1811}\hypertarget{group___b_l_e___a_n_s_ga54c2c6106811e220432232e62bf3bf8d}{}\label{group___b_l_e___a_n_s_ga54c2c6106811e220432232e62bf3bf8d}
+
+
+Alert Notification Service U\+U\+ID definations. 
+
+Definition of Alert Notification Service U\+U\+ID. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+NT@{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+NT}}
+\index{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+NT@{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+NT}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+NT}{UUID_ALERT_NOTIFICATION_CTRL_POINT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+U\+I\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+NT~0x2\+A44}\hypertarget{group___b_l_e___a_n_s_ga3c96dbb307b54bdedc450bacbb1c840b}{}\label{group___b_l_e___a_n_s_ga3c96dbb307b54bdedc450bacbb1c840b}
+Definition of Alert Notification Control Point U\+U\+ID. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!U\+U\+I\+D\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+C\+O\+N\+F\+IG@{U\+U\+I\+D\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+C\+O\+N\+F\+IG}}
+\index{U\+U\+I\+D\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+C\+O\+N\+F\+IG@{U\+U\+I\+D\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+C\+O\+N\+F\+IG}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{U\+U\+I\+D\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+C\+O\+N\+F\+IG}{UUID_CLIENT_CHARACTERISTIC_CONFIG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+U\+I\+D\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+C\+O\+N\+F\+IG~0x2902}\hypertarget{group___b_l_e___a_n_s_ga975962490e989073aec17b4c68a75c67}{}\label{group___b_l_e___a_n_s_ga975962490e989073aec17b4c68a75c67}
+Definition of Client Characteristic Configuration U\+U\+ID. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!U\+U\+I\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+RT@{U\+U\+I\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+RT}}
+\index{U\+U\+I\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+RT@{U\+U\+I\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+RT}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{U\+U\+I\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+RT}{UUID_NEW_ALERT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+U\+I\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+RT~0x2\+A46}\hypertarget{group___b_l_e___a_n_s_ga89002dc91236106925dcb63f156cb7b9}{}\label{group___b_l_e___a_n_s_ga89002dc91236106925dcb63f156cb7b9}
+Definition of New Alert U\+U\+ID. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!U\+U\+I\+D\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY@{U\+U\+I\+D\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY}}
+\index{U\+U\+I\+D\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY@{U\+U\+I\+D\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{U\+U\+I\+D\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY}{UUID_SUPPORTED_NEW_ALERT_CATEGORY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+U\+I\+D\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY~0x2\+A47}\hypertarget{group___b_l_e___a_n_s_gae79df2e16529fe8fc52a4e49fd584123}{}\label{group___b_l_e___a_n_s_gae79df2e16529fe8fc52a4e49fd584123}
+Definition of Supported New Alert Category U\+U\+ID. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!U\+U\+I\+D\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY@{U\+U\+I\+D\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY}}
+\index{U\+U\+I\+D\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY@{U\+U\+I\+D\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{U\+U\+I\+D\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY}{UUID_SUPPORTED_UNREAD_ALERT_CATEGORY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+U\+I\+D\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY~0x2\+A48}\hypertarget{group___b_l_e___a_n_s_ga33eb9ad2d28d6721c6c147fc58e22fa3}{}\label{group___b_l_e___a_n_s_ga33eb9ad2d28d6721c6c147fc58e22fa3}
+Definition of Supported Unread Alert Category U\+U\+ID. \index{Ble Alert Notify Service@{Ble Alert Notify Service}!U\+U\+I\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+US@{U\+U\+I\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+US}}
+\index{U\+U\+I\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+US@{U\+U\+I\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+US}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{U\+U\+I\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+US}{UUID_UNREAD_ALERT_STATUS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+U\+I\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+US~0x2\+A45}\hypertarget{group___b_l_e___a_n_s_ga2ff36a16f151a482454279c0a8e5fa87}{}\label{group___b_l_e___a_n_s_ga2ff36a16f151a482454279c0a8e5fa87}
+Definition of Unread Alert Status U\+U\+ID. 
+
+\subsubsection{Enumeration Type Documentation}
+\index{Ble Alert Notify Service@{Ble Alert Notify Service}!alert\+Notify\+State@{alert\+Notify\+State}}
+\index{alert\+Notify\+State@{alert\+Notify\+State}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{alert\+Notify\+State}{alertNotifyState}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf alert\+Notify\+State}}\hypertarget{group___b_l_e___a_n_s_ga070e27685d9277855911bab2da81193e}{}\label{group___b_l_e___a_n_s_ga070e27685d9277855911bab2da81193e}
+
+
+Alert Notify State (enable/disable) 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+O\+T\+I\+F\+Y\+\_\+\+D\+I\+S\+A\+B\+LE@{N\+O\+T\+I\+F\+Y\+\_\+\+D\+I\+S\+A\+B\+LE}!Ble Alert Notify Service@{Ble Alert Notify Service}}\index{Ble Alert Notify Service@{Ble Alert Notify Service}!N\+O\+T\+I\+F\+Y\+\_\+\+D\+I\+S\+A\+B\+LE@{N\+O\+T\+I\+F\+Y\+\_\+\+D\+I\+S\+A\+B\+LE}}\item[{\em 
+N\+O\+T\+I\+F\+Y\+\_\+\+D\+I\+S\+A\+B\+LE\hypertarget{group___b_l_e___a_n_s_gga070e27685d9277855911bab2da81193eab210d2305b05b39a04ae65f0adba0a2b}{}\label{group___b_l_e___a_n_s_gga070e27685d9277855911bab2da81193eab210d2305b05b39a04ae65f0adba0a2b}
+}]Alert Notify Disable \index{N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+B\+LE@{N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+B\+LE}!Ble Alert Notify Service@{Ble Alert Notify Service}}\index{Ble Alert Notify Service@{Ble Alert Notify Service}!N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+B\+LE@{N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+B\+LE}}\item[{\em 
+N\+O\+T\+I\+F\+Y\+\_\+\+E\+N\+A\+B\+LE\hypertarget{group___b_l_e___a_n_s_gga070e27685d9277855911bab2da81193eaa8f7536179be42b2c58e5a219618a82b}{}\label{group___b_l_e___a_n_s_gga070e27685d9277855911bab2da81193eaa8f7536179be42b2c58e5a219618a82b}
+}]Alert Notify Enable \end{description}
+\end{Desc}
+\index{Ble Alert Notify Service@{Ble Alert Notify Service}!B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Attribute\+Index@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Attribute\+Index}}
+\index{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Attribute\+Index@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Attribute\+Index}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Attribute\+Index}{BLE_ANS_AttributeIndex}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Attribute\+Index}}\hypertarget{group___b_l_e___a_n_s_ga80f34b5cfd2798b30f32bd666c2f82e8}{}\label{group___b_l_e___a_n_s_ga80f34b5cfd2798b30f32bd666c2f82e8}
+
+
+Attribute number in the app defined Service Table. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+P\+R\+I\+M\+A\+R\+Y\+\_\+\+S\+E\+R\+V\+I\+CE@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+P\+R\+I\+M\+A\+R\+Y\+\_\+\+S\+E\+R\+V\+I\+CE}!Ble Alert Notify Service@{Ble Alert Notify Service}}\index{Ble Alert Notify Service@{Ble Alert Notify Service}!I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+P\+R\+I\+M\+A\+R\+Y\+\_\+\+S\+E\+R\+V\+I\+CE@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+P\+R\+I\+M\+A\+R\+Y\+\_\+\+S\+E\+R\+V\+I\+CE}}\item[{\em 
+I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+P\+R\+I\+M\+A\+R\+Y\+\_\+\+S\+E\+R\+V\+I\+CE\hypertarget{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a2f5a0e00bf62844fd8a5b2c1a0c5b281}{}\label{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a2f5a0e00bf62844fd8a5b2c1a0c5b281}
+}]Index of alert notification primary service. \index{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY}!Ble Alert Notify Service@{Ble Alert Notify Service}}\index{Ble Alert Notify Service@{Ble Alert Notify Service}!I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY}}\item[{\em 
+I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY\hypertarget{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a8ed48018a098de74257f0530f883090e}{}\label{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a8ed48018a098de74257f0530f883090e}
+}]Index of supported new alert category characteristic. \index{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK}!Ble Alert Notify Service@{Ble Alert Notify Service}}\index{Ble Alert Notify Service@{Ble Alert Notify Service}!I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK}}\item[{\em 
+I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK\hypertarget{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a005f21e51ab0b78effc0888f097ff24e}{}\label{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a005f21e51ab0b78effc0888f097ff24e}
+}]Index of supported new alert category id bit mask. \index{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+RT@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+RT}!Ble Alert Notify Service@{Ble Alert Notify Service}}\index{Ble Alert Notify Service@{Ble Alert Notify Service}!I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+RT@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+RT}}\item[{\em 
+I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+RT\hypertarget{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a6d096fc1cda70df522ac597f624f30c3}{}\label{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a6d096fc1cda70df522ac597f624f30c3}
+}]Index of new alert characteristic. \index{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID}!Ble Alert Notify Service@{Ble Alert Notify Service}}\index{Ble Alert Notify Service@{Ble Alert Notify Service}!I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID}}\item[{\em 
+I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID\hypertarget{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a23346c42b2d943109442f2a3fafaef53}{}\label{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a23346c42b2d943109442f2a3fafaef53}
+}]Index of new alert category id. \index{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+C\+CD@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+C\+CD}!Ble Alert Notify Service@{Ble Alert Notify Service}}\index{Ble Alert Notify Service@{Ble Alert Notify Service}!I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+C\+CD@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+C\+CD}}\item[{\em 
+I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+N\+E\+W\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+C\+CD\hypertarget{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a45db40dca6efc90660231ec8d7f1f97e}{}\label{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a45db40dca6efc90660231ec8d7f1f97e}
+}]Index of new alert client characteristic configuration descriptor. \index{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY}!Ble Alert Notify Service@{Ble Alert Notify Service}}\index{Ble Alert Notify Service@{Ble Alert Notify Service}!I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY}}\item[{\em 
+I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+E\+G\+O\+RY\hypertarget{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8aea35b8fa80e7ce3e74e6db211d42fbc5}{}\label{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8aea35b8fa80e7ce3e74e6db211d42fbc5}
+}]Index of supported unread alert category characteristic. \index{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK}!Ble Alert Notify Service@{Ble Alert Notify Service}}\index{Ble Alert Notify Service@{Ble Alert Notify Service}!I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK}}\item[{\em 
+I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+I\+D\+\_\+\+B\+I\+T\+\_\+\+M\+A\+SK\hypertarget{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8ae7045c42fb78abc0c2c51182e0361f8a}{}\label{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8ae7045c42fb78abc0c2c51182e0361f8a}
+}]Index of supported unread alert category id bit mask. \index{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+US@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+US}!Ble Alert Notify Service@{Ble Alert Notify Service}}\index{Ble Alert Notify Service@{Ble Alert Notify Service}!I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+US@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+US}}\item[{\em 
+I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+US\hypertarget{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a25639101b36619824f7cf4c8eadd85d0}{}\label{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a25639101b36619824f7cf4c8eadd85d0}
+}]Index of unread alert status characteristic. \index{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID}!Ble Alert Notify Service@{Ble Alert Notify Service}}\index{Ble Alert Notify Service@{Ble Alert Notify Service}!I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID}}\item[{\em 
+I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+A\+T\+A\+G\+O\+R\+Y\+\_\+\+ID\hypertarget{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8aa5592ce348bbd1e4373f31b1cbc4970d}{}\label{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8aa5592ce348bbd1e4373f31b1cbc4970d}
+}]Index of unread alert status category id. \index{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+C\+CD@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+C\+CD}!Ble Alert Notify Service@{Ble Alert Notify Service}}\index{Ble Alert Notify Service@{Ble Alert Notify Service}!I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+C\+CD@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+C\+CD}}\item[{\em 
+I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+U\+N\+R\+E\+A\+D\+\_\+\+A\+L\+E\+R\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+C\+CD\hypertarget{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a4f38cc856f2e3675acc6a62896597e3b}{}\label{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a4f38cc856f2e3675acc6a62896597e3b}
+}]Index of unread alert status client characteristic configuration descriptor. \index{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+NT@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+NT}!Ble Alert Notify Service@{Ble Alert Notify Service}}\index{Ble Alert Notify Service@{Ble Alert Notify Service}!I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+NT@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+NT}}\item[{\em 
+I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+NT\hypertarget{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a5510d44e314809090a462fd40d30cefe}{}\label{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a5510d44e314809090a462fd40d30cefe}
+}]Index of alert notification control point. \index{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+V\+A\+L\+UE@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+V\+A\+L\+UE}!Ble Alert Notify Service@{Ble Alert Notify Service}}\index{Ble Alert Notify Service@{Ble Alert Notify Service}!I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+V\+A\+L\+UE@{I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+V\+A\+L\+UE}}\item[{\em 
+I\+N\+D\+E\+X\+\_\+\+A\+N\+S\+\_\+\+A\+L\+E\+R\+T\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+T\+R\+L\+\_\+\+P\+O\+I\+N\+T\+\_\+\+V\+A\+L\+UE\hypertarget{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8af168d38b6bcc6ed4f4358ce245030442}{}\label{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8af168d38b6bcc6ed4f4358ce245030442}
+}]Index of alert notification control point value. \index{T\+O\+T\+A\+L\+\_\+\+A\+N\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM@{T\+O\+T\+A\+L\+\_\+\+A\+N\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM}!Ble Alert Notify Service@{Ble Alert Notify Service}}\index{Ble Alert Notify Service@{Ble Alert Notify Service}!T\+O\+T\+A\+L\+\_\+\+A\+N\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM@{T\+O\+T\+A\+L\+\_\+\+A\+N\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM}}\item[{\em 
+T\+O\+T\+A\+L\+\_\+\+A\+N\+S\+\_\+\+A\+T\+T\+R\+\_\+\+N\+UM\hypertarget{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a271e98c2f9ba5ff30d5259a3b746e0e6}{}\label{group___b_l_e___a_n_s_gga80f34b5cfd2798b30f32bd666c2f82e8a271e98c2f9ba5ff30d5259a3b746e0e6}
+}]Total attribure number of alert notification service. \end{description}
+\end{Desc}
+
+
+\subsubsection{Function Documentation}
+\index{Ble Alert Notify Service@{Ble Alert Notify Service}!B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Add\+\_\+\+Supported\+New\+Alert\+Categories@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Add\+\_\+\+Supported\+New\+Alert\+Categories}}
+\index{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Add\+\_\+\+Supported\+New\+Alert\+Categories@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Add\+\_\+\+Supported\+New\+Alert\+Categories}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Add\+\_\+\+Supported\+New\+Alert\+Categories() large}{BLE_ANS_Add_SupportedNewAlertCategories() large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Add\+\_\+\+Supported\+New\+Alert\+Categories (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___a_n_s_gad19a07f6e6c2f3d1b2014caff90d2d5a}{}\label{group___b_l_e___a_n_s_gad19a07f6e6c2f3d1b2014caff90d2d5a}
+
+
+Add supported new alert categories. 
+
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Added new alert categories successfully. 
+\end{DoxyReturn}
+\index{Ble Alert Notify Service@{Ble Alert Notify Service}!B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Add\+\_\+\+Supported\+Unread\+Alert\+Categories@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Add\+\_\+\+Supported\+Unread\+Alert\+Categories}}
+\index{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Add\+\_\+\+Supported\+Unread\+Alert\+Categories@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Add\+\_\+\+Supported\+Unread\+Alert\+Categories}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Add\+\_\+\+Supported\+Unread\+Alert\+Categories() large}{BLE_ANS_Add_SupportedUnreadAlertCategories() large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Add\+\_\+\+Supported\+Unread\+Alert\+Categories (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___a_n_s_ga0058ffa32f5318301490f78c4d5d581f}{}\label{group___b_l_e___a_n_s_ga0058ffa32f5318301490f78c4d5d581f}
+
+
+Add supported unread alert categories. 
+
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Added unread alert categories successfully. 
+\end{DoxyReturn}
+\index{Ble Alert Notify Service@{Ble Alert Notify Service}!B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Catch\+\_\+\+Event@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Catch\+\_\+\+Event}}
+\index{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Catch\+\_\+\+Event@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Catch\+\_\+\+Event}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Catch\+\_\+\+Event(\+B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event X\+D\+A\+T\+A $\ast$p\+\_\+event) large}{BLE_ANS_Catch_Event(BLE_GATT_Event XDATA *p_event) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC void B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Catch\+\_\+\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} X\+D\+A\+TA $\ast$}]{p\+\_\+event}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___a_n_s_gaa7823cb45826351b92af25d1f0dfbd1b}{}\label{group___b_l_e___a_n_s_gaa7823cb45826351b92af25d1f0dfbd1b}
+
+
+Catch B\+L\+E\+\_\+\+G\+A\+TT events to get the A\+NS events. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+event} & Pointer to \hyperlink{struct_b_l_e___g_a_t_t___event}{B\+L\+E\+\_\+\+G\+A\+T\+T\+\_\+\+Event} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Catch B\+LE G\+A\+TT events configuration successfully. 
+\end{DoxyReturn}
+\index{Ble Alert Notify Service@{Ble Alert Notify Service}!B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Get\+\_\+supported\+New\+Alert\+Categories@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Get\+\_\+supported\+New\+Alert\+Categories}}
+\index{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Get\+\_\+supported\+New\+Alert\+Categories@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Get\+\_\+supported\+New\+Alert\+Categories}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Get\+\_\+supported\+New\+Alert\+Categories(u16 $\ast$p\+\_\+supported\+New\+Alert\+Categories) large}{BLE_ANS_Get_supportedNewAlertCategories(u16 *p_supportedNewAlertCategories) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Get\+\_\+supported\+New\+Alert\+Categories (
+\begin{DoxyParamCaption}
+\item[{u16 $\ast$}]{p\+\_\+supported\+New\+Alert\+Categories}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___a_n_s_gaeb367e2ef7c21652b9d7c64dc4b21521}{}\label{group___b_l_e___a_n_s_gaeb367e2ef7c21652b9d7c64dc4b21521}
+
+
+Get supported new alert categories. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+supported\+New\+Alert\+Categories} & copy supported new alert categories to this pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS copied supported new alert categories. 
+\end{DoxyReturn}
+\index{Ble Alert Notify Service@{Ble Alert Notify Service}!B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Get\+\_\+supported\+Unread\+Alert\+Categories@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Get\+\_\+supported\+Unread\+Alert\+Categories}}
+\index{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Get\+\_\+supported\+Unread\+Alert\+Categories@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Get\+\_\+supported\+Unread\+Alert\+Categories}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Get\+\_\+supported\+Unread\+Alert\+Categories(u16 $\ast$p\+\_\+supported\+Unread\+Alert\+Categories) large}{BLE_ANS_Get_supportedUnreadAlertCategories(u16 *p_supportedUnreadAlertCategories) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Get\+\_\+supported\+Unread\+Alert\+Categories (
+\begin{DoxyParamCaption}
+\item[{u16 $\ast$}]{p\+\_\+supported\+Unread\+Alert\+Categories}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___a_n_s_ga155e3f54a1cfbffa0d88c73399210ae3}{}\label{group___b_l_e___a_n_s_ga155e3f54a1cfbffa0d88c73399210ae3}
+
+
+Get supported unread alert categories. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+supported\+Unread\+Alert\+Categories} & copy supported unread alert categories to this pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS copied supported unread alert categories. 
+\end{DoxyReturn}
+\index{Ble Alert Notify Service@{Ble Alert Notify Service}!B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Init@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Init}}
+\index{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Init@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Init}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Init(\+A\+N\+S\+Process\+Routine ans\+Handler) large}{BLE_ANS_Init(ANSProcessRoutine ansHandler) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+N\+S\+Process\+Routine}}]{ans\+Handler}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___a_n_s_ga61c8e77a1c1bc963860a50fd8c432209}{}\label{group___b_l_e___a_n_s_ga61c8e77a1c1bc963860a50fd8c432209}
+
+
+Initialize B\+LE A\+NS. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ans\+Handler} & M\+B\+IoT callback function for B\+LE A\+NS events.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Initialize B\+LE A\+NS successfully. 
+\end{DoxyReturn}
+\index{Ble Alert Notify Service@{Ble Alert Notify Service}!B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Init\+\_\+\+Service@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Init\+\_\+\+Service}}
+\index{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Init\+\_\+\+Service@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Init\+\_\+\+Service}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Init\+\_\+\+Service() large}{BLE_ANS_Init_Service() large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Init\+\_\+\+Service (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___a_n_s_ga6424d11ab75b05bdb8d6ebec7a218d71}{}\label{group___b_l_e___a_n_s_ga6424d11ab75b05bdb8d6ebec7a218d71}
+
+
+Initialize B\+LE Alert Notification service table. 
+
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Initialize B\+LE Alert Notification service table successfully. 
+\end{DoxyReturn}
+\index{Ble Alert Notify Service@{Ble Alert Notify Service}!B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Error\+\_\+\+Response@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Error\+\_\+\+Response}}
+\index{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Error\+\_\+\+Response@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Error\+\_\+\+Response}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Error\+\_\+\+Response(u8 conn\+Handle, u8 err\+Code) large}{BLE_ANS_Send_Error_Response(u8 connHandle, u8 errCode) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Error\+\_\+\+Response (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{u8}]{err\+Code}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___a_n_s_gaad46fa2ee9dcec78ecd36415fdc5bcdb}{}\label{group___b_l_e___a_n_s_gaad46fa2ee9dcec78ecd36415fdc5bcdb}
+
+
+Send error response. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Connection handle. \\
+\hline
+\mbox{\tt in}  & {\em err\+Code} & unsupported command.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS sent error response successfully. 
+\end{DoxyReturn}
+\index{Ble Alert Notify Service@{Ble Alert Notify Service}!B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+New\+\_\+\+Alert@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+New\+\_\+\+Alert}}
+\index{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+New\+\_\+\+Alert@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+New\+\_\+\+Alert}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+New\+\_\+\+Alert(u8 conn\+Handle, B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+New\+Alert\+\_\+\+Message X\+D\+A\+T\+A $\ast$p\+\_\+ans\+New\+Alert\+Message) large}{BLE_ANS_Send_New_Alert(u8 connHandle, BLE_ANS_NewAlert_Message XDATA *p_ansNewAlertMessage) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+New\+\_\+\+Alert (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{{\bf B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+New\+Alert\+\_\+\+Message} X\+D\+A\+TA $\ast$}]{p\+\_\+ans\+New\+Alert\+Message}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___a_n_s_gac5b4e2bc46bad84b2c4b184437927ae1}{}\label{group___b_l_e___a_n_s_gac5b4e2bc46bad84b2c4b184437927ae1}
+
+
+Send new alert status. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Connection handle. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+ans\+New\+Alert\+Message} & pointer to \hyperlink{struct_b_l_e___a_n_s___new_alert___message}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+New\+Alert\+\_\+\+Message} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS sent new alert status successfully. 
+\end{DoxyReturn}
+\index{Ble Alert Notify Service@{Ble Alert Notify Service}!B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Unread\+\_\+\+Alert\+\_\+\+Status@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Unread\+\_\+\+Alert\+\_\+\+Status}}
+\index{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Unread\+\_\+\+Alert\+\_\+\+Status@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Unread\+\_\+\+Alert\+\_\+\+Status}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Unread\+\_\+\+Alert\+\_\+\+Status(u8 conn\+Handle, B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Unread\+Alert\+Status\+\_\+\+Message X\+D\+A\+T\+A $\ast$p\+\_\+ans\+Unread\+Alert\+Status\+Message) large}{BLE_ANS_Send_Unread_Alert_Status(u8 connHandle, BLE_ANS_UnreadAlertStatus_Message XDATA *p_ansUnreadAlertStatusMessage) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Unread\+\_\+\+Alert\+\_\+\+Status (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{{\bf B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Unread\+Alert\+Status\+\_\+\+Message} X\+D\+A\+TA $\ast$}]{p\+\_\+ans\+Unread\+Alert\+Status\+Message}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___a_n_s_ga12d36228c3f580967914f6ffa6876170}{}\label{group___b_l_e___a_n_s_ga12d36228c3f580967914f6ffa6876170}
+
+
+Send unread alert status. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Connection handle. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+ans\+Unread\+Alert\+Status\+Message} & pointer to \hyperlink{struct_b_l_e___a_n_s___unread_alert_status___message}{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Unread\+Alert\+Status\+\_\+\+Message} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS sent unread alert status successfully. 
+\end{DoxyReturn}
+\index{Ble Alert Notify Service@{Ble Alert Notify Service}!B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Write\+\_\+\+Response@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Write\+\_\+\+Response}}
+\index{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Write\+\_\+\+Response@{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Write\+\_\+\+Response}!Ble Alert Notify Service@{Ble Alert Notify Service}}
+\paragraph[{\texorpdfstring{B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Write\+\_\+\+Response(u8 conn\+Handle, u8 resp\+Type) large}{BLE_ANS_Send_Write_Response(u8 connHandle, u8 respType) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 B\+L\+E\+\_\+\+A\+N\+S\+\_\+\+Send\+\_\+\+Write\+\_\+\+Response (
+\begin{DoxyParamCaption}
+\item[{u8}]{conn\+Handle, }
+\item[{u8}]{resp\+Type}
+\end{DoxyParamCaption}
+)}\hypertarget{group___b_l_e___a_n_s_ga7e33cddd51ead14091de734720ce2478}{}\label{group___b_l_e___a_n_s_ga7e33cddd51ead14091de734720ce2478}
+
+
+Send write response. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em conn\+Handle} & Connection handle. \\
+\hline
+\mbox{\tt in}  & {\em resp\+Type} & write response type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS sent error response successfully. 
+\end{DoxyReturn}

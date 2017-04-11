@@ -1,0 +1,252 @@
+\hypertarget{group___i2_c}{}\subsection{I2C}
+\label{group___i2_c}\index{I2C@{I2C}}
+
+
+Definitions and prototypes for the I2C master application programming interface.  
+
+
+\subsubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___i2_c___m_a_x___s_i_z_e___d_e_f}{I2\+C\+\_\+\+M\+A\+X\+\_\+\+S\+I\+Z\+E\+\_\+\+D\+EF}
+\begin{DoxyCompactList}\small\item\em Maximum length of tx and rx bus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_a_p_p___i2_c___combine_w_r_paras}{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+W\+R\+Paras}
+\begin{DoxyCompactList}\small\item\em The struct of A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+WR parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_a_p_p___i2_c___combine_w_r_paras}{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+W\+R\+Paras} \hyperlink{group___i2_c_gaaf35ba903a08c04ed6c7d2b614222d32}{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+W\+R\+Paras}\hypertarget{group___i2_c_gaaf35ba903a08c04ed6c7d2b614222d32}{}\label{group___i2_c_gaaf35ba903a08c04ed6c7d2b614222d32}
+
+\begin{DoxyCompactList}\small\item\em The struct of A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+WR parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___i2_c_ga92ff849d9f99fb734695416e22ca1b97}{I2\+C\+\_\+\+B\+U\+S\+\_\+\+S\+P\+E\+ED} \{ \\*
+\hyperlink{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97abdff36ba6d04bee4a77001e9a66d50ae}{D\+I\+V\+\_\+\+T\+O\+\_\+400\+\_\+\+K\+Hz} = 0, 
+\hyperlink{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97ac91b2d415f3f50b2e4559af21ccde3a0}{D\+I\+V\+\_\+\+T\+O\+\_\+200\+\_\+\+K\+Hz}, 
+\hyperlink{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97a448bd277fdcd2c8e2e7e3d095cc47995}{D\+I\+V\+\_\+\+T\+O\+\_\+100\+\_\+\+K\+Hz}, 
+\hyperlink{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97ae0e51c6aa1e307835e841dd7007e2d9c}{D\+I\+V\+\_\+\+T\+O\+\_\+50\+\_\+\+K\+Hz}, 
+\\*
+\hyperlink{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97ab28cedbac171374165ea93b986cbec45}{D\+I\+V\+\_\+\+T\+O\+\_\+25\+\_\+\+K\+Hz}, 
+\hyperlink{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97ab8e01c09fd730f9762effc84e449b930}{D\+I\+V\+\_\+\+T\+O\+\_\+12\+\_\+5\+\_\+\+K\+Hz}
+ \}\begin{DoxyCompactList}\small\item\em Definition of I2C bus speed. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group___i2_c_ga1f6e0007f06d9712a8d57167530cc984}{I2\+C\+\_\+\+N\+A\+C\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+EF} \{ \hyperlink{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984abf3f27cbb9b0d3d1e946cd982dade735}{I2\+C\+\_\+\+E\+R\+R\+\_\+\+A\+D\+D\+R\+\_\+\+N\+A\+CK} =M\+T\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+P\+E\+R\+I\+P\+H\+E\+R\+A\+L\+\_\+\+I2\+C\+\_\+\+B\+A\+SE, 
+\hyperlink{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984a33888d4daf24dc7226e29d514492c271}{I2\+C\+\_\+\+E\+R\+R\+\_\+\+D\+A\+T\+A\+\_\+\+N\+A\+CK}, 
+\hyperlink{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984afd3a4e5b2b2195efea25aec929ab29f0}{I2\+C\+\_\+\+E\+R\+R\+\_\+\+N\+O\+\_\+\+C\+O\+N\+F\+IG}, 
+\hyperlink{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984acaf0aa258bfadc9ea0d22497b7629a63}{I2\+C\+\_\+\+E\+R\+R\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+E\+X\+C\+E\+E\+D\+ED}
+ \}\begin{DoxyCompactList}\small\item\em Definition of I2C error code. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___i2_c_ga90c9e55c3a8c331ef5b27243b02d5a80}{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Config} (u8 address, u8 speed) large
+\begin{DoxyCompactList}\small\item\em I2C configuration. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC void \hyperlink{group___i2_c_gacd42875c30230b785ce926891825ecab}{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Close} (void) large\hypertarget{group___i2_c_gacd42875c30230b785ce926891825ecab}{}\label{group___i2_c_gacd42875c30230b785ce926891825ecab}
+
+\begin{DoxyCompactList}\small\item\em Free I2C bus, the occupied G\+P\+IO pins return to input and internal pull high. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___i2_c_ga07c0f332850e2a2548e5789707f3036c}{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Write} (u8 len, u8 X\+D\+A\+TA $\ast$p\+\_\+write) large
+\begin{DoxyCompactList}\small\item\em Send data to I2C slave side. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___i2_c_gacebf2b81469bc11fdb65f62085f7347f}{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Read} (u8 len, u8 X\+D\+A\+TA $\ast$p\+\_\+read) large
+\begin{DoxyCompactList}\small\item\em Get data from I2C Slave side. \end{DoxyCompactList}\item 
+P\+U\+B\+L\+IC u16 \hyperlink{group___i2_c_ga01dba2fc51cd940042bc0e620de80c8f}{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+WR} (\hyperlink{struct_a_p_p___i2_c___combine_w_r_paras}{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+W\+R\+Paras} X\+D\+A\+TA $\ast$p\+\_\+combine\+W\+R\+Paras) large
+\begin{DoxyCompactList}\small\item\em Send data to I2C slave side and then get data from I2C slave side. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Definitions and prototypes for the I2C master application programming interface. 
+
+
+
+\subsubsection{Enumeration Type Documentation}
+\index{I2C@{I2C}!I2\+C\+\_\+\+B\+U\+S\+\_\+\+S\+P\+E\+ED@{I2\+C\+\_\+\+B\+U\+S\+\_\+\+S\+P\+E\+ED}}
+\index{I2\+C\+\_\+\+B\+U\+S\+\_\+\+S\+P\+E\+ED@{I2\+C\+\_\+\+B\+U\+S\+\_\+\+S\+P\+E\+ED}!I2C@{I2C}}
+\paragraph[{\texorpdfstring{I2\+C\+\_\+\+B\+U\+S\+\_\+\+S\+P\+E\+ED}{I2C_BUS_SPEED}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf I2\+C\+\_\+\+B\+U\+S\+\_\+\+S\+P\+E\+ED}}\hypertarget{group___i2_c_ga92ff849d9f99fb734695416e22ca1b97}{}\label{group___i2_c_ga92ff849d9f99fb734695416e22ca1b97}
+
+
+Definition of I2C bus speed. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\+I\+V\+\_\+\+T\+O\+\_\+400\+\_\+\+K\+Hz@{D\+I\+V\+\_\+\+T\+O\+\_\+400\+\_\+\+K\+Hz}!I2C@{I2C}}\index{I2C@{I2C}!D\+I\+V\+\_\+\+T\+O\+\_\+400\+\_\+\+K\+Hz@{D\+I\+V\+\_\+\+T\+O\+\_\+400\+\_\+\+K\+Hz}}\item[{\em 
+D\+I\+V\+\_\+\+T\+O\+\_\+400\+\_\+\+K\+Hz\hypertarget{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97abdff36ba6d04bee4a77001e9a66d50ae}{}\label{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97abdff36ba6d04bee4a77001e9a66d50ae}
+}]400\+K\+Hz,fast mode. \index{D\+I\+V\+\_\+\+T\+O\+\_\+200\+\_\+\+K\+Hz@{D\+I\+V\+\_\+\+T\+O\+\_\+200\+\_\+\+K\+Hz}!I2C@{I2C}}\index{I2C@{I2C}!D\+I\+V\+\_\+\+T\+O\+\_\+200\+\_\+\+K\+Hz@{D\+I\+V\+\_\+\+T\+O\+\_\+200\+\_\+\+K\+Hz}}\item[{\em 
+D\+I\+V\+\_\+\+T\+O\+\_\+200\+\_\+\+K\+Hz\hypertarget{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97ac91b2d415f3f50b2e4559af21ccde3a0}{}\label{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97ac91b2d415f3f50b2e4559af21ccde3a0}
+}]200\+K\+Hz. \index{D\+I\+V\+\_\+\+T\+O\+\_\+100\+\_\+\+K\+Hz@{D\+I\+V\+\_\+\+T\+O\+\_\+100\+\_\+\+K\+Hz}!I2C@{I2C}}\index{I2C@{I2C}!D\+I\+V\+\_\+\+T\+O\+\_\+100\+\_\+\+K\+Hz@{D\+I\+V\+\_\+\+T\+O\+\_\+100\+\_\+\+K\+Hz}}\item[{\em 
+D\+I\+V\+\_\+\+T\+O\+\_\+100\+\_\+\+K\+Hz\hypertarget{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97a448bd277fdcd2c8e2e7e3d095cc47995}{}\label{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97a448bd277fdcd2c8e2e7e3d095cc47995}
+}]100\+K\+Hz. \index{D\+I\+V\+\_\+\+T\+O\+\_\+50\+\_\+\+K\+Hz@{D\+I\+V\+\_\+\+T\+O\+\_\+50\+\_\+\+K\+Hz}!I2C@{I2C}}\index{I2C@{I2C}!D\+I\+V\+\_\+\+T\+O\+\_\+50\+\_\+\+K\+Hz@{D\+I\+V\+\_\+\+T\+O\+\_\+50\+\_\+\+K\+Hz}}\item[{\em 
+D\+I\+V\+\_\+\+T\+O\+\_\+50\+\_\+\+K\+Hz\hypertarget{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97ae0e51c6aa1e307835e841dd7007e2d9c}{}\label{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97ae0e51c6aa1e307835e841dd7007e2d9c}
+}]50\+K\+Hz. \index{D\+I\+V\+\_\+\+T\+O\+\_\+25\+\_\+\+K\+Hz@{D\+I\+V\+\_\+\+T\+O\+\_\+25\+\_\+\+K\+Hz}!I2C@{I2C}}\index{I2C@{I2C}!D\+I\+V\+\_\+\+T\+O\+\_\+25\+\_\+\+K\+Hz@{D\+I\+V\+\_\+\+T\+O\+\_\+25\+\_\+\+K\+Hz}}\item[{\em 
+D\+I\+V\+\_\+\+T\+O\+\_\+25\+\_\+\+K\+Hz\hypertarget{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97ab28cedbac171374165ea93b986cbec45}{}\label{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97ab28cedbac171374165ea93b986cbec45}
+}]25\+K\+Hz. \index{D\+I\+V\+\_\+\+T\+O\+\_\+12\+\_\+5\+\_\+\+K\+Hz@{D\+I\+V\+\_\+\+T\+O\+\_\+12\+\_\+5\+\_\+\+K\+Hz}!I2C@{I2C}}\index{I2C@{I2C}!D\+I\+V\+\_\+\+T\+O\+\_\+12\+\_\+5\+\_\+\+K\+Hz@{D\+I\+V\+\_\+\+T\+O\+\_\+12\+\_\+5\+\_\+\+K\+Hz}}\item[{\em 
+D\+I\+V\+\_\+\+T\+O\+\_\+12\+\_\+5\+\_\+\+K\+Hz\hypertarget{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97ab8e01c09fd730f9762effc84e449b930}{}\label{group___i2_c_gga92ff849d9f99fb734695416e22ca1b97ab8e01c09fd730f9762effc84e449b930}
+}]12.\+5\+K\+Hz. \end{description}
+\end{Desc}
+\index{I2C@{I2C}!I2\+C\+\_\+\+N\+A\+C\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+EF@{I2\+C\+\_\+\+N\+A\+C\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+EF}}
+\index{I2\+C\+\_\+\+N\+A\+C\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+EF@{I2\+C\+\_\+\+N\+A\+C\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+EF}!I2C@{I2C}}
+\paragraph[{\texorpdfstring{I2\+C\+\_\+\+N\+A\+C\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+EF}{I2C_NACK_STATUS_DEF}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf I2\+C\+\_\+\+N\+A\+C\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+EF}}\hypertarget{group___i2_c_ga1f6e0007f06d9712a8d57167530cc984}{}\label{group___i2_c_ga1f6e0007f06d9712a8d57167530cc984}
+
+
+Definition of I2C error code. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{I2\+C\+\_\+\+E\+R\+R\+\_\+\+A\+D\+D\+R\+\_\+\+N\+A\+CK@{I2\+C\+\_\+\+E\+R\+R\+\_\+\+A\+D\+D\+R\+\_\+\+N\+A\+CK}!I2C@{I2C}}\index{I2C@{I2C}!I2\+C\+\_\+\+E\+R\+R\+\_\+\+A\+D\+D\+R\+\_\+\+N\+A\+CK@{I2\+C\+\_\+\+E\+R\+R\+\_\+\+A\+D\+D\+R\+\_\+\+N\+A\+CK}}\item[{\em 
+I2\+C\+\_\+\+E\+R\+R\+\_\+\+A\+D\+D\+R\+\_\+\+N\+A\+CK\hypertarget{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984abf3f27cbb9b0d3d1e946cd982dade735}{}\label{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984abf3f27cbb9b0d3d1e946cd982dade735}
+}]Receives a N\+A\+CK on address. \index{I2\+C\+\_\+\+E\+R\+R\+\_\+\+D\+A\+T\+A\+\_\+\+N\+A\+CK@{I2\+C\+\_\+\+E\+R\+R\+\_\+\+D\+A\+T\+A\+\_\+\+N\+A\+CK}!I2C@{I2C}}\index{I2C@{I2C}!I2\+C\+\_\+\+E\+R\+R\+\_\+\+D\+A\+T\+A\+\_\+\+N\+A\+CK@{I2\+C\+\_\+\+E\+R\+R\+\_\+\+D\+A\+T\+A\+\_\+\+N\+A\+CK}}\item[{\em 
+I2\+C\+\_\+\+E\+R\+R\+\_\+\+D\+A\+T\+A\+\_\+\+N\+A\+CK\hypertarget{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984a33888d4daf24dc7226e29d514492c271}{}\label{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984a33888d4daf24dc7226e29d514492c271}
+}]Receives a N\+A\+CK on data. \index{I2\+C\+\_\+\+E\+R\+R\+\_\+\+N\+O\+\_\+\+C\+O\+N\+F\+IG@{I2\+C\+\_\+\+E\+R\+R\+\_\+\+N\+O\+\_\+\+C\+O\+N\+F\+IG}!I2C@{I2C}}\index{I2C@{I2C}!I2\+C\+\_\+\+E\+R\+R\+\_\+\+N\+O\+\_\+\+C\+O\+N\+F\+IG@{I2\+C\+\_\+\+E\+R\+R\+\_\+\+N\+O\+\_\+\+C\+O\+N\+F\+IG}}\item[{\em 
+I2\+C\+\_\+\+E\+R\+R\+\_\+\+N\+O\+\_\+\+C\+O\+N\+F\+IG\hypertarget{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984afd3a4e5b2b2195efea25aec929ab29f0}{}\label{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984afd3a4e5b2b2195efea25aec929ab29f0}
+}]I2C bus is not initialized. \index{I2\+C\+\_\+\+E\+R\+R\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+E\+X\+C\+E\+E\+D\+ED@{I2\+C\+\_\+\+E\+R\+R\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+E\+X\+C\+E\+E\+D\+ED}!I2C@{I2C}}\index{I2C@{I2C}!I2\+C\+\_\+\+E\+R\+R\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+E\+X\+C\+E\+E\+D\+ED@{I2\+C\+\_\+\+E\+R\+R\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+E\+X\+C\+E\+E\+D\+ED}}\item[{\em 
+I2\+C\+\_\+\+E\+R\+R\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+E\+X\+C\+E\+E\+D\+ED\hypertarget{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984acaf0aa258bfadc9ea0d22497b7629a63}{}\label{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984acaf0aa258bfadc9ea0d22497b7629a63}
+}]Data length is exceeded. \end{description}
+\end{Desc}
+
+
+\subsubsection{Function Documentation}
+\index{I2C@{I2C}!A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+WR@{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+WR}}
+\index{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+WR@{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+WR}!I2C@{I2C}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+W\+R(\+A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+W\+R\+Paras X\+D\+A\+T\+A $\ast$p\+\_\+combine\+W\+R\+Paras) large}{APP_I2C_CombineWR(APP_I2C_CombineWRParas XDATA *p_combineWRParas) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+WR (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+W\+R\+Paras} X\+D\+A\+TA $\ast$}]{p\+\_\+combine\+W\+R\+Paras}
+\end{DoxyParamCaption}
+)}\hypertarget{group___i2_c_ga01dba2fc51cd940042bc0e620de80c8f}{}\label{group___i2_c_ga01dba2fc51cd940042bc0e620de80c8f}
+
+
+Send data to I2C slave side and then get data from I2C slave side. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+combine\+W\+R\+Paras} & Pointer to \hyperlink{struct_a_p_p___i2_c___combine_w_r_paras}{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+W\+R\+Paras} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully send data to I2C slave side. 
+
+\hyperlink{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984afd3a4e5b2b2195efea25aec929ab29f0}{I2\+C\+\_\+\+E\+R\+R\+\_\+\+N\+O\+\_\+\+C\+O\+N\+F\+IG} I2C bus is not initialized. 
+
+\hyperlink{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984abf3f27cbb9b0d3d1e946cd982dade735}{I2\+C\+\_\+\+E\+R\+R\+\_\+\+A\+D\+D\+R\+\_\+\+N\+A\+CK} Receives a N\+A\+CK on address. 
+
+\hyperlink{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984acaf0aa258bfadc9ea0d22497b7629a63}{I2\+C\+\_\+\+E\+R\+R\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+E\+X\+C\+E\+E\+D\+ED} Data length is exceeded.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Example\+:~\newline
+ Send 20 bytes length of data to I2C slave side, and then get 10 bytes length of data form I2C slave.~\newline
+ X\+D\+A\+TA \hyperlink{struct_a_p_p___i2_c___combine_w_r_paras}{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+W\+R\+Paras} p\+\_\+combine\+WR;~\newline
+ p\+\_\+combine\+W\+R.\+len\+Write = 20;~\newline
+ xmemset(\&p\+\_\+combine\+W\+R.\+write\+Buffer, 0x11, p\+\_\+combine\+W\+R.\+len\+Write);~\newline
+ p\+\_\+combine\+W\+R.\+len\+Read = 10;~\newline
+ xmemset(\&p\+\_\+combine\+W\+R.\+read\+Buffer, 0, p\+\_\+combine\+W\+R.\+len\+Read);~\newline
+ A\+P\+P\+\_\+\+I2\+C\+\_\+\+Combine\+W\+R(\&p\+\_\+combine\+W\+R);~\newline
+
+\end{DoxyNote}
+\index{I2C@{I2C}!A\+P\+P\+\_\+\+I2\+C\+\_\+\+Config@{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Config}}
+\index{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Config@{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Config}!I2C@{I2C}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Config(u8 address, u8 speed) large}{APP_I2C_Config(u8 address, u8 speed) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+I2\+C\+\_\+\+Config (
+\begin{DoxyParamCaption}
+\item[{u8}]{address, }
+\item[{u8}]{speed}
+\end{DoxyParamCaption}
+)}\hypertarget{group___i2_c_ga90c9e55c3a8c331ef5b27243b02d5a80}{}\label{group___i2_c_ga90c9e55c3a8c331ef5b27243b02d5a80}
+
+
+I2C configuration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em address} & 7-\/bit address of the Slave. \\
+\hline
+\mbox{\tt in}  & {\em speed} & I2C bus speed, see \hyperlink{group___i2_c_ga92ff849d9f99fb734695416e22ca1b97}{I2\+C\+\_\+\+B\+U\+S\+\_\+\+S\+P\+E\+ED}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Configuring I2C successfully. 
+
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+RA Invalid parameters.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Two G\+P\+IO pins are occupied if I2C bus are enabled.~\newline
+ I2C S\+CL is pin P12, I2C S\+DA is pin P13.~\newline
+ Example\+:~\newline
+ Access E2prom by I2C bus.~\newline
+ E\+E\+P\+R\+O\+M(\+I2\+C slave) address is 0x\+A0. I2C bus speed is 200\+K\+Hz.~\newline
+ A\+P\+P\+\_\+\+I2\+C\+\_\+\+Config(0x\+A0, D\+I\+V\+\_\+\+T\+O\+\_\+200\+\_\+\+K\+Hz); 
+\end{DoxyNote}
+\index{I2C@{I2C}!A\+P\+P\+\_\+\+I2\+C\+\_\+\+Read@{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Read}}
+\index{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Read@{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Read}!I2C@{I2C}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Read(u8 len, u8 X\+D\+A\+T\+A $\ast$p\+\_\+read) large}{APP_I2C_Read(u8 len, u8 XDATA *p_read) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+I2\+C\+\_\+\+Read (
+\begin{DoxyParamCaption}
+\item[{u8}]{len, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+read}
+\end{DoxyParamCaption}
+)}\hypertarget{group___i2_c_gacebf2b81469bc11fdb65f62085f7347f}{}\label{group___i2_c_gacebf2b81469bc11fdb65f62085f7347f}
+
+
+Get data from I2C Slave side. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em len} & The data length of rx, maximun length sees \hyperlink{group___i2_c___m_a_x___s_i_z_e___d_e_f}{I2\+C\+\_\+\+M\+A\+X\+\_\+\+S\+I\+Z\+E\+\_\+\+D\+EF}. \\
+\hline
+\mbox{\tt out}  & {\em p\+\_\+read} & Pointer to the rx data buffer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully send data to I2C slave side. 
+
+\hyperlink{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984afd3a4e5b2b2195efea25aec929ab29f0}{I2\+C\+\_\+\+E\+R\+R\+\_\+\+N\+O\+\_\+\+C\+O\+N\+F\+IG} I2C bus is not initialized. 
+
+\hyperlink{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984abf3f27cbb9b0d3d1e946cd982dade735}{I2\+C\+\_\+\+E\+R\+R\+\_\+\+A\+D\+D\+R\+\_\+\+N\+A\+CK} Receives a N\+A\+CK on address. 
+
+\hyperlink{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984acaf0aa258bfadc9ea0d22497b7629a63}{I2\+C\+\_\+\+E\+R\+R\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+E\+X\+C\+E\+E\+D\+ED} Data length is exceeded.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Example\+:~\newline
+ Get 2 bytes length of data from I2C slave side. ~\newline
+ X\+D\+A\+TA u8 test\mbox{[}2\mbox{]};~\newline
+ A\+P\+P\+\_\+\+I2\+C\+\_\+\+Read(2, test);~\newline
+
+\end{DoxyNote}
+\index{I2C@{I2C}!A\+P\+P\+\_\+\+I2\+C\+\_\+\+Write@{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Write}}
+\index{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Write@{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Write}!I2C@{I2C}}
+\paragraph[{\texorpdfstring{A\+P\+P\+\_\+\+I2\+C\+\_\+\+Write(u8 len, u8 X\+D\+A\+T\+A $\ast$p\+\_\+write) large}{APP_I2C_Write(u8 len, u8 XDATA *p_write) large}}]{\setlength{\rightskip}{0pt plus 5cm}P\+U\+B\+L\+IC u16 A\+P\+P\+\_\+\+I2\+C\+\_\+\+Write (
+\begin{DoxyParamCaption}
+\item[{u8}]{len, }
+\item[{u8 X\+D\+A\+TA $\ast$}]{p\+\_\+write}
+\end{DoxyParamCaption}
+)}\hypertarget{group___i2_c_ga07c0f332850e2a2548e5789707f3036c}{}\label{group___i2_c_ga07c0f332850e2a2548e5789707f3036c}
+
+
+Send data to I2C slave side. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em len} & The data length of tx, maximun length sees \hyperlink{group___i2_c___m_a_x___s_i_z_e___d_e_f}{I2\+C\+\_\+\+M\+A\+X\+\_\+\+S\+I\+Z\+E\+\_\+\+D\+EF}. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+write} & Pointer to the tx data buffer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+B\+I\+O\+T\+\_\+\+R\+E\+S\+\_\+\+S\+U\+C\+C\+E\+SS Successfully send data to I2C slave side. 
+
+\hyperlink{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984afd3a4e5b2b2195efea25aec929ab29f0}{I2\+C\+\_\+\+E\+R\+R\+\_\+\+N\+O\+\_\+\+C\+O\+N\+F\+IG} I2C bus is not initialized. 
+
+\hyperlink{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984abf3f27cbb9b0d3d1e946cd982dade735}{I2\+C\+\_\+\+E\+R\+R\+\_\+\+A\+D\+D\+R\+\_\+\+N\+A\+CK} Receives a N\+A\+CK on address. 
+
+\hyperlink{group___i2_c_gga1f6e0007f06d9712a8d57167530cc984acaf0aa258bfadc9ea0d22497b7629a63}{I2\+C\+\_\+\+E\+R\+R\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+E\+X\+C\+E\+E\+D\+ED} Data length is exceeded.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Example\+:~\newline
+ Send 3 bytes length of data to I2C slave. ~\newline
+ X\+D\+A\+TA u8 test\mbox{[}3\mbox{]};~\newline
+ test\mbox{[}0\mbox{]}=0x\+C0;~\newline
+ test\mbox{[}1\mbox{]}=0x\+FF;~\newline
+ test\mbox{[}2\mbox{]}=0x\+EE;~\newline
+ A\+P\+P\+\_\+\+I2\+C\+\_\+\+Write(3, test);~\newline
+
+\end{DoxyNote}

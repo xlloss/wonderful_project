@@ -1,0 +1,50 @@
+\hypertarget{struct_b_l_e___a_n_c_s___evt___notify}{}\subsection{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify Struct Reference}
+\label{struct_b_l_e___a_n_c_s___evt___notify}\index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify}}
+
+
+i\+OS notification structure.  
+
+
+
+
+{\ttfamily \#include $<$ble\+\_\+ancs\+\_\+service.\+h$>$}
+
+\subsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___b_l_e___a_n_c_s_gaf8fe466493239548694a1a439f5b8bc0}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+Id\+\_\+\+Values} \hyperlink{struct_b_l_e___a_n_c_s___evt___notify_ab305cddebbb9a48f8b1c801e8061f062}{evt\+Id}
+\item 
+\hyperlink{struct_b_l_e___a_n_c_s___notify___flags}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Notify\+\_\+\+Flags} \hyperlink{struct_b_l_e___a_n_c_s___evt___notify_a1e6bcdb7cc9e01b6f5d6b500488fdbc7}{evt\+Flags}
+\item 
+\hyperlink{group___b_l_e___a_n_c_s_ga982bbd8a00c6ecff960d5196576dbba0}{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Category\+Id\+\_\+\+Values} \hyperlink{struct_b_l_e___a_n_c_s___evt___notify_a822feaaaeffd80d8abcc0656714b371a}{category\+Id}
+\item 
+u8 \hyperlink{struct_b_l_e___a_n_c_s___evt___notify_ac144c76d5e403f456b52a470b3cd543e}{category\+Count}
+\item 
+u32 \hyperlink{struct_b_l_e___a_n_c_s___evt___notify_aa89f38914f91f6dcafffde27ef802ae1}{notif\+\_\+\+U\+U\+ID}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+i\+OS notification structure. 
+
+\subsubsection{Member Data Documentation}
+\index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify}!category\+Count@{category\+Count}}
+\index{category\+Count@{category\+Count}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify}}
+\paragraph[{\texorpdfstring{category\+Count}{categoryCount}}]{\setlength{\rightskip}{0pt plus 5cm}u8 B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify\+::category\+Count}\hypertarget{struct_b_l_e___a_n_c_s___evt___notify_ac144c76d5e403f456b52a470b3cd543e}{}\label{struct_b_l_e___a_n_c_s___evt___notify_ac144c76d5e403f456b52a470b3cd543e}
+Current number of active notifications for this category ID. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify}!category\+Id@{category\+Id}}
+\index{category\+Id@{category\+Id}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify}}
+\paragraph[{\texorpdfstring{category\+Id}{categoryId}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Category\+Id\+\_\+\+Values} B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify\+::category\+Id}\hypertarget{struct_b_l_e___a_n_c_s___evt___notify_a822feaaaeffd80d8abcc0656714b371a}{}\label{struct_b_l_e___a_n_c_s___evt___notify_a822feaaaeffd80d8abcc0656714b371a}
+Classification of the notification type, for example, email or location. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify}!evt\+Flags@{evt\+Flags}}
+\index{evt\+Flags@{evt\+Flags}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify}}
+\paragraph[{\texorpdfstring{evt\+Flags}{evtFlags}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Notify\+\_\+\+Flags} B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify\+::evt\+Flags}\hypertarget{struct_b_l_e___a_n_c_s___evt___notify_a1e6bcdb7cc9e01b6f5d6b500488fdbc7}{}\label{struct_b_l_e___a_n_c_s___evt___notify_a1e6bcdb7cc9e01b6f5d6b500488fdbc7}
+Bitmask to signal if a special condition applies to the notification, for example, \char`\"{}\+Silent\char`\"{} or \char`\"{}\+Important\char`\"{}. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify}!evt\+Id@{evt\+Id}}
+\index{evt\+Id@{evt\+Id}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify}}
+\paragraph[{\texorpdfstring{evt\+Id}{evtId}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+Id\+\_\+\+Values} B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify\+::evt\+Id}\hypertarget{struct_b_l_e___a_n_c_s___evt___notify_ab305cddebbb9a48f8b1c801e8061f062}{}\label{struct_b_l_e___a_n_c_s___evt___notify_ab305cddebbb9a48f8b1c801e8061f062}
+Whether the notification was added, removed, or modified. \index{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify}!notif\+\_\+\+U\+U\+ID@{notif\+\_\+\+U\+U\+ID}}
+\index{notif\+\_\+\+U\+U\+ID@{notif\+\_\+\+U\+U\+ID}!B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify@{B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify}}
+\paragraph[{\texorpdfstring{notif\+\_\+\+U\+U\+ID}{notif_UUID}}]{\setlength{\rightskip}{0pt plus 5cm}u32 B\+L\+E\+\_\+\+A\+N\+C\+S\+\_\+\+Evt\+\_\+\+Notify\+::notif\+\_\+\+U\+U\+ID}\hypertarget{struct_b_l_e___a_n_c_s___evt___notify_aa89f38914f91f6dcafffde27ef802ae1}{}\label{struct_b_l_e___a_n_c_s___evt___notify_aa89f38914f91f6dcafffde27ef802ae1}
+Notification U\+ID. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+B\+L\+E\+\_\+\+Service/ble\+\_\+ancs\+\_\+service.\+h\end{DoxyCompactItemize}

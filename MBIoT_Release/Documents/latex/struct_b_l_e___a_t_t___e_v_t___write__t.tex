@@ -1,0 +1,60 @@
+\hypertarget{struct_b_l_e___a_t_t___e_v_t___write__t}{}\subsection{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t Struct Reference}
+\label{struct_b_l_e___a_t_t___e_v_t___write__t}\index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}}
+
+
+G\+A\+TT E\+V\+E\+NT Write Request Parameters.  
+
+
+
+
+{\ttfamily \#include $<$ble\+\_\+gatt.\+h$>$}
+
+\subsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+u8 \hyperlink{struct_b_l_e___a_t_t___e_v_t___write__t_a194cae0c814ddbab6f128daf30a38a76}{conn\+Handle}
+\item 
+u16 \hyperlink{struct_b_l_e___a_t_t___e_v_t___write__t_a4941bfa5cdcb87938bbe50adfe39169a}{char\+Handle}
+\item 
+u8 \hyperlink{struct_b_l_e___a_t_t___e_v_t___write__t_ab80fc4f4dda9f2b98b45bf1b71d1c9fe}{write\+Type}
+\item 
+u16 \hyperlink{struct_b_l_e___a_t_t___e_v_t___write__t_a730e34f88af2d5b0ba9e02a7bdb698ae}{value\+Offset}
+\item 
+u8 \hyperlink{struct_b_l_e___a_t_t___e_v_t___write__t_a6975ba28b678e3120cb99ac2fa4963f0}{flags}
+\item 
+u16 \hyperlink{struct_b_l_e___a_t_t___e_v_t___write__t_a4a8a607c349cdedb0e67f96463ca7c47}{write\+Data\+Length}
+\item 
+u8 X\+D\+A\+TA $\ast$ \hyperlink{struct_b_l_e___a_t_t___e_v_t___write__t_afdedd38ebfaf004b919426aab36eb16b}{p\+\_\+char\+Value}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+G\+A\+TT E\+V\+E\+NT Write Request Parameters. 
+
+\subsubsection{Member Data Documentation}
+\index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}!char\+Handle@{char\+Handle}}
+\index{char\+Handle@{char\+Handle}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}}
+\paragraph[{\texorpdfstring{char\+Handle}{charHandle}}]{\setlength{\rightskip}{0pt plus 5cm}u16 B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t\+::char\+Handle}\hypertarget{struct_b_l_e___a_t_t___e_v_t___write__t_a4941bfa5cdcb87938bbe50adfe39169a}{}\label{struct_b_l_e___a_t_t___e_v_t___write__t_a4941bfa5cdcb87938bbe50adfe39169a}
+The handle of the attribute to be written. \index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}!conn\+Handle@{conn\+Handle}}
+\index{conn\+Handle@{conn\+Handle}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}}
+\paragraph[{\texorpdfstring{conn\+Handle}{connHandle}}]{\setlength{\rightskip}{0pt plus 5cm}u8 B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t\+::conn\+Handle}\hypertarget{struct_b_l_e___a_t_t___e_v_t___write__t_a194cae0c814ddbab6f128daf30a38a76}{}\label{struct_b_l_e___a_t_t___e_v_t___write__t_a194cae0c814ddbab6f128daf30a38a76}
+Connection Handle. \index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}!flags@{flags}}
+\index{flags@{flags}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}}
+\paragraph[{\texorpdfstring{flags}{flags}}]{\setlength{\rightskip}{0pt plus 5cm}u8 B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t\+::flags}\hypertarget{struct_b_l_e___a_t_t___e_v_t___write__t_a6975ba28b678e3120cb99ac2fa4963f0}{}\label{struct_b_l_e___a_t_t___e_v_t___write__t_a6975ba28b678e3120cb99ac2fa4963f0}
+Flags for Execute Write Request. \index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}!p\+\_\+char\+Value@{p\+\_\+char\+Value}}
+\index{p\+\_\+char\+Value@{p\+\_\+char\+Value}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}}
+\paragraph[{\texorpdfstring{p\+\_\+char\+Value}{p_charValue}}]{\setlength{\rightskip}{0pt plus 5cm}u8 X\+D\+A\+TA$\ast$ B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t\+::p\+\_\+char\+Value}\hypertarget{struct_b_l_e___a_t_t___e_v_t___write__t_afdedd38ebfaf004b919426aab36eb16b}{}\label{struct_b_l_e___a_t_t___e_v_t___write__t_afdedd38ebfaf004b919426aab36eb16b}
+The value to be written to the attribute. \index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}!value\+Offset@{value\+Offset}}
+\index{value\+Offset@{value\+Offset}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}}
+\paragraph[{\texorpdfstring{value\+Offset}{valueOffset}}]{\setlength{\rightskip}{0pt plus 5cm}u16 B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t\+::value\+Offset}\hypertarget{struct_b_l_e___a_t_t___e_v_t___write__t_a730e34f88af2d5b0ba9e02a7bdb698ae}{}\label{struct_b_l_e___a_t_t___e_v_t___write__t_a730e34f88af2d5b0ba9e02a7bdb698ae}
+Value offset for Prepare Write Request. \index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}!write\+Data\+Length@{write\+Data\+Length}}
+\index{write\+Data\+Length@{write\+Data\+Length}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}}
+\paragraph[{\texorpdfstring{write\+Data\+Length}{writeDataLength}}]{\setlength{\rightskip}{0pt plus 5cm}u16 B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t\+::write\+Data\+Length}\hypertarget{struct_b_l_e___a_t_t___e_v_t___write__t_a4a8a607c349cdedb0e67f96463ca7c47}{}\label{struct_b_l_e___a_t_t___e_v_t___write__t_a4a8a607c349cdedb0e67f96463ca7c47}
+Length of the written data. \index{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}!write\+Type@{write\+Type}}
+\index{write\+Type@{write\+Type}!B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t@{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t}}
+\paragraph[{\texorpdfstring{write\+Type}{writeType}}]{\setlength{\rightskip}{0pt plus 5cm}u8 B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+E\+V\+T\+\_\+\+Write\+\_\+t\+::write\+Type}\hypertarget{struct_b_l_e___a_t_t___e_v_t___write__t_ab80fc4f4dda9f2b98b45bf1b71d1c9fe}{}\label{struct_b_l_e___a_t_t___e_v_t___write__t_ab80fc4f4dda9f2b98b45bf1b71d1c9fe}
+Write Type. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+B\+L\+E/ble\+\_\+gatt.\+h\end{DoxyCompactItemize}

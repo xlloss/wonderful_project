@@ -1,0 +1,72 @@
+\hypertarget{struct_a_p_p___u_a_r_t___conf_paras}{}\subsection{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras Struct Reference}
+\label{struct_a_p_p___u_a_r_t___conf_paras}\index{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}}
+
+
+The structure of U\+A\+RT configuration parameters.  
+
+
+
+
+{\ttfamily \#include $<$uart.\+h$>$}
+
+\subsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+u8 \hyperlink{struct_a_p_p___u_a_r_t___conf_paras_a44c82eefdb9983db1acd6ca61e7ae2da}{baudrate}
+\item 
+u8 \hyperlink{struct_a_p_p___u_a_r_t___conf_paras_a874c375f80b2329e3a1cb485d94b9cb3}{flow\+Contol}
+\item 
+u16 \hyperlink{struct_a_p_p___u_a_r_t___conf_paras_a2bbafd648dba36ed57035ab029c31104}{rx\+Notify\+Length}
+\item 
+u16 \hyperlink{struct_a_p_p___u_a_r_t___conf_paras_aa600bf0e3bc9cb82642d01d348378c82}{rx\+Buffer\+Size}
+\item 
+u8 X\+D\+A\+TA $\ast$ \hyperlink{struct_a_p_p___u_a_r_t___conf_paras_a7647cd1d40dbdbde863d7a3efa6321e8}{rx\+Buffer}
+\item 
+u16 \hyperlink{struct_a_p_p___u_a_r_t___conf_paras_a82655de0151751621b334938ee53bd8d}{tx\+Buffer\+Size}
+\item 
+u8 X\+D\+A\+TA $\ast$ \hyperlink{struct_a_p_p___u_a_r_t___conf_paras_a630a0cba4876c9d9139695ac3b7c7ca5}{tx\+Buffer}
+\item 
+u8 \hyperlink{struct_a_p_p___u_a_r_t___conf_paras_a090955f2d6580707c9550c1f5139b41e}{rx\+Wakeup\+Pin\+Num}
+\item 
+u8 \hyperlink{struct_a_p_p___u_a_r_t___conf_paras_aaf8ef206c38d3b47a4e730f799c82846}{tx\+Indicate\+Interval}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+The structure of U\+A\+RT configuration parameters. 
+
+\subsubsection{Member Data Documentation}
+\index{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}!baudrate@{baudrate}}
+\index{baudrate@{baudrate}!A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}}
+\paragraph[{\texorpdfstring{baudrate}{baudrate}}]{\setlength{\rightskip}{0pt plus 5cm}u8 A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras\+::baudrate}\hypertarget{struct_a_p_p___u_a_r_t___conf_paras_a44c82eefdb9983db1acd6ca61e7ae2da}{}\label{struct_a_p_p___u_a_r_t___conf_paras_a44c82eefdb9983db1acd6ca61e7ae2da}
+U\+A\+RT baud rate, see \hyperlink{group___u_a_r_t___b_a_u_d_r_a_t_e___d_e_f}{U\+A\+R\+T\+\_\+\+B\+A\+U\+D\+R\+A\+T\+E\+\_\+\+D\+EF}. \index{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}!flow\+Contol@{flow\+Contol}}
+\index{flow\+Contol@{flow\+Contol}!A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}}
+\paragraph[{\texorpdfstring{flow\+Contol}{flowContol}}]{\setlength{\rightskip}{0pt plus 5cm}u8 A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras\+::flow\+Contol}\hypertarget{struct_a_p_p___u_a_r_t___conf_paras_a874c375f80b2329e3a1cb485d94b9cb3}{}\label{struct_a_p_p___u_a_r_t___conf_paras_a874c375f80b2329e3a1cb485d94b9cb3}
+U\+A\+RT flow control option, see \hyperlink{group___u_a_r_t___f_l_o_w___c_o_n_t_r_o_l___d_e_f}{U\+A\+R\+T\+\_\+\+F\+L\+O\+W\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+D\+EF}.~\newline
+ If the parameter is set to A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+F\+L\+O\+W\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+E\+N\+A\+B\+LE, then the G\+P\+IO P00 is occupied for U\+A\+R\+T\+\_\+\+C\+TS and the G\+P\+IO P36 is occupied for U\+A\+R\+T\+\_\+\+R\+TS. \index{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}!rx\+Buffer@{rx\+Buffer}}
+\index{rx\+Buffer@{rx\+Buffer}!A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}}
+\paragraph[{\texorpdfstring{rx\+Buffer}{rxBuffer}}]{\setlength{\rightskip}{0pt plus 5cm}u8 X\+D\+A\+TA$\ast$ A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras\+::rx\+Buffer}\hypertarget{struct_a_p_p___u_a_r_t___conf_paras_a7647cd1d40dbdbde863d7a3efa6321e8}{}\label{struct_a_p_p___u_a_r_t___conf_paras_a7647cd1d40dbdbde863d7a3efa6321e8}
+Pointer to the U\+A\+RT RX buffer. \index{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}!rx\+Buffer\+Size@{rx\+Buffer\+Size}}
+\index{rx\+Buffer\+Size@{rx\+Buffer\+Size}!A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}}
+\paragraph[{\texorpdfstring{rx\+Buffer\+Size}{rxBufferSize}}]{\setlength{\rightskip}{0pt plus 5cm}u16 A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras\+::rx\+Buffer\+Size}\hypertarget{struct_a_p_p___u_a_r_t___conf_paras_aa600bf0e3bc9cb82642d01d348378c82}{}\label{struct_a_p_p___u_a_r_t___conf_paras_aa600bf0e3bc9cb82642d01d348378c82}
+U\+A\+RT RX buffer size, see the minimum limition \hyperlink{group___u_a_r_t___m_i_n_i_m_u_m___b_u_f_f_e_r___l_e_n_ga51ca08a6719a231ab16b26d5f7b1eb1f}{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+M\+I\+N\+\_\+\+L\+E\+N\+G\+TH}. \index{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}!rx\+Notify\+Length@{rx\+Notify\+Length}}
+\index{rx\+Notify\+Length@{rx\+Notify\+Length}!A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}}
+\paragraph[{\texorpdfstring{rx\+Notify\+Length}{rxNotifyLength}}]{\setlength{\rightskip}{0pt plus 5cm}u16 A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras\+::rx\+Notify\+Length}\hypertarget{struct_a_p_p___u_a_r_t___conf_paras_a2bbafd648dba36ed57035ab029c31104}{}\label{struct_a_p_p___u_a_r_t___conf_paras_a2bbafd648dba36ed57035ab029c31104}
+The length of queued data in U\+A\+RT RX buffer needs to be notified by U\+A\+RT callback event A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+E\+V\+T\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+D\+A\+TA. \index{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}!rx\+Wakeup\+Pin\+Num@{rx\+Wakeup\+Pin\+Num}}
+\index{rx\+Wakeup\+Pin\+Num@{rx\+Wakeup\+Pin\+Num}!A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}}
+\paragraph[{\texorpdfstring{rx\+Wakeup\+Pin\+Num}{rxWakeupPinNum}}]{\setlength{\rightskip}{0pt plus 5cm}u8 A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras\+::rx\+Wakeup\+Pin\+Num}\hypertarget{struct_a_p_p___u_a_r_t___conf_paras_a090955f2d6580707c9550c1f5139b41e}{}\label{struct_a_p_p___u_a_r_t___conf_paras_a090955f2d6580707c9550c1f5139b41e}
+The pin number used to wake up M\+B\+IoT from low power mode to receive U\+A\+RT data, see \hyperlink{group___g_p_i_o_ga92de7c3421c2bc82f5e88b4303991d1d}{G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+\+N\+U\+M\+\_\+\+D\+EF} \index{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}!tx\+Buffer@{tx\+Buffer}}
+\index{tx\+Buffer@{tx\+Buffer}!A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}}
+\paragraph[{\texorpdfstring{tx\+Buffer}{txBuffer}}]{\setlength{\rightskip}{0pt plus 5cm}u8 X\+D\+A\+TA$\ast$ A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras\+::tx\+Buffer}\hypertarget{struct_a_p_p___u_a_r_t___conf_paras_a630a0cba4876c9d9139695ac3b7c7ca5}{}\label{struct_a_p_p___u_a_r_t___conf_paras_a630a0cba4876c9d9139695ac3b7c7ca5}
+Pointer to the U\+A\+RT TX buffer. \index{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}!tx\+Buffer\+Size@{tx\+Buffer\+Size}}
+\index{tx\+Buffer\+Size@{tx\+Buffer\+Size}!A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}}
+\paragraph[{\texorpdfstring{tx\+Buffer\+Size}{txBufferSize}}]{\setlength{\rightskip}{0pt plus 5cm}u16 A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras\+::tx\+Buffer\+Size}\hypertarget{struct_a_p_p___u_a_r_t___conf_paras_a82655de0151751621b334938ee53bd8d}{}\label{struct_a_p_p___u_a_r_t___conf_paras_a82655de0151751621b334938ee53bd8d}
+U\+A\+RT TX buffer size, see the minimum limition \hyperlink{group___u_a_r_t___m_i_n_i_m_u_m___b_u_f_f_e_r___l_e_n_ga51ca08a6719a231ab16b26d5f7b1eb1f}{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+M\+I\+N\+\_\+\+L\+E\+N\+G\+TH}. \index{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}!tx\+Indicate\+Interval@{tx\+Indicate\+Interval}}
+\index{tx\+Indicate\+Interval@{tx\+Indicate\+Interval}!A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras@{A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras}}
+\paragraph[{\texorpdfstring{tx\+Indicate\+Interval}{txIndicateInterval}}]{\setlength{\rightskip}{0pt plus 5cm}u8 A\+P\+P\+\_\+\+U\+A\+R\+T\+\_\+\+Conf\+Paras\+::tx\+Indicate\+Interval}\hypertarget{struct_a_p_p___u_a_r_t___conf_paras_aaf8ef206c38d3b47a4e730f799c82846}{}\label{struct_a_p_p___u_a_r_t___conf_paras_aaf8ef206c38d3b47a4e730f799c82846}
+The timing setting of U\+A\+R\+T\+\_\+\+Tx\+\_\+\+Ind signal deasserted if tx\+Indicate\+Interval is not zero. U\+A\+R\+T\+\_\+\+Tx\+\_\+\+Ind is low before U\+A\+R\+T\+\_\+\+Tx packet is transmitted.~\newline
+ The G\+P\+IO P02 is occupied as U\+A\+R\+T\+\_\+\+Tx\+\_\+\+Ind if the value is not set to 0. (Unit\+: 625us) 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Peripheral/uart.\+h\end{DoxyCompactItemize}
