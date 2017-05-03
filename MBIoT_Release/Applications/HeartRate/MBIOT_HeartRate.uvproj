@@ -431,6 +431,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\Source\BLE_Service\ble_heart_rate_service.c</FilePath>
             </File>
+            <File>
+              <FileName>PUTCHAR.C</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\PUTCHAR.C</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -1,4 +1,4 @@
-﻿/********************************************************************
+/********************************************************************
   File Information:
     FileName:       application.c
     Processor:      8051
@@ -214,7 +214,7 @@ static void app_uart_parsing(u8 XDATA *p_payload)large reentrant
 					//index += (p_hrsMeasurement->rr_interval_count*2);
 				}
 				
-				BLE_HRS_Send_Measurement(p_app_conn->handle, p_hrsMeasurement);								
+				//BLE_HRS_Send_Measurement(p_app_conn->handle, p_hrsMeasurement);
 				APP_HEAP_Free((u8 XDATA*)p_hrsMeasurement);
 			} 
 		}

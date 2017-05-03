@@ -179,7 +179,8 @@ PUBLIC extern u16 BLE_HRS_Send_Error_Response(u8 connHandle, u8 errCode);
  *
  * @return @ref MBIOT_RES_SUCCESS		Send heart rate measurement successfully.
  */
-PUBLIC extern u16  BLE_HRS_Send_Measurement(u8 connHandle, BLE_HRS_Measurement XDATA * p_measurement) large;
+//PUBLIC extern u16  BLE_HRS_Send_Measurement(u8 connHandle, BLE_HRS_Measurement XDATA * p_measurement) large;
+PUBLIC extern u16  BLE_HRS_Send_Measurement(u8 connHandle) large;
 
 
 /**@brief Set the Body Sensor Location.

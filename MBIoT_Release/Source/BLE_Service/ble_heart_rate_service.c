@@ -207,67 +207,72 @@ PUBLIC u16 BLE_HRS_Send_Error_Response(u8 connHandle, u8 errCode)
 	return MBIOT_RES_OOM;
 }		
 
-PUBLIC u16 BLE_HRS_Send_Measurement(u8 connHandle, BLE_HRS_Measurement XDATA *p_measurement) large
+PUBLIC u16 BLE_HRS_Send_Measurement(u8 connHandle) large
 {
-	u16 XDATA result;
-	XDATA BLE_GATTS_HandleValueParams XDATA *p_value;
-	XDATA u8 measurement[MAX_HEART_RATE_MEASUREMENT_LEN]=0, index=0, i;
-		
-	//Configure Flags
-	(p_measurement->isHeartRateValueFormatsupportedBit)?(measurement[index]|=HEART_RATE_MEASUREMENT_FLAG_VALUE_FORMAT):(measurement[index]&=(~HEART_RATE_MEASUREMENT_FLAG_VALUE_FORMAT));
-	(p_measurement->isSensorContactSupportedBit)?(measurement[index]|=HEART_RATE_MEASUREMENT_FLAG_SENSOR_SUPPORTED):(measurement[index]&=(~HEART_RATE_MEASUREMENT_FLAG_SENSOR_SUPPORTED));//these are not conditional 
-	(p_measurement->isSensorContactDetectedBit)?(measurement[index]|=HEART_RATE_MEASUREMENT_FLAG_SENSOR_DETECTED):(measurement[index]&=(~HEART_RATE_MEASUREMENT_FLAG_SENSOR_DETECTED));// these are not condition
-	(p_measurement->isEnergyExpendedStatusBit)?(measurement[index]|=HEART_RATE_MEASUREMENT_FLAG_ENERGY_EXPENDED):(measurement[index]&=(~HEART_RATE_MEASUREMENT_FLAG_ENERGY_EXPENDED));
-	(p_measurement->isRRIntervalBit)?(measurement[index]|=HEART_RATE_MEASUREMENT_FLAG_RR_INTERVAL):(measurement[index]&=(~HEART_RATE_MEASUREMENT_FLAG_RR_INTERVAL));
-		
-  index++;
-  
-  if(p_measurement->isHeartRateValueFormatsupportedBit)
-	{
-		EQU_Swap_u16pt(&measurement[index],&p_measurement->heart_rate);
-		index+=2;//u16 bit
-	}
-	else
-	{
-		xmemcpy(&measurement[index],(u8 XDATA*)&p_measurement->heart_rate, 1);
-		index+=1;// u8 bit
-	}
-		
-	//Energy expended
-	if (p_measurement->isEnergyExpendedStatusBit)
-	{
-		//if(reset_energy_flag)
-		//{
-		//	memset((u8 XDATA *)&p_measurement->energy_expended,0,2);
-		//	reset_energy_flag = 0;//0
-		//}//This logic moved to application.c
-		EQU_Swap_u16pt(&measurement[index],&p_measurement->energy_expended);
-		index+=sizeof(p_measurement->energy_expended);
-	}
-
-    // Encode rr_interval values
-  if (p_measurement->isRRIntervalBit)			
-  {
-		if(p_measurement->rr_interval_count > BLE_HRS_MAX_BUFFERED_RR_INTERVALS)
-		{
-			p_measurement->rr_interval_count = BLE_HRS_MAX_BUFFERED_RR_INTERVALS;
-		}
-    for (i = 0; i < p_measurement->rr_interval_count; i++)
-    {
-			EQU_Swap_u16pt(&measurement[index],&p_measurement->rr_interval[i]);
-			index+=2;
-		}
-	}
-	p_value = (BLE_GATTS_HandleValueParams*)APP_HEAP_Alloc(sizeof(BLE_GATTS_HandleValueParams));
-	if(p_value!=NULL)
-	{
-		p_value->charHandle=HRMearsuementHandle;
-		p_value->charLength=index;
-		p_value->sendType=BLE_GATT_HV_NOTIFICATION;
-		xmemcpy_u16(p_value->charValue, measurement, p_value->charLength);
-		result=BLE_GATTS_SendHandleValue(connHandle, p_value);
-		APP_HEAP_Free((u8 XDATA *)p_value);
-		return result;
-	}
 	return MBIOT_RES_OOM;
 }
+
+//PUBLIC u16 BLE_HRS_Send_Measurement(u8 connHandle, BLE_HRS_Measurement XDATA *p_measurement) large
+//{
+//	u16 XDATA result;
+//	XDATA BLE_GATTS_HandleValueParams XDATA *p_value;
+//	XDATA u8 measurement[MAX_HEART_RATE_MEASUREMENT_LEN]=0, index=0, i;
+//		
+//	//Configure Flags
+//	(p_measurement->isHeartRateValueFormatsupportedBit)?(measurement[index]|=HEART_RATE_MEASUREMENT_FLAG_VALUE_FORMAT):(measurement[index]&=(~HEART_RATE_MEASUREMENT_FLAG_VALUE_FORMAT));
+//	(p_measurement->isSensorContactSupportedBit)?(measurement[index]|=HEART_RATE_MEASUREMENT_FLAG_SENSOR_SUPPORTED):(measurement[index]&=(~HEART_RATE_MEASUREMENT_FLAG_SENSOR_SUPPORTED));//these are not conditional 
+//	(p_measurement->isSensorContactDetectedBit)?(measurement[index]|=HEART_RATE_MEASUREMENT_FLAG_SENSOR_DETECTED):(measurement[index]&=(~HEART_RATE_MEASUREMENT_FLAG_SENSOR_DETECTED));// these are not condition
+//	(p_measurement->isEnergyExpendedStatusBit)?(measurement[index]|=HEART_RATE_MEASUREMENT_FLAG_ENERGY_EXPENDED):(measurement[index]&=(~HEART_RATE_MEASUREMENT_FLAG_ENERGY_EXPENDED));
+//	(p_measurement->isRRIntervalBit)?(measurement[index]|=HEART_RATE_MEASUREMENT_FLAG_RR_INTERVAL):(measurement[index]&=(~HEART_RATE_MEASUREMENT_FLAG_RR_INTERVAL));
+//		
+//  index++;
+//  
+//  if(p_measurement->isHeartRateValueFormatsupportedBit)
+//	{
+//		EQU_Swap_u16pt(&measurement[index],&p_measurement->heart_rate);
+//		index+=2;//u16 bit
+//	}
+//	else
+//	{
+//		xmemcpy(&measurement[index],(u8 XDATA*)&p_measurement->heart_rate, 1);
+//		index+=1;// u8 bit
+//	}
+//		
+//	//Energy expended
+//	if (p_measurement->isEnergyExpendedStatusBit)
+//	{
+//		//if(reset_energy_flag)
+//		//{
+//		//	memset((u8 XDATA *)&p_measurement->energy_expended,0,2);
+//		//	reset_energy_flag = 0;//0
+//		//}//This logic moved to application.c
+//		EQU_Swap_u16pt(&measurement[index],&p_measurement->energy_expended);
+//		index+=sizeof(p_measurement->energy_expended);
+//	}
+//
+//    // Encode rr_interval values
+//  if (p_measurement->isRRIntervalBit)			
+//  {
+//		if(p_measurement->rr_interval_count > BLE_HRS_MAX_BUFFERED_RR_INTERVALS)
+//		{
+//			p_measurement->rr_interval_count = BLE_HRS_MAX_BUFFERED_RR_INTERVALS;
+//		}
+//    for (i = 0; i < p_measurement->rr_interval_count; i++)
+//    {
+//			EQU_Swap_u16pt(&measurement[index],&p_measurement->rr_interval[i]);
+//			index+=2;
+//		}
+//	}
+//	p_value = (BLE_GATTS_HandleValueParams*)APP_HEAP_Alloc(sizeof(BLE_GATTS_HandleValueParams));
+//	if(p_value!=NULL)
+//	{
+//		p_value->charHandle=HRMearsuementHandle;
+//		p_value->charLength=index;
+//		p_value->sendType=BLE_GATT_HV_NOTIFICATION;
+//		xmemcpy_u16(p_value->charValue, measurement, p_value->charLength);
+//		result=BLE_GATTS_SendHandleValue(connHandle, p_value);
+//		APP_HEAP_Free((u8 XDATA *)p_value);
+//		return result;
+//	}
+//	return MBIOT_RES_OOM;
+//}
