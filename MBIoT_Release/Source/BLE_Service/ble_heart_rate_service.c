@@ -109,7 +109,7 @@ PUBLIC void BLE_HRS_Catch_Event(BLE_GATT_Event XDATA * p_event) large
 					xmemcpy((u8 XDATA *)&pwm_value, p_event->eventField.onWrite.p_charValue, 
 						p_event->eventField.onWrite.writeDataLength);
 					
-					pwm.compareValue = (led_pwm * 24) / 100;
+					pwm.compareValue = (pwm_value * 24) / 100;
 					if (pwm.compareValue > 24 )
 						pwm.compareValue = 24;
 

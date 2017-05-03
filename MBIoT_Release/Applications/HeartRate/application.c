@@ -27,16 +27,16 @@
 
 ********************************************************************/
 
-/**@brief Project Setting Include File. */
+/** Project Setting Include File. */
 #include "mbiot.h"
 
-/**@brief Application Include File. */
+/** Application Include File. */
 #include "application.h"
 
-/**@brief BLE Service Include File. */
+/** BLE Service Include File. */
 #include "ble_heart_rate_service.h"
 
-/**@brief Definition of Application Version. */
+/** Definition of Application Version. */
 PUBLIC  MCODE    u8   APP_VERSION[]={0x00,0x00};
 
 #ifdef APP_OPEN_DEBUG_MODE
