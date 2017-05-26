@@ -60,6 +60,11 @@ PUBLIC u16 XDATA  HRBodySensorLocationHandle;
 PUBLIC u16 XDATA  HRControlPointHandle;
 //PUBLIC u8 XDATA reset_energy_flag;
 
+struct pwm_channel {
+	u8 pwm_ch;
+	u8 pwm_val;
+};
+
 PUBLIC u16 BLE_HRS_Init(HRSProcessRoutine hrsHandler)large
 {
 	if(hrsHandler==NULL)
@@ -100,26 +105,32 @@ PUBLIC void BLE_HRS_Catch_Event(BLE_GATT_Event XDATA * p_event) large
 
 	switch(p_event->eventID)
 	{
-			XDATA u8 pwm_value;
+			struct pwm_channel pwm_channel;
+			XDATA u8 tmp_val[2];
 
 			case BLE_GATTS_EVT_WRITE:
 			{
 				if (p_event->eventField.onWrite.charHandle == HRControlPointHandle) {
-					my_printf ("HRControlPointHandle\n");
-					xmemcpy((u8 XDATA *)&pwm_value, p_event->eventField.onWrite.p_charValue, 
+					xmemcpy((u8 XDATA *)tmp_val,
+						p_event->eventField.onWrite.p_charValue,
 						p_event->eventField.onWrite.writeDataLength);
 					
-					pwm.compareValue = (pwm_value * 24) / 100;
+					pwm_channel.pwm_ch = tmp_val[0];
+					pwm_channel.pwm_val = tmp_val[1];
+
+					pwm.compareValue = (pwm_channel.pwm_val * 24) / 100;
 					if (pwm.compareValue > 24 )
 						pwm.compareValue = 24;
 
-					APP_PWM_Stop (PWM1_MASK);
-					APP_PWM_Config((PWM1_MASK), &pwm);
-					APP_PWM_Start(PWM1_MASK);
-
-					APP_PWM_Stop (PWM2_MASK);
-					APP_PWM_Config((PWM2_MASK), &pwm);
-					APP_PWM_Start(PWM2_MASK);
+					if (pwm_channel.pwm_ch == 0) {
+						APP_PWM_Stop (PWM1_MASK);
+						APP_PWM_Config((PWM1_MASK), &pwm);
+						APP_PWM_Start(PWM1_MASK);
+					} else if (pwm_channel.pwm_ch == 1) {
+						APP_PWM_Stop (PWM2_MASK);
+						APP_PWM_Config((PWM2_MASK), &pwm);
+						APP_PWM_Start(PWM2_MASK);
+					}
 				}
 				break;
 			}
