@@ -66,7 +66,9 @@ public class DeviceControlActivity extends Activity {
     private final String LIST_NAME = "NAME";
     private final String LIST_UUID = "UUID";
 
-    private SeekBar volumeControl = null;
+    private SeekBar lightControl1 = null;
+    private SeekBar lightControl2 = null;
+    private OnSeekBarChangeListener SeekBarListener;
 
     // Code to manage Service lifecycle.
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
@@ -160,7 +162,8 @@ public class DeviceControlActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.button_control);
 
-        volumeControl = (SeekBar) findViewById(R.id.seek1);
+        lightControl1 = (SeekBar) findViewById(R.id.light_1);
+        lightControl2 = (SeekBar) findViewById(R.id.light_2);
 
         final Intent intent = getIntent();
         mDeviceName = intent.getStringExtra(EXTRAS_DEVICE_NAME);
@@ -184,15 +187,29 @@ public class DeviceControlActivity extends Activity {
         Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
 
-        volumeControl.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+        SeekBarListener = new OnSeekBarChangeListener() {
             int progressChanged = 0;
 
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+            public void onProgressChanged(SeekBar seekBar,
+              int progress, boolean fromUser) {
+                byte [] pwm_data = new byte [] {0, 0};
+                if (lightControl1 == seekBar)
+                    Log.i(TAG, "lightControl1");
+
+                if (lightControl2 == seekBar)
+                    Log.i(TAG, "lightControl2");
+
                 Log.i(TAG, "progress= "+ progress);
                 progressChanged = progress;
                 if(mBluetoothLeService != null) {
                     Log.i(TAG, "onProgressChanged");
-                    mBluetoothLeService.pwm(progressChanged);
+                    if (lightControl1 == seekBar)
+                      pwm_data[0] = 0;
+                    else
+                      pwm_data[0] = 1;
+
+                    pwm_data[1] = (byte)progressChanged;
+                    mBluetoothLeService.pwm(pwm_data);
                 }
             }
 
@@ -206,10 +223,34 @@ public class DeviceControlActivity extends Activity {
                 //Toast.makeText(SeekbarActivity.this, "seek bar progress:" + progressChanged,
                 //Toast.LENGTH_SHORT).show();
             }
-        });
+        };
 
+        lightControl1.setOnSeekBarChangeListener (SeekBarListener);
+        lightControl2.setOnSeekBarChangeListener (SeekBarListener);
 
-
+        //lightControl1.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+        //    int progressChanged = 0;
+        //
+        //    public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+        //        Log.i(TAG, "progress= "+ progress);
+        //        progressChanged = progress;
+        //        if(mBluetoothLeService != null) {
+        //            Log.i(TAG, "onProgressChanged");
+        //            mBluetoothLeService.pwm(progressChanged);
+        //        }
+        //    }
+        //
+        //    public void onStartTrackingTouch(SeekBar seekBar) {
+        //        Log.i(TAG, "onStartTrackingTouch");
+        //        // TODO Auto-generated method stub
+        //    }
+        //
+        //    public void onStopTrackingTouch(SeekBar seekBar) {
+        //        Log.i(TAG, "onStopTrackingTouch");
+        //        //Toast.makeText(SeekbarActivity.this, "seek bar progress:" + progressChanged,
+        //        //Toast.LENGTH_SHORT).show();
+        //    }
+        //});
     }
 
     @Override

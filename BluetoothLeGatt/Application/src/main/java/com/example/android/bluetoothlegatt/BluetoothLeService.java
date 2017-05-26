@@ -410,7 +410,7 @@ public class BluetoothLeService extends Service {
     {
         BluetoothGattCharacteristic mPwmCharacteristic;
         BluetoothGattService mLightService;
-
+        Log.w(TAG, "pwm v1");
         if (mBluetoothAdapter == null || mBluetoothGatt == null) {
             Log.w(TAG, "BluetoothAdapter not initialized");
             return;
@@ -424,6 +424,30 @@ public class BluetoothLeService extends Service {
         /*get the write characteristic from the service*/
         mPwmCharacteristic = mLightService.getCharacteristic(UUID.fromString("00002a39-0000-1000-8000-00805f9b34fb"));
         mPwmCharacteristic.setValue(pwm_width, android.bluetooth.BluetoothGattCharacteristic.FORMAT_UINT8, 0);
+        if(mBluetoothGatt.writeCharacteristic(mPwmCharacteristic ) == false) {
+            Log.w(TAG, "Failed to PWM characteristic");
+        }
+    }
+
+
+    public void pwm(byte pwm_width[])
+    {
+        BluetoothGattCharacteristic mPwmCharacteristic;
+        BluetoothGattService mLightService;
+        Log.w(TAG, "pwm v2");
+        if (mBluetoothAdapter == null || mBluetoothGatt == null) {
+            Log.w(TAG, "BluetoothAdapter not initialized");
+            return;
+        }
+        mLightService= mBluetoothGatt.getService(UUID.fromString("0000180d-0000-1000-8000-00805f9b34fb"));
+        if(mLightService== null){
+            Log.w(TAG, "BLE mLightService Service not found");
+            return;
+        }
+
+        /*get the write characteristic from the service*/
+        mPwmCharacteristic = mLightService.getCharacteristic(UUID.fromString("00002a39-0000-1000-8000-00805f9b34fb"));
+        mPwmCharacteristic.setValue(pwm_width);
         if(mBluetoothGatt.writeCharacteristic(mPwmCharacteristic ) == false) {
             Log.w(TAG, "Failed to PWM characteristic");
         }

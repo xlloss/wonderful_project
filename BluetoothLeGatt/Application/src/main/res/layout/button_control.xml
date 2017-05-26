@@ -32,12 +32,20 @@
         android:onClick="onClickNotify" />
 
     <SeekBar
-    android:id="@+id/seek1"
+    android:id="@+id/light_1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     android:progress="20"
     android:secondaryProgress="20" />
+
+    <SeekBar
+        android:id="@+id/light_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:progress="20"
+        android:secondaryProgress="20" />
 
     <TextView
         android:layout_width="wrap_content"
